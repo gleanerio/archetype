@@ -45,22 +45,24 @@ while getopts ":a:" opt; do
       case $OPTARG in
           docker) 
                 # Docker:  current docker command to do local volume mounts
+                shift
                 exec docker run \
                   --interactive --tty --rm \
                   --network=host \
                   --volume "$PWD":/wd \
                   --workdir /wd \
-                  "docker.io/fils/gleaner:v3.0.11-development-df" "$@:2"
+                  "docker.io/fils/gleaner:v3.0.11-development-df" "$@"
           ;;
           podman) 
                 # Podman:  podman needs --privileged to mount /dev/shm
+                shift
                 exec podman run \
                   --privileged \
                   --network=host \
                   --interactive --tty --rm \
                   --volume "$PWD":/gleaner/wd \
                   --workdir /gleaner/wd \
-                  "docker.io/fils/gleaner:v3.0.11-development-df" "$@:2"
+                  "docker.io/fils/gleaner:v3.0.11-development-df" "$@"
           ;;
       esac
       ;;
