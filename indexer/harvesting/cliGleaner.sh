@@ -50,7 +50,7 @@ while getopts ":a:" opt; do
                   --network=host \
                   --volume "$PWD":/wd \
                   --workdir /wd \
-                  "docker.io/fils/gleaner:v3.0.11-development-df" "$@: -1"
+                  "docker.io/fils/gleaner:v3.0.11-development-df" "$@:2"
           ;;
           podman) 
                 # Podman:  podman needs --privileged to mount /dev/shm
@@ -60,7 +60,7 @@ while getopts ":a:" opt; do
                   --interactive --tty --rm \
                   --volume "$PWD":/gleaner/wd \
                   --workdir /gleaner/wd \
-                  "docker.io/fils/gleaner:v3.0.11-development-df" "$@: -1"
+                  "docker.io/fils/gleaner:v3.0.11-development-df" "$@:2"
           ;;
       esac
       ;;
