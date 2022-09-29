@@ -10,8 +10,12 @@ then be overridden with the source ENV value.
 
 Example command
 
+For docker
 ```bash
-./gleanerDocker.sh -cfg /gleaner/wd/rundir/oih_queue.yaml  --source emodnet
-./gleanerDocker.sh -cfg /gleaner/wd/iow_local.yaml  --source refstates -rude
+./cliGleaner.sh  -a docker -cfg /wd/iow_local.yaml  --source damspids -rude
 ```
 
+For podman
+```bash
+./cliGleaner.sh  -a podman -cfg /gleaner/wd/iow_local.yaml  --source damspids -rude
+```
