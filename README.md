@@ -1,4 +1,4 @@
-# rchetype
+# Archetype
 
 ## About
 

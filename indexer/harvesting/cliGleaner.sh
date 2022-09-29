@@ -6,7 +6,6 @@
 # cfg eco_local 
 # cfg eco_local -source cfg_name
 
-
 PROGNAME="$(basename $0)"
 VERSION="v0.0.1"
 
@@ -39,19 +38,41 @@ check_cmd_in_path(){
 check_cmd_in_path docker
 check_cmd_in_path curl
 
-# Podman:  podman needs --privileged to mount /dev/shm
-exec podman run \
-  --privileged \
-  --network=host \
-  --interactive --tty --rm \
-  --volume "$PWD":/gleaner/wd \
-  --workdir /gleaner/wd \
-  "docker.io/fils/gleaner:v3.0.11-development-df" "$@"
+while getopts ":a:" opt; do
+  case $opt in
+    a)
+      #echo "-a was triggered, Parameter: $OPTARG" >&2
+      case $OPTARG in
+          docker) 
+                # Docker:  current docker command to do local volume mounts
+                exec docker run \
+                  --interactive --tty --rm \
+                  --network=host \
+                  --volume "$PWD":/wd \
+                  --workdir /wd \
+                  "docker.io/fils/gleaner:v3.0.11-development-df" "$@"
+          ;;
+          podman) 
+                # Podman:  podman needs --privileged to mount /dev/shm
+                exec podman run \
+                  --privileged \
+                  --network=host \
+                  --interactive --tty --rm \
+                  --volume "$PWD":/gleaner/wd \
+                  --workdir /gleaner/wd \
+                  "docker.io/fils/gleaner:v3.0.11-development-df" "$@"
+          ;;
+      esac
+      ;;
+    \?)
+      echo "Invalid option: -$OPTARG" >&2
+      exit 1
+      ;;
+    :)
+      echo "Option -$OPTARG requires an argument." >&2
+      exit 1
+      ;;
+  esac
+done
 
-# Docker:  current docker command to do local volume mounts
-#exec docker run \
-  #--interactive --tty --rm \
-  #--volume "$PWD":/wd \
-  #--workdir /wd \
-  #"fils/gleaner:latest" "$@"
 
