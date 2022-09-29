@@ -45,7 +45,7 @@ while getopts ":a:" opt; do
       case $OPTARG in
           docker) 
                 # Docker:  current docker command to do local volume mounts
-                shift
+                shift 2
                 exec docker run \
                   --interactive --tty --rm \
                   --network=host \
