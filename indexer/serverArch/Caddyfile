@@ -1,0 +1,25 @@
+(cors) {
+        @origin header Origin *
+        header @origin Access-Control-Allow-Origin *
+        header @origin Access-Control-Request-Method *
+        header @origin Access-Control-Request-Headers *
+}
+
+{$GLEANER_OSS_DOMAIN:local.dev} {
+        reverse_proxy localhost:54321
+}
+
+{$GLEANER_GRAPH_DOMAIN:local.dev} {
+        import cors
+        reverse_proxy localhost:7200
+}
+
+{$GLEANER_INDEX_DOMAIN:local.dev} {
+        import cors
+        reverse_proxy localhost:7700
+}
+
+{$GLEANER_WEB_DOMAIN:local.dev} {
+        import cors
+        reverse_proxy localhost:8080
+}
