@@ -1,9 +1,9 @@
 #!/bin/bash
 
-# gleaner-cli : A wrapper script for invoking gleaner-cli with docker
+# cliGleaner.sh : A wrapper script for invoking gleaner-cli with docker
 
-# TODO:  add help with things like config for 
-# cfg eco_local 
+# TODO:  add help with things like config for
+# cfg eco_local
 # cfg eco_local -source cfg_name
 
 PROGNAME="$(basename $0)"
@@ -11,7 +11,7 @@ VERSION="v0.0.1"
 
 # Pull down some of the needed docks if called with -init
 if [[ $1 == "-init" ]];
-then 
+then
     curl -O https://schema.org/version/latest/schemaorg-current-https.jsonld
     curl -O https://raw.githubusercontent.com/earthcubearchitecture-project418/gleaner/master/configs/demo.yaml
     curl -O https://raw.githubusercontent.com/earthcubearchitecture-project418/gleaner/master/deployment/setenvIS.sh
@@ -43,25 +43,34 @@ while getopts ":a:" opt; do
     a)
       #echo "-a was triggered, Parameter: $OPTARG" >&2
       case $OPTARG in
-          docker) 
+          docker)
                 # Docker:  current docker command to do local volume mounts
-                shift 2
+                shift 2  # drop the now unneed first two cli params
                 exec docker run \
                   --interactive --tty --rm \
+                  --group-add keep-groups \
+                  -e MINIO_USE_SSL \
+                  -e MINIO_SECRET_KEY \
+                  -e MINIO_ACCESS_KEY \
                   --network=host \
                   --volume "$PWD":/wd \
                   --workdir /wd \
                   "docker.io/fils/gleaner:v3.0.11-development-df" "$@"
           ;;
-          podman) 
+          podman)
                 # Podman:  podman needs --privileged to mount /dev/shm
-                shift
+                shift 2  # drop the now unneed first two cli params
                 exec podman run \
                   --privileged \
+                  --group-add keep-groups \
+                  -e MINIO_USE_SSL \
+                  -e MINIO_SECRET_KEY \
+                  -e MINIO_ACCESS_KEY \
+                  --user root \
                   --network=host \
                   --interactive --tty --rm \
-                  --volume "$PWD":/gleaner/wd \
-                  --workdir /gleaner/wd \
+                  --volume "$PWD":/wd \
+                  --workdir /wd \
                   "docker.io/fils/gleaner:v3.0.11-development-df" "$@"
           ;;
       esac
@@ -76,5 +85,3 @@ while getopts ":a:" opt; do
       ;;
   esac
 done
-
-

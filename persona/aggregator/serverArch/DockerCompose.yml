@@ -46,20 +46,20 @@ services:
     networks:
       - traefik_default
 
-  meili:
-    image: getmeili/meilisearch:latest
-    restart: unless-stopped
-    labels:
-      - "traefik.backend=headlesschrome"
-      - "traefik.port=7700"
-    volumes:
-      - ${GLEANER_MEILI}:/data.ms
-    ports:
-     - 7700:7700
-    environment:
-     - SERVICE_PORTS=7700
-    networks:
-      - traefik_default
+#  meili:
+#    image: getmeili/meilisearch:latest
+#    restart: unless-stopped
+#    labels:
+#      - "traefik.backend=headlesschrome"
+#      - "traefik.port=7700"
+#    volumes:
+#      - ${GLEANER_MEILI}:/data.ms
+#    ports:
+#     - 7700:7700
+#    environment:
+#     - SERVICE_PORTS=7700
+#    networks:
+#      - traefik_default
 
   # features:
   #   image: fils/grow-general:latest
