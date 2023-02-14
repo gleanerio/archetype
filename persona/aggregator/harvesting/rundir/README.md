@@ -116,12 +116,22 @@ access keys for your S3 object store.
 
 ## Example command
 
+As noted above you need to set the accessKey and secretKey in environment variables and these
+will be read and passed to the container.  Set the variables:
+
+```bash
+export MINIO_SECRET_KEY=MYSECRET
+export MINIO_ACCESS_KEY=MYACCESS
+```
+
+to align
+
 For docker
 ```bash
-./cliGleaner.sh  -a docker -cfg /wd/iow_local.yaml  --source damspids -rude
+../scripts/cliGleaner.sh -a docker --cfg 09022023_iow.yml --source cioos --rude 
 ```
 
 For podman
 ```bash
-./cliGleaner.sh  -a podman -cfg /gleaner/wd/iow_local.yaml  --source damspids -rude
+../scripts/cliGleaner.sh -a podman --cfg 09022023_iow.yml --source cioos --rude 
 ```
