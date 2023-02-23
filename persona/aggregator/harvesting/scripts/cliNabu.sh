@@ -10,14 +10,16 @@ exec podman run \
   --privileged \
   --network=host \
   --interactive --tty --rm \
+  --group-add keep-groups \
   --volume "$PWD":/nabu/wd \
   --workdir /nabu/wd \
-  "docker.io/fils/nabu:2.0.3-developement" "$@"
+  "docker.io/fils/nabu:2.0.9-df-development" "$@"
 
 #exec docker run \
     #--network=host \
     #--interactive --tty --rm \
+    #--group-add keep-groups \
     #--volume "$PWD":/wd \
     #--workdir /wd \
-    #"docker.io/fils/nabu:2.0.3-developement" "$@"
+    #"docker.io/fils/nabu:2.0.9-df-development" "$@"
 

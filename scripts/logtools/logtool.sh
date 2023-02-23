@@ -14,11 +14,12 @@ function usage() {
     echo "  -h  Display this help message"
     echo "  -l  list object in prefix GLEANERIO_LOGDIR"
     echo "  -c  X  view object X in prefix GLEANERIO_LOGDIR "
+    echo "  -r  cat object X in prefix GLEANERIO_LOGDIR "
     echo ""
 }
 
 # Parse command line arguments
-while getopts ":hlc" opt; do
+while getopts ":hlcr" opt; do
   case ${opt} in
     h )
       usage
@@ -31,6 +32,10 @@ while getopts ":hlc" opt; do
     c )
       # Command c, cat
          mc cat $PREFIX/$2 | grep -o "{[^{}]*}" $filename | grep "\"file\":" | jq .
+      ;;
+    r )
+      # Command c, cat
+         mc cat $PREFIX/$2 
       ;;
     \? )
       echo "Invalid option: -$OPTARG" 1>&2
