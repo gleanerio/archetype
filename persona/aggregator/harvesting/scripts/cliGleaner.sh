@@ -48,14 +48,13 @@ while getopts ":a:" opt; do
                 shift 2  # drop the now unneed first two cli params
                 exec docker run \
                   --interactive --tty --rm \
-                  --group-add keep-groups \
                   -e MINIO_USE_SSL \
                   -e MINIO_SECRET_KEY \
                   -e MINIO_ACCESS_KEY \
                   --network=host \
                   --volume "$PWD":/wd \
                   --workdir /wd \
-                  "docker.io/fils/gleaner:v3.0.11-development-df" "$@"
+                  "fils/gleaner:latest" "$@"
           ;;
           podman)
                 # Podman:  podman needs --privileged to mount /dev/shm
