@@ -1,0 +1,38 @@
+version: '3'
+
+services:
+
+  triplestore:
+    image: khaller/graphdb-free:latest
+    restart: unless-stopped
+    ports:
+      - 7200:7200
+    environment:
+      JAVA_XMS: 2048m
+      JAVA_XMX: 4g
+    volumes:
+      - ./gleaner/datavol/graph/graphdb-home:/opt/graphdb-home
+      - ./gleaner/datavol/graph/graphdb-data:/opt/graphdb/data
+      - ./gleaner/datavol/graph/graphdb-import:/root/graphdb-import
+      - ./gleaner/datavol/graph/repository.init:/repository.init
+
+  s3system:
+    image: minio/minio:latest
+    restart: unless-stopped
+    ports:
+      - 54321:54321
+      - 9000:9000
+    volumes:
+      - ./gleaner/datavol/s3:/data
+    environment:
+      MINIO_ROOT_USER: minioadmin
+      MINIO_ROOT_PASSWORD: minioadmin
+    command: [ "server", "/data", "--console-address", ":54321" ]
+
+  headless:
+    image: chromedp/headless-shell:latest
+    restart: unless-stopped
+    ports:
+      - 9222:9222
+    environment:
+      SERVICE_PORTS: 9222

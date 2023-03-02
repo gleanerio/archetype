@@ -1,9 +1,9 @@
 ---
 minio:
-  address: 192.168.202.114
-  port: 49153
-  accessKey: 
-  secretKey: 
+  address: 127.0.0.1
+  port: 9000
+  accessKey: minioadmin
+  secretKey: minioadmin
   ssl: False
   bucket: gleaner.oih
 gleaner:
