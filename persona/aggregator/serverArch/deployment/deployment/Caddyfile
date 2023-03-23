@@ -1,0 +1,19 @@
+(cors) {
+        @origin header Origin *
+        header @origin Access-Control-Allow-Origin *
+        header @origin Access-Control-Request-Method *
+}
+
+http://web.local.dev {
+        import cors
+        reverse_proxy localhost:8080
+}
+
+http://oss.local.dev {
+        reverse_proxy localhost:9000
+}
+
+http://graph.local.dev {
+        import cors
+        reverse_proxy localhost:9999
+}

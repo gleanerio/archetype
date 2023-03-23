@@ -1,0 +1,28 @@
+name,propername,code,description,url,type
+balto,Balto,1,ERROR balto : http://balto.opendap.org/opendap/site_map.txt reading sitemap XML,http://balto.opendap.org/opendap/site_map.txt,sitemap
+neotomadb,Neotoma,0,45936 : neotomadb VALID http://data.neotomadb.org/sitemap.xml  with 1 sitemap URL(s),http://data.neotomadb.org/sitemap.xml,sitemap
+resourceregistry,Resource Registry,1,ERROR resourceregistry : https://object.cloud.sdsc.edu/v1/AUTH_85f46aa78936477d8e71b186269414e8/gleaner-summoned reading sitemap XML,https://object.cloud.sdsc.edu/v1/AUTH_85f46aa78936477d8e71b186269414e8/gleaner-summoned,sitemap
+unidata,UNIDATA,0,202 : unidata VALID https://www.unidata.ucar.edu/sitemap.xml  with 1 sitemap URL(s),https://www.unidata.ucar.edu/sitemap.xml,sitemap
+aquadocs,AquaDocs,0,aquadocs 	 https://oih.aquadocs.org/aquadocs.json Sitegraph URL code is 200 ,https://oih.aquadocs.org/aquadocs.json,sitegraph
+iris,IRIS,0,28 : iris VALID http://ds.iris.edu/files/sitemap.xml  with 1 sitemap URL(s),http://ds.iris.edu/files/sitemap.xml,sitemap
+edi,Environmental Data Initiative,0,45520 : edi VALID https://portal.edirepository.org/sitemap_index.xml  with 10 sitemap URL(s),https://portal.edirepository.org/sitemap_index.xml,sitemap
+bcodmo,Biological and Chemical Oceanography Data Management Office,0,17851 : bcodmo VALID https://www.bco-dmo.org/sitemap.xml  with 2 sitemap URL(s),https://www.bco-dmo.org/sitemap.xml,sitemap
+hydroshare,"Consortium of Universities for the Advancement of Hydrologic Science, Inc.¬†(CUAHSI)",0,13897 : hydroshare VALID https://www.hydroshare.org/sitemap-resources.xml  with 1 sitemap URL(s),https://www.hydroshare.org/sitemap-resources.xml,sitemap
+iedadata,IEDA (Integrated Earth Data Applications),0,10080 : iedadata VALID http://get.iedadata.org/doi/xml-sitemap.php  with 1 sitemap URL(s),http://get.iedadata.org/doi/xml-sitemap.php,sitemap
+opentopography,OpenTopography,1,ERROR opentopography : https://opentopography.org/sitemap.xml reading sitemap XML,https://opentopography.org/sitemap.xml,sitemap
+unavco,UNAVCO,0,5689 : unavco VALID https://www.unavco.org/data/doi/sitemap.xml  with 1 sitemap URL(s),https://www.unavco.org/data/doi/sitemap.xml,sitemap
+ssdbiodp,IODP Site Survey Databank,0,26156 : ssdbiodp VALID https://ssdb.iodp.org/dataset/sitemap.xml  with 1 sitemap URL(s),https://ssdb.iodp.org/dataset/sitemap.xml,sitemap
+linkedearth,Linked Earth,0,18634 : linkedearth VALID http://wiki.linked.earth/sitemap.xml  with 1 sitemap URL(s),http://wiki.linked.earth/sitemap.xml,sitemap
+lipdverse,Linked PaleoData,0,27 : lipdverse VALID https://lipdverse.org/sitemap.xml  with 1 sitemap URL(s),https://lipdverse.org/sitemap.xml,sitemap
+ucar,UCAR,0,18725 : ucar VALID https://data.ucar.edu/sitemap.xml  with 1 sitemap URL(s),https://data.ucar.edu/sitemap.xml,sitemap
+opencoredata,opencoredata,0,83388 : opencoredata VALID http://opencoredata.org/sitemap.xml  with 4 sitemap URL(s),http://opencoredata.org/sitemap.xml,sitemap
+magic,Magnetics Information Consortium (MagIC),0,4332 : magic VALID https://www2.earthref.org/MagIC/contributions.sitemap.xml  with 1 sitemap URL(s),https://www2.earthref.org/MagIC/contributions.sitemap.xml,sitemap
+earthchem,earthchem,0,650 : earthchem VALID https://ecl.earthchem.org/sitemap.xml  with 1 sitemap URL(s),https://ecl.earthchem.org/sitemap.xml,sitemap
+xdomes,xdomes,1,"ERROR making request, no further information at this time",https://xdomes.tamucc.edu/srr/sensorML/sitemap.xml,sitemap
+neon,National Ecological Observatory Network (NEON),1,ERROR neon : https://geodex.org/neon_prodcodes_sm.xml Sitemap URL is 404,https://geodex.org/neon_prodcodes_sm.xml,sitemap
+designsafe,,0,1820 : designsafe VALID https://www.designsafe-ci.org/sitemap.xml  with 1 sitemap URL(s),https://www.designsafe-ci.org/sitemap.xml,sitemap
+r2r,Rolling Deck to Repository Program (R2R),0,47140 : r2r VALID https://service-dev.rvdata.us/api/sitemap/  with 1 sitemap URL(s),https://service-dev.rvdata.us/api/sitemap/,sitemap
+geocodes_demo_datasets,Geocodes Demo Datasets,0,9 : geocodes_demo_datasets VALID https://earthcube.github.io/GeoCODES-Metadata/metadata/Dataset/allgood/sitemap.xml  with 1 sitemap URL(s),https://earthcube.github.io/GeoCODES-Metadata/metadata/Dataset/allgood/sitemap.xml,sitemap
+usapdc,U.S. Antarctic Program Data Center,0,960 : usapdc VALID https://www.usap-dc.org/view/dataset/sitemap.xml  with 1 sitemap URL(s),https://www.usap-dc.org/view/dataset/sitemap.xml,sitemap
+cchdo,CLIVAR and Carbon Hydrographic Data Office,0,2523 : cchdo VALID https://cchdo.ucsd.edu/sitemap.xml  with 1 sitemap URL(s),https://cchdo.ucsd.edu/sitemap.xml,sitemap
+amgeo,Assimilative Mapping of Geospace Observations,1,ERROR amgeo : https://amgeo-dev.colorado.edu/sitemap.xml reading sitemap XML,https://amgeo-dev.colorado.edu/sitemap.xml,sitemap
