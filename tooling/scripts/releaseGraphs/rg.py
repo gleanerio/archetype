@@ -7,6 +7,7 @@ import distutils
 import argparse
 from minio import Minio
 from minio.commonconfig import REPLACE, CopySource
+from urllib.parse import urlparse
 
 
 warnings.simplefilter(action='ignore', category=FutureWarning)  ## remove pandas future warning
@@ -97,7 +98,7 @@ def markdown(client, bucket, prefix):
     ## need to switch on the modes here..
     # make a main and then call functions based on swithc
 
-    print("| provider   |      size      |  date | URL")
+    print("| provider by graph alias   |      size      |  date | URL")
     print("|----------|:-------------:|------:|------:|")
 
     # List objects information whose names starts with "my/prefix/".
@@ -124,8 +125,11 @@ def markdown(client, bucket, prefix):
                 print("No match found.")
                 raise "unable to match on provider name via regex"
 
-            print("| {3} | {2}  | {1}  | [{0}]({0}) |".format(url, result.last_modified, result.size,
-                                                              source))
+            parsed_url = urlparse(url)
+            last_element = parsed_url.path.split("/")[-1]
+
+
+            print("| {3} | {2}  | {1}  | [{4}]({0}) |".format(url, result.last_modified, result.size, source, last_element))
             # print("{3} \t URL: {0}  \t size: {2}\t  last-modified: {1}".format(url, result.last_modified, result.size,
             #                                                                    source))
 
