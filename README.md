@@ -43,6 +43,9 @@ experiences are described in the User section.
 
 ## References
 
+* https://github.com/ESIPFed/science-on-schema.org/tree/master/guides
+* [Schema.org for research data managers: a primer
+](https://www.inderscienceonline.com/doi/10.1504/IJBDM.2022.128449)
 * Data on th web W3c
 * [Science on Schema](https://github.com/ESIPFed/science-on-schema.org//)
 * [Ocean Best Practices on Schema](https://github.com/adamml/ocean-best-practices-on-schema)
