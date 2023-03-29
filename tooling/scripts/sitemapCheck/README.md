@@ -5,6 +5,20 @@
 A simple script to loop through a gleaner config file and check the sitemap
 status.
 
+Usage:
+
+```bash
+python check_sitemap_loop.py -h
+
+usage: check_sitemap_loop.py [-h] [-s SOURCE] [-n NAME] [-f FILE]
+
+options:
+  -h, --help            show this help message and exit
+  -s SOURCE, --source SOURCE
+                        Source: URL or file
+  -n NAME, --name NAME  Optional name of single source, by name, to check
+  -f FILE, --file FILE  Optional name of CSV file to save results to
+```
 
 ### Pointing to a local file
 
