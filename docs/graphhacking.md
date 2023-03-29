@@ -10,6 +10,10 @@ open world aware approaches, provides a starting point for connections and integ
 with the larger web of data.  Groups could also be thinking about 
 this in terms of FAIR or CARE principles as well.  
 
+There is also the [EarthCube Call for Notebooks](https://www.earthcube.org/post/call-for-notebooks-cfn-22)
+which might provide an interesting concept that could be used for 
+a communities graph.  
+
 Looking at something like a hackathon or the relation, the following strucutre might 
 provide a starting point for thinking about what would be involved. 
 
