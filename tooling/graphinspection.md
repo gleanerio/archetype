@@ -3,7 +3,7 @@
 ## About
 
 What follows are a set of tools and approaches to exploring graphs beyond the
-class use of SPARQL, SHACL or framing.
+classic use of SPARQL, SHACL or framing.
 
 This collection is designed to provide a sample of the tools available
 that might align with the skills and needs of the user.  Some are somewhat
@@ -19,8 +19,8 @@ is going.
 * [RML](https://rml.io)
 * [Linked Data Hub](https://github.com/AtomGraph/LinkedDataHub)
 * [DuckDB](https://duckdb.org/)
-* [OpenRefine](foo)
-    * RDF extension
+* [OpenRefine](https://openrefine.org/)
+    * RDF extension in [extensions showcase](https://openrefine.org/extensions)
 * [Data World](https://data.world/)
 * Python
     * [kglab](https://derwen.ai/docs/kgl/ex6_0/)

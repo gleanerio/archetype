@@ -41,6 +41,8 @@ User tools may be websites or scientific notebooks. Some examples of these user
 experiences are described in the User section.
 
 
+![relations](./docs/images/relations.png)
+
 ## References
 
 * https://github.com/ESIPFed/science-on-schema.org/tree/master/guides
