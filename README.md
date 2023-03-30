@@ -41,6 +41,16 @@ User tools may be websites or scientific notebooks. Some examples of these user
 experiences are described in the User section.
 
 
+## Activity Flow
+
+A rough draft of the activity flow.
+
+![relations](./docs/images/activityFlow.svg)
+
+
+
+## Relations
+
 ![relations](./docs/images/relations.png)
 
 ## References
