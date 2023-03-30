@@ -40,18 +40,23 @@ warehouse of collected data graphs.
 User tools may be websites or scientific notebooks. Some examples of these user
 experiences are described in the User section.
 
+## Relations
+
+The following image shows some of the relations between these personas.  It does
+this in the context of [FAIR Implementation Networks](https://www.go-fair.org/implementation-networks/).
+
+![relations](./docs/images/relations.png)
+
 
 ## Activity Flow
 
-A rough draft of the activity flow.
+A rough draft of the activity flow.  This is very Gleaner centric at this time which is not
+required. So you can assume that Gleaner and Nabu could be replaced by other services.  Indeed,
+the S3 and graph stores are also very optional.  
 
 ![relations](./docs/images/activityFlow.svg)
 
 
-
-## Relations
-
-![relations](./docs/images/relations.png)
 
 ## References
 
