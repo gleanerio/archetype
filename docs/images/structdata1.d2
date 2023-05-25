@@ -1,0 +1,94 @@
+direction: right
+
+
+sr: Standards and\n Recommendations {
+dbp: Data on the Web \n Best Practices
+sw: Semantic Web
+fp: FAIR Principles
+wa: Web Architecture \n (https + JSON)
+
+emrg : |md
+    # Emerging
+    * Signposting
+    * FAIR Digital Objects
+    * Negotiation by Profile
+    * many more...
+|
+
+}
+
+
+
+cp: Communities {
+sdo: Schema.org
+sdousers: |md
+          # Implementors
+            - Google Dataset Search
+            - Google Job Search
+            - DataONE
+            - GeoCODES / DeCODER
+            - UNESCO / ODIS Ocean Infohub |
+sdo -> sdousers
+
+
+profiles: |md
+    # Profiles & Frameworks
+    * Science on Schema (SOSO)
+    * BioSchemas
+    * DCAT Profiles
+    * GoFAIR
+    * CODATA CDIF
+|
+}
+
+in: Implementors {
+cop : |md
+    # Publishing Communities
+    * IoW
+    * WiFIRE
+    * OIH
+    * POLDER
+    * NSF Geo via GeoCODES
+|
+
+cv : |md
+    # Vocabularies
+    * schema.org (SOSO, BioSchema, etc)
+    * geosparql
+    * SOSA / SSN 
+    * prov
+|
+
+cop -> cv: indentify
+
+emrgimp : |md
+# Note
+This is very anologous to the  
+FAIR Implementation Networks
+|
+
+}
+
+dp: Derived Products {
+webd: Web of Data
+fin: FAIR Implementation Networks
+fdo: FAIR Digital Objects
+    }
+
+
+
+sr -> in : leveraged by
+sr -> cp : leveraged by
+cp <-> in
+
+u: Users {
+note : |md
+    # Web Of Data 
+    * users here..  
+|
+}
+in -> u
+
+in -> dp
+sr -> dp
+cp -> dp

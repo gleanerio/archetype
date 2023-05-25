@@ -1,0 +1,42 @@
+direction: down
+
+cg: Community Guidance {
+m1: Module 1\n Introduction to\n the Ocean InfoHub project\n & Ocean Data and Information System
+m2: Module 2\n General introduction to\n our use of schema.org
+m10: Module 10\n Catalogue Recommendations\n / Best Practices
+
+m1 -> m2
+}
+
+p1: Publishing Community {
+icon: ./noun-person-924847.svg
+m3: Module 3\n ODIS schema.org patterns
+m4: Module 4\n Demonstrations of\n ODIS-architecture patterns
+m5: Module 5\n Setting up the standard\n publishing/contribution environment
+
+m3 -> m4 -> m5
+}
+
+p2: Harvesting \nCommunity {
+icon: ./noun-person-924847.svg
+
+m6: Module 6\n Harvesting patterns\n in JSON/RDF
+}
+
+p3: User Community {
+icon: ./noun-person-924847.svg
+
+m7: Module 7\n Querying harvested material
+m8: Module 8\n Practical OIH\n implementation examples 
+m9: Module 9\n Demonstration of\n the ODIS Search Interface
+
+m7-> m8 -> m9
+}
+
+cg -> p1
+p1.m5 -> p2.m6
+p2.m6 -> p3.m7
+p3.m9 -> cg.m10
+
+
+
