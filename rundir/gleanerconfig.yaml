@@ -1,0 +1,40 @@
+minio:
+    address: 192.168.202.114
+    port: 49153
+    accessKey: 
+    secretKey: 
+    ssl: false
+    bucket: gleaner.oih
+gleaner:
+    runid: runx # this will be the bucket the output is placed in...
+    summon: true # do we want to visit the web sites and pull down the files
+    mill: false
+context:
+    cache: true
+contextmaps:
+- prefix: "https://schema.org/"
+  file: "./schemaorg-current-https.jsonld"
+- prefix: "http://schema.org/"
+  file: "./schemaorg-current-https.jsonld"
+summoner:
+  after: ""      # "21 May 20 10:00 UTC"   
+  mode: full  # full || diff:  If diff compare what we have currently in gleaner to sitemap, get only new, delete missing
+  threads: 5
+  delay:  # milliseconds (1000 = 1 second) to delay between calls (will FORCE threads to 1) 
+  headless: http://0.0.0.0:9222  # URL for headless see docs/headless
+millers:
+    graph: true
+sources:
+- name: africaioc
+  propername: IOC Africa Data Portal
+  catalogue: https://ioc-africa.org/dbs/displayData.php
+  domain: https://ioc-africa.org
+  logo: https://ioc-africa.org/dbs/images/unesco_ioc_logo.png
+  pid: https://oceaninfohub.org/.well-known/org/africaioc
+  sourcetype: sitemap
+  url: https://ioc-africa.org/sitemap.xml
+  changefreq: daily
+  backend: Custom
+  headless: false
+  dateadded: 2023-02-09
+  active: true
