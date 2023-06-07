@@ -39,3 +39,16 @@ sources:
       headless: false
       dateadded: 2023-02-09
       active: true
+    - name: medin
+      propername: Marine Environmental Data and Information Network (MEDIN)
+      catalogue: https://portal.medin.org.uk/portal/start.php
+      domain: https://medin.org.uk/
+      logo: https://medin.org.uk/sites/medin/files/images/medin-portal-logo.png
+      pid: https://catalogue.odis.org/view/40
+      sourcetype: sitemap  
+      url: https://portal.medin.org.uk/portal/sitemap.php
+      changefreq: daily
+      backend: MARIS
+      headless: yes
+      dateadded: 2023-05-11
+      active: true     
