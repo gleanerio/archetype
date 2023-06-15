@@ -1,0 +1,3 @@
+level=error contentType="Direct access failed, trying headless']" url="https://portal.medin.org.uk/portal/start.php?tpc=015_db265479-74ca-4fe3-bdb4-1933525f6af9"
+level=error msg="Not REPO FAULT. Devtools... Is Headless Container running?" url="https://portal.medin.org.uk/portal/start.php?tpc=015_db265479-74ca-4fe3-bdb4-1933525f6af9"
+level=error msg="devtool: CreateURL: Using unsafe HTTP verb GET to invoke /json/new. This action supports only PUT verb." issue="converting json ld" url="https://portal.medin.org.uk/portal/start.php?tpc=015_db265479-74ca-4fe3-bdb4-1933525f6af9"

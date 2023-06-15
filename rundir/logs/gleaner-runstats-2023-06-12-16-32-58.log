@@ -1,0 +1,12 @@
+RunStats:
+  Start: 2023-06-12 16:16:24.550840099 +0000 UTC m=+0.505207459
+  Reason: User Interrupt or Fatal Error
+  Soruce:
+    - name: cioos
+      Start: 2023-06-12 16:16:25.19085056 +0000 UTC m=+1.145217757
+      End: 2023-06-12 16:16:25.209114334 +0000 UTC m=+1.163481348
+      SitemapHttpError: 0 
+      SitemapIssues: 0 
+      SitemapSummoned: 288 
+      SitemapStored: 288 
+      SitemapCount: 1778 

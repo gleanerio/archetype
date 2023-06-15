@@ -58,6 +58,7 @@ while getopts ":a:" opt; do
           ;;
           podman)
                 # Podman:  podman needs --privileged to mount /dev/shm
+                #  "docker.io/fils/gleaner:v3.0.11-development-df" "$@"
                 shift 2  # drop the now unneed first two cli params
                 exec podman run \
                   --privileged \
@@ -70,7 +71,7 @@ while getopts ":a:" opt; do
                   --interactive --tty --rm \
                   --volume "$PWD":/wd \
                   --workdir /wd \
-                  "docker.io/fils/gleaner:v3.0.11-development-df" "$@"
+                  "docker.io/nsfearthcube/gleaner:latest" "$@"
           ;;
       esac
       ;;
