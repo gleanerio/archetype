@@ -1,11 +1,28 @@
 ---
 minio:
-    address: 192.168.202.114
-    port: 49153
+    address: storage.googleapis.com
+    port: 443
     accessKey:
     secretKey:
-    ssl: false
-    bucket: gleaner.oih
+    ssl: true
+    bucket: gleaner-oih
+    region: US-CENTRAL-1
+miniogoogle:
+    address: storage.googleapis.com
+    port: 443
+    accessKey:
+    secretKey:
+    ssl: true
+    bucket: gleaner-oih
+    region: US-CENTRAL-1
+minioaws:
+    address: aws.amazon.com
+    port: 443
+    accessKey:
+    secretKey:
+    ssl: true
+    bucket: gleaner-oih
+    region: US-CENTRAL-1
 gleaner:
     runid: runx    # this will be the bucket the output is placed in...
     summon: true   # do we want to visit the web sites and pull down the files
