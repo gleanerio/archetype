@@ -1,6 +1,6 @@
 ---
 minio:
-    address: storage.googleapis.com
+    address: myminio.dev
     port: 443
     accessKey:
     secretKey:
