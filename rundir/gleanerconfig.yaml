@@ -108,3 +108,17 @@ sources:
       headless: false
       dateadded: 2023-01-31
       active: true
+    - name: bodc
+      propername: BODC
+      catalogue: https://api.linked-systems.uk
+      domain: https://api.linked-systems.uk
+      logo: https://api.linked-systems.uk/logo.png
+      pid: https://catalogue.odis.org/view/3263
+      sourcetype: sitemap
+      url: https://api.linked-systems.uk/sitemap_pap_api.xml
+      changefreq: daily
+      backend: Custom
+      headless: false
+      dateadded: 2023-01-31
+      active: true
+

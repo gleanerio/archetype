@@ -1,2 +1,0 @@
-{"file":"/home/fils/src/gomods/gleaner/pkg/gleaner.go:94","func":"github.com/gleanerio/gleaner/pkg.PreflightChecks","level":"error","msg":"Connection issue, make sure the minio server is running and accessible.Access Denied.","time":"2023-06-03T02:04:14Z"}
-{"file":"/home/fils/src/gomods/gleaner/cmd/gleaner/main.go:165","func":"main.main","level":"fatal","msg":"Preflight Check failed. Make sure the minio server is running, accessible and has been setup.Access Denied.","time":"2023-06-03T02:04:14Z"}

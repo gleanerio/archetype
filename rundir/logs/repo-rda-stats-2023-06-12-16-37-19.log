@@ -1,9 +1,0 @@
-SourceStats:
-  Start: 2023-06-12 16:37:19.04916161 +0000 UTC m=+4.609655110
-  End: 2023-06-12 16:37:19.084081886 +0000 UTC m=+4.644574653
-  Soruce:
-    - name: rda
-      SitemapCount: 5342 
-      SitemapHttpError: 0 
-      SitemapIssues: 0 
-      SitemapSummoned: 0 

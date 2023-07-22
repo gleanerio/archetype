@@ -1,1 +1,0 @@
-{"file":"/home/runner/work/gleaner/gleaner/cmd/gleaner/main.go:124","func":"main.main","level":"error","msg":"CAUTION:  no matching source, did your -source VALUE match a sources.name VALUE in your config file?","time":"2023-06-09T13:15:22Z"}
