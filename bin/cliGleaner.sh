@@ -8,6 +8,8 @@
 
 PROGNAME="$(basename $0)"
 VERSION="v0.0.1"
+GLIMAGE="nsfearthcube/gleaner:dev"
+#GLIMAGE="docker.io/nsfearthcube/gleaner:latest" 
 
 # Pull down some of the needed docks if called with -init
 if [[ $1 == "-init" ]];
@@ -54,7 +56,7 @@ while getopts ":a:" opt; do
                   --network=host \
                   --volume "$PWD":/wd \
                   --workdir /wd \
-                  "fils/gleaner:latest" "$@"
+                  $GLIMAGE "$@"
           ;;
           podman)
                 # Podman:  podman needs --privileged to mount /dev/shm
@@ -71,7 +73,7 @@ while getopts ":a:" opt; do
                   --interactive --tty --rm \
                   --volume "$PWD":/wd \
                   --workdir /wd \
-                  "docker.io/nsfearthcube/gleaner:latest" "$@"
+                  $GLIMAGE "$@"
           ;;
       esac
       ;;
