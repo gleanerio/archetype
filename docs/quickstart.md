@@ -1,5 +1,15 @@
 # Quickstart
 
+## Prerequisits
+
+To leverage the scripts below you need:
+
+* Docker or Podman installed
+* A valid S3 object store (Minio, AWS, Google Cloud, etc) with your access codes
+* The scripts use bash, so some environment like Linux, Mac OS or Bash on Windows to run the scripts
+
+## Steps
+
 This is a command line based example and assumes a bash
 or zsh type shell.  If you are using another shell or CLI environment
 you will need to adapt these commands to your environment.
@@ -51,21 +61,23 @@ for your
 
 ## configs for various sources
 
-For a local S3 like Minio
+For a local S3 like Minio.  Here is an example on a local port 45123 with no SSL.  No _region_ is needed
+in this case.
+
 ```yaml
 ---
 minio:
 address: myminio.dev
-port: 443
+port: 45123
 accessKey:
 secretKey:
-ssl: true
-bucket: gleaner-oih
-region: US-CENTRAL-1
+ssl: false
+bucket: yourbucketname
 ```
 
 
 Google
+
 ```yaml
 ---
 minio:
@@ -74,19 +86,20 @@ port: 443
 accessKey:
 secretKey:
 ssl: true
-bucket: gleaner-oih
+bucket: yourbucketname
 region: US-CENTRAL-1
 ```
 
 AWS
+
 ```yaml
 ---
 minio:
-address: aws.amazon.com
+address: s3.amazonaws.com
 port: 443
 accessKey:
 secretKey:
 ssl: true
-bucket: gleaner-oih
-region: US-CENTRAL-1
+bucket: yourbucketname
+region: us-east-1
 ```
