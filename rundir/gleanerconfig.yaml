@@ -1,27 +1,11 @@
 ---
 minio:
-    address: myminio.dev
-    port: 443
-    accessKey:
-    secretKey:
-    ssl: true
-    bucket: gleaner-oih
-    region: US-CENTRAL-1
-miniogoogle:
-    address: storage.googleapis.com
-    port: 443
-    accessKey:
-    secretKey:
-    ssl: true
-    bucket: gleaner-oih
-    region: US-CENTRAL-1
-minioaws:
     address: aws.amazon.com
     port: 443
     accessKey:
     secretKey:
     ssl: true
-    bucket: gleaner-oih
+    bucket: gleaner-oih  # set to a bucket you own in your object store of choice
     region: US-CENTRAL-1
 gleaner:
     runid: runx    # this will be the bucket the output is placed in...
