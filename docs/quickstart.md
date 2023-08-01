@@ -14,13 +14,12 @@ This is a command line based example and assumes a bash
 or zsh type shell.  If you are using another shell or CLI environment
 you will need to adapt these commands to your environment.
 
-You will need to extend your path
+You will need to extend your path, by executing the following at
+the top level directory of this repository:
 
 ```bash
 export PATH=$PATH:$(pwd)/bin
 ```
-
-The above assumes you are in the top level directory of this repository.
 
 You will also need to set up Minio or have an S3 compatible
 service via AWS, Googl or others.  For Minio see the
@@ -39,8 +38,13 @@ Set the SSL variable for your environment.  AWS or Google services will always b
 a local setup might not be.
 
 You need to have a valid Gleaner config file and some base JSON-LD
-context fils for schema.org.  You can find a skeleton directory
+context files for schema.org.  You can find a skeleton directory
 structure for all this in the rundir directory.
+
+> **_NOTE:_** In the case of AWS S3, it is important to use the region-specific  
+> version of the AWS API URL, for the `address` parameter in your Gleaner config  
+> file, such as `address: s3.ca-central-1.amazonaws.com` if your AWS buckets
+> are in the `ca-central-1` region
 
 
 You should now be able to run the Gleaner indexing.  The script
@@ -56,8 +60,13 @@ So an example command using docker might look like:
 cliGleaner.sh -a docker -cfg gleanerconfig.yaml -source africaioc -rude
 ```
 
+> **_NOTE:_** If you receive an error of `permission denied while trying to connect to the Docker daemon socket` 
+> then you likely have to add your user to the docker group, 
+> see [here](https://www.digitalocean.com/community/questions/how-to-fix-docker-got-permission-denied-while-trying-to-connect-to-the-docker-daemon-socket)
+
 An example config file and the Schema.org context are in the _rundir_ directory of this repo
-for your
+for your use.  You can try executing the above `cliGleaner.sh` command 
+from inside that `rundir` folder, which will use the config located there.
 
 ## configs for various sources
 
