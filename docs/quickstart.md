@@ -54,8 +54,7 @@ that follows works with docker or podman using the
 -a docker||podman parameter.
 ```
 
-So an example command using docker, run from inside the `rundir` 
-directory, might look like:
+So an example command using docker might look like:
 
 ```bash
 cliGleaner.sh -a docker -cfg gleanerconfig.yaml -source africaioc -rude
@@ -66,7 +65,8 @@ cliGleaner.sh -a docker -cfg gleanerconfig.yaml -source africaioc -rude
 > see [here](https://www.digitalocean.com/community/questions/how-to-fix-docker-got-permission-denied-while-trying-to-connect-to-the-docker-daemon-socket)
 
 An example config file and the Schema.org context are in the _rundir_ directory of this repo
-for your
+for your use.  You can try executing the above `cliGleaner.sh` command 
+from inside that `rundir` folder, which will use the config located there.
 
 ## configs for various sources
 
