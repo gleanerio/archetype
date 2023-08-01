@@ -41,10 +41,10 @@ You need to have a valid Gleaner config file and some base JSON-LD
 context files for schema.org.  You can find a skeleton directory
 structure for all this in the rundir directory.
 
-> **_NOTE:_** In the case of AWS S3, it is important to use the region specific version of the 
->             AWS API URL, for the `address` parameter in your
->             Gleaner config file, such as 
->               `address: s3.ca-central-1.amazonaws.com`
+> **_NOTE:_** In the case of AWS S3, it is important to use the region-specific  
+> version of the AWS API URL, for the `address` parameter in your Gleaner config  
+> file, such as `address: s3.ca-central-1.amazonaws.com` if your AWS buckets
+> are in the `ca-central-1` region
 
 
 You should now be able to run the Gleaner indexing.  The script
@@ -62,8 +62,8 @@ cliGleaner.sh -a docker -cfg gleanerconfig.yaml -source africaioc -rude
 ```
 
 > **_NOTE:_** If you receive an error of `permission denied while trying to connect to the Docker daemon socket` 
->             then you likely have to add your user to the docker group, 
->             see [here](https://www.digitalocean.com/community/questions/how-to-fix-docker-got-permission-denied-while-trying-to-connect-to-the-docker-daemon-socket)
+> then you likely have to add your user to the docker group, 
+> see [here](https://www.digitalocean.com/community/questions/how-to-fix-docker-got-permission-denied-while-trying-to-connect-to-the-docker-daemon-socket)
 
 An example config file and the Schema.org context are in the _rundir_ directory of this repo
 for your
