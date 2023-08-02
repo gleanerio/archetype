@@ -1,6 +1,6 @@
 # Quickstart
 
-## Prerequisits
+## Requirements
 
 To leverage the scripts below you need:
 
