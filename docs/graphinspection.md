@@ -38,6 +38,7 @@ is going.
     * [jsonld-cli](https://github.com/digitalbazaar/jsonld-cli)
     * [jsonld-requests](https://github.com/digitalbazaar/jsonld-request)
     * [jq](https://stedolan.github.io/jq/)
+    * [ld-cli](https://github.com/filip26/ld-cli)
 * [Titanium JSON-LD 1.1 Processor & API](https://github.com/filip26/titanium-json-ld)
 
 Refs:
