@@ -101,6 +101,14 @@ region: US-CENTRAL-1
 
 AWS
 
+Note for many regions you will need to encode the URL in the address node with the region such as
+
+```yaml
+address: http://s3-us-west-2.amazonaws.com/
+```
+
+for region us-west-2.  Use that pattern for your region.
+
 ```yaml
 ---
 minio:
