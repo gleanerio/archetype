@@ -1,0 +1,22 @@
+{
+  "@context": "file://context.jsonld",
+  "@id": "concept:201820",
+  "@type": "schema:MedicalRiskFactor",
+  "increasesRiskOf": {
+    "@type": "schema:MedicalCondition",
+    "code": {
+      "@type": "schema:MedicalCode",
+      "codeValue": "840539006",
+      "codingSystem": "SNOMED",
+      "sameAs": "http://snomed.info/id/840539006"
+    }
+  },
+  "code": {
+    "@type": "schema:MedicalCode",
+    "codeValue": "73211009",
+    "codingSystem": "SNOMED",
+    "sameAs": "http://snomed.info/id/73211009"
+  },
+  "identifier": "201820",
+  "name": "Diabetes mellitus"
+}

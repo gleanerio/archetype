@@ -1,0 +1,139 @@
+{
+  "@context": "file://context.jsonld",
+  "@id": "dataset:mubasCDM",
+  "@type": "schema:Dataset",
+  "identifier": "<nil>",
+  "name": "Malawi/MUBAS OMOP CDM",
+  "version": "5.4",
+  "keywords": [
+    "OMOP CDM",
+    "COVID-19",
+    "SARS-CoV-2",
+    "Transmission",
+    "Surveillance",
+    "Symptoms",
+    "Diagnosis",
+    "Treatment",
+    "Response",
+    "Vaccine",
+    "Specimen"
+  ],
+  "spatialCoverage": {
+    "@type": "schema:Place",
+    "geo": {
+      "@type": "schema:GeoShape",
+      "polygon": "<nil>"
+    }
+  },
+  "temporalCoverage": "<nil>",
+  "ohdsi:investigator": [
+    "person:TaylorA"
+  ],
+  "ohdsi:institution": {
+    "@type": "schema:Organization",
+    "identifier": "<nil>",
+    "name": "Mubas"
+  },
+  "hasPart": [
+    {
+      "@type": "schema:Dataset",
+      "name": "OMOP CDM Person table",
+      "description": "OMOP CDM Person table for Malawi IDSR data",
+      "variableMeasured": [
+        {
+          "@type": "PropertyValue",
+          "name": "person id",
+          "alternateName": "none",
+          "description": "Unique person identifier",
+          "value": "number",
+          "minValue": "1",
+          "maxValue": "51299"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "gender concept id",
+          "propertyID": [
+            "https://athena.ohdsi.org/search-terms/terms/8532",
+            "https://athena.ohdsi.org/search-terms/terms/8507"
+          ],
+          "sameAs": [
+            "http://snomed.info/id/139867007",
+            "http://snomed.info/id/248153007"
+          ],
+          "alternateName": "none",
+          "description": "Gender Concept ID (FEMALE=8532, MALE=8507)",
+          "value": "number"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "gender_source_concept_id",
+          "propertyID": [
+            "F",
+            "M"
+          ],
+          "subjectOf": {
+            "@type": "schema:CreativeWork",
+            "name": "WHO IDSR Africa",
+            "description": "Techncal Guidelines for Integrated Disease Surveillance and Response in the WHO African Region",
+            "url": "https://apps.who.int/iris/bitstream/handle/10665/312317/WHO-AF-WHE-CPI-01-2019-eng.pdf",
+            "hasPart": {
+              "@type": "schema:CreativeWork",
+              "name": "Annex 2F",
+              "description": "IDSR immediate case-based reporting form."
+            }
+          },
+          "alternateName": "none",
+          "description": "Gender Concept ID (FEMALE=8532, MALE=8507)",
+          "value": "number"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "year of birth",
+          "alternateName": "none",
+          "description": "year of birth",
+          "value": "number"
+        }
+      ]
+    },
+    {
+      "@type": "schema:Dataset",
+      "name": "OMOP CDM observation table",
+      "description": "OMOP CDM observation table for Malawi IDSR data"
+    },
+    {
+      "@type": "schema:Dataset",
+      "name": "specimen",
+      "description": "OMOP CDM specimen table for Malawi IDSR data"
+    },
+    {
+      "@type": "schema:Dataset",
+      "name": "visit_occurrence",
+      "description": "OMOP CDM visit occurrence table for Malawi IDSR data"
+    },
+    {
+      "@type": "schema:Dataset",
+      "name": "care_site",
+      "description": "OMOP CDM care site table for Malawi IDSR data"
+    },
+    {
+      "@type": "schema:Dataset",
+      "name": "condition_occurrence",
+      "description": "OMOP CDM condition occurrence table for Malawi IDSR data"
+    },
+    {
+      "@type": "schema:Dataset",
+      "name": "drug_exposure",
+      "description": "OMOP CDM drug exposure table for Malawi IDSR data"
+    },
+    {
+      "@type": "schema:Dataset",
+      "name": "location",
+      "description": "OMOP CDM location table for Malawi IDSR data"
+    },
+    {
+      "@type": "schema:Dataset",
+      "name": "measurement",
+      "description": "OMOP CDM measurement table for Malawi IDSR data"
+    }
+  ]
+}

@@ -1,0 +1,13 @@
+{
+  "@context": "file://context.jsonld",
+  "@id": "person:MuyingoS",
+  "@type": "schema:Person",
+  "schema:mainEntityOfPage": "<nil>",
+  "honorificSuffix": [
+    "PhD"
+  ],
+  "jobTitle": [
+    "Research Scientist"
+  ],
+  "name": "Sylvia Muyingo"
+}

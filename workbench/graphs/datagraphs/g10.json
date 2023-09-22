@@ -1,0 +1,190 @@
+{
+  "@context": "file://context.jsonld",
+  "@id": "study:IDSRCovid19PrevalenceAndPredictionStudy",
+  "@type": "schema:MedicalObservationalStudy",
+  "identifier": "<nil>",
+  "name": "Prevalence and Prediction of COVID-19 By Subgroup across several SSA countries: a Network Study",
+  "description": "The objective of this study is to predict and provide incident rates by subgroups for COVID-19 using the WHO Integrated Disease Surveillance and Response (IDSR) person-level CRF used as adopted by many countries across Subsaharan Africa",
+  "image": "https://lucid.app/documents/view/10790453-aed5-4f7c-906e-caa414531987",
+  "url": "https://aphrc.org/inspire/",
+  "studyLocation": [
+    {
+      "@type": "Country",
+      "name": "Malawi"
+    },
+    {
+      "@type": "Country",
+      "name": "Kenya"
+    },
+    {
+      "@type": "Country",
+      "name": "Uganda"
+    }
+  ],
+  "ohdsi:studyType": [
+    "ohdsi:PopulationHealthApplication"
+  ],
+  "ohdsi:medicalStudyUseCase": [
+    [
+      "ohdsi:Characterization"
+    ],
+    [
+      "ohdsi:PatientLevelPrediction"
+    ]
+  ],
+  "mainEntityOfPage": "<nil>",
+  "studyDesign": "IDSRCovid19PrevalenceAndPredictionStudy/design",
+  "status": [
+    "ohdsi:ResultsAvailable"
+  ],
+  "healthCondition": [
+    "concept:37311061"
+  ],
+  "studySubject": [
+    "concept:201820",
+    "concept:317009"
+  ],
+  "subjectOf": [
+    "creativework:IDSRproject"
+  ],
+  "potentialAction": [
+    {
+      "@type": "schema:UpdateAction",
+      "name": "MedicalObservationalStudy Execute Action",
+      "agent": [
+        "person:MuyingoS"
+      ],
+      "instrument": {
+        "@type": "schema:ItemList",
+        "name": "OHDSI R library",
+        "description": "The software stack by way of which the Action produces the Result from the Object dataset(s) at the Target",
+        "itemListElement": [
+          {
+            "@type": "schema:ListItem",
+            "name": "ATLAS",
+            "item": {
+              "@type": "schema:SoftwareApplication",
+              "softwareVersion": "2.13",
+              "applicationCategory": "R Package",
+              "description": "ATLAS is an open source software tool for researchers to conduct scientific analyses on standardized observational data converted to the OMOP Common Data Model V5. Researchers can create cohorts by defining groups of people based on an exposure to a drug or diagnosis of a particular condition using healthcare claims data. ATLAS has vocabulary searching of medical concepts to identify people with specific conditions, drug exposures etc. Patient profiles can be viewed within a specific cohort allowing visualization of a particular subject's health care records. Population effect level estimation analyses allows for comparison of two different cohorts and leverages R packages."
+            }
+          },
+          {
+            "@type": "schema:ListItem",
+            "name": "ACHILLES",
+            "item": {
+              "@type": "schema:SoftwareApplication",
+              "softwareVersion": "1.7",
+              "applicationCategory": "R Package",
+              "description": "Automated Characterization of Health Information at Large-scale Longitudinal Evidence Systems (ACHILLES). Achilles provides descriptive statistics on an OMOP CDM database. ACHILLES currently supports CDM version 5.3 and 5.4."
+            }
+          },
+          {
+            "@type": "schema:ListItem",
+            "name": "HADES",
+            "item": {
+              "@type": "schema:SoftwareApplication",
+              "softwareVersion": "5.0.3",
+              "applicationCategory": "R Package",
+              "description": "HADES includes PatientLevelPrediction. PatientLevelPrediction is an R package for building and validating patient-level predictive models using data in the OMOP Common Data Model format."
+            }
+          },
+          {
+            "@type": "schema:ListItem",
+            "name": "WebAPI",
+            "item": {
+              "@type": "schema:SoftwareApplication",
+              "softwareVersion": "2.13",
+              "applicationCategory": "R Package",
+              "description": "OHDSI WebAPI contains all OHDSI RESTful services that can be called from OHDSI applications."
+            }
+          }
+        ]
+      },
+      "target": [
+        "http://51.105.33.160:9090/Atlas",
+        {
+          "@type": "EntryPoint",
+          "actionPlatform": "ATLAS",
+          "description": "ATLAS is an open source software tool for researchers to conduct scientific analyses on standardized observational data converted to the OMOP Common Data Model V5. Researchers can create cohorts by defining groups of people based on an exposure to a drug or diagnosis of a particular condition using healthcare claims data. ATLAS has vocabulary searching of medical concepts to identify people with specific conditions, drug exposures etc. Patient profiles can be viewed within a specific cohort allowing visualization of a particular subject's health care records. Population effect level estimation analyses allows for comparison of two different cohorts and leverages R packages.",
+          "urlTemplate": "http://51.105.33.160:9090/Atlas",
+          "contentType": "text/plain"
+        }
+      ],
+      "object": [
+        "dataset:mubasCDM",
+        "dataset:coordinatingcenterCDM"
+      ],
+      "result": {
+        "@type": "schema:ItemList",
+        "name": "OHDSIStudyPackageResultsSchema",
+        "description": "Hosts study settings (metadata) and study results (aggregate data) by analysis from the study package",
+        "itemListElement": [
+          {
+            "@type": "schema:ListItem",
+            "name": "OHDSIStudyPackageMetadata",
+            "item": {
+              "@type": "schema:ItemList",
+              "name": "MachineActionableSettingByAnalysis",
+              "description": "OHDSI study package metadata by analysis. Facilitates sharing of analysis settings across multiple CDMs at different institutions"
+            }
+          },
+          {
+            "@type": "schema:ListItem",
+            "name": "OHDSIStudyPackageAggregateData",
+            "item": {
+              "@type": "schema:ItemList",
+              "name": "IndicatorCollections",
+              "description": "OHDSI study package aggregate study data by analysis formatted for synthesis at a network study coordinating center",
+              "subjectOf": [
+                {
+                  "@type": "schema:CreativeWork",
+                  "name": "EvidenceSynthesis",
+                  "description": "This R package contains routines for combining causal effect estimates and study diagnostics across multiple data sites in a distributed study. This includes functions for performing meta-analysis and forest plots.",
+                  "disambiguatingDescription": "Not for use in synthesizing predictive analysis network studies across CDMs. Achieving transportability of predictive analysis models takes techniques like transfer learning, attention based learning and/or fine turning.",
+                  "url": "https://ohdsi.github.io/EvidenceSynthesis/"
+                }
+              ]
+            }
+          }
+        ]
+      },
+      "actionStatus": [
+        "PotentialActionStatus"
+      ]
+    },
+    {
+      "@type": "schema:updateAction",
+      "name": "MedicalObservationalStudy CDM ETL Action",
+      "result": [
+        "dataset:mubasCDM"
+      ],
+      "object": {
+        "@type": "schema:Dataset",
+        "name": "Case-based Surveillance Reporting Form",
+        "maintainer": "Malawi Ministry of Health",
+        "schemaVersion": "4.2.1 2021",
+        "isBasedOn": {
+          "@type": "schema:CreativeWork",
+          "creator": {
+            "@type": "schema:Organization",
+            "legalName": "World Health Organization"
+          },
+          "name": "IDSR immediate case-based reporting form (Appendix 2F)",
+          "url": "https://apps.who.int/iris/bitstream/handle/10665/312317/WHO-AF-WHE-CPI-01-2019-eng.pdf"
+        }
+      },
+      "instrument": {
+        "@type": "schema:SoftwareSourceCode",
+        "codeRepository": "<nil>",
+        "programmingLanguage": "SQL",
+        "runtimePlatform": "<nil>",
+        "isBasedOn": {
+          "@type": "schema:SoftwareApplication",
+          "name": "Rabbit in a Hat",
+          "url": "https://ohdsi.github.io/WhiteRabbit/RabbitInAHat.html"
+        }
+      }
+    }
+  ]
+}

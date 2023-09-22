@@ -1,0 +1,13 @@
+{
+  "@context": "file://context.jsonld",
+  "@id": "concept:37311061",
+  "@type": "schema:MedicalCondition",
+  "code": {
+    "@type": "schema:MedicalCode",
+    "codeValue": "840539006",
+    "codingSystem": "SNOMED",
+    "sameAs": "http://snomed.info/id/840539006"
+  },
+  "identifier": "37311061",
+  "name": "Disease caused by severe acute respiratory syndrome coronavirus 2"
+}

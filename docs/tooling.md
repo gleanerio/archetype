@@ -1,4 +1,4 @@
-# Graph Inspection
+# Tooling
 
 ## About
 
@@ -40,6 +40,8 @@ is going.
     * [jq](https://stedolan.github.io/jq/)
     * [ld-cli](https://github.com/filip26/ld-cli)
 * [Titanium JSON-LD 1.1 Processor & API](https://github.com/filip26/titanium-json-ld)
+* [Morph-KGC](https://github.com/morph-kgc/morph-kgc) is an engine that constructs RDF knowledge graphs from heterogeneous data sources
+* [fx](https://fx.wtf/)  Terminal JSON viewer & processor
 
 Refs:
 

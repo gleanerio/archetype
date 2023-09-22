@@ -1,0 +1,266 @@
+{
+  "@context": "file://context.jsonld",
+  "@id": "IDSRCovid19PrevalenceAndPredictionStudy/design",
+  "@type": "schema:MedicalObservationalStudyDesign",
+  "identifier": "<nil>",
+  "url": "<nil>",
+  "ohdsi:dateModified": "2020-03-28",
+  "ohdsi:license": "open-source license",
+  "ohdsi:designVersion": "5.4",
+  "aphrc:protocol": [
+    {
+      "@type": "ohdsi:IncidenceRateAnalysis",
+      "name": "<nil>",
+      "description": "In an incidence calculation, we describe: amongst the persons in the target cohort, who experienced the outcome cohort during the time at risk period",
+      "timeAtRisk": {
+        "@type": "ohdsi:TimeAtRisk",
+        "description": "The time at risk defines the time window relative to the target cohort start or end date in which a person is at risk to an outcome.",
+        "startDate": "<nil>",
+        "startDateOffset": "<nil>",
+        "endDate": "<nil>",
+        "endDateOffset": "<nil>"
+      },
+      "url": "http://51.105.33.160:9090/Atlas/#/iranalysis/2",
+      "ohdsi:targetCohort": {
+        "@type": "schema:ItemList",
+        "name": "<nil>",
+        "url": "http://51.105.33.160:9090/Atlas/#/cohortdefinition/7",
+        "description": "Atlas webpage for Covid-19 patient cohort"
+      },
+      "ohdsi:outcomeCohort": {
+        "@type": "schema:ItemList",
+        "name": "<nil>",
+        "url": "http://51.105.33.160:9090/Atlas/#/cohortdefinition/11",
+        "itemListElement": [
+          {
+            "@type": "schema:ListItem",
+            "identifier": "listItemEntryEvent",
+            "item": {
+              "@type": "schema:ItemList",
+              "identifier": "itemListEntryEventOccurrences",
+              "description": "This is an array of occurrences any one of which qualifies a person to move from the target cohort to the outcome cohort.",
+              "itemListElement": [
+                {
+                  "@type": "schema:MedicalEntity",
+                  "identifier": "medicalEntity #1",
+                  "code": {
+                    "@type": "schema:MedicalCode",
+                    "codeValue": "",
+                    "codingSystem": "SNOMED",
+                    "sameAs": "http://snomed.info/id/"
+                  },
+                  "guideline": {
+                    "@type": "schema:MedicalGuideline",
+                    "evidenceLevel": [
+                      "EvidenceLevelC"
+                    ],
+                    "evidenceOrigin": "<nil>"
+                  }
+                },
+                {
+                  "@type": "schema:MedicalEntity",
+                  "identifier": "medicalEntity #n",
+                  "code": {
+                    "@type": "schema:MedicalCode",
+                    "codeValue": "",
+                    "codingSystem": "SNOMED",
+                    "sameAs": "http://snomed.info/id/"
+                  },
+                  "guideline": {
+                    "@type": "schema:MedicalGuideline",
+                    "evidenceLevel": [
+                      "EvidenceLevelC"
+                    ],
+                    "evidenceOrigin": "<nil>"
+                  }
+                }
+              ]
+            },
+            "nextItem": "listItemInclusionCriteria",
+            "previousItem": "<nil>"
+          },
+          {
+            "@type": "ListItem",
+            "identifier": "listItemInclusionCriteria",
+            "description": "This is a placeholder for work in progress.",
+            "item": {
+              "@type": "schema:ItemList"
+            },
+            "nextItem": "listItemExitCriteria",
+            "previousItem": "listItemEntryEvent"
+          },
+          {
+            "@type": "ListItem",
+            "identifier": "listItemExitCriteria",
+            "description": "This is a placeholder for work in progress.",
+            "item": {
+              "@type": "schema:ItemList"
+            },
+            "nextItem": "<nil>",
+            "previousItem": "listItemMedicalTest"
+          }
+        ]
+      },
+      "ohdsi:stratifyCriteria": {
+        "@type": "schema:ItemList",
+        "url": "http://51.105.33.160:9090/Atlas/#/iranalysis/2/definition",
+        "itemListElement": [
+          {
+            "@type": "schema:ListItem",
+            "item": {
+              "@type": "schema:MedicalIndication",
+              "description": "Age < 40",
+              "code": {
+                "@type": "schema:MedicalCode",
+                "codeValue": "<nil>",
+                "codingSystem": "<nil>",
+                "sameAs": "<nil>"
+              }
+            }
+          },
+          {
+            "@type": "schema:ListItem",
+            "item": {
+              "@type": "schema:MedicalIndication",
+              "description": "Age between 40 and 65",
+              "code": {
+                "@type": "schema:MedicalCode",
+                "codeValue": "<nil>",
+                "codingSystem": "<nil>",
+                "sameAs": "<nil>"
+              }
+            }
+          },
+          {
+            "@type": "schema:ListItem",
+            "item": {
+              "@type": "schema:MedicalIndication",
+              "description": "Age > 65",
+              "code": {
+                "@type": "schema:MedicalCode",
+                "codeValue": "<nil>",
+                "codingSystem": "<nil>",
+                "sameAs": "<nil>"
+              }
+            }
+          },
+          {
+            "@type": "schema:ListItem",
+            "item": {
+              "@type": "schema:MedicalIndication",
+              "description": "Pre-existing condition: asthma",
+              "code": {
+                "@type": "schema:MedicalCode",
+                "codeValue": "195967001",
+                "codingSystem": "SNOMED",
+                "sameAs": "http://snomed.info/id/195967001"
+              }
+            }
+          },
+          {
+            "@type": "schema:ListItem",
+            "item": {
+              "@type": "schema:MedicalIndication",
+              "description": "Pre-existing condition: diabetes",
+              "code": {
+                "@type": "schema:MedicalCode",
+                "codeValue": "195967001",
+                "codingSystem": "SNOMED",
+                "sameAs": "http://snomed.info/id/195967001"
+              }
+            }
+          },
+          {
+            "@type": "schema:ListItem",
+            "item": {
+              "@type": "schema:MedicalIndication",
+              "description": "The biological classification of individuals as female",
+              "code": {
+                "@type": "schema:MedicalCode",
+                "codeValue": "F",
+                "codingSystem": "OMOP Gender",
+                "sameAs": "https://athena.ohdsi.org/search-terms/terms/8532"
+              }
+            }
+          },
+          {
+            "@type": "schema:ListItem",
+            "item": {
+              "@type": "schema:MedicalIndication",
+              "description": "The biological classification of individuals as male",
+              "code": {
+                "@type": "schema:MedicalCode",
+                "codeValue": "M",
+                "codingSystem": "OMOP Gender",
+                "sameAs": "https://athena.ohdsi.org/search-terms/terms/8507"
+              }
+            }
+          },
+          {
+            "@type": "schema:ListItem",
+            "item": {
+              "@type": "schema:MedicalIndication",
+              "description": "Vaccinated for COVID",
+              "code": {
+                "@type": "schema:MedicalCode",
+                "codeValue": "85713-6",
+                "codingSystem": "LOINC",
+                "sameAs": "https://loinc.org/search/?t=1&s=85713-6"
+              }
+            }
+          }
+        ]
+      }
+    },
+    {
+      "@type": "ohdsi:PredictiveAnalysis",
+      "name": "OHDSIPredictiveAnalysis",
+      "description": "Predictive analysis uses supervised learning. A target cohort is defined. From the target an outcome cohort is selected based on one or more CDM occurrences (e.g. measurements and/or diagnoses and/or death). With these CDM outcome occurrences, their concepts serve as the labels. Next OHDSI tries to account for these labeled outcomes with predictors that are also extracted from the same target cohort. In OHDSI predictors automatically include demographics as well as perhaps specific occurrences the Principal Investigator (PI) chooses from the target cohort person/patient record. A PI also specifies one or more supervised learning algorithms each with their own hyper-parameter settings (e.g., regularized logistic regression, gradient boosting machines, random forest, K-nearest neighbors, Naïve Bayes, etc.). Finally, predictive analysis tries each of these algorithms to determine which one(s) provide the best fit between the predictors (independent variables and the labelled outcomes (dependent variables).",
+      "disambiguatingDescription": "Predictive analysis in OHDSI uses the same interface called ATLAS used in descriptive and causal analysis. Using ATLAS, a supervised learning experiment can be specified and executed codelessly. In the process ATLAS orchestrates a set of R packages that a user can orchestrate directly in the event specialization is needed. For example, as in attention-based learning, there may be a need that is not empirical to weigh certain predictors and outcomes more than others.",
+      "ohdsi:targetCohort": {
+        "@type": "schema:ItemList",
+        "name": "TargetCohortDefinition"
+      },
+      "ohdsi:outcomeCohort": {
+        "@type": "schema:ItemList",
+        "name": "OutcomeCohortDefinition"
+      },
+      "ohdsi:analysisModel": {
+        "@type": "schema:SoftwareApplication",
+        "name": "HADES (Health Analytics Data-To-Evidence Suite)",
+        "description": "HADES (formally known as the OHDSI Methods Library) is a set of open source R packages for large scale analytics, including population characterization, population-level causal effect estimation, and patient-level predictiction.",
+        "url": "https://ohdsi.github.io/Hades/",
+        "applicationCategory": "Health Analytics",
+        "downloadUrl": "https://github.com/OHDSI/Hades",
+        "featureList": "One feature of HADES is that includes a package of prediction analysis methods that it exercises in determining a best method for prediction with a target cohort and and outcomes cohort and a set of predictors.",
+        "softwareHelp": {
+          "@type": "schema:CreativeWork",
+          "name": "The Book of OHDSI: Chapter 13",
+          "url": "https://ohdsi.github.io/TheBookOfOhdsi/PatientLevelPrediction.html"
+        },
+        "aphrc:analysisModelDetails": {
+          "@type": "schema:ItemList",
+          "name": "AnalysisModelDetails",
+          "description": "This is a placeholder for work in progress. The scope of this ItemList are patient level prediction settings in ATLAS.",
+          "itemListElement": [
+            {
+              "@type": "schema:ItemList",
+              "name": "ModelSettings (from ohdsi:ATLAS)",
+              "description": "To add a supervised learning algorithm click on the “Add Model Settings” button. A dropdown containing all the models currently supported in the ATLAS interface will appear. We can select the supervised learning model we want to include in the study by clicking on the name in the dropdown menu. This will then show a view for that specific model, allowing the selection of the hyper-parameter values. If multiple values are provided, a grid search is performed across all possible combinations of values to select the optimal combination using cross-validation."
+            },
+            {
+              "@type": "schema:ItemList",
+              "name": "CovariateSettings (from ohdsi:ATLAS)",
+              "description": "We have defined a set of standard covariates that can be extracted from the observational data in the CDM format. In the covariate settings view, it is possible to select which of the standard covariates to include. We can define different types of covariate settings, and each model will be created separately with each specified covariate setting."
+            },
+            {
+              "@type": "schema:ItemList",
+              "name": "PopulationSettings (from ohdsi:ATLAS)",
+              "description": "The population settings is where addition inclusion criteria can be applied to the target population and is also where the time-at-risk is defined. "
+            }
+          ]
+        }
+      }
+    }
+  ]
+}

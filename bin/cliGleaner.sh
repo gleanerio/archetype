@@ -8,7 +8,7 @@
 
 PROGNAME="$(basename $0)"
 VERSION="v0.0.1"
-GLIMAGE="nsfearthcube/gleaner:dev"
+GLIMAGE="nsfearthcube/gleaner:latest"
 #GLIMAGE="docker.io/nsfearthcube/gleaner:latest" 
 
 # Pull down some of the needed docks if called with -init

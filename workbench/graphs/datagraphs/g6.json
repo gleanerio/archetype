@@ -1,0 +1,22 @@
+{
+  "@context": "file://context.jsonld",
+  "@id": "concept:317009",
+  "@type": "schema:MedicalRiskFactor",
+  "increasesRiskOf": {
+    "@type": "schema:MedicalCondition",
+    "code": {
+      "@type": "schema:MedicalCode",
+      "codeValue": "840539006",
+      "codingSystem": "SNOMED",
+      "sameAs": "http://snomed.info/id/840539006"
+    }
+  },
+  "code": {
+    "@type": "schema:MedicalCode",
+    "codeValue": "195967001",
+    "codingSystem": "SNOMED",
+    "sameAs": "http://snomed.info/id/195967001"
+  },
+  "identifier": "317009",
+  "name": "Asthma"
+}

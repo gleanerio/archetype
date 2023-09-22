@@ -1,0 +1,12 @@
+RunStats:
+  Start: 2023-07-28 13:46:09.977166744 +0000 UTC m=+0.518232701
+  Reason: Complete
+  Soruce:
+    - name: africaioc
+      Start: 2023-07-28 13:46:10.597220807 +0000 UTC m=+1.138286762
+      End: 2023-07-28 13:46:10.597929375 +0000 UTC m=+1.138995336
+      SitemapSummoned: 228 
+      SitemapStored: 228 
+      SitemapCount: 255 
+      SitemapHttpError: 0 
+      SitemapIssues: 27 

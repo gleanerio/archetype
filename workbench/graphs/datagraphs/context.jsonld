@@ -1,0 +1,16 @@
+{
+    "@context": {
+        "@vocab": "http://schema.org/",
+        "study": "https://covid19.ohdsi.app/study/",
+        "owl": "http://www.w3.org/2002/07/owl#",
+        "person": "https://covid19.ohdsi.app/author/",
+        "snomed": "http://snomed.info/id/",
+        "concept": "http://data.ohdsi.org/concept/",
+        "xsd": "http://www.w3.org/2001/XMLSchema#",
+        "ohdsi": "http://data.ohdsi.org/",
+        "funder": "ohdsi:institution",
+        "Organization": "ohdsi:Organization",
+        "covid19": "https://covid19.ohdsi.app/",
+        "aphrc": "https://aphrc.org/"
+    }
+}

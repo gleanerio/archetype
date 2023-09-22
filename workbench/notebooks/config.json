@@ -1,0 +1,11 @@
+{
+     "PUBLIC_OR_PROXY_ENDPOINT": "",
+     "GRAPH_CONNECTION_URL": "http://localhost:7878/query",
+     "USING_PROXY_SERVER": false,
+     "IAM": false,
+     "AWS_REGION": "us-west-2",
+     "GRAPH_TYPE": "sparql",
+     "PROXY_SERVER_HTTPS_CONNECTION": false,
+     "GRAPH_EXP_HTTPS_CONNECTION": false
+}
+

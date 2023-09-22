@@ -1,0 +1,36 @@
+{
+  "@context": "file://context.jsonld",
+  "@id": "dataset:coordinatingcenterCDM",
+  "@type": "Dataset",
+  "identifier": [
+    "urn:isbn:978-0-394-52137-1",
+    {
+      "@id": "https://doi.org/10.5066/F7VX0DMQ",
+      "@type": "PropertyValue",
+      "propertyID": "https://registry.identifiers.org/registry/doi",
+      "value": "doi:10.5066/F7VX0DMQ",
+      "url": "https://doi.org/10.5066/F7VX0DMQ"
+    }
+  ],
+  "name": "Coordinating Center OMOP CDM",
+  "spatialCoverage": {
+    "@type": "Place",
+    "geo": {
+      "@type": "GeoShape",
+      "polygon": "POLYGON ((36.75619125366211 -1.2896266404243057,36.775054931640625 -1.1946209558237755, 36.75619125366211 -1.2896266404243057))"
+    }
+  },
+  "temporalCoverage": "2022-01-01/2022-06-30",
+  "ohdsi:investigator": [
+    "person:MuyingoS"
+  ],
+  "ohdsi:institution":  {
+    "@type": "Organization",
+    "identifier": "https://ror.org/0ksfjgq98",
+    "name": "Mumbas"
+  },
+  "hasPart": [
+    "dataset:ConditionOccurrence",
+    "dataset:Person"
+  ]
+}
