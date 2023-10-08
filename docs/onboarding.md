@@ -23,10 +23,7 @@ How is this relatd to semantic workflow from Fox?
 
 # Course Notes
 
-
-
 ## Module 1: Introduction to the Ocean InfoHub project & Ocean Data and Information System
-
 
 ## Module 2: General introduction to our use of schema.org
 

@@ -1,5 +1,12 @@
 # Quickstart
 
+
+> Note:  This system currently doesn't support headless indexing.  That is,
+> indexing that requires an approach that processes a web page to execute
+> javascript that places the JSON-LD into the document object model.
+
+
+
 ## Requirements
 
 To leverage the scripts below you need:
