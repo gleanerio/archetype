@@ -42,6 +42,8 @@ is going.
 * [Titanium JSON-LD 1.1 Processor & API](https://github.com/filip26/titanium-json-ld)
 * [Morph-KGC](https://github.com/morph-kgc/morph-kgc) is an engine that constructs RDF knowledge graphs from heterogeneous data sources
 * [fx](https://fx.wtf/)  Terminal JSON viewer & processor
+* [Classy Schema](https://classyschema.org/Visualisation)
+* [json-ld tools](https://jsonld.tools/force/)
 
 Refs:
 
