@@ -1,10 +1,8 @@
 # Quickstart
 
-
 > Note:  This system currently doesn't support headless indexing.  That is,
 > indexing that requires an approach that processes a web page to execute
 > javascript that places the JSON-LD into the document object model.
-
 
 
 ## Requirements
@@ -74,6 +72,23 @@ cliGleaner.sh -a docker -cfg gleanerconfig.yaml -source africaioc -rude
 An example config file and the Schema.org context are in the _rundir_ directory of this repo
 for your use.  You can try executing the above `cliGleaner.sh` command 
 from inside that `rundir` folder, which will use the config located there.
+
+
+## Nabu
+
+```bash
+cliNabu.sh -a podman --cfg nabuconfig.yaml bulk --prefix summoned/sourcex --endpoint triplestore
+```
+
+```bash
+cliNabu.sh -a podman --cfg nabuconfig.yaml release --prefix summoned/sourcex --endpoint triplestore
+```
+
+
+```bash
+cliNabu.sh -a podman --cfg nabuconfig.yaml prefix --prefix summoned/sourcex --endpoint triplestore
+```
+
 
 ## configs for various sources
 

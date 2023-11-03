@@ -1,0 +1,63 @@
+---
+minio:
+  address: s3.amazonaws.com
+  port: 443
+  accessKey:
+  secretKey:
+  ssl: true
+  bucket: yourbucketname  # set to a bucket you own in your object store of choice
+  region: us-east-1
+implementation_network:
+  orgname: iow
+context:
+  cache: true
+  strict: true
+contextmaps:
+  - prefix: https://schema.org/
+    file: ./assets/schemaorg-current-https.jsonld
+  - prefix: http://schema.org/
+    file: ./assets/schemaorg-current-http.jsonld
+objects:
+  domain: us-east-1
+  prefix:
+    - prov/source1
+    - summoned/source1
+endpoints:
+  - service: blazegraph_testing
+    baseurl: http://coreos.lan:9090/blazegraph/namespace/testing
+    type: blaszgraph
+    authenticate: false
+    username: admin
+    password: jfpwd
+    modes:
+      - action: sparql
+        suffix: /sparql
+        accept: application/sparql-results+json
+        method: GET
+      - action: update
+        suffix: /sparql
+        accept: application/sparql-update
+        method: POST
+      - action: bulk
+        suffix: /sparql
+        accept: text/x-nquads
+        method: POST
+  - service: graphdb_testing
+    baseurl: http://coreos.lan:7200/repositories/testing
+    type: graphed
+    authenticate: false
+    username: admin
+    password: jfpw
+    modes:
+      - action: sparql
+        suffix:  # no suffix needed for GraphDB
+        accept: application/sparql-results+json
+        method: GET
+      - action: update
+        suffix: /statements
+        accept: application/sparql-update
+        method: POST
+      - action: bulk
+        suffix: /statements
+        accept: text/x-nquads
+        method: POST

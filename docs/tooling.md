@@ -29,8 +29,9 @@ is going.
     * [kglab](https://derwen.ai/docs/kgl/ex6_0/)
     * [rdflib](https://rdflib.readthedocs.io/en/stable/)
     * [pySHACL](https://github.com/RDFLib/pySHACL) Also has a commond line option that is very useful
-* [Gephi](https://gephi.org/)
-* [Cytoscape](https://cytoscape.org/)
+  * Visaulizations
+    * [Gephi](https://gephi.org/)
+    * [Cytoscape](https://cytoscape.org/)
 * [yasgui](https://github.com/TriplyDB/Yasgui)
 * [JSON Crack](https://jsoncrack.com/)
 * [Miller](https://github.com/johnkerl/miller)
