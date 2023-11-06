@@ -30,8 +30,11 @@ is going.
     * [rdflib](https://rdflib.readthedocs.io/en/stable/)
     * [pySHACL](https://github.com/RDFLib/pySHACL) Also has a commond line option that is very useful
   * Visaulizations
+    * [Graphia](https://graphia.app/)
     * [Gephi](https://gephi.org/)
     * [Cytoscape](https://cytoscape.org/)
+    * [Graphistry](https://www.graphistry.com/)
+      * [pyGraphistry](https://github.com/graphistry/pygraphistry)
 * [yasgui](https://github.com/TriplyDB/Yasgui)
 * [JSON Crack](https://jsoncrack.com/)
 * [Miller](https://github.com/johnkerl/miller)
