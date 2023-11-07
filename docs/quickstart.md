@@ -74,20 +74,45 @@ for your use.  You can try executing the above `cliGleaner.sh` command
 from inside that `rundir` folder, which will use the config located there.
 
 
-## Nabu
+## Nabu CLI
+
+There is also a CLI tools for transforming JSON-LD objects into a single release graph in NQuads format.
+This tool can also load JSON-LD objects into a triplestore.  It has been tested with BlazeGraph, Jena, Oxigraph and GraphDB.  
+
+### Release
+
+This command will ETL the JSON-LD documents into a single relase graph in NQUADS format.  It will 
+place these in the ```graphs``` bucket prefix in the bucket you specify in the config file
+at ```minio:bucket```
 
 ```bash
-cliNabu.sh -a podman --cfg nabuconfig.yaml bulk --prefix summoned/sourcex --endpoint triplestore
+cliNabu.sh -a docker --cfg nabuconfig.yaml release --prefix summoned/sourcex 
 ```
+
+The path specified in --prefix must be a bucket prefix in the bucket you specify in the config file
+at ```minio:bucket```.   So in the case above and using the default config file the bucket path
 
 ```bash
-cliNabu.sh -a podman --cfg nabuconfig.yaml release --prefix summoned/sourcex --endpoint triplestore
+yourbucketname/summoed/sourcex
 ```
 
+must exist.  
+
+
+### Bulk
 
 ```bash
-cliNabu.sh -a podman --cfg nabuconfig.yaml prefix --prefix summoned/sourcex --endpoint triplestore
+cliNabu.sh -a docker --cfg nabuconfig.yaml bulk --prefix summoned/sourcex --endpoint triplestore
 ```
+
+### Prefix
+
+```bash
+cliNabu.sh -a docker --cfg nabuconfig.yaml prefix --prefix summoned/sourcex --endpoint triplestore
+```
+
+
+You can also reference the [Nabu docs](https://github.com/gleanerio/nabu/tree/master/docs)
 
 
 ## configs for various sources
