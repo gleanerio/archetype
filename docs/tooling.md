@@ -7,10 +7,14 @@ classic use of SPARQL, SHACL or framing.
 
 This collection is designed to provide a sample of the tools available
 that might align with the skills and needs of the user.  Some are somewhat
-novel applications of existing tools that
+novel applications of existing tools.  Some are more JSON tools, but that I 
+have found useful for JSON-LD.   
+
 The goal is to show some approaches that could be usd to explore graphs
 to better understand how the encoding and representation of the information
 is going.
+
+Suggestions welcome.
 
 # Explore
 
@@ -19,6 +23,7 @@ is going.
 * RML
     * [RML](https://rml.io)
     * [Yatter](https://github.com/oeg-upm/yatter) Translates mapping rules from YARRRML in a turtle-based serialization of RML or R2RML.
+* [SSSOM](https://mapping-commons.github.io/sssom/)
 * [Schemasheets](https://github.com/linkml/schemasheets)
 * [Linked Data Hub](https://github.com/AtomGraph/LinkedDataHub)
 * [DuckDB](https://duckdb.org/)
@@ -28,13 +33,14 @@ is going.
 * Python
     * [kglab](https://derwen.ai/docs/kgl/ex6_0/)
     * [rdflib](https://rdflib.readthedocs.io/en/stable/)
-    * [pySHACL](https://github.com/RDFLib/pySHACL) Also has a commond line option that is very useful
+    * [pySHACL](https://github.com/RDFLib/pySHACL) Also has a command line option that is very useful
   * Visaulizations
     * [Graphia](https://graphia.app/)
     * [Gephi](https://gephi.org/)
     * [Cytoscape](https://cytoscape.org/)
     * [Graphistry](https://www.graphistry.com/)
       * [pyGraphistry](https://github.com/graphistry/pygraphistry)
+    * [sigma.js](https://www.sigmajs.org/) a JavaScript library aimed at visualizing graphs of thousands of nodes and edges
 * [yasgui](https://github.com/TriplyDB/Yasgui)
 * [JSON Crack](https://jsoncrack.com/)
 * [Miller](https://github.com/johnkerl/miller)
