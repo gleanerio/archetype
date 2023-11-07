@@ -81,9 +81,22 @@ This tool can also load JSON-LD objects into a triplestore.  It has been tested 
 
 ### Release
 
-This command will ETL the JSON-LD documents into a single relase graph in NQUADS format.  It will 
-place these in the ```graphs``` bucket prefix in the bucket you specify in the config file
-at ```minio:bucket```
+This command will ETL the JSON-LD documents into a single release graph in NQuads format.  It will 
+save these into the ```graphs``` bucket prefix in the bucket you specify in the config file
+at ```minio:bucket``` like in:
+
+```yaml
+minio:
+  address: s3.amazonaws.com
+  port: 443
+  accessKey:
+  secretKey:
+  ssl: true
+  bucket: yourbucketname  # set to a bucket you own in your object store of choice
+  region: us-east-1
+```
+
+The command would look something like:
 
 ```bash
 cliNabu.sh -a docker --cfg nabuconfig.yaml release --prefix summoned/sourcex 
@@ -101,18 +114,56 @@ must exist.
 
 ### Bulk
 
+The bulk command will take the JSON-LD objects in the specified bucket prefix.  It will then collect
+these into a single tempory object, similar to what is going on with the release command above, 
+and load that as a single bulk loading operation into your triplstore.  It will then remove this 
+temporary item.  If you want that single file as a new object, use the release command above.
+
+This command will use the SPARQL Update command, so this will need to the proper one for your 
+triplestore and noted in the configuration file as something like:
+
+endpoint:modes:action with the value update.  So like
+
+```yaml
+endpoints:
+  - service: blazegraph_testing
+    baseurl: http://coreos.lan:9090/blazegraph/namespace/testing
+    type: blaszgraph
+    authenticate: false
+    username: admin
+    password: jfpwd
+    modes:
+      - action: sparql
+        suffix: /sparql
+        accept: application/sparql-results+json
+        method: GET
+      - action: update
+        suffix: /sparql
+        accept: application/sparql-update
+        method: POST
+```
+The command would look something like:
+
 ```bash
 cliNabu.sh -a docker --cfg nabuconfig.yaml bulk --prefix summoned/sourcex --endpoint triplestore
 ```
 
 ### Prefix
 
+The ```prefix``` command is likely the least useful.  It takes a source and loads the JSON-LD 
+one by one into the triplestore.  This is far slower than the bulk command but may be of use 
+in some cases.  This was the original command used to load the data into triplestores, but was
+replaced by ```bulk``` for peformance reasons.  It is kept around for potential utility in 
+edge caes. 
+
+The command would look something like:
+
 ```bash
 cliNabu.sh -a docker --cfg nabuconfig.yaml prefix --prefix summoned/sourcex --endpoint triplestore
 ```
 
 
-You can also reference the [Nabu docs](https://github.com/gleanerio/nabu/tree/master/docs)
+You can also reference the GleaerIO [Nabu docs](https://github.com/gleanerio/nabu/tree/master/docs).
 
 
 ## configs for various sources
