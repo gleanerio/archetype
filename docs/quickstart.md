@@ -98,7 +98,7 @@ curl -L -O https://schema.org/version/latest/schemaorg-current-https.jsonld
 curl -L -O https://schema.org/version/latest/schemaorg-current-http.jsonld
 ```
 
-Make sure the path is set property to those schemas in your `nabuconfig.yaml'
+Make sure the path is set property to those schemas in your `nabuconfig.yaml`
 (see the `contextmaps` section).
 
 ### Release
