@@ -89,6 +89,18 @@ such as:
 docker pull fils/nabu:2.0.18-df-development
 ```
 
+You also must have the context schemas locally from schema.org.  You can run 
+the following inside the `rundir` directory:
+```bash
+mkdir assets
+cd assets
+curl -L -O https://schema.org/version/latest/schemaorg-current-https.jsonld
+curl -L -O https://schema.org/version/latest/schemaorg-current-http.jsonld
+```
+
+Make sure the path is set property to those schemas in your `nabuconfig.yaml'
+(see the `contextmaps` section).
+
 ### Release
 
 This command will ETL the JSON-LD documents into a single release graph in NQuads format.  It will 
