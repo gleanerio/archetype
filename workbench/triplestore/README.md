@@ -34,7 +34,10 @@ podman run --group-add keep-groups  --env HOST=ghost.lan --privileged  -v ./conf
 
 Expose the server on port 7878 of the host machine, and save data on the local ./data folder
 
+```bash
 docker run --rm -v $PWD/data:/data -p 7878:7878 ghcr.io/oxigraph/oxigraph --location /data serve --bind 0.0.0.0:7878
+```
+
 
 You can then access it from your machine on port 7878:
 
@@ -44,11 +47,15 @@ firefox http://localhost:7878
 
 ### Post some data
 
+```bash
 curl http://localhost:7878/store?default -H 'Content-Type: text/turtle' -T ./data.ttl
+```
 
 ### Make a query
 
+```bash
 curl -X POST -H 'Accept: application/sparql-results+json' -H 'Content-Type: application/sparql-query' --data 'SELECT * WHERE { ?s ?p ?o } LIMIT 10' http://localhost:7878/query
+```
 
 ### Make an UPDATE
 

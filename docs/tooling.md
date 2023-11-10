@@ -18,6 +18,7 @@ Suggestions welcome.
 
 # Explore
 
+* [RDF Ext](https://rdf-ext.org/)
 * [AWS Graph Explore](https://github.com/aws/graph-explorer)
 * [AWS Graph Notebook](https://github.com/aws/graph-notebook)
 * RML
