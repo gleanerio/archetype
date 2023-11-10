@@ -79,7 +79,7 @@ from inside that `rundir` folder, which will use the config located there.
 There is also a CLI tools for transforming JSON-LD objects into a single release graph in NQuads format.
 This tool can also load JSON-LD objects into a triplestore.  It has been tested with BlazeGraph, Jena, Oxigraph and GraphDB.  
 
-### Requirements
+### Nabu Requirements
 
 The `cliNabu.sh` tool points to a Docker image (see line #10 for the `NBIMAGE` value).
 You will have to pull that image locally (see the available tags at https://hub.docker.com/r/fils/nabu/tags ),
