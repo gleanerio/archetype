@@ -43,12 +43,25 @@ You can then access it from your machine on port 7878:
 
 ### Open the GUI in a browser
 
-firefox http://localhost:7878
+http://localhost:7878
 
 ### Post some data
 
+Turtle
 ```bash
 curl http://localhost:7878/store?default -H 'Content-Type: text/turtle' -T ./data.ttl
+```
+
+N-Quads
+
+```bash
+curl -i  -X POST -H 'Content-Type:text/x-nquads' --data-binary @africaioc_release.nq  http://localhost:7878/store
+```
+
+The following will attempt to load all the files in a diretory using the command above as the template. 
+
+```bssh
+for file in *; do [ -f "$file" ] && curl -i  -X POST -H 'Content-Type:text/x-nquads' --data-binary @$file  http://localhost:7878/store; done
 ```
 
 ### Make a query

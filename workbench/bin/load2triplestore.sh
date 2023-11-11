@@ -38,3 +38,4 @@ for i in $FILES; do
     echo Next: $i
      cat $i | jsonld format -q |  rapper -i nquads -o turtle  -q -I https://example.org/ - |  curl -X POST -H 'Content-Type:text/turtle' --data-binary  @- $SPARQL
 done
+

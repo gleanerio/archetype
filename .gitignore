@@ -1,3 +1,4 @@
 **/secret/*
 .idea/
-./rundir/logs/*
+rundir/logs/*
+workbench/data/
