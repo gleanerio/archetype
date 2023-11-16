@@ -19,8 +19,10 @@ Suggestions welcome.
 # Explore
 
 * [RDF Ext](https://rdf-ext.org/)
-* [AWS Graph Explore](https://github.com/aws/graph-explorer)
-* [AWS Graph Notebook](https://github.com/aws/graph-notebook)
+* AWS
+    * [AWS Graph Explore](https://github.com/aws/graph-explorer)
+    * [AWS Graph Notebook](https://github.com/aws/graph-notebook)
+    * [AWS Graph Data Model](https://github.com/aws-samples/aws-dbs-refarch-graph/tree/master/src/graph-data-modelling)
 * RML
     * [RML](https://rml.io)
     * [Yatter](https://github.com/oeg-upm/yatter) Translates mapping rules from YARRRML in a turtle-based serialization of RML or R2RML.
