@@ -40,3 +40,16 @@ This is ment only as an example and tools like those listed in the
 
   * Must run on 80 and 443 for podman you will likely need to allow this with: 
     * ```sudo sysctl net.ipv4.ip_unprivileged_port_start=80```
+
+
+### Minio
+
+```bash
+podman run -dt                                  \
+  -p 9000:9000 -p 9090:9090                     \
+  -v PATH:/mnt/data                             \
+  -v /etc/default/minio:/etc/config.env         \
+  -e "MINIO_CONFIG_ENV_FILE=/etc/config.env"    \
+  --name "minio_local"                          \
+  minio server --console-address ":9090"
+  ```

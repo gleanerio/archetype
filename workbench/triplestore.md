@@ -21,6 +21,7 @@ podman run --group-add keep-groups  --env HOST=ghost.lan --privileged  -v ./conf
 * The code appends /sparql to all URLs for SPARQL endpoints, this is an issue and 
   means the package can only be used easily with AWS Neptune or Blazegraph and a few 
   others.  Packages like GraphDB and Oxigraph will not work well, if at all.  
+* for simple cases where we do not match UIDs, use chmod 777 to allow write access
 
 ## Graph Explorer
 
