@@ -10,24 +10,33 @@ details on this approach.
 The examples here are intended as a way to quickly get a feel for the process
 that is implemented to collect and work with the JSON-LD documents.
 
+It was named _archetype_ originally since the plan was for it to be a core model 
+with the fundamental characteristics, themes and motifs of a provider instance. 
+However, it evolved from that to act more as a demonstrator for the workflow 
+of an implementation across the range of personas. 
+
 ## Personas
 
-Link to personas (and clean up there)
+[Personas](./personas/README.md)
 
 ## Scripts and code
 
-link to the tools and bash scripts as well as the Gleaner Nabu CLI code
+We are developing the tooling in the _bin_ directory. 
+Usually this is just added to your PATH as shown in the quickstart.
 
 ### Quick start
 
+[Quick Start](./docs/quickstart.md)
+
+
 ## Implementation Networks
 
-This is based on, but is not, the GoFAIR implementation networks
+This is based on, but is not a direction implementation of, 
+the [GoFAIR Implementation Networks](https://www.go-fair.org/implementation-networks/).
 
 ## Validation
 
-
-## Workbench (if I still keep this concept)
+[Validation](./docs/validation.md)
 
 
 ## Activity Flow
