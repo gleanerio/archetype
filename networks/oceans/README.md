@@ -1,7 +1,4 @@
-# Oceans  (DOOS, DeCODER)
-
-## Notes
-* listen to data products catalog for inspiration
+# Structured Data on the web: Oceans  (DOOS, DeCODER)
 
 ## About / Prolog
 
@@ -13,6 +10,15 @@ of the data products of value to the customers of the community.
 
 It is sustained by providing a foundation for the engagement in 
 and the use of those products by communities.  
+
+
+References: 
+* [About Ocean InfoHub](https://oceaninfohub.org/project-overview/) 
+* [Home page and search](https://oceaninfohub.org/)
+
+### Ocean InfoHub Introduction Video
+[![Ocean InfoHub Intro Video](https://img.youtube.com/vi/KrxeZrPg0u8/0.jpg)](https://www.youtube.com/watch?v=KrxeZrPg0u8)
+
 
 ## Social-technical implementation
 
@@ -61,7 +67,6 @@ let's see this
 Act II Future
 where to go from here, DeCODER, OIH, etc.
 do this, open to all, anyone can use what you do, you can too
-
 
 
 * the personas
