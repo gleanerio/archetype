@@ -122,5 +122,6 @@ but go ahead and do it here for people.
     desired.  Those products may or may not be possible, but this 
     flow can help define those that are not enabled now and what is
     needed to realize them.
-            - NOTE:  Mention CDIF here too
+    * Mention Tom's ML work here 
+    * NOTE:  Mention CDIF here too
 

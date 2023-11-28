@@ -1,0 +1,39 @@
+direction: left
+
+g: Gleaner
+
+sm: Sitemap
+sg: SiteGraph (Data.json)
+stac: STAC
+lt: LDES & Tree
+dc: schema.org/DataCatalog
+csv: CSV
+mqtt
+sdf: Schema DataFeed
+erdapp
+etl: Some set of ETLs
+
+sm <- etl 
+etl <- mqtt
+etl <- sdf 
+etl <- stac
+etl <- lt
+
+
+dc <- erdapp
+sm <- erdapp
+
+g <- sm
+g <- sg
+
+sm <- dc
+
+dc <- csv: via RML (rml.io)
+
+note: |md
+
+how to express trust in the csv, the prov of it
+
+| 
+
+
