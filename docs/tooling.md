@@ -57,6 +57,7 @@ Suggestions welcome.
 * [fx](https://fx.wtf/)  Terminal JSON viewer & processor
 * [Classy Schema](https://classyschema.org/Visualisation)
 * [json-ld tools](https://jsonld.tools/force/)
+* [SPARQL wiki](https://kvistgaard.github.io/sparql/#/page/sparql%20wiki)
 
 Refs:
 
