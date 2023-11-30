@@ -13,7 +13,7 @@ All this is done in the context of the UN Ocean Decade and this approach
 demonstrates how a group could become a contributor to the Ocean Decade.
 We will discuss the [ODIS Ocean InfoHub (OIH)](https://oceaninfohub.org/project-overview/)
 as an example these approaches in development. This is also related to the
-work of the NSF funded DeCODER project and for this talk we will use
+work of the [NSF funded DeCODER project](https://www.earthcube.org/decoder) and for this talk we will use
 resource assocated with the
 [Deep Ocean Observing Stragety (DOOS)](https://www.deepoceanobserving.org/).
 
@@ -136,11 +136,13 @@ and increases the burden of maintaining the generation of the products.
       * NOTEBOOK: [sitemap_assay.ipynb](../commons/sitemap_assay.ipynb)
     * define configuration
 * Gleaner
-    * indexing
+    * indexing cliGleaner.sh [quickstart](../../docs/quickstart.md)
 * Nabu
-    * release graph
-        * link to OIH release graph and make sure that link mentions the zenodo plans
-    * load to oxigraph
+    * building graphs with cliNabu.sh   [quickstart](../../docs/quickstart.md)
+    * release graph concept
+        * [OIH Release Graph Development](https://github.com/iodepo/odis-arch/tree/master/graphOps/releaseGraphs)
+        * Zenodo plans  [Ocean InfoHub Community](https://zenodo.org/communities/oceaninfohub)
+    * load to [Oxigraph](https://github.com/oxigraph/oxigraph)
 * Query with SPARQL
     * In oxigraph directly
     * In jupyter with rdflib loading release graphs
