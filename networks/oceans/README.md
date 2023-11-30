@@ -5,7 +5,7 @@
 
 ## Introduction
 
-In this session, we'll explore leveraging structured data on the internet to establish a knowledge graph serving as a
+In this session, we'll explore leveraging structured data on the web to establish a knowledge graph serving as a
 comprehensive master data catalog for community resources. The discussion will showcase various strategies for
 generating data productions that align with community objectives.
 
@@ -18,31 +18,35 @@ resource assocated with the
 [Deep Ocean Observing Stragety (DOOS)](https://www.deepoceanobserving.org/).
 
 Additionally, we'll delve into techniques for validating and analyzing this knowledge graph, framing these components as
-part of a conceptualized "implementation network" akin to the principles outlined in the GoFAIR approach.
+part of a conceptualized "implementation network" akin to the principles outlined in the GoFAIR approach and developing 
+data products based on the resources described in the knowledge graph.
 
 ### Implementation Network
 
-This approach is not an instance of a [FAIR Implementation Network](https://www.go-fair.org/implementation-networks/),
-however there are some similarities
-worth make the connection through.
+This approach is __not__ an instance of a [FAIR Implementation Network](https://www.go-fair.org/implementation-networks/),
+however, there are some similarities that make it worth raising the comparison.
 
-We have broken down the following image with the concept of three persona
-in the form of the _Publisher_, _Indexer_ and _User and Community_. More details
-on these can be found in the [Personas Section](../../personas/README.md).
+We have broken down the following image with the concept of three persona; _Publisher_, _Indexer_ and _User and Community_. 
+These are described in More detail in the [Personas Section](../../personas/README.md).
 
 ![relations](../../docs/images/relations.png)
 
-### Ocean Infohub introduction
+The primary goal here is to highlight that this is a melding of social and tehcnical elements 
+into a continuous workflow.  The process helps to sustain engagement in and the sustainability of 
+the system.
 
-You can find more information on Ocean InfoHub at the [overview page](https://oceaninfohub.org/project-overview/). A
-broad introduction to
-the concept can be seen in the following video as well.
+### Ocean InfoHub & DeCODER
+
+As noted, this work is done in the context of Ocean InfoHub (OIH) and the NSF funded DeCODER work.  
+You can find more information on Ocean InfoHub at the [overview page](https://oceaninfohub.org/project-overview/). 
+A short introduction to the concept can be seen in the following video.
 
 [![Ocean InfoHub Intro Video](https://img.youtube.com/vi/KrxeZrPg0u8/0.jpg)](https://www.youtube.com/watch?v=KrxeZrPg0u8)
 
 ## This talk as a Three Act Play
 
-I will frame this session along the classic three act play structure
+We will frame this session along the classic three act play structure.  This will
+provide some easy framing of the various elements we will go over. 
 
 ### Act I  Problem
 
@@ -71,26 +75,22 @@ this talk will and will not be about.
 
 ### Is not
 
-* This is not another review of structured data on the web, we have those; 
-  * link to Adam's presentation in SOSO
-  * some others 
-* This is not a vocabulary review, see;
-  * SOSO
-  * schema.org
-  * book.oceaninfohub.org
-* This is not a review of JSON-LD as a means to serialize knowledge via
-  RDF (a data model) + schema.org (a vocabulary), see;
-  * json-ld site and the presentation link there
+* A review of structured data on the web, we have those; 
+  * [ESIP Summer Meeting 2022](https://github.com/ESIPFed/science-on-schema.org/tree/226-esip-summer-mtg-2022-tutorial/tutorials/esip-summer-mtg-2022) by Adam Shepherd
+  * _Schema.org for research data managers: a primer_  https://doi.org/10.1504/IJBDM.2022.128449
+* A vocabulary review, see resources such as;
+  * [ESIP Science on Schema](https://github.com/ESIPFed/science-on-schema.org//) and https://doi.org/10.5281/zenodo.7872383
+  * [Shema.org](https://schema.org/)
+  * [Ocean InfoHub Book](https://book.oceaninfohub.org/)
+* A review of JSON-LD as a means to serialize knowledge via RDF (a data model) + schema.org (a vocabulary), see;
+  * [json-ld.org documentation](https://json-ld.org/learn.html)
 
 ### Is
 
-* This is a description of a socio-technical implementation
-  to enable FAIR and allow a community to generate products to address 
-  their data needs
-* demonstration of web architecture as foundation for structured data
-  on the web to build community knowledge graphs
-* a review of the principles of such an architecture and a reference
-  implementation of those principles
+* A description of a socio-technical architecture to address FAIR principles 
+* A demonstration of an application of  web architecture as foundation for structured data
+  on the web to build knowledge graphs and other data products
+* A review of the principles of such an architecture and a reference implementation of those principles
 
 ## Approaches
 
@@ -102,22 +102,28 @@ projects themselves.
 
 ### Data in context
 
-It is important to keep the logic in the data to the greatest
-extent possible. Logic in code is disconnected from the data
+It is important to keep the logic in the data to the greatest extent possible. Logic in code is disconnected from the data
 and increases the burden of maintaining the generation of the products.
 
-## Activity workflow (demo draft)
+## Activity workflow (finally! the demo )
 
-### define our environment and set up things with Docker
-* define our tools (GleanerIO, but could be other)
+> Note:  What follows is the "project" part.  Here we are being 
+> prescriptive about how we implement the "principles"
+
+> Note: The goal is that this demo can be run with the only pre-requisite 
+> being Docker, the ability to run command line scripts and optionally the ability to run 
+> Jupyter notebooks
+
+### define our environment and set up our supporting architecture with Docker
+* define our tools (GleanerIO)
     - our tools (gleaner, nabu)
-    - our system architecture (docker compose for minio et al)
+    - our system architecture (docker compose for minio, oxigraph,  et al)
     - link to docs
 * define our sources (see notes.md)
     - link to configs, use as an example of what to look for
         - both gleaner and nabu
     - show [Ocean Catalog](https://catalogue.odis.org/)
-      - Example entgry for [BCO-DMO](https://catalogue.odis.org/view/3287)
+      - Example entry for [BCO-DMO](https://catalogue.odis.org/view/3287)
 * set up our run environment via archetype
     - docker compose based  
     - why was archetype made? as a means to quickly test/demonstrate to providers for OIH
@@ -127,24 +133,33 @@ and increases the burden of maintaining the generation of the products.
 
 * source selection
     * web architecture approach via sitemaps as a primary source
-      * validate sitemaps with notebook
+      * NOTEBOOK: sitemapAssay.ipynb 
     * define configuration
-* index (cliGleaner)
-* make the release graphs (cliNabu)
-* load them into the triplestore, but mention that is not needed as we can use a notebook
-  * search it in oxigraph
-* load the KG's into notebook and rdflib for local query
-    * search it
-    * view it
-* Using the mdp notebook to build a release product
-* search the release product with duckdb  (notebook)
-* make a graph network
-    * visualize it [example](https://github.com/iodepo/odis-arch/tree/schema-dev-df/graphOps/graphVisualization)
-* make a geopackage
-  * visualize with grids (notebook)
-* validation notebook
-    * SHACL validate with SOSO shacl shapes
-    * mention Fuji and FAIR too?
+* Gleaner
+    * indexing
+* Nabu
+    * release graph
+        * link to OIH release graph and make sure that link mentions the zenodo plans
+    * load to oxigraph
+* Query with SPARQL
+    * In oxigraph directly
+    * In jupyter with rdflib loading release graphs
+        * NOTEBOOK: sparqlQuery.ipynb
+        * Mention the AWS notebooks here
+* Validation
+    * NOTEBOOK: shaclValidation.ipynb
+        * SHACL validate with SOSO shacl shapes (maybe CDIF and OIH ones too?)
+    * Fuji
+* Data products from the KG        
+    * NOTEBOOK: mdp.ipynb
+        * Using the mdp notebook to build a release product
+    * NOTEBOOK: mdpDuck.ipynb 
+        * search the release product with duckdb  (notebook)
+    * NOTEBOOK: kg2network.ipynb 
+        * make a graph network
+        * visualize it [example](https://github.com/iodepo/odis-arch/tree/schema-dev-df/graphOps/graphVisualization)
+    * NOTEBOOK: mdp2spatial.ipynb 
+        * visualize with grids (notebook)
 * potential products: discuss here how the catalog can let us tap the variables
   and even the data distributions to marshall data as well.  
   We can form up parquet, geojson, geopackage, OGC geoapi, etc.
@@ -156,5 +171,12 @@ and increases the burden of maintaining the generation of the products.
       flow can help define those that are not enabled now and what is
       needed to realize them.
     * Mention Tom's ML work here
-    * NOTE:  Mention CDIF here too
+    * CODATA CDIF
+    * other sources like geoapi, etc
 
+
+Thanks
+    * points of contact
+        * developer contacts DeCODER, OIH, Gleaner (me,Dave, etc)
+        * DeCODER (Kenton)
+        * OIH (Pier Luigi and Lucy)
