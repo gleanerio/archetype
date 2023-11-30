@@ -133,7 +133,7 @@ and increases the burden of maintaining the generation of the products.
 
 * source selection
     * web architecture approach via sitemaps as a primary source
-      * NOTEBOOK: sitemapAssay.ipynb 
+      * NOTEBOOK: [sitemap_assay.ipynb](../commons/sitemap_assay.ipynb)
     * define configuration
 * Gleaner
     * indexing
@@ -144,16 +144,16 @@ and increases the burden of maintaining the generation of the products.
 * Query with SPARQL
     * In oxigraph directly
     * In jupyter with rdflib loading release graphs
-        * NOTEBOOK: sparqlQuery.ipynb
+        * NOTEBOOK: [sparql.ipynb](../commons/sparql.ipynb)
         * Mention the AWS notebooks here
 * Validation
-    * NOTEBOOK: shaclValidation.ipynb
+    * NOTEBOOK: [validationSHACL.ipynb](../commons/validationSHACL.ipynb)
         * SHACL validate with SOSO shacl shapes (maybe CDIF and OIH ones too?)
     * Fuji
 * Data products from the KG        
-    * NOTEBOOK: mdp.ipynb
+    * NOTEBOOK: [mdpLite.ipynb](../commons/mdpLite.ipynb)
         * Using the mdp notebook to build a release product
-    * NOTEBOOK: mdpDuck.ipynb 
+    * NOTEBOOK: [mdpDuckDB.ipynb](../commons/mdpDuckDB.ipynb)
         * search the release product with duckdb  (notebook)
     * NOTEBOOK: kg2network.ipynb 
         * make a graph network
