@@ -35,135 +35,72 @@ We have broken down the following image with the concept of three persona; _Publ
 Community_.
 These are described in More detail in the [Personas Section](../../personas/README.md).
 
-![relations](../../docs/images/relations.png)
+<img src="../../docs/images/relations.png" width="800">
 
 The primary goal here is to highlight that this is a melding of social and tehcnical elements
 into a continuous workflow. The process helps to sustain engagement in and the sustainability of
 the system.
 
-## What to expect
+### Other notes
 
-We will frame this session along the classic three act play structure. This will
-provide some easy framing of the various elements we will go over.
+I've placed a few supporting notes in the [appendix](./appendix.md).
 
-| Act I: The problem                                                                                                                                                                                                                                                                | Act II: Resolution                                                                                                                                                                                                                                                                                | Act III: The Future                                                                                                                                                                                                                                                                                                       |
-|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| How do communities of practice organize their desperate data and research projects to generate the products and resources to support their goals. We might call this "addressing FAIR" though that could risk disconnecting this from specific research goals within a community. | Focus on the creation of a knowledge graph as a type of  "master data catalog" and use that as a foundation to generate data products from. Also, we will explore the knowledge graph as a foundation to define needed products and iterate/validate the data workflow to generate those products | During this phase, I aim to illustrate the potential directions that OIH and DeCODER are exploring. The primary objective is to produce essential metadata and broad products, facilitating exploration within these domains. The overarching goal is to empower the utilization of data to address community objectives. |
+# Activity
 
-## Boundary conditions
+> GOAL: As part of this demo we will use open source tools to index JSON-LD from the web and 
+> form a Knowledge Graph.  We will then use that graph to form new products and interact with them.
 
-Given this context we can briefly set some boundaries on what
-this talk will and will not be about.
+> NOTE:  What follows is the "project" part of the _Principles over Project_ approach above. Therefore, 
+> we are now being prescriptive about how we implement the "principles"
 
-<table>
-  <tr>
-    <th>Is</th>
-    <th>Is Not</th>
-  </tr>
-  <tr>
-    <td>
-
-* A description of a socio-technical architecture to address FAIR principles 
-* A demonstration of an application of  web architecture as foundation for structured data
-  on the web to build knowledge graphs and other data products
-* A review of the principles of such an architecture and a reference implementation of those principles
-
-</td>
-    <td>
-
-* A review of structured data on the web, we have those; 
-  * [ESIP Summer Meeting 2022](https://github.com/ESIPFed/science-on-schema.org/tree/226-esip-summer-mtg-2022-tutorial/tutorials/esip-summer-mtg-2022) by Adam Shepherd
-  * _Schema.org for research data managers: a primer_  https://doi.org/10.1504/IJBDM.2022.128449
-* A vocabulary review, see resources such as;
-  * [ESIP Science on Schema](https://github.com/ESIPFed/science-on-schema.org//) and https://doi.org/10.5281/zenodo.7872383
-  * [Shema.org](https://schema.org/)
-  * [Ocean InfoHub Book](https://book.oceaninfohub.org/)
-* A review of JSON-LD as a means to serialize knowledge via RDF (a data model) + schema.org (a vocabulary), see;
-  * [json-ld.org documentation](https://json-ld.org/learn.html)
-
-</td>
-  </tr>
-</table>
-
-## Approaches
-
-| Principles over Project | Data in Context |
-|-------------------------|-----------------|
-|      Our technical component is introduced as a collection of principles. These principles can be executed through various implementations or projects. It's crucial to continually direct our attention to these principles rather than the projects themselves.                   |       It is important to keep the logic in the data to the greatest extent possible. Logic in code is disconnected from the data and increases the burden of maintaining the generation of the products.          |
-
-## Activity workflow (finally! the demo )
-
-> Note:  What follows is the "project" part. Here we are being
-> prescriptive about how we implement the "principles"
-
-> Note: The goal is that this demo can be run with the only pre-requisite
+> NOTE: The goal is that this demo can be run with the only pre-requisites
 > being Docker, the ability to run command line scripts and optionally the ability to run
 > Jupyter notebooks
 
-### define our environment and set up our supporting architecture with Docker
+## Define our environment
 
-* define our tools (GleanerIO)
-    - our tools (gleaner, nabu)
-    - our system architecture (docker compose for minio, oxigraph, et al)
-    - link to docs
+* introduction to our tool selection 
+  * GleanerIO
+      - Gleaner
+      - Nabu
 * define our sources (see notes.md)
-    - link to configs, use as an example of what to look for
-        - both gleaner and nabu
-    - show [Ocean Catalog](https://catalogue.odis.org/)
-        - Example entry for [BCO-DMO](https://catalogue.odis.org/view/3287)
-* set up our run environment via archetype
-    - docker compose based
-    - why was archetype made? as a means to quickly test/demonstrate to providers for OIH
-* show the data products workflow here to show what we are doing
+    - identify our sources and show configuration files for gleaner and nabu
+    - show [Ocean Catalog](https://catalogue.odis.org/) and example entry for [BCO-DMO](https://catalogue.odis.org/view/3287)
+* set up our run environment
+    - docker compose 
+      - Minio
+      - Oxigraph
+      - Headless Chrome
 
-### Let's just do it
+## Let's just do it
 
-* source selection
-    * web architecture approach via sitemaps as a primary source
-        * NOTEBOOK: [sitemap_assay.ipynb](../commons/sitemap_assay.ipynb)
-    * define configuration
+* Source assessment 
+    * NOTEBOOK: [sitemap_assay.ipynb](../commons/sitemap_assay.ipynb)
 * Gleaner
-    * indexing cliGleaner.sh [quickstart](../../docs/quickstart.md)
+    * indexing via cliGleaner.sh [quickstart](../../docs/quickstart.md)
 * Nabu
-    * building graphs with cliNabu.sh   [quickstart](../../docs/quickstart.md)
-    * release graph concept
-        * [OIH Release Graph Development](https://github.com/iodepo/odis-arch/tree/master/graphOps/releaseGraphs)
-        * Zenodo plans  [Ocean InfoHub Community](https://zenodo.org/communities/oceaninfohub)
-    * load to [Oxigraph](https://github.com/oxigraph/oxigraph)
+    * building graphs via cliNabu.sh   [quickstart](../../docs/quickstart.md)
+      * release graph concept [OIH Release Graph Development](https://github.com/iodepo/odis-arch/tree/master/graphOps/releaseGraphs) and Zenodo plans  [Ocean InfoHub Community](https://zenodo.org/communities/oceaninfohub)
+      * load to [Oxigraph](https://github.com/oxigraph/oxigraph)
 * Query with SPARQL
-    * In oxigraph directly
+    * In Oxigraph UI
     * In jupyter with rdflib loading release graphs
         * NOTEBOOK: [sparql.ipynb](../commons/sparql.ipynb)
-        * Mention the AWS notebooks here
+* [Tooling digression](../../docs/tooling.md) 
 * Validation
     * NOTEBOOK: [validationSHACL.ipynb](../commons/validationSHACL.ipynb)
-        * SHACL validate with SOSO shacl shapes (maybe CDIF and OIH ones too?)
-    * Fuji
-* Data products from the KG
-    * NOTEBOOK: [mdpLite.ipynb](../commons/mdpLite.ipynb)
-        * Using the mdp notebook to build a release product
-    * NOTEBOOK: [mdpDuckDB.ipynb](../commons/mdpDuckDB.ipynb)
-        * search the release product with duckdb  (notebook)
-    * NOTEBOOK: kg2network.ipynb
-        * make a graph network
-        * visualize it [example](https://github.com/iodepo/odis-arch/tree/schema-dev-df/graphOps/graphVisualization)
-    * NOTEBOOK: mdp2spatial.ipynb
-        * visualize with grids (notebook)
-* potential products: discuss here how the catalog can let us tap the variables
-  and even the data distributions to marshall data as well.  
-  We can form up parquet, geojson, geopackage, OGC geoapi, etc.
-  Would be fun to show a query that pulls variables and distribution links to files.
-* the future
-    * revisit the data workflow diagram, this is where a community
-      can being to think about the products needs to address the goals
-      desired. Those products may or may not be possible, but this
-      flow can help define those that are not enabled now and what is
-      needed to realize them.
-    * Mention Tom's ML work here
+        * SHACL validate with SOSO, CDIF and OIH shape graphs
+    * Other options like Fuji, JSON schema, etc.
+* Building data products from the KG
+    * Build an example data product NOTEBOOK: [mdpLite.ipynb](../commons/mdpLite.ipynb)
+    * Demonstrate using DuckDB on a parquet product NOTEBOOK: [mdpDuckDB.ipynb](../commons/mdpDuckDB.ipynb)
+    * Convert to a network and visualize it [example](https://github.com/iodepo/odis-arch/tree/schema-dev-df/graphOps/graphVisualization) NOTEBOOK: NOTEBOOK: kg2network.ipynb
+    * Build a spatial product NOTEBOOK: mdp2spatial.ipynb
+* Emerging activities
     * CODATA CDIF
-    * other sources like geoapi, etc
+    * ML/AI 
 
-Thanks
+## Thanks
 * points of contact
 * developer contacts DeCODER, OIH, Gleaner (me,Dave, etc)
 * DeCODER (Kenton)
