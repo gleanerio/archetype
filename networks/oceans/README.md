@@ -31,15 +31,13 @@ This approach is __not__ an instance of
 a [FAIR Implementation Network](https://www.go-fair.org/implementation-networks/),
 however, there are some similarities that make it worth raising the comparison.
 
-We have broken down the following image with the concept of three persona; _Publisher_, _Indexer_ and _User and
+The following image highlights some of the interactions between three personas; _Publisher_, _Indexer_ and _User and
 Community_.
-These are described in More detail in the [Personas Section](../../personas/README.md).
+These are described in More detail in the [Personas Section](../../personas/README.md).  The primary goal here is to highlight that this is a __melding of social and technical elements__ into a continuous workflow. 
 
 <img src="../../docs/images/relations.png" width="800">
 
-The primary goal here is to highlight that this is a melding of social and tehcnical elements
-into a continuous workflow. The process helps to sustain engagement in and the sustainability of
-the system.
+
 
 ### Other notes
 
@@ -101,7 +99,6 @@ I've placed a few supporting notes in the [appendix](./appendix.md).
     * ML/AI 
 
 ## Thanks
-* points of contact
-* developer contacts DeCODER, OIH, Gleaner (me,Dave, etc)
-* DeCODER (Kenton)
-* OIH (Pier Luigi and Lucy)
+
+
+* Provide some points of contacts here for some of the projects mentioned
