@@ -1,5 +1,7 @@
 # GleanerIO: Archetype
 
+[![FAIR checklist badge](https://fairsoftwarechecklist.net/badge.svg)](https://fairsoftwarechecklist.net/v0.2?f=31&a=32100&i=31100&r=133)
+
 ## About
 
 This repository gives a basic set of tools and guides to allow someone to
@@ -53,5 +55,5 @@ the S3 and graph stores are also very optional.
 * [Data on the Web Best Practices](https://www.w3.org/TR/dwbp/)
 * [Science on Schema](https://github.com/ESIPFed/science-on-schema.org//)
 * [Ocean Best Practices on Schema](https://github.com/adamml/ocean-best-practices-on-schema)
-
+* [FAIR software](https://fairsoftwarechecklist.net/v0.2/)
 

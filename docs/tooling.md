@@ -32,7 +32,6 @@ Suggestions welcome.
 * [DuckDB](https://duckdb.org/)
 * [OpenRefine](https://openrefine.org/)
     * RDF extension in [extensions showcase](https://openrefine.org/extensions)
-* [Data World](https://data.world/)
 * Python
     * [kglab](https://derwen.ai/docs/kgl/ex6_0/)
     * [rdflib](https://rdflib.readthedocs.io/en/stable/)
@@ -45,12 +44,17 @@ Suggestions welcome.
       * [pyGraphistry](https://github.com/graphistry/pygraphistry)
     * [sigma.js](https://www.sigmajs.org/) a JavaScript library aimed at visualizing graphs of thousands of nodes and edges
 * [yasgui](https://github.com/TriplyDB/Yasgui)
-* [JSON Crack](https://jsoncrack.com/)
+* On-line tools
+  * [JSON Crack](https://jsoncrack.com/)
+  * [JSON-LD Playground](https://json-ld.org/playground/)
+  * [validator.schema.org](https://validator.schema.org/)
+  * [Data World](https://data.world/)
 * [Miller](https://github.com/johnkerl/miller)
 * CLI tools
     * [jsonld-cli](https://github.com/digitalbazaar/jsonld-cli)
     * [jsonld-requests](https://github.com/digitalbazaar/jsonld-request)
     * [jq](https://stedolan.github.io/jq/)
+    * [jaq](https://github.com/01mf02/jaq)
     * [ld-cli](https://github.com/filip26/ld-cli)
 * [Titanium JSON-LD 1.1 Processor & API](https://github.com/filip26/titanium-json-ld)
 * [Morph-KGC](https://github.com/morph-kgc/morph-kgc) is an engine that constructs RDF knowledge graphs from heterogeneous data sources

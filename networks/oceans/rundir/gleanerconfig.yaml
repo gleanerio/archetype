@@ -27,70 +27,50 @@ summoner:
 millers:
     graph: true
 sources:
-    - name: africaioc
-      propername: IOC Africa Data Portal
-      catalogue: https://ioc-africa.org/dbs/displayData.php
-      domain: https://ioc-africa.org
-      logo: https://ioc-africa.org/dbs/images/unesco_ioc_logo.png
-      pid: https://oceaninfohub.org/.well-known/org/africaioc
+    - name: bcodmo
+      propername: BCO-DMO
+      catalogue: https://www.bco-dmo.org/
+      domain: https://www.bco-dmo.org/
+      logo: https://www.bco-dmo.org/sites/all/themes/bcodmo/logo.png
+      #ODISCat entry missing ODIS-arch url
+      pid: https://catalogue.odis.org/view/3287
       sourcetype: sitemap
-      url: https://ioc-africa.org/sitemap.xml
-      changefreq: daily
-      backend: Custom
+      url: https://www.bco-dmo.org/sitemap.xml
+      changefreq: weekly
+      backend: unknown
       headless: false
-      dateadded: 2023-02-09
+      dateadded: 2021-02-26
       active: true
-    - name: medin
-      propername: Marine Environmental Data and Information Network (MEDIN)
-      catalogue: https://portal.medin.org.uk/portal/start.php
-      domain: https://medin.org.uk/
-      logo: https://medin.org.uk/sites/medin/files/images/medin-portal-logo.png
-      pid: https://catalogue.odis.org/view/40
-      sourcetype: sitemap  
-      url: https://portal.medin.org.uk/portal/sitemap.php
-      changefreq: daily
-      backend: MARIS
-      headless: false
-      dateadded: 2023-05-11
-      active: true     
-    - name: oceanscape
-      propername: Oceanscape Project
-      catalogue: https://oceanscape.org
-      domain: https://geoblueplanet.org/
-      logo: https://oceanscape.org/wp-content/uploads/2019/06/Oceanscape-banner-1024x183.png
-      pid: https://catalogue.odis.org/view/1098
+      cron: 0 19 * * 0
+    - name: obis
+      propername: Ocean Biodiversity Information System
+      catalogue: https://obis.org
+      domain: https://obis.org
+      logo: https://obis.org/images/logo.png
+      #ODISCat entry missing ODIS-arch url
+      pid: https://catalogue.odis.org/view/343
       sourcetype: sitemap
-      url: https://oceanscape.org/organisation-sitemap.xml
+      url: https://obis.org/sitemap_datasets.xml
+      changefreq: weekly
+      backend: unknown
+      headless: false
+      dateadded: 2021-02-26
+      active: true
+      cron: 0 19 * * 0
+    - name: edmo
+      propername: European Directory of Marine Organisations (EDMO) SeaDataNet
+      catalogue: https://edmo.seadatanet.org/search
+      domain: https://edmo.seadatanet.org
+      logo: https://edmo.seadatanet.org/grfx/edmo/logo.png
+      #missing ODISCat entry
+      pid: https://oceaninfohub.org/.well-known/org/edmo
+      sourcetype: sitemap
+      url: https://edmo.seadatanet.org/sitemap.xml
       changefreq: as needed
-      backend: WordPress
+      backend: SeaDataCloud
+      dateadded: 2021-07-26
       headless: false
-      dateadded: 2022-05-18
-      active: true
-    - name: rda
-      propername: Research Data Australia
-      catalogue: https://researchdata.edu.au/
-      domain: https://ardc.edu.au/
-      logo: https://researchdata.edu.au/assets/img/ARDC_Research_Data_RGB_FA_Reverse_sml.png
-      pid: https://catalogue.odis.org/view/3267
-      sourcetype: sitemap
-      url: https://researchdata.edu.au/home/sitemap/?ds=384
-      changefreq: daily
-      backend: GeoNetwork
-      headless: false
-      dateadded: 2023-03-06
-      active: true
-    - name: cioos
-      propername: CIOOS
-      catalogue: https://catalogue.cioos.ca/
-      domain: https://cioos.ca/
-      logo: https://cioos.ca/wp-content/themes/cioos-siooc-wordpress-theme/img/national/cioos-national_EN.svg
-      pid: https://catalogue.odis.org/view/3263
-      sourcetype: sitemap
-      url: https://catalogue.cioos.ca/sitemap/sitemap.xml
-      changefreq: daily
-      backend: CKAN
-      headless: false
-      dateadded: 2023-01-31
+      cron: 0 5 * * 0
       active: true
     - name: bodc
       propername: BODC
@@ -105,4 +85,3 @@ sources:
       headless: false
       dateadded: 2023-01-31
       active: true
-

@@ -1,0 +1,39 @@
+{
+    "creators": [
+        {
+            "orcid": "0000-0002-1825-0097",
+            "affiliation": "University of California San Diego",
+            "name": "Susanna Anil"
+        },
+        {
+            "orcid": "0000-0002-1825-0097",
+            "affiliation": "Scripps Institution of Oceanography, University of California San Diego",
+            "name": "Steve Diggs"
+        }
+    ],
+    "license": "CC0",
+    "title": "Interactive Jupyter notebook for hydrographic ocean data exploration, retrieval and visualization via the Argovis API",
+    "related_identifiers": [
+        {
+            "scheme": "doi",
+            "identifier": "10.5281/zenodo.5189252",
+            "relation": "isDocumentedBy",
+            "resource_type": {
+                "type": "??",
+                "subtype": "??"
+            }
+        }
+    ],
+    "keywords": [“Argovis”, “hydrographic data”, “profiling floats”, “exploring ocean data”, “in-situ ocean observations”
+    ],
+    "communities": [
+        {
+            "identifier": "?????"
+        }
+    ],
+    "grants": [
+        {
+            "id": "https://www.nsf.gov/awardsearch/showAward?AWD_ID=1928208"
+        }
+    ]
+}
