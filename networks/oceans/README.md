@@ -3,6 +3,8 @@
 > Note:  This material is being prepared for a Dec 14th 2023 talk. So
 > they are still in development (likely till Dec 13th) ;-)
 
+![ocean1.png](..%2F..%2Fdocs%2Fimages%2Focean1v2crop.png)
+
 ## Introduction
 
 In this session, we'll explore leveraging structured data on the web to establish a knowledge graph serving as a

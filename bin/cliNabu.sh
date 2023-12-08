@@ -7,7 +7,7 @@
 
 PROGNAME="$(basename $0)"
 VERSION="v0.0.1"
-NBIMAGE="fils/nabu:2.0.18-df-development"
+NBIMAGE="fils/nabu:2.0.19-df-development"
 
 # Pull down some of the needed docks if called with -init
 if [[ $1 == "-init" ]];

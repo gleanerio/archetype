@@ -27,6 +27,21 @@ summoner:
 millers:
     graph: true
 sources:
+    - name: oceanexpert
+      propername: OceanExpert UNESCO/IOC Project Office for IODE
+      catalogue: https://oceanexpert.org/advancedSearch
+      domain: https://oceanexpert.org/
+      logo: https://oceanexpert.org/img/logoimageindex.jpg
+      #ODISCat arch url doesn't point to sitemap
+      pid: https://catalogue.odis.org/view/4
+      sourcetype: sitemap
+      url: https://oceanexpert.org/assets/sitemaps/sitemapIndex.xml
+      changefreq: unknown
+      backend: unknown
+      headless: false
+      dateadded: 2021-08-26
+      active: true
+      cron: 0 21 * * 0
     - name: bcodmo
       propername: BCO-DMO
       catalogue: https://www.bco-dmo.org/

@@ -23,13 +23,15 @@ Suggestions welcome.
     * [AWS Graph Explore](https://github.com/aws/graph-explorer)
     * [AWS Graph Notebook](https://github.com/aws/graph-notebook)
     * [AWS Graph Data Model](https://github.com/aws-samples/aws-dbs-refarch-graph/tree/master/src/graph-data-modelling)
-* RML
+* Mappings
+    * [R2RML](https://www.w3.org/news/2012/rdb-to-rdf-mapping-language-r2rml-and-a-direct-mapping-of-relational-data-to-rdf-are-w3c-recommendat/)
     * [RML](https://rml.io)
     * [Yatter](https://github.com/oeg-upm/yatter) Translates mapping rules from YARRRML in a turtle-based serialization of RML or R2RML.
 * [SSSOM](https://mapping-commons.github.io/sssom/)
 * [Schemasheets](https://github.com/linkml/schemasheets)
 * [Linked Data Hub](https://github.com/AtomGraph/LinkedDataHub)
 * [DuckDB](https://duckdb.org/)
+* [Harlequin](https://harlequin.sh/) database client for the terminal that works well with duckdb
 * [OpenRefine](https://openrefine.org/)
     * RDF extension in [extensions showcase](https://openrefine.org/extensions)
 * Python
@@ -53,9 +55,10 @@ Suggestions welcome.
 * CLI tools
     * [jsonld-cli](https://github.com/digitalbazaar/jsonld-cli)
     * [jsonld-requests](https://github.com/digitalbazaar/jsonld-request)
-    * [jq](https://stedolan.github.io/jq/)
+    * [jq](https://stedolan.github.io/jq/) the classic tool
     * [jaq](https://github.com/01mf02/jaq)
     * [ld-cli](https://github.com/filip26/ld-cli)
+    * [gron](https://github.com/tomnomnom/gron) makes JSON greppable
 * [Titanium JSON-LD 1.1 Processor & API](https://github.com/filip26/titanium-json-ld)
 * [Morph-KGC](https://github.com/morph-kgc/morph-kgc) is an engine that constructs RDF knowledge graphs from heterogeneous data sources
 * [fx](https://fx.wtf/)  Terminal JSON viewer & processor
