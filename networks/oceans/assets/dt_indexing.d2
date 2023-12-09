@@ -1,0 +1,88 @@
+direction: right
+
+
+title:  |md
+  # UNESCO/IODE/ODIS/OIH Indexing Workflow
+
+| { near: top-center }
+
+classes: {
+od: {
+    width: 300
+               style: {
+                     stroke-width: 0
+                    fill: "#44C7B1"
+                    shadow: true
+                    border-radius: 5
+               }
+      }
+
+oih: {
+    width: 300
+               style: {
+                     stroke-width: 0
+                    fill: lightblue
+                    shadow: true
+                    border-radius: 5
+               }
+      }
+
+oihgroup: {
+               style: {
+                     stroke-width: 0
+                    fill: honeydew
+                    shadow: true
+                    border-radius: 5
+               }
+      }
+
+}
+
+is: Indexing Source  {
+
+sm: Sitemap {
+   class: oih
+    }
+
+sg: Sitegraph {
+class: oih
+    }
+
+note: |md
+
+This is likely a sitemap  
+might be a sitegraph
+|
+
+    class: oihgroup
+}
+
+g: Gleaner {
+class: oih
+   }
+
+n: Nabu {
+class: oih
+   }
+
+kg: Knowledge Graph {
+
+rg: Release Graphs {
+class: oih
+    }
+
+
+ts: triple store{
+class: oih
+    }
+
+p: derived data products {
+class:oih
+   }    
+
+
+class: oihgroup
+    }
+
+   is -> g -> n -> kg
+
