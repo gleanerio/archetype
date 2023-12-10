@@ -58,7 +58,7 @@ state of the ocean data landscape.
 > being Docker, the ability to run command line scripts and optionally the ability to run
 > Jupyter notebooks
 
-## Define our environment
+## Set up our environment
 
 * introduction to our tool selection 
   * GleanerIO
@@ -75,33 +75,50 @@ state of the ocean data landscape.
 
 ## Let's just do it
 
-Overview images for the source definitions dt_sources
-Publishing dt_jsonld
-Image for the indexing and Nabu  dt_indexing
-Image for data products dt_dataops
-note:  removed the "shape" dt, included in dt_jsonld
 
-play the game in your command line too!  link to bash scraping docs
+### Publisher
+
+> NOTE:  see the [appendix](appendix.md) for other more detailed resources on this topic
+
+[JSON-LD Flow](./card_jsonld.md)
+
+* Authoring (meta)data graphs
+* Validation
+    * NOTEBOOK: [validationSHACL.ipynb](../commons/validationSHACL.ipynb)
+        * SHACL validate with SOSO, CDIF and OIH shape graphs
+
+
+[Source Flow](./card_sources.md)  NOTE:  rename assets to _publishing_
 
 * Source assessment 
     * NOTEBOOK: [sitemap_assay.ipynb](../commons/sitemap_assay.ipynb)
-* publishing 
-    * this is out of scope for the demo, but I will touch on this 
+
+### Indexer
+
+[Indexing Flow](./card_indexer.md)
+
 * Gleaner
     * indexing via cliGleaner.sh [quickstart](../../docs/quickstart.md)
 * Nabu
     * building graphs via cliNabu.sh   [quickstart](../../docs/quickstart.md)
       * release graph concept [OIH Release Graph Development](https://github.com/iodepo/odis-arch/tree/master/graphOps/releaseGraphs) and Zenodo plans  [Ocean InfoHub Community](https://zenodo.org/communities/oceaninfohub)
       * load to [Oxigraph](https://github.com/oxigraph/oxigraph)
+* Fun at the command line [clitools](../../docs/bashScrape.md)
+* [Tooling digression](../../docs/tooling.md) 
+* The _indexer_ persona is likely to conduct validation as well and may have other criteria.
+    * Other options like Fuji, JSON schema, etc.
+    * Validation
+        * NOTEBOOK: [validationSHACL.ipynb](../commons/validationSHACL.ipynb)
+            * SHACL validate with SOSO, CDIF and OIH shape graphs
+
+### Users / Community
+
+[Data Ops Flow](./card_dataops.md)
+
 * Query with SPARQL
     * In Oxigraph UI
     * In jupyter with rdflib loading release graphs
         * NOTEBOOK: [sparql.ipynb](../commons/sparql.ipynb)
-* [Tooling digression](../../docs/tooling.md) 
-* Validation
-    * NOTEBOOK: [validationSHACL.ipynb](../commons/validationSHACL.ipynb)
-        * SHACL validate with SOSO, CDIF and OIH shape graphs
-    * Other options like Fuji, JSON schema, etc.
 * Building data products from the KG
     * Build an example data product NOTEBOOK: [mdpLite.ipynb](../commons/mdpLite.ipynb)
     * Demonstrate using DuckDB on a parquet product NOTEBOOK: [mdpDuckDB.ipynb](../commons/mdpDuckDB.ipynb)
@@ -115,5 +132,4 @@ play the game in your command line too!  link to bash scraping docs
 ## Thanks
 
 * Provide some points of contacts here for some of the projects mentioned
-
 

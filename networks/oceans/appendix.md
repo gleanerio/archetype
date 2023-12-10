@@ -1,22 +1,5 @@
 # Appendix
 
-### What to expect
-
-We will frame this session along the classic three act play structure. This will
-provide some easy framing of the various elements we will go over.
-
-| Act I: The problem                                                                                                                                                                                                                                                                | Act II: Resolution                                                                                                                                                                                                                                                                                | Act III: The Future                                                                                                                                                                                                                                                                                                       |
-|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| How do communities of practice organize their desperate data and research projects to generate the products and resources to support their goals. We might call this "addressing FAIR" though that could risk disconnecting this from specific research goals within a community. | Focus on the creation of a knowledge graph as a type of  "master data catalog" and use that as a foundation to generate data products from. Also, we will explore the knowledge graph as a foundation to define needed products and iterate/validate the data workflow to generate those products | During this phase, I aim to illustrate the potential directions that OIH and DeCODER are exploring. The primary objective is to produce essential metadata and broad products, facilitating exploration within these domains. The overarching goal is to empower the utilization of data to address community objectives. |
-
-
-### Approaches
-
-| Principles over Project | Data in Context |
-|-------------------------|-----------------|
-|      Our technical component is introduced as a collection of principles. These principles can be executed through various implementations or projects. It's crucial to continually direct our attention to these principles rather than the projects themselves.                   |       It is important to keep the logic in the data to the greatest extent possible. Logic in code is disconnected from the data and increases the burden of maintaining the generation of the products.          |
-
-
 ### Boundary conditions
 
 Given this context we can briefly set some boundaries on what
@@ -55,3 +38,23 @@ this talk will and will not be about.
 </td>
   </tr>
 </table>
+
+
+### What to expect
+
+We will frame this session along the classic three act play structure. This will
+provide some easy framing of the various elements we will go over.
+
+| Act I: The problem                                                                                                                                                                                                                                                                | Act II: Resolution                                                                                                                                                                                                                                                                                | Act III: The Future                                                                                                                                                                                                                                                                                                       |
+|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| How do communities of practice organize their desperate data and research projects to generate the products and resources to support their goals. We might call this "addressing FAIR" though that could risk disconnecting this from specific research goals within a community. | Focus on the creation of a knowledge graph as a type of  "master data catalog" and use that as a foundation to generate data products from. Also, we will explore the knowledge graph as a foundation to define needed products and iterate/validate the data workflow to generate those products | During this phase, I aim to illustrate the potential directions that OIH and DeCODER are exploring. The primary objective is to produce essential metadata and broad products, facilitating exploration within these domains. The overarching goal is to empower the utilization of data to address community objectives. |
+
+
+### Approaches
+
+| Principles over Project | Data in Context |
+|-------------------------|-----------------|
+|      Our technical component is introduced as a collection of principles. These principles can be executed through various implementations or projects. It's crucial to continually direct our attention to these principles rather than the projects themselves.                   |       It is important to keep the logic in the data to the greatest extent possible. Logic in code is disconnected from the data and increases the burden of maintaining the generation of the products.          |
+
+
+

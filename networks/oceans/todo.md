@@ -35,3 +35,9 @@ OBIS needs a --rude to override robots.txt
 However, oceanexpert, takes about 1.5 hours and BCODO is 55 hours at 10-second delays
 Ocean Expert also has a 30-second delay which is ridiculous. 
 
+
+## conlusion concept
+
+In the context of the ocean decade, it is interesitng to think about how to connect data
+to policy and goals.  What tools do we use to do this?  Can LLMs help connect SDG to data with the 
+aid of KGs.    and how do we cite this?   
