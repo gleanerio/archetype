@@ -78,7 +78,7 @@ enough talk...  more action...
 
 ### Indexer
 
-* [Indexing Flow](./card_indexer.md)
+* [Indexing Flow](./card_indexing.md)
 
 
 ### Users / Community
