@@ -1,0 +1,141 @@
+grid-rows: 2
+grid-columns: 4
+horizontal-gap: 200
+vertical-gap: 200
+
+g1
+g1.class: empty
+
+ag: Authoring Guidance {
+    small profile: "" {
+        shape: image
+        icon: content.svg
+        width: 100
+        height: 100
+    }
+
+    note: |md
+        ### Fosters
+
+    |
+}
+
+ag.class: node
+
+g3
+g3.class: empty
+
+uc: User & Community {
+
+    small profile: "" {
+        shape: image
+        icon: profile.png
+        width: 100
+        height: 100
+    }
+
+    note: |md
+         ### Communicates
+
+    |
+
+            }
+
+uc.class: node
+
+p: Publisher {
+
+     small profile: "" {
+         shape: image
+         icon: profile.png
+         width: 100
+         height: 100
+     }
+
+     note: |md
+          ### Implements
+
+     |
+
+             }
+p.class: node
+
+g4
+g4.class: empty
+
+
+i: Indexer {
+    small profile: "" {
+        shape: image
+        icon: profile.png
+        width: 100
+        height: 100
+    }
+
+    note: |md
+        ### Implements
+
+    |
+
+            }
+i.class: node
+
+g6
+g6.class: empty
+
+
+
+uc --> ag: Influences {
+                        style: {
+                          font-size: 36
+                          stroke-width: 6
+                        }
+                      }
+i --> ag: Influences {
+                        style: {
+                          font-size: 36
+                          stroke-width: 6
+                        }
+                      }
+i --> uc: Used By {
+                        style: {
+                          font-size: 36
+                          stroke-width: 6
+                        }
+                      }
+ag --> p: Used By {
+                        style: {
+                          font-size: 36
+                        stroke-width: 6
+                        }
+                      }
+p --> i: Enables{
+                style: {
+                  font-size: 36
+                stroke-width: 6
+                }
+              }
+
+
+
+classes: {
+  empty: {
+    label: ""
+    width: 50
+    height: 50
+    style: {
+      fill: transparent
+      stroke: transparent
+    }
+  }
+  node: {
+   width: 350
+   height: 250
+    style: {
+        stroke-width: 0
+       fill: honeydew
+       shadow: true
+       border-radius: 25
+  }
+}
+}

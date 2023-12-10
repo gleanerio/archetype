@@ -36,8 +36,16 @@ However, oceanexpert, takes about 1.5 hours and BCODO is 55 hours at 10-second d
 Ocean Expert also has a 30-second delay which is ridiculous. 
 
 
-## conlusion concept
+## conclusion concept
 
-In the context of the ocean decade, it is interesitng to think about how to connect data
+In the context of the ocean decade, it is interesting to think about how to connect data
 to policy and goals.  What tools do we use to do this?  Can LLMs help connect SDG to data with the 
 aid of KGs.    and how do we cite this?   
+
+
+### Other notes
+
+I've placed a few supporting notes in the [appendix](./appendix.md).
+
+This work can also be seen in the frame of establishing an approach to assess the
+state of the ocean data landscape. 

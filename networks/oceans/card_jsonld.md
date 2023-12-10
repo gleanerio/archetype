@@ -5,15 +5,26 @@
 
 ## About
 
-about this card
+This document present a flow of concepts we would want to go over with respect to 
+the authoring of JSON-LD documents.
 
+## Details
 
-## Notes
+__Sources__
 
-link to other options to index with like bioschema work or apache approaches
-link to bash scripts (note headless issue)
-mention why gleaner (testing new idea out)
+__Vocabulary__
+
+__Serialization__
+
+__Validation__
+
+* Validation
+    * NOTEBOOK: [validationSHACL.ipynb](../commons/validationSHACL.ipynb)
+        * SHACL validate with SOSO, CDIF and OIH shape graphs
+
+__Publishing__
+
 
 ## Activity
 
-the bash or images of actions here
+None for this card, though we can look at example JSON-LD document.

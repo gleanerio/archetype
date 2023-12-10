@@ -37,14 +37,7 @@ The following image highlights some of the interactions between three personas; 
 Community_.
 These are described in More detail in the [Personas Section](../../personas/README.md).  The primary goal here is to highlight that this is a __melding of social and technical elements__ into a continuous workflow. 
 
-<img src="../../docs/images/relations.png" width="800">
-
-### Other notes
-
-I've placed a few supporting notes in the [appendix](./appendix.md).
-
-This work can also be seen in the frame of establishing an approach to assess the 
-state of the ocean data landscape. 
+![im](./assets/fairIN.svg)
 
 # Demonstration
 
@@ -56,18 +49,18 @@ state of the ocean data landscape.
 
 > NOTE: The goal is that this demo can be run with the only pre-requisites
 > being Docker, the ability to run command line scripts and optionally the ability to run
-> Jupyter notebooks
+> Jupyter notebooks 
+
+> NOTE:  see the [appendix](appendix.md) for other more detailed resources on the topic of authoring
+> and structuring JSON-LD.  We will only touch on it briefly here.
+
 
 ## Set up our environment
 
-* introduction to our tool selection 
-  * GleanerIO
-      - Gleaner
-      - Nabu
-* define our sources (see notes.md)
+* Introduction to our tool selection: [GleanerIO](https://github.com/gleanerio)
+* Define our sources 
     - identify our sources and show configuration files for gleaner and nabu
-    - show [Ocean Catalog](https://catalogue.odis.org/) and example entry for [BCO-DMO](https://catalogue.odis.org/view/3287)
-* set up our run environment
+* Set up our run environment
     - docker compose 
       - Minio
       - Oxigraph
@@ -75,59 +68,23 @@ state of the ocean data landscape.
 
 ## Let's just do it
 
+enough talk...  more action...
 
 ### Publisher
 
-> NOTE:  see the [appendix](appendix.md) for other more detailed resources on this topic
+* [Publishing: JSON-LD Flow](./card_jsonld.md)
+* [Publishing: Web Architecture Flow](./card_sources.md)   
 
-[JSON-LD Flow](./card_jsonld.md)
-
-* Authoring (meta)data graphs
-* Validation
-    * NOTEBOOK: [validationSHACL.ipynb](../commons/validationSHACL.ipynb)
-        * SHACL validate with SOSO, CDIF and OIH shape graphs
-
-
-[Source Flow](./card_sources.md)  NOTE:  rename assets to _publishing_
-
-* Source assessment 
-    * NOTEBOOK: [sitemap_assay.ipynb](../commons/sitemap_assay.ipynb)
 
 ### Indexer
 
-[Indexing Flow](./card_indexer.md)
+* [Indexing Flow](./card_indexer.md)
 
-* Gleaner
-    * indexing via cliGleaner.sh [quickstart](../../docs/quickstart.md)
-* Nabu
-    * building graphs via cliNabu.sh   [quickstart](../../docs/quickstart.md)
-      * release graph concept [OIH Release Graph Development](https://github.com/iodepo/odis-arch/tree/master/graphOps/releaseGraphs) and Zenodo plans  [Ocean InfoHub Community](https://zenodo.org/communities/oceaninfohub)
-      * load to [Oxigraph](https://github.com/oxigraph/oxigraph)
-* Fun at the command line [clitools](../../docs/bashScrape.md)
-* [Tooling digression](../../docs/tooling.md) 
-* The _indexer_ persona is likely to conduct validation as well and may have other criteria.
-    * Other options like Fuji, JSON schema, etc.
-    * Validation
-        * NOTEBOOK: [validationSHACL.ipynb](../commons/validationSHACL.ipynb)
-            * SHACL validate with SOSO, CDIF and OIH shape graphs
 
 ### Users / Community
 
-[Data Ops Flow](./card_dataops.md)
+* [Data Ops Flow](./card_dataops.md)
 
-* Query with SPARQL
-    * In Oxigraph UI
-    * In jupyter with rdflib loading release graphs
-        * NOTEBOOK: [sparql.ipynb](../commons/sparql.ipynb)
-* Building data products from the KG
-    * Build an example data product NOTEBOOK: [mdpLite.ipynb](../commons/mdpLite.ipynb)
-    * Demonstrate using DuckDB on a parquet product NOTEBOOK: [mdpDuckDB.ipynb](../commons/mdpDuckDB.ipynb)
-    * Convert to a network and visualize it [example](https://github.com/iodepo/odis-arch/tree/schema-dev-df/graphOps/graphVisualization) NOTEBOOK: NOTEBOOK: kg2network.ipynb
-    * Build a spatial product NOTEBOOK: mdp2spatial.ipynb
-* Emerging activities
-    * observatons:  space and time, good descritpions, data models and variables (profiles)
-    * CODATA CDIF
-    * ML/AI 
 
 ## Thanks
 
