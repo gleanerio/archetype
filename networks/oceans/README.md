@@ -19,7 +19,7 @@ work of the [NSF funded DeCODER project](https://www.earthcube.org/decoder) and 
 resource assocated with the
 [Deep Ocean Observing Stragety (DOOS)](https://www.deepoceanobserving.org/).
 
-| UNESCO / ODIS / Ocean InfoHub                                                                                             | NSF DeCODER                                                               |
+| UNESCO / ODIS / Ocean InfoHub                                                                                             | National Science Foundation: DeCODER                                      |
 |---------------------------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------|
 | [![Ocean InfoHub Intro Video](https://img.youtube.com/vi/KrxeZrPg0u8/0.jpg)](https://www.youtube.com/watch?v=KrxeZrPg0u8) | [![DeCoder](./assets/decoderLogo.png)](https://www.earthcube.org/decoder) |
 

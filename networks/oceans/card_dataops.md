@@ -17,3 +17,7 @@ mention why gleaner (testing new idea out)
 ## Activity
 
 the bash or images of actions here
+
+
+
+![img.png](./assets/obisoe.png)
