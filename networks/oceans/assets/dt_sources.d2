@@ -1,0 +1,83 @@
+direction: right
+
+
+title:  |md
+  # UNESCO/IODE/ODIS/OIH Source Workflow
+
+| { near: top-center }
+
+classes: {
+od: {
+    width: 300
+               style: {
+                     stroke-width: 0
+                    fill: "#44C7B1"
+                    shadow: true
+                    border-radius: 5
+               }
+      }
+
+oih: {
+    width: 300
+               style: {
+                     stroke-width: 0
+                    fill: lightblue
+                    shadow: true
+                    border-radius: 5
+               }
+      }
+
+}
+
+
+r: Do you have \nrobots.txt {
+}
+
+nr: No robots.txt {
+   tooltip:  It's fine, not a big deal
+link: https://book.oceaninfohub.org/publishing/publishing.html#robots-txt
+}
+
+s: Do you have \nsitemap.xml {
+  link: https://book.oceaninfohub.org/publishing/publishing.html#sitemap-xml
+}
+
+ns: make a sitemap.xml {
+  link: https://book.oceaninfohub.org/publishing/publishing.html#sitemap-xml
+}
+
+vs: validate your sitemap {
+  tooltip: We will have a simple sitemap validation \n workflow
+}
+
+rc: request indexing \nresource check {
+  link: https://github.com/gleanerio/archetype
+  tooltip: You can also index with Google Dataset Search \n or other using this archtecture \n at this point.
+}
+
+
+oc: Ocean Catalog entry {
+    class: od
+    link: https://catalogue.odis.org/
+    }
+
+oe: Ocean Expert entry {
+    class: od
+    link: https://catalogue.odis.org/
+    }
+
+
+r -> s: yes
+r -> nr: no
+nr -> s: optional
+
+s -> ns: no
+ns -> s: created
+
+s -> vs: yes
+
+vs -> vs: validate
+vs -> rc: valid
+
+vs -> oc
+vs -> oe

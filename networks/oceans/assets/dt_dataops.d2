@@ -2,7 +2,7 @@ direction: right
 
 
 title:  |md
-  # UNESCO/IODE/ODIS/OIH Indexing Workflow
+  # UNESCO/IODE/ODIS/OIH Data Operations
 
 | { near: top-center }
 
@@ -27,6 +27,17 @@ oih: {
                }
       }
 
+oihservice : {
+    width: 300
+               style: {
+                     stroke-width: 0
+                    fill: "#FF2400"
+                    shadow: true
+                    border-radius: 5
+               }
+      }
+
+
 oihgroup: {
                style: {
                      stroke-width: 0
@@ -38,53 +49,56 @@ oihgroup: {
 
 }
 
-is: Indexing Source  {
-
-sm: Sitemap {
+kg: Knowledge Graph {
    class: oih
     }
 
-sg: Sitegraph {
-class: oih
-    }
-
-note: |md
-
-This is likely a sitemap  
-might be a sitegraph
-|
-
-    class: oihgroup
+net: Graph Network {
+   class: oih
 }
 
-g: Gleaner {
-class: oih
-link: https://github.com/gleanerio/gleaner
-   }
-
-n: Nabu {
-class: oih
-link: https://github.com/gleanerio/nabu
-   }
-
-kg: Knowledge Graph {
-
-rg: Release Graphs {
-class: oih
-    }
-
-
-ts: triple store{
-class: oih
-    }
-
-p: derived data products {
+mdp: Query generated \n  Master Data Product {
 class:oih
-   }    
 
+     }
 
-class: oihgroup
+ti: Text or Vector Index  {
+      class:oih
     }
 
-   is -> g -> n -> kg
+sp: Spatial index {
+    class:oih
+    }
 
+ml: Machine Learning Worflow {
+class: oih
+    }
+
+kg -> net
+kg -> mdp
+
+mdp -> ti
+
+kg -> sp
+mdp -> sp
+
+kg -> ml
+mdp -> ml
+
+# services
+
+ddb: DuckDB {
+class: oihservice
+}
+
+ts: TripleStore / SPARQL {
+class:  oihservice
+    }
+
+geo: GeoAPI {
+class: oihservice
+     }
+
+kg -> ts
+mdp -> ddb
+sp -> geo

@@ -1,7 +1,7 @@
-#  Indexing
+#  JSON-LD
 
 
-![visual](./assets/dt_indexing.svg)
+![visual](./assets/dt_jsonld.svg)
 
 ## About
 

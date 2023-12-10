@@ -1,7 +1,7 @@
-#  Indexing
+#  Sources
 
 
-![visual](./assets/dt_indexing.svg)
+![visual](./assets/dt_sources.svg)
 
 ## About
 

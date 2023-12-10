@@ -1,11 +1,11 @@
 ---
 minio:
-  address: s3.amazonaws.com
-  port: 443
-  accessKey:
-  secretKey:
-  ssl: true
-  bucket: yourbucketname  # set to a bucket you own in your object store of choice
+  address: 0.0.0.0
+  port: 9000
+  accessKey: minioadmin
+  secretKey: minioadmin
+  ssl: false
+  bucket: devbucket  # set to a bucket you own in your object store of choice
   region: us-east-1
 implementation_network:
   orgname: iow
@@ -13,10 +13,10 @@ context:
   cache: true
   strict: true
 contextmaps:
-  - prefix: https://schema.org/
-    file: ./assets/schemaorg-current-https.jsonld
-  - prefix: http://schema.org/
-    file: ./assets/schemaorg-current-http.jsonld
+    - prefix: "https://schema.org/"
+      file: "./schemaorg-current-https.jsonld"
+    - prefix: "http://schema.org/"
+      file: "./schemaorg-current-https.jsonld"
 objects:
   domain: us-east-1
   prefix:
@@ -24,23 +24,23 @@ objects:
     - summoned/source1
 endpoints:
   - service: oxigraph
-    baseurl: http://coreos.lan:9090/blazegraph/namespace/testing
+    baseurl: http://0.0.0.0:7878
     type: oxigraph
     authenticate: false
     username:
     password:
     modes:
       - action: sparql
-        suffix: /sparql
+        suffix: /query
         accept: application/sparql-results+json
         method: GET
       - action: update
-        suffix: /sparql
-        accept: application/sparql-update
+        suffix: /store
+        accept: application/n-quads
         method: POST
       - action: bulk
-        suffix: /sparql
-        accept: text/x-nquads
+        suffix: /store
+        accept: application/n-quads
         method: POST
   - service: blazegraph_testing
     baseurl: http://coreos.lan:9090/blazegraph/namespace/testing

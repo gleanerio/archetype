@@ -1,7 +1,7 @@
-#  Indexing
+#  Data Ops
 
 
-![visual](./assets/dt_indexing.svg)
+![visual](./assets/dt_dataops.svg)
 
 ## About
 

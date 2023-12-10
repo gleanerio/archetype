@@ -1,52 +1,57 @@
-# TODO
+# Commands
 
-* [ ] explore the depth approach, note this in the presentation as an example of the community process
-* [ ] document the cli scripts pointing to specific docker images and potential issues there
-* [ ] document my use of podman vs the typical use of docker
-* [ ] add in the gihub repos for odis and decoder
-* [ ] review use of https://towardsdatascience.com/the-new-best-python-package-for-visualising-network-graphs-e220d59e054e
-* [ ] MDP code 
-* [ ] qdrant workflow in a notebook, with loading and query
 
-## Notes
 
 ```Bash
-podman-compose -f compose.yaml up
+> pwd 
+.../archetype
+> export PATH=$PATH:$(pwd)/bin
+```
+
+
+```Bash
+> pwd
+.../archetype/networks/commons
+> podman-compose -f compose.yaml up
 ```
 
 Run the web page and see if you can connect
 
 ```Bash
-python -m http.server 8000
-```
-
-```Bash
-export PATH=$PATH:$(pwd)/bin
+> pwd
+.../archetype/networks/commons
+> python -m http.server 8000
 ```
 
 ### Gleaner Phase
 
 ```Bash
-cliGleaner.sh -a podman -cfg gleanerconfig.yaml -setup
+> pwd
+.../archetype/networks/oceans
+> cliGleaner.sh -a podman -cfg gleanerconfig.yaml -setup
 ```
 
 ```Bash
-cliGleaner.sh -a podman -cfg gleanerconfig.yaml -source obis
+> pwd
+.../archetype/networks/oceans
+> cliGleaner.sh -a podman -cfg gleanerconfig.yaml -source obis
 ```
 
 * When indexing obis I got rejected to index due to settings in the robots.txt. I need to look into this and see what is
   up. --rude resolved this
 
 ```Bash
-cliGleaner.sh -a podman -cfg gleanerconfig.yaml -source obis -rude
+> pwd
+.../archetype/networks/oceans
+> cliGleaner.sh -a podman -cfg gleanerconfig.yaml -source obis -rude
 ```
 
 ```Bash
-docker run -it --entrypoint=/bin/sh minio/mc
+> docker run -it --entrypoint=/bin/sh minio/mc
 ```
 
 ```Bash
-mc alias set minio http://192.168.202.159:9000 minioadmin minioadmin
+> mc alias set minio http://192.168.202.159:9000 minioadmin minioadmin
 ```
 
 #### A few notes on indexing
@@ -61,13 +66,13 @@ mc alias set minio http://192.168.202.159:9000 minioadmin minioadmin
 #### Release Graphs
 
 ```Bash
- cliNabu.sh  -a podman release --cfg nabuconfig.yaml  --prefix summoned/obis
+> cliNabu.sh  -a podman release --cfg nabuconfig.yaml  --prefix summoned/obis
 ```
 
 could also make up the prov release graph
 
 ```Bash
- cliNabu.sh  -a podman release --cfg nabuconfig.yaml  --prefix prov/obis
+> cliNabu.sh  -a podman release --cfg nabuconfig.yaml  --prefix prov/obis
 ```
 
 See this at:  http://0.0.0.0:54321/browser/devbucket/
@@ -75,7 +80,7 @@ See this at:  http://0.0.0.0:54321/browser/devbucket/
 #### Load to Oxigraph
 
 ```Bash
- cliNabu.sh  -a podman bulk  --cfg nabuconfig.yaml --prefix summoned/obis --endpoint oxigraph
+> cliNabu.sh  -a podman bulk  --cfg nabuconfig.yaml --prefix summoned/obis --endpoint oxigraph
 ```
 
 At this  point you can visit http://0.0.0.0:7878/ and use a sparql query
@@ -125,10 +130,10 @@ WHERE {
 Replace the contents
 
 ```bash
-curl -i  -X PUT -H 'Content-Type:text/x-nquads' --data-binary @oceanexperts_release.nq  http://localhost:7878/store
+> curl -i  -X PUT -H 'Content-Type:text/x-nquads' --data-binary @oceanexperts_release.nq  http://localhost:7878/store
 ```
 
 Insert the contents
 ```bash
-curl -i  -X POST -H 'Content-Type:text/x-nquads' --data-binary @oceanexperts_release.nq  http://localhost:7878/store
+> curl -i  -X POST -H 'Content-Type:text/x-nquads' --data-binary @oceanexperts_release.nq  http://localhost:7878/store
 ```

@@ -1,0 +1,147 @@
+direction: right
+
+
+title:  |md
+  # UNESCO/IODE/ODIS/OIH JSON-LD workflow
+
+| { near: top-center }
+
+classes: {
+od: {
+    width: 300
+               style: {
+                     stroke-width: 0
+                    fill: "#44C7B1"
+                    shadow: true
+                    border-radius: 5
+               }
+      }
+
+oih: {
+    width: 300
+               style: {
+                     stroke-width: 0
+                    fill: lightblue
+                    shadow: true
+                    border-radius: 5
+               }
+      }
+oihgroup: {
+               style: {
+                     stroke-width: 0
+                    fill: honeydew
+                    shadow: true
+                    border-radius: 5
+               }
+      }
+
+
+}
+
+
+
+mds: Metadata Source(s)  {
+  tooltip: You will need a collection of metadata for your resoruces
+    class: oih
+    }
+
+voc: Vocabulary Selection {
+     soso: Science on Schema.org {
+            class: od
+
+          link: https://github.com/ESIPFed/science-on-schema.org
+            note: |md schema.org based|
+        }
+
+
+     oih: Ocean InfoHub {
+            class: oih
+            link: https://book.oceaninfohub.org
+            note: |md schema.org based|
+        }
+
+
+
+gs: geoSPARQL {
+class:od
+link: https://www.ogc.org/standard/geosparql/
+    }
+
+     dcat: Data Catalog {
+            class: od
+            link: https://www.w3.org/TR/vocab-dcat-3/
+        }
+
+     d: Domain Vocabulary(ies){
+            class: od
+        }
+
+     gs -> oih
+     soso -> oih 
+
+
+    class: oihgroup
+     }    
+
+sjld: Serialize to JSON-LD {
+    class: oih
+    link: https://json-ld.org
+    }
+
+pub: Publishing {
+
+        em: Embedded in HTML Landing pages {
+            class: oih
+        }
+
+sg: Sitegraph {
+class: oih 
+tooltip: CAUTION: anti-pattern, may not be indexed by others
+    }
+
+hosted: Host your JSON-LD documents {
+class: oih 
+tooltip: CAUTION: anti-pattern, may not be indexed by others
+        }
+
+    class: oihgroup
+
+     }
+
+val: Validation {
+  soso: Science on Schema.org {
+            class: od
+        }
+
+     oih: Ocean InfoHub {
+            class: oih
+        }
+
+     CDIF: CODATA CDIF{
+            class: od
+        }
+
+    class: oihgroup
+
+tooltip: This may be done by your indexing \n partners too
+     }
+
+i: Make ready for indexing {
+    sm: Sitemap or other* {
+        class: oih
+    }
+    class: oihgroup
+   }
+
+mds -> sjld
+voc.oih -> sjld
+voc.d -> sjld
+
+sjld -> val
+
+val -> sjld: edits based on \n validation results
+
+sjld -> pub
+
+pub -> i
+

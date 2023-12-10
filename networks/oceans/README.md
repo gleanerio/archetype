@@ -39,13 +39,14 @@ These are described in More detail in the [Personas Section](../../personas/READ
 
 <img src="../../docs/images/relations.png" width="800">
 
-
-
 ### Other notes
 
 I've placed a few supporting notes in the [appendix](./appendix.md).
 
-# Activity
+This work can also be seen in the frame of establishing an approach to assess the 
+state of the ocean data landscape. 
+
+# Demonstration
 
 > GOAL: As part of this demo we will use open source tools to index JSON-LD from the web and 
 > form a Knowledge Graph.  We will then use that graph to form new products and interact with them.
@@ -74,8 +75,18 @@ I've placed a few supporting notes in the [appendix](./appendix.md).
 
 ## Let's just do it
 
+Overview images for the source definitions dt_sources
+Publishing dt_jsonld
+Image for the indexing and Nabu  dt_indexing
+Image for data products dt_dataops
+note:  removed the "shape" dt, included in dt_jsonld
+
+play the game in your command line too!  link to bash scraping docs
+
 * Source assessment 
     * NOTEBOOK: [sitemap_assay.ipynb](../commons/sitemap_assay.ipynb)
+* publishing 
+    * this is out of scope for the demo, but I will touch on this 
 * Gleaner
     * indexing via cliGleaner.sh [quickstart](../../docs/quickstart.md)
 * Nabu
@@ -97,10 +108,12 @@ I've placed a few supporting notes in the [appendix](./appendix.md).
     * Convert to a network and visualize it [example](https://github.com/iodepo/odis-arch/tree/schema-dev-df/graphOps/graphVisualization) NOTEBOOK: NOTEBOOK: kg2network.ipynb
     * Build a spatial product NOTEBOOK: mdp2spatial.ipynb
 * Emerging activities
+    * observatons:  space and time, good descritpions, data models and variables (profiles)
     * CODATA CDIF
     * ML/AI 
 
 ## Thanks
 
-
 * Provide some points of contacts here for some of the projects mentioned
+
+
