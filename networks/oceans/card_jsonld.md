@@ -118,5 +118,8 @@ demo we will use the [pySHACL](https://github.com/RDFLib/pySHACL) package.
 
 ## Activity
 
+JSON-LD brief overview with [json crack](https://jsoncrack.com/editor)
+with an example from BCO-DMO or OBIS.  
+
 NOTEBOOK: [validationSHACL.ipynb](../commons/notebooks/validationSHACL.ipynb)
 
