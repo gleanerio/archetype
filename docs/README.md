@@ -10,7 +10,7 @@ personas described in this repository.
 [Graph Inspection](./tooling.md) provides links and some examples to packages
 and utilities of value to a user.  
 
-[Bash Scraping](./bashScrape.md) describes using the UNIX shell environment to do quick easy
+[Shell Scraping](./shellScraping.md) describes using the UNIX shell environment to do quick easy
 inspection of sitemaps and web pages with JSON-LD
 
 [Validation](./validation.md) introduces the concept of graph validation via SHACL.  

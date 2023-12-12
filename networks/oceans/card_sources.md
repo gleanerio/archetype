@@ -9,11 +9,9 @@ In this flow we will talk about the elemenmts needed in the publishing phase.
 
 ## Details
 
-__robots.txt__
+__robots.txt & sitemap.xml__
 
-
-__sitemap.xml__
-
+For these topics, lets visit the OIH [the publishing page](https://book.oceaninfohub.org/publishing/publishing.html)
 
 __community registries__
 
@@ -22,14 +20,8 @@ project, for example, we use Ocean Catalog and Ocean Experts to hold information
 people and organizations.
 
 - show [Ocean Catalog](https://catalogue.odis.org/) and example entry for [BCO-DMO](https://catalogue.odis.org/view/3287)
-- show ocean export entry https://oceanexpert.org/expert/44151 
-
+- show [Ocean Expert](https://oceanexpert.org) entry for [me](https://oceanexpert.org/expert/44151) 
 
 ## Activity
 
-Notes on the robots.txt in this indexing effort.  
-
-Let's validate a sitemap.
-
-* Source assessment
-    * NOTEBOOK: [sitemap_assay.ipynb](../commons/sitemap_assay.ipynb)
+NOTEBOOK: [sitemap_assay.ipynb](../commons/notebooks/sitemap_assay.ipynb)

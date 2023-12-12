@@ -39,6 +39,11 @@ These are described in More detail in the [Personas Section](../../personas/READ
 
 ![im](./assets/fairIN.svg)
 
+### References
+
+* [Ocean Decade Site](https://oceandecade.org)
+* [2024 Ocean Decade Conference April 10, 2024 - April 12, 2024](https://oceandecade.org/events/2024-ocean-decade-conference/)
+
 # Demonstration
 
 > GOAL: As part of this demo we will use open source tools to index JSON-LD from the web and 
@@ -70,23 +75,22 @@ These are described in More detail in the [Personas Section](../../personas/READ
 
 enough talk...  more action...
 
-### Publisher
-
-* [Publishing: JSON-LD Flow](./card_jsonld.md)
-* [Publishing: Web Architecture Flow](./card_sources.md)   
-
-
-### Indexer
-
-* [Indexing Flow](./card_indexing.md)
+* Publisher
+    * [Publishing: JSON-LD Flow](./card_jsonld.md)
+    * [Publishing: Web Architecture Flow](./card_sources.md)   
+* Indexer
+  * [Indexing Flow](./card_indexing.md)
+* Users / Community
+  * [Data Ops Flow](./card_dataops.md)
 
 
-### Users / Community
-
-* [Data Ops Flow](./card_dataops.md)
-
+## Conclusion and final thoughts
+    
+* observations:  space and time, good descriptions, data models and variables (profiles)
+* [CODATA CDIF](https://worldfair-project.eu/cross-domain-interoperability-framework/)
+* ML/AI
 
 ## Thanks
 
-* Provide some points of contacts here for some of the projects mentioned
+Provide some points of contacts here for some of the projects mentioned
 
