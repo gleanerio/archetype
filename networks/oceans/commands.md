@@ -1,7 +1,7 @@
 # Commands
 
 
-
+## Setup 
 ```Bash
 > pwd 
 .../archetype
@@ -23,7 +23,7 @@ Run the web page and see if you can connect
 > python -m http.server 8000
 ```
 
-### Gleaner Phase
+## Gleaner Phase
 
 ```Bash
 > pwd
@@ -54,16 +54,16 @@ Run the web page and see if you can connect
 > mc alias set minio http://192.168.202.159:9000 minioadmin minioadmin
 ```
 
-#### A few notes on indexing
+### A few notes on indexing
 
 - robots.txt is honored and this means oceanexpert is very slow, do be kind out there
 - headless vs embedded 
 - sitegraphs
 
 
-### Nabu Phase
+## Nabu Phase
 
-#### Release Graphs
+### Release Graphs
 
 ```Bash
 > cliNabu.sh  -a podman release --cfg nabuconfig.yaml  --prefix summoned/obis
@@ -77,7 +77,7 @@ could also make up the prov release graph
 
 See this at:  http://0.0.0.0:54321/browser/devbucket/
 
-#### Load to Oxigraph
+### Load to Oxigraph
 
 ```Bash
 > cliNabu.sh  -a podman bulk  --cfg nabuconfig.yaml --prefix summoned/obis --endpoint oxigraph
@@ -123,9 +123,9 @@ WHERE {
 
 
 
-## Appendix
+# Appendix
 
-### curl load Oxigraph
+## curl load Oxigraph
 
 Replace the contents
 

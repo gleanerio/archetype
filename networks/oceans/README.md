@@ -19,7 +19,7 @@ work of the [NSF funded DeCODER project](https://www.earthcube.org/decoder) and 
 resource assocated with the
 [Deep Ocean Observing Stragety (DOOS)](https://www.deepoceanobserving.org/).
 
-| UNESCO / ODIS / Ocean InfoHub                                                                                             | National Science Foundation: DeCODER                                      |
+| UNESCO / IODE / ODIS / Ocean InfoHub                                                                                      | National Science Foundation: DeCODER                                      |
 |---------------------------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------|
 | [![Ocean InfoHub Intro Video](https://img.youtube.com/vi/KrxeZrPg0u8/0.jpg)](https://www.youtube.com/watch?v=KrxeZrPg0u8) | [![DeCoder](./assets/decoderLogo.png)](https://www.earthcube.org/decoder) |
 
@@ -43,6 +43,8 @@ These are described in More detail in the [Personas Section](../../personas/READ
 
 * [Ocean Decade Site](https://oceandecade.org)
 * [2024 Ocean Decade Conference April 10, 2024 - April 12, 2024](https://oceandecade.org/events/2024-ocean-decade-conference/)
+* [DeCODER GitHub](https://github.com/earthcube)
+* [ODIS/OIH](https://github.com/iodepo/odis-arch)
 
 # Demonstration
 
@@ -73,8 +75,6 @@ These are described in More detail in the [Personas Section](../../personas/READ
 
 ## Let's just do it
 
-enough talk...  more action...
-
 * Publisher
     * [Publishing: JSON-LD Flow](./card_jsonld.md)
     * [Publishing: Web Architecture Flow](./card_sources.md)   
@@ -83,12 +83,16 @@ enough talk...  more action...
 * Users / Community
   * [Data Ops Flow](./card_dataops.md)
 
-
 ## Conclusion and final thoughts
     
 * observations:  space and time, good descriptions, data models and variables (profiles)
 * [CODATA CDIF](https://worldfair-project.eu/cross-domain-interoperability-framework/)
 * ML/AI
+
+In the context of the ocean decade, it is interesting to think about how to connect data
+to policy and goals.  What tools do we use to do this?  Can LLMs help connect SDG to data with the
+aid of KGs.    and how do we cite this?
+
 
 ## Thanks
 

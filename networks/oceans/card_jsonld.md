@@ -37,6 +37,11 @@ Other languages you might leverage include [DCAT](https://www.w3.org/TR/vocab-dc
 As mentioned, see some of the resources in the [appendix.md](appendix.md) for more
 details on authoring JSON-LD in schema.org.
 
+This is also a good place to discuss the role of the community in helping to 
+define the patterns and shapes in the structured data graphs.  An example of this
+can be seen in the recent collaborative work between DeCODER and OIH on the 
+topic of depth.
+
 __Serialization__
 
 With your metadata in hand and a vocabulary to map into the next step would be 
