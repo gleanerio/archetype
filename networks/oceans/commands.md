@@ -1,7 +1,7 @@
 # Commands
 
 
-## Setup 
+## Setup
 ```Bash
 > pwd 
 .../archetype

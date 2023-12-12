@@ -19,23 +19,21 @@ It is, in a manner, a master data catalogue for a community of practice.
 
 * In Oxigraph UI (SPARQL examples)
 * In jupyter with rdflib loading release graphs
-  * NOTEBOOK: [sparql.ipynb](../commons/notebooks/sparql.ipynb)
+  * __NOTEBOOK:__ [sparql.ipynb](../commons/notebooks/sparql.ipynb)
 
 ### Data products from query
 
 Building data products from the KG
 
 * Build an example data product 
-  * NOTEBOOK: [mdpLite.ipynb](../commons/notebooks/mdpLite.ipynb)
-* Demonstrate using DuckDB on a parquet product 
-  * NOTEBOOK: [mdpDuckDB.ipynb](../commons/notebooks/mdpDuckDB.ipynb)
+  * __NOTEBOOK:__ [mdpLite.ipynb](../commons/notebooks/mdpLite.ipynb)
+  * __NOTEBOOK:__ [mdpDuckDB.ipynb](../commons/notebooks/mdpDuckDB.ipynb)  Using DuckDB on a parquet product
 
 ### Make a graph network
 
-Convert to a network and visualize it [ODIS/OIH viz](https://github.com/iodepo/odis-arch/tree/schema-dev-df/graphOps/graphVisualization)
+Convert to a network and visualize it (ref: [ODIS/OIH viz](https://github.com/iodepo/odis-arch/tree/schema-dev-df/graphOps/graphVisualization))
 
-* NOTEBOOK: [graph2NetworkViz.ipynb](../commons/notebooks/graph2NetworkViz.ipynb)
-* NOTEBOOK: [networkViz.ipynb](../commons/notebooks/networkViz.ipynb)
+* __NOTEBOOK:__ [networkViz.ipynb](../commons/notebooks/networkViz.ipynb)
 
 ![img.png](./assets/obisoe_blur.png)
 

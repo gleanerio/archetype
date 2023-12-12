@@ -24,7 +24,7 @@ in the OIH Book.
 
 let's index some sources!  
 
-__First, fun with bash__
+__First, some fun with bash__
 
 [Shell Scraping](./shellScraping.md) describes using the UNIX shell environment to do quick easy
 inspection of sitemaps and web pages with JSON-LD.
@@ -37,10 +37,14 @@ __Gleaner.io__
 * Indexing via cliGleaner.sh [quickstart](../../docs/quickstart.md)
 * Nabu
     * Building graphs via cliNabu.sh   [quickstart](../../docs/quickstart.md)
-        * Release graph concept [OIH Release Graph Development](https://github.com/iodepo/odis-arch/tree/master/graphOps/releaseGraphs) and Zenodo plans  [Ocean InfoHub Community](https://zenodo.org/communities/oceaninfohub)
-        * Load to [Oxigraph](https://github.com/oxigraph/oxigraph)
+    * Release graph concept [OIH Release Graph Development](https://github.com/iodepo/odis-arch/tree/master/graphOps/releaseGraphs) and Zenodo plans  [Ocean InfoHub Community](https://zenodo.org/communities/oceaninfohub)
+    * Loading to [Oxigraph](https://github.com/oxigraph/oxigraph)
+
+__validation__
+
+We revisit validation here again.  This time as the indexing persona.  
 
 * The _indexer_ persona is likely to conduct validation as well and may have other criteria.
-    * Other options like Fuji, JSON schema, etc.
-    * Validation
-        * NOTEBOOK: [validationSHACL.ipynb](../commons/notebooks/validationSHACL.ipynb)
+  * See: [validation.md](..%2F..%2Fdocs%2Fvalidation.md)
+  * Other options like [Fuji](https://github.com/pangaea-data-publisher/fuji), [JSON schema](https://json-schema.org/), etc.
+  * __NOTEBOOK:__ [validationSHACL.ipynb](../commons/notebooks/validationSHACL.ipynb)

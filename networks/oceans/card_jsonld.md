@@ -8,6 +8,8 @@
 This document present a flow of concepts we would want to go over with respect to 
 the authoring of JSON-LD documents.
 
+See [appendix.md](appendix.md) for references on authoring JSON-LD leveraging schema.org.
+
 ## Details
 
 __Sources__
@@ -115,11 +117,12 @@ approaches.  For RDF this can be in the form of [SHACL](https://www.w3.org/TR/sh
 shape graphs.  There are many tools/implementation for each of these.  For this 
 demo we will use the [pySHACL](https://github.com/RDFLib/pySHACL) package.  
 
+See: [validation.md](..%2F..%2Fdocs%2Fvalidation.md)
 
 ## Activity
 
 JSON-LD brief overview with [json crack](https://jsoncrack.com/editor)
 with an example from BCO-DMO or OBIS.  
 
-NOTEBOOK: [validationSHACL.ipynb](../commons/notebooks/validationSHACL.ipynb)
+__NOTEBOOK:__ [validationSHACL.ipynb](../commons/notebooks/validationSHACL.ipynb)
 

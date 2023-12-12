@@ -5,7 +5,9 @@
 
 ## About
 
-In this flow we will talk about the elemenmts needed in the publishing phase.  
+In this flow we will talk about the elements needed in the publishing phase.  At this point
+we have our JSON-LD documents formed and enabled at our site. We need to make them available to 
+people via the web architecture now.  
 
 ## Details
 
@@ -24,4 +26,13 @@ people and organizations.
 
 ## Activity
 
-NOTEBOOK: [sitemap_assay.ipynb](../commons/notebooks/sitemap_assay.ipynb)
+
+__First, some fun with bash__
+
+[Shell Scraping](./shellScraping.md) describes using the UNIX shell environment to do quick easy
+inspection of sitemaps and web pages with JSON-LD.
+
+You can also look again at some of the tools in the [tooling page](../../docs/tooling.md)
+
+
+__NOTEBOOK:__ [sources.ipynb](../commons/notebooks/sources.ipynb)
