@@ -1,0 +1,111 @@
+direction: right
+
+
+classes: {
+  node: {
+   width: 350
+   height: 250
+    style: {
+        stroke-width: 0
+       fill: honeydew
+       shadow: true
+       border-radius: 25
+  }
+}
+  subnode: {
+   width: 150
+    style: {
+        stroke-width: 0
+                    fill: "#44C7B1"
+       shadow: true
+       border-radius: 25
+  }
+}
+}
+
+*.class: node
+
+g1: "DeCODER" {
+deco: DeCODER
+doos:  DOOS
+ doos -> deco
+}
+
+g1.deco.class: subnode
+g1.doos.class: subnode
+
+g2: "Ocean InfoHub" {
+oih: OIH
+od: UN Ocean Decade
+od -> oih
+}
+
+g2.oih.class: subnode
+g2.od.class: subnode
+
+
+g: Goals and Objectives {
+note: |md
+* sustainable
+* easy
+* self sovereign
+* federated and distributed
+|
+}
+
+a: Approach {
+note: |md
+### Elements
+* web architecture
+* wed formats (JSON(-ld))
+* shared vocabularies (schema.org, geoSPARQL)
+* domain vocabularies (RDF based)
+
+|
+}
+
+c: Communities {
+note: |md
+
+* DeCODER / DOOS
+* Ocean InfoHub
+* POLDER
+* Open Science Graphs Community
+|
+
+}
+
+d: Details {
+note: |md
+What we will talk about
+in this presentation
+|
+}
+
+p: Products {
+note: |md
+We will go over this in
+this presentation too.
+|
+}
+
+f: FAIR {
+note: |md
+At this point, do I need
+to still list them?
+|
+}
+
+
+g1 -> c
+g2 -> c
+
+f -> a
+
+g -> a
+a -> c
+c -> d
+d -> p
+p -> f
+
+

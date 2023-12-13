@@ -4,23 +4,22 @@ cliGleaner.sh -a podman -cfg gleanerconfig.yaml -source  obis
 cliGleaner.sh -a podman -cfg gleanerconfig.yaml -source  bcodmo
 cliGleaner.sh -a podman -cfg gleanerconfig.yaml -source  edmo
 
-cliNabu.sh  -a podman  --cfg nabuconfig.yaml release --prefix summoned/oceanexpert
-cliNabu.sh  -a podman  --cfg nabuconfig.yaml release --prefix summoned/bodc
-cliNabu.sh  -a podman  --cfg nabuconfig.yaml release --prefix summoned/obis
-cliNabu.sh  -a podman  --cfg nabuconfig.yaml release --prefix summoned/bcodmo
-cliNabu.sh  -a podman  --cfg nabuconfig.yaml release --prefix summoned/edmo
+cliNabu.sh  -a podman  release --cfg nabuconfig.yaml --prefix summoned/oceanexpert
+cliNabu.sh  -a podman  release --cfg nabuconfig.yaml --prefix summoned/bodc
+cliNabu.sh  -a podman  release --cfg nabuconfig.yaml --prefix summoned/obis
+cliNabu.sh  -a podman  release --cfg nabuconfig.yaml --prefix summoned/bcodmo
+cliNabu.sh  -a podman  release --cfg nabuconfig.yaml --prefix summoned/edmo
 
-put in the single object load code as well
+cliNabu.sh  -a podman object --cfg nabuconfig.yaml graphs/latest/bcodmo_release.nq --endpoint oxigraph
 
-try to run mdp through to a geospatial representation too and make a 
+cliNabu.sh  -a podman bulk  --cfg nabuconfig.yaml --prefix summoned/oceanexpert --endpoint oxigraph
+
+
+
+try to run mdp through to a geospatial representation too and make a
 hex or, at least show that and say it can be done.
 
-put in my URL for contacting, use ESIP slack first if you can.
-
-
-I tend to do these one at at time, but if you don't specify, it will do all that
-are in the config.
-
+Mention Scheduler (in the indexing card)
 This is all being done manual for this demo and we often use this when working
 with new partners.  However, there is an automation approach we used both 
 in DeCODER and Ocean InfoHub called _scheduler_ in the GleanerIO which is an
