@@ -21,8 +21,8 @@ contextmaps:
 summoner:
     after: ""      # "21 May 20 10:00 UTC"
     mode: full     # full || diff:
-    threads: 5
-    delay:  # ms (1000 = 1 sec) delay between calls (will FORCE threads to 1)
+    threads: 1
+    delay: 1000  # ms (1000 = 1 sec) delay between calls (will FORCE threads to 1)
     headless: http://0.0.0.0:9222  # URL for headless see docs/headless
 millers:
     graph: true

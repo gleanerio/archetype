@@ -21,33 +21,15 @@ of an implementation across the range of personas.
 
 [Personas](./personas/README.md)
 
-## Scripts and code
-
-We are developing the tooling in the _bin_ directory. 
-Usually this is just added to your PATH as shown in the quickstart.
-
-### Quick start
+### Gleaner and Nabu Indexing Quick Start
 
 [Quick Start](./docs/quickstart.md)
 
-
-## Implementation Networks
-
-This is based on, but is not a direction implementation of, 
-the [GoFAIR Implementation Networks](https://www.go-fair.org/implementation-networks/).
 
 ## Validation
 
 [Validation](./docs/validation.md)
 
-
-## Activity Flow
-
-A rough draft of the activity flow.  This is very Gleaner centric at this time which is not
-required. So you can assume that Gleaner and Nabu could be replaced by other services.  Indeed,
-the S3 and graph stores are also very optional.  
-
-![relations](./docs/images/activityFlow.svg)
 
 ## References
 

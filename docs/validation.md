@@ -2,19 +2,19 @@
 # Discussions on Validating Graphs
 
 
-# Validation Personas and  GO FAIR Implementation Network
+## Validation Personas and  GO FAIR Implementation Network
 
-![relations](./images/relations.png)
+We talk about the technical aspects of validation.  However, it is worth thinking about
+these in the context of the various personas that may wish to do validation and why they 
+need it.  
 
-
+![fairIN.svg](images%2FfairIN.svg)
+ 
 - IMPLEMENT  clearly defined plans and deliverables to implement an element of the Internet of FAIR Data and Services (IFDS) within a defined time period;
-
 
 - FOSTER  a community of harmonized FAIR practices;
 
-
 - COMMUNICATE  together on critical issues on which consensus has been reached and which are of generic importance for the community.
-
 
 ## RDF Conceptual Model
 
@@ -71,7 +71,7 @@ This includes things like domain and range issues and predicate and type terms.
 You can try SHACL at the [SHACL Playground](https://shacl.org/playground/)
 
 
-# Some example SHACL Shapes
+## Some example SHACL Shapes
 
 
 
@@ -251,24 +251,24 @@ This feature could potentially be used to accomplish a high level of interoperab
 
 Inbox URLs can announce their own constraints (e.g., SHACL, Web Annotation Protocol) via an HTTP Link header or body of the resource with a rel value of http://www.w3.org/ns/ldp#constrainedBy. Senders should comply with constraint specifications or the receiver may reject their notification and return an appropriate 4xx error code.
 
-# Links to the OIH Notebooks for demonstration
+## Links to the OIH Notebooks for demonstration
 
-## Examples of using pySHACL
+### Examples of using pySHACL
 
 [Basic SHACL](https://book.oceaninfohub.org/tooling/notebooks/validation/OIH_Simple_SHACL.html)
 
 
 
-## Notes
+### Notes
 
 
 ```
 curl http://ossapi.oceaninfohub.org/public/graphs/summonededmo_2023-02-21-06-26-50_release.rdf |  pyshacl -s shapeGraphs/googleRecommended.ttl -sf turtle -df n3 -f human -
 ```
 
-## CLI approach
+### CLI approach
 
-### pySHACL
+#### pySHACL
 Once you have pySHACL installed it's easy to leverage it directly from the command line.
 
 For command line use:

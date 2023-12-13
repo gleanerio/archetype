@@ -11,11 +11,10 @@ models or characters.
 
 
 The following image shows some of the relations between these personas.  It does
-this in the context of [FAIR Implementation Networks](https://www.go-fair.org/implementation-networks/).
+this in the context of [FAIR Implementation Networks](https://www.go-fair.org/implementation-networks/).  However, this work
+should be seen as an implementation of that approach.
 
-![relations](../docs/images/relations.png)
-
-
+![fairIN.svg](..%2Fdocs%2Fimages%2FfairIN.svg)
 
 ### Persona: Publisher 
 
