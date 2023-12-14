@@ -1,0 +1,44 @@
+---
+minio:
+    address: 0.0.0.0
+    port: 9000
+    accessKey: minioadmin
+    secretKey: minioadmin
+    ssl: false
+    bucket: devbucket  # set to a bucket you own in your object store of choice
+    region: us-east-1
+gleaner:
+    runid: myrun   # this will be the bucket the output is placed in...
+    summon: true   # do we want to visit the web sites and pull down the files
+    mill: false
+context:
+    cache: true
+contextmaps:
+    - prefix: "https://schema.org/"
+      file: "./schemaorg-current-https.jsonld"
+    - prefix: "http://schema.org/"
+      file: "./schemaorg-current-https.jsonld"
+summoner:
+    after: ""      # "21 May 20 10:00 UTC"
+    mode: full     # full || diff:
+    threads: 1
+    delay: 1000  # ms (1000 = 1 sec) delay between calls (will FORCE threads to 1)
+    headless: http://0.0.0.0:9222  # URL for headless see docs/headless
+millers:
+    graph: true
+sources:
+    - name: africaioc
+      propername: IOC Africa Data Portal
+      catalogue: https://ioc-africa.org/dbs/displayData.php
+      domain: https://ioc-africa.org
+      logo: https://ioc-africa.org/dbs/images/unesco_ioc_logo.png
+      #missing ODISCat entry
+      pid: https://oceaninfohub.org/.well-known/org/africaioc
+      sourcetype: sitemap
+      url: https://ioc-africa.org/sitemap.xml
+      changefreq: daily
+      backend: Custom
+      headless: false
+      dateadded: 2023-02-09
+      cron: 0 6 * * 0
+      active: true
