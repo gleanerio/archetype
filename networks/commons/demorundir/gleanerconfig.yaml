@@ -27,18 +27,17 @@ summoner:
 millers:
     graph: true
 sources:
-    - name: africaioc
-      propername: IOC Africa Data Portal
-      catalogue: https://ioc-africa.org/dbs/displayData.php
-      domain: https://ioc-africa.org
-      logo: https://ioc-africa.org/dbs/images/unesco_ioc_logo.png
-      #missing ODISCat entry
-      pid: https://oceaninfohub.org/.well-known/org/africaioc
+    - name: wod
+      propername: World Ocean Database
+      catalogue: https://noaa-wod-pds.s3.amazonaws.com/index.html
+      domain: https://www.ncei.noaa.gov/products/world-ocean-database
+      logo: https://www.ncei.noaa.gov/themes/custom/ncei/logo.svg
+      pid: https://catalogue.odis.org/view/182
       sourcetype: sitemap
-      url: https://ioc-africa.org/sitemap.xml
-      changefreq: daily
-      backend: Custom
+      url: https://raw.githubusercontent.com/iodepo/odis-arch/master/collection/tempHosting/data-wod/sitemap.xml
+      changefreq:
+      backend: AmazonS3
       headless: false
-      dateadded: 2023-02-09
-      cron: 0 6 * * 0
+      dateadded: 2023-09-13
+      cron: 0 15 * * 0
       active: true

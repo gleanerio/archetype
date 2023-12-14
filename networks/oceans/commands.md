@@ -85,6 +85,7 @@ See this at:  http://0.0.0.0:54321/browser/devbucket/
 ```Bash
 > cliNabu.sh  -a podman bulk  --cfg nabuconfig.yaml --prefix summoned/obis --endpoint oxigraph
 ```
+
 or load a release graph already built
 
 ```bash
