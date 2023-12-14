@@ -1,0 +1,62 @@
+
+{
+    "@context": {
+        "@vocab": "https://schema.org/"
+    },
+    "@type": "Dataset",
+    "@id": "https://obis.org/dataset/39b93828-0807-4511-be78-7ef5939c3001",
+    "name": "Chennai India, olive ridley tracking (aggregated per 1-degree cell)",
+    "description": "Original provider:\nSupraja Dharini\n\nDataset credits:\nData provider\nTree Foundation\nOriginating data center\n<a href=\"http://www.seaturtle.org/tracking/\">Satellite Tracking and Analysis Tool (STAT)</a>\nProject partner\nTREE Foundation http://www.treefoundationindia.orgWildlife Wing of the Forest DepartmentDepartment of Fisheries, Tamil NaduMote Marine Laboratory, Sarasota Florida, USA http://www.mote.orgMarinelife Alliance,Bangladesh\nProject sponsor or sponsor description\nWhitley Fund for Nature, UK http://www.whitleyaward.org/TREE Foundation www.treefoundationindia.orgRoots and Shoots, India http://www.rootsandshoots.org/\n\n\nAbstract:\nThe Olive Ridley turtle has a unique gene pool different from those sea turtles which nest along the Orissa coast, but little is known about this population. Thus we lack the ability to mitigate the effects of fisheries and other potential threats to this globally threatened species. Despite this, the political will and  necessary infrastructure to protect Olive Ridleys is just picking up  in India, and local attitudes towards sea turtles is just beginning to  change. Unfortunately, the resources available to protect Olive Ridleys are extremely limited. The TREE Foundation's Olive Ridley Satellite Tagging study provides practical information to guide sea turtle management and serves as a model for other  coastal states for leveraging the results of small-scale tracking projects into substantive management results. The first ever satellite telemetry study on this population of Olive Ridleys  will deploy 2 satellite telemetry tags on olive ridleys along the Chennai coast,  to determine their movements and turtle hotspots in the off shore waters.The Wildlife Wing of the Forest department and Department of Fisheries will then use the results of this study to inform the mechanized and trawl fishermen of the areas which are feeding grounds and congregations areas of the turtles to in order to request them to keep away from those areas during the turtle nesting season.Such enforcement can be implemented only through repeated awareness programs for the fishing community and general public.  Only then will the adult  nesting Olive Ridley as well as the juvenile Green turtle and Hawksbill population feeding in the off shore areas survive.TREE Foundation was founded on the principles of community involvement and ownership. The success of the programs is largely due to the day-to-day participation of the major stakeholders. Fishers who adapt their practices to sustain marine life are providing livelihoods for the next generation. Students who learn about the importance of marine ecosystems and conservation will grow to teach their children and grandchildren. STPF members are given incentives to become community leaders by training the next group of the Sea Turtle Protection Force. In these ways, we plan to ensure the programs of the TREE Foundation grow along with the communities they serve.To help ensure the sustainability of the conservation program, we are spearheading the efforts to unify conservation groups around the Bay of Bengal.  Over the next five years, sea turtle, marine mammal and ecosystem conservation groups from India, Sri Lanka and Bangladesh will come together under the umbrella group BEACON (Bay Of Bengal Ecologists and Conservationists Network) to provide support, standardize all database formats, share best practices and bring science to the common man, resulting in better law enforcement, protection for sustainable coexistence of man and megafauna and the health of the Bay as a whole.TREE Foundation was founded on the principles of community involvement and ownership. This is the main basis for sustainability of the program. STPF members are given incentives to become responsible future community leaders by training the next group of the Sea Turtle Protection Force. In these ways, we plan to ensure the programs of the TREE Foundation grow along with the communities they serve. One of the specific goals of the community based conservation program is to empower the present generation with the will and tools to ensure that sea turtles continue to survive. Specifically recruiting young fisher children, students from high schools and colleges is to get them involved in a life-long commitment to saving our ecosystem. For further information about this satellite tracking project http://www.treefoundationindia.org/satellite.htm\n\nSupplemental information:\n<a href=\"http://www.seaturtle.org/tracking/index.shtml?project_id=477\">Visit STAT's project page</a> for additional information.\n\nThis dataset is a summarized representation of the telemetry locations aggregated per species per 1-degree cell.",
+    "url": "https://obis.org/dataset/39b93828-0807-4511-be78-7ef5939c3001",
+    "sameAs": [
+        "http://ipt.env.duke.edu/resource?r=zd_575_1deg"
+    ],
+    "license": "This work is licensed under a  Creative Commons Attribution Non Commercial (CC-BY-NC) 4.0 License",
+    "citation": "Tucker S. 2021. Chennai India, olive ridley tracking. Data downloaded from OBIS-SEAMAP (http://seamap.env.duke.edu/dataset/575) on yyyy-mm-dd originated from Satellite Tracking and Analysis Tool (STAT; http://www.seaturtle.org/tracking/index.shtml?project_id=477).",
+    "version": "2021-04-24T10:02:40.000Z",
+    "keywords": [
+        "Occurrence",
+        "Observation",
+        "Occurrence"
+    ],
+    "variableMeasured": [],
+    "includedInDataCatalog": {
+        "@id": "https://obis.org",
+        "@type": "DataCatalog",
+        "url": "https://obis.org"
+    },
+    "temporalCoverage": "2010/2011",
+    "distribution": {
+        "@type": "DataDownload",
+        "contentUrl": "http://ipt.env.duke.edu/archive.do?r=zd_575_1deg",
+        "encodingFormat": "application/zip"
+    },
+    "spatialCoverage": {
+        "@type": "Place",
+        "geo": {
+            "@type": "GeoShape",
+            "polygon": "71.5 8.5,71.5 19.5,92.5 19.5,92.5 8.5,71.5 8.5"
+        },
+        "additionalProperty": {
+            "@type": "PropertyValue",
+            "propertyID": "http://dbpedia.org/resource/Spatial_reference_system",
+            "value": "http://www.w3.org/2003/01/geo/wgs84_pos#lat_long"
+        }
+    },
+    "provider": [
+        {
+            "@id": "https://oceanexpert.org/institution/19393",
+            "@type": "Organization",
+            "legalName": "Duke University",
+            "name": "Duke University",
+            "url": "https://oceanexpert.org/institution/19393"
+        },
+        {
+            "@id": "https://oceanexpert.org/institution/23181",
+            "@type": "Organization",
+            "legalName": "SEATURTLE.ORG",
+            "name": "SEATURTLE.ORG",
+            "url": "https://oceanexpert.org/institution/23181"
+        }
+    ]
+}

@@ -53,27 +53,43 @@ note: |md
 |
 }
 
-a: Approach {
-note: |md
-### Elements
-* web architecture
-* wed formats (JSON(-ld))
-* shared vocabularies (schema.org, geoSPARQL)
-* domain vocabularies (RDF based)
 
-|
+gov: Communities and Principles {
+        c: Communities {
+        note: |md
+        ### Examples like
+        * DeCODER / DOOS
+        * Ocean InfoHub
+        * POLDER
+        * Open Science Graphs Community
+        |
+
+        }
+
+        a: Approach {
+        note: |md
+        ### Elements
+        * web architecture
+        * wed formats (JSON(-ld))
+        * shared vocabularies (schema.org, geoSPARQL)
+        * domain vocabularies (RDF based)
+
+        |
+        }
+
+
+        f: FAIR {
+        note: |md
+        At this point, do I need
+        to still list them?
+        |
+        }
 }
 
-c: Communities {
-note: |md
+gov.c.class: subnode
+gov.a.class: subnode
+gov.f.class: subnode
 
-* DeCODER / DOOS
-* Ocean InfoHub
-* POLDER
-* Open Science Graphs Community
-|
-
-}
 
 d: Details {
 note: |md
@@ -89,23 +105,17 @@ this presentation too.
 |
 }
 
-f: FAIR {
-note: |md
-At this point, do I need
-to still list them?
-|
-}
+g1 -> gov.c
+g2 -> gov.c
+
+gov.f -> gov.a
+
+g -> gov.c
+gov.c -> gov.a
+gov.c -> d
 
 
-g1 -> c
-g2 -> c
-
-f -> a
-
-g -> a
-a -> c
-c -> d
 d -> p
-p -> f
+p -> gov.f
 
 

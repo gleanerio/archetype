@@ -23,7 +23,21 @@ resource assocated with the
 |---------------------------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------|
 | [![Ocean InfoHub Intro Video](https://img.youtube.com/vi/KrxeZrPg0u8/0.jpg)](https://www.youtube.com/watch?v=KrxeZrPg0u8) | [![DeCoder](./assets/decoderLogo.png)](https://www.earthcube.org/decoder) |
 
-Additionally, we'll delve into techniques for validating and analyzing this knowledge graph, framing these components as
+With respect to the UN Ocean Decade, this work is focused on:
+
+[Outcome 6](https://oceandecade.org/vision-mission/): __An accessible ocean__ with open and equitable access to data, information and technology and innovation.
+
+
+[Chalenges: 8, 9, 10](https://oceandecade.org/challenges/)
+
+| Challenge 8 | Challenge 9 | Challenge 10 |
+|-------------|-------------|--------------|
+|     Create a digital representation of the ocean        |       Skills, knowledge and technology for all      |      Change humanity’s relationship with the ocean        |
+|        Through multi-stakeholder collaboration, develop a comprehensive digital representation of the ocean, including a dynamic ocean map, which provides free and open access for exploring, discovering, and visualizing past, current, and future ocean conditions in a manner relevant to diverse stakeholders.     |      Ensure comprehensive capacity development and equitable access to data, information, knowledge and technology across all aspects of ocean science and for all stakeholders.       |    Ensure that the multiple values and services of the ocean for human wellbeing, culture, and sustainable development are widely understood, and identify and overcome barriers to behaviour change required for a step change in humanity’s relationship with the ocean.          |
+
+
+
+During this presentation, we'll delve into techniques for validating and analyzing this knowledge graph, framing these components as
 part of a conceptualized "implementation network" akin to the principles outlined in the GoFAIR approach and developing
 data products based on the resources described in the knowledge graph.
 
@@ -67,6 +81,8 @@ These are described in More detail in the [Personas Section](../../personas/READ
 * Introduction to our tool selection: [GleanerIO](https://github.com/gleanerio)
 * Define our sources 
     - identify our sources and show configuration files for gleaner and nabu
+    - [Gleaner Config](./rundir/gleanerconfig.yaml)
+    - [Nabu Config](./rundir/nabuconfig.yaml)
 * Set up our run environment
     - docker compose 
       - Minio

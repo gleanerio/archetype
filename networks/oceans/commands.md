@@ -1,5 +1,8 @@
 # Commands
 
+> NOTE:  I use podman, which is a drop in replacement for docker.
+> You will likely be using docker so simply replace _podman_ with 
+> _docker_ in the following examples. 
 
 ## Setup
 ```Bash
@@ -81,6 +84,11 @@ See this at:  http://0.0.0.0:54321/browser/devbucket/
 
 ```Bash
 > cliNabu.sh  -a podman bulk  --cfg nabuconfig.yaml --prefix summoned/obis --endpoint oxigraph
+```
+or load a release graph already built
+
+```bash
+cliNabu.sh  -a podman object --cfg nabuconfig.yaml graphs/latest/bcodmo_release.nq --endpoint oxigraph
 ```
 
 At this  point you can visit http://0.0.0.0:7878/ and use a sparql query

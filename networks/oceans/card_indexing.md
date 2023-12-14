@@ -48,3 +48,10 @@ We revisit validation here again.  This time as the indexing persona.
   * See: [validation.md](..%2F..%2Fdocs%2Fvalidation.md)
   * Other options like [Fuji](https://github.com/pangaea-data-publisher/fuji), [JSON schema](https://json-schema.org/), etc.
   * __NOTEBOOK:__ [validationSHACL.ipynb](../commons/notebooks/validationSHACL.ipynb)
+
+
+> Note: This is all being done manual for this demo and we often use this when working
+> with new partners.  However, there is an automation approach we used both 
+> in DeCODER and Ocean InfoHub called _scheduler_ in the GleanerIO which is an
+> implemenaton of Dagster.  
+

@@ -42,13 +42,16 @@ details on authoring JSON-LD in schema.org.
 This is also a good place to discuss the role of the community in helping to 
 define the patterns and shapes in the structured data graphs.  An example of this
 can be seen in the recent collaborative work between DeCODER and OIH on the 
-topic of depth.
+topic of depth.  [Draft of that work](https://github.com/iodepo/odis-arch/blob/master/book/thematics/depth/index.md)
 
 __Serialization__
 
 With your metadata in hand and a vocabulary to map into the next step would be 
 to develop a data workflow that generates the JSON-LD data graphs.  Again, 
 look at some of the developer and translation tools in [tooling.md](..%2F..%2Fdocs%2Ftooling.md).
+
+[Example OBIS record](./datagraphs/obis_ffd36d51df93af24a9f9b5f40dd79cd4924a9d8b.jsonld)
+(try in JSON Crack)
 
 __Publishing__
 
@@ -116,6 +119,8 @@ Groups like Science on Schema.org, CODATA, OIH and others often generate validat
 approaches.  For RDF this can be in the form of [SHACL](https://www.w3.org/TR/shacl/)
 shape graphs.  There are many tools/implementation for each of these.  For this 
 demo we will use the [pySHACL](https://github.com/RDFLib/pySHACL) package.  
+
+See: [RFEADME.md](shapegraphs%2FRFEADME.md)
 
 See: [validation.md](..%2F..%2Fdocs%2Fvalidation.md)
 

@@ -19,8 +19,5 @@ cliNabu.sh  -a podman bulk  --cfg nabuconfig.yaml --prefix summoned/oceanexpert 
 try to run mdp through to a geospatial representation too and make a
 hex or, at least show that and say it can be done.
 
-Mention Scheduler (in the indexing card)
-This is all being done manual for this demo and we often use this when working
-with new partners.  However, there is an automation approach we used both 
-in DeCODER and Ocean InfoHub called _scheduler_ in the GleanerIO which is an
-implemenaton of Dagster.  
+run mdp for the URLS from NIAID with sitemaps.
+

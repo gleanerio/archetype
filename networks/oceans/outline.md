@@ -12,11 +12,16 @@ A few key points.
 * The Ocean InfoHub
 * UN Ocean Decade
 
-Links to the cards:
+Flow:
 
-[README.md](README.md)
-
-
-## Thanks
-
-to all the people!  
+* Goals and Objectives [README.md](README.md)
+* Community and Principles  
+  * Communities
+    * DeCODER 
+    * Ocean InfoHub
+  * Approach
+  * FAIR (and others)
+* Details 
+  * the implementation of principles
+* Products
+  * the graphs and data products to address needs
