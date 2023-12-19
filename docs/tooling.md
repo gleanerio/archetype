@@ -9,7 +9,7 @@ have found useful for JSON-LD for some use cases.
 
 Suggestions welcome!
 
-## Links
+## Tools and Services
 
 * SPARQL related
   * [SPARQL wiki](https://kvistgaard.github.io/sparql/#/page/sparql%20wiki)
@@ -58,11 +58,20 @@ Suggestions welcome!
 * [Titanium JSON-LD 1.1 Processor & API](https://github.com/filip26/titanium-json-ld)
 * [Morph-KGC](https://github.com/morph-kgc/morph-kgc) is an engine that constructs RDF knowledge graphs from heterogeneous data sources
 * [Classy Schema](https://classyschema.org/Visualisation)
-
 * [SSSOM](https://mapping-commons.github.io/sssom/)
 * [Schemasheets](https://github.com/linkml/schemasheets)
 * [Linked Data Hub](https://github.com/AtomGraph/LinkedDataHub)
 * [DuckDB](https://duckdb.org/)
 * [Harlequin](https://harlequin.sh/) database client for the terminal that works well with duckdb
 
-`
+
+## FAIR Orchestration Platforms 
+* [The FAIR Data Point](https://www.go-fair.org/how-to-go-fair/fair-data-point/)
+* [FAIR Data Station](https://fairds.fairbydesign.nl/)   (ref: [FAIR data station for lightweight metadata management and validation of omics studies ](https://academic.oup.com/gigascience/article/doi/10.1093/gigascience/giad014/7069910))
+* [Nanopublications](https://nanopub.net/) and the [Nanopub Server Network](https://nanopub.net/docs/network)
+* Other FDO implementations: 
+  * [Distributed System of Scientific Collections DiSSCo](https://www.dissco.eu/) 
+  * [Research Object Crate](https://www.researchobject.org/ro-crate/) 
+  * [Sign-Posting Profile](https://signposting.org/)
+  * [CEDAR](https://more.metadatacenter.org/) and [CEDAR API](https://more.metadatacenter.org/tools-training/cedar-api)
+  * [DeSci Labs Research Object Nodes](https://docs.desci.com/)  

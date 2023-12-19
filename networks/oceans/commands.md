@@ -4,6 +4,12 @@
 > You will likely be using docker so simply replace _podman_ with 
 > _docker_ in the following examples. 
 
+## Git clone
+
+```bash
+git clone https://github.com/gleanerio/archetype
+```
+
 ## Setup
 ```Bash
 > pwd 
