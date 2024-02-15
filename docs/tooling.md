@@ -11,6 +11,7 @@ Suggestions welcome!
 
 ## Tools and Services
 
+* inProcess LPG and RDF with [Kuzu](https://kuzudb.com/)
 * SPARQL related
   * [SPARQL wiki](https://kvistgaard.github.io/sparql/#/page/sparql%20wiki)
   * [yasgui](https://github.com/TriplyDB/Yasgui)

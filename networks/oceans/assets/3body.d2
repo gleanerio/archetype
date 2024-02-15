@@ -1,0 +1,108 @@
+grid-rows: 4
+grid-columns: 3
+horizontal-gap: 20
+vertical-gap: 20
+
+r11
+r11.class: empty
+
+e: expressivity {
+}
+
+r13
+r13.class: empty
+
+rx1
+rx1.class: empty
+
+rx2
+rx2.class: empty
+
+rx3
+rx3.class: empty
+
+r21
+r21.class: empty
+
+cm: "" 
+cm.class: point
+
+r23
+r23.class: empty
+
+
+
+i: implementability {
+}
+
+r32
+r32.class: empty
+
+
+m: maintainability \n & extensibility {
+}
+
+i.class: node
+e.class: node
+m.class: node
+
+
+i <-> m
+e <-> m
+i <-> e
+
+i -- cm {
+  style: {
+    stroke-dash: 3
+    stroke-width: 1
+  }
+}
+
+e -- cm {
+  style: {
+    stroke-dash: 3
+    stroke-width: 1
+  }
+}
+
+m -- cm {
+  style: {
+    stroke-dash: 3
+    stroke-width: 1
+  }
+}
+
+
+
+classes: {
+  empty: {
+    label: ""
+    width: 50
+    height: 50
+    style: {
+      fill: transparent
+      stroke: transparent
+    }
+  }
+  node: {
+   shape: circle
+   width: 175
+   height: 175
+    style: {
+        stroke-width: 0
+       fill: honeydew
+       shadow: true
+       border-radius: 5
+  }
+}
+  point: {
+   label: ""
+    width: 5
+    height: 5
+    style: {
+      fill: transparent
+      stroke: transparent
+    }
+}
+
+}
