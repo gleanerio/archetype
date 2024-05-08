@@ -11,7 +11,8 @@ Suggestions welcome!
 
 ## Tools and Services
 
-* inProcess LPG and RDF with [Kuzu](https://kuzudb.com/)
+* [SemSpect](https://www.semspect.de/) scalable graph exploration and data-driven no-code querying tool for Neo4j and RDF data
+* Great inProcess LPG and RDF with [KuzuDB](https://kuzudb.com/)
 * SPARQL related
   * [SPARQL wiki](https://kvistgaard.github.io/sparql/#/page/sparql%20wiki)
   * [yasgui](https://github.com/TriplyDB/Yasgui)
