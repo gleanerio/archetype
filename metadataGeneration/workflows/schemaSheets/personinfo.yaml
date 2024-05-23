@@ -1,0 +1,136 @@
+name: TEMP
+id: TEMP
+imports:
+- linkml:types
+prefixes:
+  linkml: https://w3id.org/linkml/
+  TEMP: https://example.org/TEMP/
+  wikidata: http://www.wikidata.org/entity/
+  sdo: http://example.org/sdo/
+default_prefix: TEMP
+default_range: string
+subsets:
+  a: {}
+  b: {}
+slots:
+  id:
+    description: any identifier
+    from_schema: TEMP
+    exact_mappings:
+    - sdo:identifier
+    multivalued: false
+    identifier: true
+    range: string
+    required: true
+  description:
+    annotations:
+      special:
+        tag: special
+        value: my_val
+      special2:
+        tag: special2
+        value: my_val2
+    description: a textual description
+    from_schema: TEMP
+    exact_mappings:
+    - sdo:description
+    multivalued: false
+    range: string
+    required: false
+  name:
+    from_schema: TEMP
+  age:
+    from_schema: TEMP
+  gender:
+    from_schema: TEMP
+  has medical history:
+    from_schema: TEMP
+classes:
+  Person:
+    description: a person,living or dead
+    from_schema: TEMP
+    exact_mappings:
+    - sdo:Person
+    - wikidata:Q215627
+    status: release
+    slots:
+    - id
+    - name
+    - age
+    - gender
+    - has medical history
+    slot_usage:
+      id:
+        description: identifier for a person
+        exact_mappings:
+        - sdo:identifier
+        multivalued: false
+        identifier: true
+        range: string
+        required: true
+      name:
+        annotations:
+          special:
+            tag: special
+            value: my_val
+        description: full name
+        exact_mappings:
+        - sdo:name
+        multivalued: false
+        range: string
+        required: true
+      age:
+        description: age in years
+        multivalued: false
+        range: decimal
+        required: false
+      gender:
+        description: age in years
+        multivalued: false
+        range: decimal
+        required: false
+      has medical history:
+        description: medical history
+        status: testing
+        multivalued: true
+        range: MedicalEvent
+        required: false
+  Organization:
+    from_schema: TEMP
+    slots:
+    - name
+    slot_usage:
+      name:
+        annotations:
+          special:
+            tag: special
+            value: my_val
+        description: full name
+        exact_mappings:
+        - sdo:name
+        multivalued: false
+        range: string
+        required: true
+  Event:
+    description: grouping class for events
+    in_subset:
+    - a
+    from_schema: TEMP
+    exact_mappings:
+    - wikidata:Q1656682
+    status: release
+  MedicalEvent:
+    description: a medical encounter
+    in_subset:
+    - b
+    from_schema: TEMP
+    status: testing
+    is_a: Event
+  ForProfit:
+    from_schema: TEMP
+    is_a: Organization
+  NonProfit:
+    from_schema: TEMP
+    exact_mappings:
+    - wikidata:Q163740
+    is_a: Organization

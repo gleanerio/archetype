@@ -1,0 +1,15 @@
+{
+  "@context": {
+    "@vocab": "https://schema.org/"
+  },
+  "@type": "Dataset",
+  "@id": "https://example.org/datasets/ID",
+  "identifier": "doi",
+  "name": "name",
+  "description": "description",
+  "url": "url",
+  "license": "license",
+  "sameAs": "type",
+    "creator": "Creator"
+}
+

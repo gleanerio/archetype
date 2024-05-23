@@ -1,0 +1,1088 @@
+<?xml version="1.0" ?>
+<graphml>
+    <key id="label" attr.name="label" attr.type="string"/>
+    <key id="type" attr.name="type" attr.type="string"/>
+    <key id="name" attr.name="name" attr.type="string"/>
+    <graph id="" edgedefault="undirected">
+        <node id="7a254c646c67f3680bfa6ef10f331046">
+            <data key="type">https://schema.org/SoftwareApplication</data>
+            <data key="name">HADES (Health Analytics Data-To-Evidence Suite)</data>
+        </node>
+        <node id="3cb48f0d6383a05cf4cdd3d730628b63">
+            <data key="type">https://schema.org/CreativeWork</data>
+            <data key="name">The Book of OHDSI: Chapter 13</data>
+        </node>
+        <node id="7a254c646c67f3680bfa6ef10f331046">
+            <data key="type">https://schema.org/SoftwareApplication</data>
+            <data key="name">HADES (Health Analytics Data-To-Evidence Suite)</data>
+        </node>
+        <node id="ff94e9051fb74b53e85bb5f9b576fac8">
+            <data key="type">https://schema.org/ItemList</data>
+            <data key="name">AnalysisModelDetails</data>
+        </node>
+        <node id="https://example.org/id/concept/317009">
+            <data key="type">https://schema.org/MedicalRiskFactor</data>
+            <data key="name">Asthma</data>
+        </node>
+        <node id="c02aa0b72781b641a27b76d0960f9ac2">
+            <data key="type">https://schema.org/MedicalCondition</data>
+            <data key="name">None</data>
+        </node>
+        <node id="https://example.org/id/concept/317009">
+            <data key="type">https://schema.org/MedicalRiskFactor</data>
+            <data key="name">Asthma</data>
+        </node>
+        <node id="3611b1940d045a75e111bbf2d81b2b5b">
+            <data key="type">https://schema.org/MedicalCode</data>
+            <data key="name">None</data>
+        </node>
+        <node id="https://example.org/id/concept/201820">
+            <data key="type">https://schema.org/MedicalRiskFactor</data>
+            <data key="name">Diabetes mellitus</data>
+        </node>
+        <node id="3600a2932e24365bcdc614428aa38b7c">
+            <data key="type">https://schema.org/MedicalCondition</data>
+            <data key="name">None</data>
+        </node>
+        <node id="https://example.org/id/concept/201820">
+            <data key="type">https://schema.org/MedicalRiskFactor</data>
+            <data key="name">Diabetes mellitus</data>
+        </node>
+        <node id="1d71b35695849cd837d9e17d1c892a45">
+            <data key="type">https://schema.org/MedicalCode</data>
+            <data key="name">None</data>
+        </node>
+        <node id="175d3e8c6a28ad3fef1628051b725da9">
+            <data key="type">https://schema.org/ListItem</data>
+            <data key="name">None</data>
+        </node>
+        <node id="7666413b82543dbc4214e419e8e5e524">
+            <data key="type">https://schema.org/MedicalIndication</data>
+            <data key="name">None</data>
+        </node>
+        <node id="179ccb12629f949e730a6f4a05d1e1c1">
+            <data key="type">https://schema.org/ListItem</data>
+            <data key="name">ACHILLES</data>
+        </node>
+        <node id="e8750ec8812544f0cf71cde8e8635498">
+            <data key="type">https://schema.org/SoftwareApplication</data>
+            <data key="name">None</data>
+        </node>
+        <node id="22af3af114d88e46134b5c5ef3540cfb">
+            <data key="type">https://schema.org/ListItem</data>
+            <data key="name">HADES</data>
+        </node>
+        <node id="71fde4c9d53aa4e285fd8b9daf24628c">
+            <data key="type">https://schema.org/SoftwareApplication</data>
+            <data key="name">None</data>
+        </node>
+        <node id="3b577dd8556415232a1e6d44005e9f52">
+            <data key="type">https://schema.org/ListItem</data>
+            <data key="name">ATLAS</data>
+        </node>
+        <node id="d333beb3c2621fcab838920695615a8">
+            <data key="type">https://schema.org/SoftwareApplication</data>
+            <data key="name">None</data>
+        </node>
+        <node id="5eed5646515ba44db03828c79f0818cc">
+            <data key="type">https://schema.org/ListItem</data>
+            <data key="name">None</data>
+        </node>
+        <node id="451ded39b6a36cc8e25d8e751cc5a287">
+            <data key="type">https://schema.org/MedicalIndication</data>
+            <data key="name">None</data>
+        </node>
+        <node id="692b6d95dde9d86c59cdcb528e03963c">
+            <data key="type">https://schema.org/ListItem</data>
+            <data key="name">OHDSIStudyPackageMetadata</data>
+        </node>
+        <node id="8b306e5a0e833b98aa0e3cc6bc03cbe2">
+            <data key="type">https://schema.org/ItemList</data>
+            <data key="name">MachineActionableSettingByAnalysis</data>
+        </node>
+        <node id="73837f24a2b7eafe1c7be6e7a991f0d9">
+            <data key="type">https://schema.org/ListItem</data>
+            <data key="name">None</data>
+        </node>
+        <node id="a235461a79f60e57c58664b38d817e92">
+            <data key="type">https://schema.org/MedicalIndication</data>
+            <data key="name">None</data>
+        </node>
+        <node id="7a3093c17cfe57d75c10106822ee9dce">
+            <data key="type">https://schema.org/ListItem</data>
+            <data key="name">None</data>
+        </node>
+        <node id="25b578f66ecfe2872505765efdd88ab3">
+            <data key="type">https://schema.org/MedicalIndication</data>
+            <data key="name">None</data>
+        </node>
+        <node id="8de3081fc6540e5547e6531ed37e3d73">
+            <data key="type">https://schema.org/ListItem</data>
+            <data key="name">None</data>
+        </node>
+        <node id="55fdc01065c57935ed03da6937b08573">
+            <data key="type">https://schema.org/ItemList</data>
+            <data key="name">None</data>
+        </node>
+        <node id="8e0bf3fbae957c38350230a06a65a709">
+            <data key="type">https://schema.org/ListItem</data>
+            <data key="name">None</data>
+        </node>
+        <node id="4927670981579dda0eabd2c54d14c8bb">
+            <data key="type">https://schema.org/ItemList</data>
+            <data key="name">None</data>
+        </node>
+        <node id="a9219f97c57751654b9929542d870f31">
+            <data key="type">https://schema.org/ListItem</data>
+            <data key="name">None</data>
+        </node>
+        <node id="eb9ca9d6c5d1ab4f24c8d76c824dc320">
+            <data key="type">https://schema.org/MedicalIndication</data>
+            <data key="name">None</data>
+        </node>
+        <node id="b2bb199c67af79c69fe5694a401daa0a">
+            <data key="type">https://schema.org/ListItem</data>
+            <data key="name">OHDSIStudyPackageAggregateData</data>
+        </node>
+        <node id="9b3bf5830e53e74b0b480d8cb389565e">
+            <data key="type">https://schema.org/ItemList</data>
+            <data key="name">IndicatorCollections</data>
+        </node>
+        <node id="c69af9e12a87934cdfe57ed741863ced">
+            <data key="type">https://schema.org/ListItem</data>
+            <data key="name">WebAPI</data>
+        </node>
+        <node id="ec75b4fc8c059bec8c12436eb903e20c">
+            <data key="type">https://schema.org/SoftwareApplication</data>
+            <data key="name">None</data>
+        </node>
+        <node id="d4bae5efd74999d2894e24e7fbacb914">
+            <data key="type">https://schema.org/ListItem</data>
+            <data key="name">None</data>
+        </node>
+        <node id="2b4f141cdd3dc7511e173c9331b7dd6e">
+            <data key="type">https://schema.org/MedicalIndication</data>
+            <data key="name">None</data>
+        </node>
+        <node id="e6c5cb74cbaf2a8e3bc9c11ef04818cc">
+            <data key="type">https://schema.org/ListItem</data>
+            <data key="name">None</data>
+        </node>
+        <node id="402dc8d5e25c1ce5f784fa3cae0076ae">
+            <data key="type">https://schema.org/MedicalIndication</data>
+            <data key="name">None</data>
+        </node>
+        <node id="ed790bdfa4feaae776b376d6e4fcc16e">
+            <data key="type">https://schema.org/ListItem</data>
+            <data key="name">None</data>
+        </node>
+        <node id="f69121c873faa03543593016db7126be">
+            <data key="type">https://schema.org/MedicalIndication</data>
+            <data key="name">None</data>
+        </node>
+        <node id="fc22723a1ae8a5c2ea07cd8a962eb2b9">
+            <data key="type">https://schema.org/ListItem</data>
+            <data key="name">None</data>
+        </node>
+        <node id="b50532df15e7b34ca02deb6af948cfa1">
+            <data key="type">https://schema.org/ItemList</data>
+            <data key="name">None</data>
+        </node>
+        <node id="30932f94884f0cd21069a61e74ca245c">
+            <data key="type">http://data.ohdsi.org/PredictiveAnalysis</data>
+            <data key="name">OHDSIPredictiveAnalysis</data>
+        </node>
+        <node id="ca25aac46116a14cf611c0f0e8c01bbb">
+            <data key="type">https://schema.org/ItemList</data>
+            <data key="name">OutcomeCohortDefinition</data>
+        </node>
+        <node id="30932f94884f0cd21069a61e74ca245c">
+            <data key="type">http://data.ohdsi.org/PredictiveAnalysis</data>
+            <data key="name">OHDSIPredictiveAnalysis</data>
+        </node>
+        <node id="78583a550b45fd7bd1ff824c9cdd1f74">
+            <data key="type">https://schema.org/ItemList</data>
+            <data key="name">TargetCohortDefinition</data>
+        </node>
+        <node id="30932f94884f0cd21069a61e74ca245c">
+            <data key="type">http://data.ohdsi.org/PredictiveAnalysis</data>
+            <data key="name">OHDSIPredictiveAnalysis</data>
+        </node>
+        <node id="7a254c646c67f3680bfa6ef10f331046">
+            <data key="type">https://schema.org/SoftwareApplication</data>
+            <data key="name">HADES (Health Analytics Data-To-Evidence Suite)</data>
+        </node>
+        <node id="cc54f33466735ca1d66d63df4072e661">
+            <data key="type">https://schema.org/SoftwareSourceCode</data>
+            <data key="name">None</data>
+        </node>
+        <node id="d5108ba642b98a346a84a31835c28028">
+            <data key="type">https://schema.org/SoftwareApplication</data>
+            <data key="name">Rabbit in a Hat</data>
+        </node>
+        <node id="270aaa580a30585c8669a0f529518bc0">
+            <data key="type">https://schema.org/ItemList</data>
+            <data key="name">OHDSIStudyPackageResultsSchema</data>
+        </node>
+        <node id="b2bb199c67af79c69fe5694a401daa0a">
+            <data key="type">https://schema.org/ListItem</data>
+            <data key="name">OHDSIStudyPackageAggregateData</data>
+        </node>
+        <node id="270aaa580a30585c8669a0f529518bc0">
+            <data key="type">https://schema.org/ItemList</data>
+            <data key="name">OHDSIStudyPackageResultsSchema</data>
+        </node>
+        <node id="692b6d95dde9d86c59cdcb528e03963c">
+            <data key="type">https://schema.org/ListItem</data>
+            <data key="name">OHDSIStudyPackageMetadata</data>
+        </node>
+        <node id="55fdc01065c57935ed03da6937b08573">
+            <data key="type">https://schema.org/ItemList</data>
+            <data key="name">None</data>
+        </node>
+        <node id="8d18725e95c3ff2a25f772f0e8855f92">
+            <data key="type">https://schema.org/MedicalEntity</data>
+            <data key="name">None</data>
+        </node>
+        <node id="55fdc01065c57935ed03da6937b08573">
+            <data key="type">https://schema.org/ItemList</data>
+            <data key="name">None</data>
+        </node>
+        <node id="5bf6f1c30c03019a07b92f5eca2232c1">
+            <data key="type">https://schema.org/MedicalEntity</data>
+            <data key="name">None</data>
+        </node>
+        <node id="93837ae03fa299c1073a1b150dbb16a1">
+            <data key="type">https://schema.org/ItemList</data>
+            <data key="name">OHDSI R library</data>
+        </node>
+        <node id="c69af9e12a87934cdfe57ed741863ced">
+            <data key="type">https://schema.org/ListItem</data>
+            <data key="name">WebAPI</data>
+        </node>
+        <node id="93837ae03fa299c1073a1b150dbb16a1">
+            <data key="type">https://schema.org/ItemList</data>
+            <data key="name">OHDSI R library</data>
+        </node>
+        <node id="3b577dd8556415232a1e6d44005e9f52">
+            <data key="type">https://schema.org/ListItem</data>
+            <data key="name">ATLAS</data>
+        </node>
+        <node id="93837ae03fa299c1073a1b150dbb16a1">
+            <data key="type">https://schema.org/ItemList</data>
+            <data key="name">OHDSI R library</data>
+        </node>
+        <node id="22af3af114d88e46134b5c5ef3540cfb">
+            <data key="type">https://schema.org/ListItem</data>
+            <data key="name">HADES</data>
+        </node>
+        <node id="93837ae03fa299c1073a1b150dbb16a1">
+            <data key="type">https://schema.org/ItemList</data>
+            <data key="name">OHDSI R library</data>
+        </node>
+        <node id="179ccb12629f949e730a6f4a05d1e1c1">
+            <data key="type">https://schema.org/ListItem</data>
+            <data key="name">ACHILLES</data>
+        </node>
+        <node id="9740c90c3b541613ea7fbffb28a5ef64">
+            <data key="type">https://schema.org/ItemList</data>
+            <data key="name">None</data>
+        </node>
+        <node id="ed790bdfa4feaae776b376d6e4fcc16e">
+            <data key="type">https://schema.org/ListItem</data>
+            <data key="name">None</data>
+        </node>
+        <node id="9740c90c3b541613ea7fbffb28a5ef64">
+            <data key="type">https://schema.org/ItemList</data>
+            <data key="name">None</data>
+        </node>
+        <node id="e6c5cb74cbaf2a8e3bc9c11ef04818cc">
+            <data key="type">https://schema.org/ListItem</data>
+            <data key="name">None</data>
+        </node>
+        <node id="9740c90c3b541613ea7fbffb28a5ef64">
+            <data key="type">https://schema.org/ItemList</data>
+            <data key="name">None</data>
+        </node>
+        <node id="d4bae5efd74999d2894e24e7fbacb914">
+            <data key="type">https://schema.org/ListItem</data>
+            <data key="name">None</data>
+        </node>
+        <node id="9740c90c3b541613ea7fbffb28a5ef64">
+            <data key="type">https://schema.org/ItemList</data>
+            <data key="name">None</data>
+        </node>
+        <node id="a9219f97c57751654b9929542d870f31">
+            <data key="type">https://schema.org/ListItem</data>
+            <data key="name">None</data>
+        </node>
+        <node id="9740c90c3b541613ea7fbffb28a5ef64">
+            <data key="type">https://schema.org/ItemList</data>
+            <data key="name">None</data>
+        </node>
+        <node id="7a3093c17cfe57d75c10106822ee9dce">
+            <data key="type">https://schema.org/ListItem</data>
+            <data key="name">None</data>
+        </node>
+        <node id="9740c90c3b541613ea7fbffb28a5ef64">
+            <data key="type">https://schema.org/ItemList</data>
+            <data key="name">None</data>
+        </node>
+        <node id="73837f24a2b7eafe1c7be6e7a991f0d9">
+            <data key="type">https://schema.org/ListItem</data>
+            <data key="name">None</data>
+        </node>
+        <node id="9740c90c3b541613ea7fbffb28a5ef64">
+            <data key="type">https://schema.org/ItemList</data>
+            <data key="name">None</data>
+        </node>
+        <node id="5eed5646515ba44db03828c79f0818cc">
+            <data key="type">https://schema.org/ListItem</data>
+            <data key="name">None</data>
+        </node>
+        <node id="9740c90c3b541613ea7fbffb28a5ef64">
+            <data key="type">https://schema.org/ItemList</data>
+            <data key="name">None</data>
+        </node>
+        <node id="175d3e8c6a28ad3fef1628051b725da9">
+            <data key="type">https://schema.org/ListItem</data>
+            <data key="name">None</data>
+        </node>
+        <node id="9b3bf5830e53e74b0b480d8cb389565e">
+            <data key="type">https://schema.org/ItemList</data>
+            <data key="name">IndicatorCollections</data>
+        </node>
+        <node id="5cb4c027b6cb477025731d714eb30099">
+            <data key="type">https://schema.org/CreativeWork</data>
+            <data key="name">EvidenceSynthesis</data>
+        </node>
+        <node id="c9cb5937b9219041f0137631730da74d">
+            <data key="type">https://schema.org/ItemList</data>
+            <data key="name">&lt;nil&gt;</data>
+        </node>
+        <node id="fc22723a1ae8a5c2ea07cd8a962eb2b9">
+            <data key="type">https://schema.org/ListItem</data>
+            <data key="name">None</data>
+        </node>
+        <node id="c9cb5937b9219041f0137631730da74d">
+            <data key="type">https://schema.org/ItemList</data>
+            <data key="name">&lt;nil&gt;</data>
+        </node>
+        <node id="8e0bf3fbae957c38350230a06a65a709">
+            <data key="type">https://schema.org/ListItem</data>
+            <data key="name">None</data>
+        </node>
+        <node id="c9cb5937b9219041f0137631730da74d">
+            <data key="type">https://schema.org/ItemList</data>
+            <data key="name">&lt;nil&gt;</data>
+        </node>
+        <node id="8de3081fc6540e5547e6531ed37e3d73">
+            <data key="type">https://schema.org/ListItem</data>
+            <data key="name">None</data>
+        </node>
+        <node id="ff94e9051fb74b53e85bb5f9b576fac8">
+            <data key="type">https://schema.org/ItemList</data>
+            <data key="name">AnalysisModelDetails</data>
+        </node>
+        <node id="50cc2ce56eaf61e3ce05ddec965a2a1b">
+            <data key="type">https://schema.org/ItemList</data>
+            <data key="name">ModelSettings (from ohdsi:ATLAS)</data>
+        </node>
+        <node id="ff94e9051fb74b53e85bb5f9b576fac8">
+            <data key="type">https://schema.org/ItemList</data>
+            <data key="name">AnalysisModelDetails</data>
+        </node>
+        <node id="3949cb7e8786164eb1e07075e6085b00">
+            <data key="type">https://schema.org/ItemList</data>
+            <data key="name">CovariateSettings (from ohdsi:ATLAS)</data>
+        </node>
+        <node id="ff94e9051fb74b53e85bb5f9b576fac8">
+            <data key="type">https://schema.org/ItemList</data>
+            <data key="name">AnalysisModelDetails</data>
+        </node>
+        <node id="12d9857bba933580eebdffeee63b67da">
+            <data key="type">https://schema.org/ItemList</data>
+            <data key="name">PopulationSettings (from ohdsi:ATLAS)</data>
+        </node>
+        <node id="89d8fb15db6732b4a5757a4ed9062522">
+            <data key="type">http://data.ohdsi.org/IncidenceRateAnalysis</data>
+            <data key="name">&lt;nil&gt;</data>
+        </node>
+        <node id="c9cb5937b9219041f0137631730da74d">
+            <data key="type">https://schema.org/ItemList</data>
+            <data key="name">&lt;nil&gt;</data>
+        </node>
+        <node id="89d8fb15db6732b4a5757a4ed9062522">
+            <data key="type">http://data.ohdsi.org/IncidenceRateAnalysis</data>
+            <data key="name">&lt;nil&gt;</data>
+        </node>
+        <node id="9740c90c3b541613ea7fbffb28a5ef64">
+            <data key="type">https://schema.org/ItemList</data>
+            <data key="name">None</data>
+        </node>
+        <node id="89d8fb15db6732b4a5757a4ed9062522">
+            <data key="type">http://data.ohdsi.org/IncidenceRateAnalysis</data>
+            <data key="name">&lt;nil&gt;</data>
+        </node>
+        <node id="72f4589fd8f97bdc001365f2485ad3ff">
+            <data key="type">https://schema.org/ItemList</data>
+            <data key="name">&lt;nil&gt;</data>
+        </node>
+        <node id="89d8fb15db6732b4a5757a4ed9062522">
+            <data key="type">http://data.ohdsi.org/IncidenceRateAnalysis</data>
+            <data key="name">&lt;nil&gt;</data>
+        </node>
+        <node id="bc8087821b09bd3a9cf98035772e7db">
+            <data key="type">http://data.ohdsi.org/TimeAtRisk</data>
+            <data key="name">None</data>
+        </node>
+        <node id="https://example.org/id/concept/37311061">
+            <data key="type">https://schema.org/MedicalCondition</data>
+            <data key="name">Disease caused by severe acute respiratory syndrome coronavirus 2</data>
+        </node>
+        <node id="36a6ecd0121963ff19cc263d77efbd5c">
+            <data key="type">https://schema.org/MedicalCode</data>
+            <data key="name">None</data>
+        </node>
+        <node id="3600a2932e24365bcdc614428aa38b7c">
+            <data key="type">https://schema.org/MedicalCondition</data>
+            <data key="name">None</data>
+        </node>
+        <node id="1c69811cab036ae3f0dc505736306fb4">
+            <data key="type">https://schema.org/MedicalCode</data>
+            <data key="name">None</data>
+        </node>
+        <node id="c02aa0b72781b641a27b76d0960f9ac2">
+            <data key="type">https://schema.org/MedicalCondition</data>
+            <data key="name">None</data>
+        </node>
+        <node id="f83154debf84d05410c2e6ec5dd81488">
+            <data key="type">https://schema.org/MedicalCode</data>
+            <data key="name">None</data>
+        </node>
+        <node id="5bf6f1c30c03019a07b92f5eca2232c1">
+            <data key="type">https://schema.org/MedicalEntity</data>
+            <data key="name">None</data>
+        </node>
+        <node id="74bb39c9292b8fe47f741974347b8532">
+            <data key="type">https://schema.org/MedicalGuideline</data>
+            <data key="name">None</data>
+        </node>
+        <node id="5bf6f1c30c03019a07b92f5eca2232c1">
+            <data key="type">https://schema.org/MedicalEntity</data>
+            <data key="name">None</data>
+        </node>
+        <node id="fd520d5754bd6388c27b892ae0508cde">
+            <data key="type">https://schema.org/MedicalCode</data>
+            <data key="name">None</data>
+        </node>
+        <node id="8d18725e95c3ff2a25f772f0e8855f92">
+            <data key="type">https://schema.org/MedicalEntity</data>
+            <data key="name">None</data>
+        </node>
+        <node id="63d8d15184d782f7b920bc6b38a17723">
+            <data key="type">https://schema.org/MedicalGuideline</data>
+            <data key="name">None</data>
+        </node>
+        <node id="8d18725e95c3ff2a25f772f0e8855f92">
+            <data key="type">https://schema.org/MedicalEntity</data>
+            <data key="name">None</data>
+        </node>
+        <node id="74c42e94eea09d8912512839f589974e">
+            <data key="type">https://schema.org/MedicalCode</data>
+            <data key="name">None</data>
+        </node>
+        <node id="15501f486f71a56c378112693e3a0bb6">
+            <data key="type">https://schema.org/updateAction</data>
+            <data key="name">MedicalObservationalStudy CDM ETL Action</data>
+        </node>
+        <node id="ab4e62a7bd9d24190b04d2265fd6828">
+            <data key="type">https://schema.org/Dataset</data>
+            <data key="name">Case-based Surveillance Reporting Form</data>
+        </node>
+        <node id="15501f486f71a56c378112693e3a0bb6">
+            <data key="type">https://schema.org/updateAction</data>
+            <data key="name">MedicalObservationalStudy CDM ETL Action</data>
+        </node>
+        <node id="https://example.org/id/dataset/mubasCDM">
+            <data key="type">https://schema.org/Dataset</data>
+            <data key="name">Malawi/MUBAS OMOP CDM</data>
+        </node>
+        <node id="15501f486f71a56c378112693e3a0bb6">
+            <data key="type">https://schema.org/updateAction</data>
+            <data key="name">MedicalObservationalStudy CDM ETL Action</data>
+        </node>
+        <node id="cc54f33466735ca1d66d63df4072e661">
+            <data key="type">https://schema.org/SoftwareSourceCode</data>
+            <data key="name">None</data>
+        </node>
+        <node id="https://example.org/id/design/IDSRCovid19PrevalenceAndPredictionStudy">
+            <data key="type">https://schema.org/MedicalObservationalStudyDesign</data>
+            <data key="name">None</data>
+        </node>
+        <node id="89d8fb15db6732b4a5757a4ed9062522">
+            <data key="type">http://data.ohdsi.org/IncidenceRateAnalysis</data>
+            <data key="name">&lt;nil&gt;</data>
+        </node>
+        <node id="https://example.org/id/design/IDSRCovid19PrevalenceAndPredictionStudy">
+            <data key="type">https://schema.org/MedicalObservationalStudyDesign</data>
+            <data key="name">None</data>
+        </node>
+        <node id="30932f94884f0cd21069a61e74ca245c">
+            <data key="type">http://data.ohdsi.org/PredictiveAnalysis</data>
+            <data key="name">OHDSIPredictiveAnalysis</data>
+        </node>
+        <node id="25b578f66ecfe2872505765efdd88ab3">
+            <data key="type">https://schema.org/MedicalIndication</data>
+            <data key="name">None</data>
+        </node>
+        <node id="e82ad0076aea3116c6d2d26fa8da4ef5">
+            <data key="type">https://schema.org/MedicalCode</data>
+            <data key="name">None</data>
+        </node>
+        <node id="2b4f141cdd3dc7511e173c9331b7dd6e">
+            <data key="type">https://schema.org/MedicalIndication</data>
+            <data key="name">None</data>
+        </node>
+        <node id="1cd988e0d6cab9db4046a6831b48ebc2">
+            <data key="type">https://schema.org/MedicalCode</data>
+            <data key="name">None</data>
+        </node>
+        <node id="402dc8d5e25c1ce5f784fa3cae0076ae">
+            <data key="type">https://schema.org/MedicalIndication</data>
+            <data key="name">None</data>
+        </node>
+        <node id="6065a06188032829002cf169657748f2">
+            <data key="type">https://schema.org/MedicalCode</data>
+            <data key="name">None</data>
+        </node>
+        <node id="451ded39b6a36cc8e25d8e751cc5a287">
+            <data key="type">https://schema.org/MedicalIndication</data>
+            <data key="name">None</data>
+        </node>
+        <node id="1d12a7b7842225f6da24ba1e6e2151f6">
+            <data key="type">https://schema.org/MedicalCode</data>
+            <data key="name">None</data>
+        </node>
+        <node id="7666413b82543dbc4214e419e8e5e524">
+            <data key="type">https://schema.org/MedicalIndication</data>
+            <data key="name">None</data>
+        </node>
+        <node id="a66926cdf829b852ef4abf49b9fa687e">
+            <data key="type">https://schema.org/MedicalCode</data>
+            <data key="name">None</data>
+        </node>
+        <node id="a235461a79f60e57c58664b38d817e92">
+            <data key="type">https://schema.org/MedicalIndication</data>
+            <data key="name">None</data>
+        </node>
+        <node id="e755b723fa38e7fcd52787017ef235a9">
+            <data key="type">https://schema.org/MedicalCode</data>
+            <data key="name">None</data>
+        </node>
+        <node id="eb9ca9d6c5d1ab4f24c8d76c824dc320">
+            <data key="type">https://schema.org/MedicalIndication</data>
+            <data key="name">None</data>
+        </node>
+        <node id="e3e65de11adb276c2bef76f6a6154c19">
+            <data key="type">https://schema.org/MedicalCode</data>
+            <data key="name">None</data>
+        </node>
+        <node id="f69121c873faa03543593016db7126be">
+            <data key="type">https://schema.org/MedicalIndication</data>
+            <data key="name">None</data>
+        </node>
+        <node id="71745ca26ddd530c79daf9c984a53e89">
+            <data key="type">https://schema.org/MedicalCode</data>
+            <data key="name">None</data>
+        </node>
+        <node id="dbcc7c3aa028473de67df9df06c63791">
+            <data key="type">https://schema.org/UpdateAction</data>
+            <data key="name">MedicalObservationalStudy Execute Action</data>
+        </node>
+        <node id="442781e9ff4e11fdaba4311b0c867593">
+            <data key="type">https://schema.org/EntryPoint</data>
+            <data key="name">None</data>
+        </node>
+        <node id="dbcc7c3aa028473de67df9df06c63791">
+            <data key="type">https://schema.org/UpdateAction</data>
+            <data key="name">MedicalObservationalStudy Execute Action</data>
+        </node>
+        <node id="https://example.org/id/dataset/coordinatingcenterCDM">
+            <data key="type">https://schema.org/Dataset</data>
+            <data key="name">Coordinating Center OMOP CDM</data>
+        </node>
+        <node id="dbcc7c3aa028473de67df9df06c63791">
+            <data key="type">https://schema.org/UpdateAction</data>
+            <data key="name">MedicalObservationalStudy Execute Action</data>
+        </node>
+        <node id="https://example.org/id/dataset/mubasCDM">
+            <data key="type">https://schema.org/Dataset</data>
+            <data key="name">Malawi/MUBAS OMOP CDM</data>
+        </node>
+        <node id="dbcc7c3aa028473de67df9df06c63791">
+            <data key="type">https://schema.org/UpdateAction</data>
+            <data key="name">MedicalObservationalStudy Execute Action</data>
+        </node>
+        <node id="93837ae03fa299c1073a1b150dbb16a1">
+            <data key="type">https://schema.org/ItemList</data>
+            <data key="name">OHDSI R library</data>
+        </node>
+        <node id="dbcc7c3aa028473de67df9df06c63791">
+            <data key="type">https://schema.org/UpdateAction</data>
+            <data key="name">MedicalObservationalStudy Execute Action</data>
+        </node>
+        <node id="270aaa580a30585c8669a0f529518bc0">
+            <data key="type">https://schema.org/ItemList</data>
+            <data key="name">OHDSIStudyPackageResultsSchema</data>
+        </node>
+        <node id="dbcc7c3aa028473de67df9df06c63791">
+            <data key="type">https://schema.org/UpdateAction</data>
+            <data key="name">MedicalObservationalStudy Execute Action</data>
+        </node>
+        <node id="https://example.org/id/person/MuyingoS">
+            <data key="type">https://schema.org/Person</data>
+            <data key="name">Sylvia Muyingo</data>
+        </node>
+        <node id="https://example.org/id/dataset/mubasCDM">
+            <data key="type">https://schema.org/Dataset</data>
+            <data key="name">Malawi/MUBAS OMOP CDM</data>
+        </node>
+        <node id="ca1188fd9a99a0b790ba6361917612be">
+            <data key="type">https://schema.org/Place</data>
+            <data key="name">None</data>
+        </node>
+        <node id="https://example.org/id/dataset/mubasCDM">
+            <data key="type">https://schema.org/Dataset</data>
+            <data key="name">Malawi/MUBAS OMOP CDM</data>
+        </node>
+        <node id="ecf5ae0feb9f0109638d8883d35c4f9d">
+            <data key="type">https://schema.org/Dataset</data>
+            <data key="name">drug_exposure</data>
+        </node>
+        <node id="https://example.org/id/dataset/mubasCDM">
+            <data key="type">https://schema.org/Dataset</data>
+            <data key="name">Malawi/MUBAS OMOP CDM</data>
+        </node>
+        <node id="d1d1b64f4198c0be1522342b0167fd81">
+            <data key="type">https://schema.org/Dataset</data>
+            <data key="name">measurement</data>
+        </node>
+        <node id="https://example.org/id/dataset/mubasCDM">
+            <data key="type">https://schema.org/Dataset</data>
+            <data key="name">Malawi/MUBAS OMOP CDM</data>
+        </node>
+        <node id="9fb6ed00ba74fd55aaea968b91c88aef">
+            <data key="type">https://schema.org/Dataset</data>
+            <data key="name">OMOP CDM Person table</data>
+        </node>
+        <node id="https://example.org/id/dataset/mubasCDM">
+            <data key="type">https://schema.org/Dataset</data>
+            <data key="name">Malawi/MUBAS OMOP CDM</data>
+        </node>
+        <node id="9e7aa7a6e17c3c0a2b78cb8ea80f95d6">
+            <data key="type">https://schema.org/Dataset</data>
+            <data key="name">OMOP CDM observation table</data>
+        </node>
+        <node id="https://example.org/id/dataset/mubasCDM">
+            <data key="type">https://schema.org/Dataset</data>
+            <data key="name">Malawi/MUBAS OMOP CDM</data>
+        </node>
+        <node id="83a6c70eb07a6ba1041500b0f4d2df12">
+            <data key="type">https://schema.org/Dataset</data>
+            <data key="name">specimen</data>
+        </node>
+        <node id="https://example.org/id/dataset/mubasCDM">
+            <data key="type">https://schema.org/Dataset</data>
+            <data key="name">Malawi/MUBAS OMOP CDM</data>
+        </node>
+        <node id="80e924ec69de31b8d5d5514423485f5e">
+            <data key="type">https://schema.org/Dataset</data>
+            <data key="name">visit_occurrence</data>
+        </node>
+        <node id="https://example.org/id/dataset/mubasCDM">
+            <data key="type">https://schema.org/Dataset</data>
+            <data key="name">Malawi/MUBAS OMOP CDM</data>
+        </node>
+        <node id="66987de4d604aace8bb2f621314ab299">
+            <data key="type">https://schema.org/Dataset</data>
+            <data key="name">location</data>
+        </node>
+        <node id="https://example.org/id/dataset/mubasCDM">
+            <data key="type">https://schema.org/Dataset</data>
+            <data key="name">Malawi/MUBAS OMOP CDM</data>
+        </node>
+        <node id="170132c79a4809e318a6fe1533aaa9e2">
+            <data key="type">https://schema.org/Dataset</data>
+            <data key="name">care_site</data>
+        </node>
+        <node id="https://example.org/id/dataset/mubasCDM">
+            <data key="type">https://schema.org/Dataset</data>
+            <data key="name">Malawi/MUBAS OMOP CDM</data>
+        </node>
+        <node id="144b493e9e4ea212da545593fa87d1e7">
+            <data key="type">https://schema.org/Dataset</data>
+            <data key="name">condition_occurrence</data>
+        </node>
+        <node id="https://example.org/id/dataset/mubasCDM">
+            <data key="type">https://schema.org/Dataset</data>
+            <data key="name">Malawi/MUBAS OMOP CDM</data>
+        </node>
+        <node id="84416a85dc3317650ce742f959f6fdca">
+            <data key="type">http://data.ohdsi.org/Organization</data>
+            <data key="name">Mubas</data>
+        </node>
+        <node id="https://example.org/id/dataset/mubasCDM">
+            <data key="type">https://schema.org/Dataset</data>
+            <data key="name">Malawi/MUBAS OMOP CDM</data>
+        </node>
+        <node id="https://example.org/id/person/TaylorA">
+            <data key="type">https://schema.org/Person</data>
+            <data key="name">Amelia Taylor</data>
+        </node>
+        <node id="https://example.org/id/dataset/coordinatingcenterCDM">
+            <data key="type">https://schema.org/Dataset</data>
+            <data key="name">Coordinating Center OMOP CDM</data>
+        </node>
+        <node id="e00b8c5b4f7e49647e0d5478190fb1b4">
+            <data key="type">https://schema.org/CreativeWork</data>
+            <data key="name">Person</data>
+        </node>
+        <node id="https://example.org/id/dataset/coordinatingcenterCDM">
+            <data key="type">https://schema.org/Dataset</data>
+            <data key="name">Coordinating Center OMOP CDM</data>
+        </node>
+        <node id="2e6743b00b20edb791afa2e210ec3e90">
+            <data key="type">https://schema.org/CreativeWork</data>
+            <data key="name">ConditionOccurrence</data>
+        </node>
+        <node id="https://example.org/id/dataset/coordinatingcenterCDM">
+            <data key="type">https://schema.org/Dataset</data>
+            <data key="name">Coordinating Center OMOP CDM</data>
+        </node>
+        <node id="ff5979a39820fe3da9e29dcf8e402429">
+            <data key="type">https://schema.org/Place</data>
+            <data key="name">None</data>
+        </node>
+        <node id="https://example.org/id/dataset/coordinatingcenterCDM">
+            <data key="type">https://schema.org/Dataset</data>
+            <data key="name">Coordinating Center OMOP CDM</data>
+        </node>
+        <node id="https://doi.org/10.5066/F7VX0DMQ">
+            <data key="type">https://schema.org/PropertyValue</data>
+            <data key="name">None</data>
+        </node>
+        <node id="https://example.org/id/dataset/coordinatingcenterCDM">
+            <data key="type">https://schema.org/Dataset</data>
+            <data key="name">Coordinating Center OMOP CDM</data>
+        </node>
+        <node id="81a706c3cd4b12717ee59aa5d09a289e">
+            <data key="type">http://data.ohdsi.org/Organization</data>
+            <data key="name">Mumbas</data>
+        </node>
+        <node id="https://example.org/id/dataset/coordinatingcenterCDM">
+            <data key="type">https://schema.org/Dataset</data>
+            <data key="name">Coordinating Center OMOP CDM</data>
+        </node>
+        <node id="https://example.org/id/person/MuyingoS">
+            <data key="type">https://schema.org/Person</data>
+            <data key="name">Sylvia Muyingo</data>
+        </node>
+        <node id="ab4e62a7bd9d24190b04d2265fd6828">
+            <data key="type">https://schema.org/Dataset</data>
+            <data key="name">Case-based Surveillance Reporting Form</data>
+        </node>
+        <node id="3c09de4ab2a74a69140d6ad334a8e82c">
+            <data key="type">https://schema.org/CreativeWork</data>
+            <data key="name">IDSR immediate case-based reporting form (Appendix 2F)</data>
+        </node>
+        <node id="9fb6ed00ba74fd55aaea968b91c88aef">
+            <data key="type">https://schema.org/Dataset</data>
+            <data key="name">OMOP CDM Person table</data>
+        </node>
+        <node id="fb8ad980edbaf088d8c444f0131943e5">
+            <data key="type">https://schema.org/PropertyValue</data>
+            <data key="name">person id</data>
+        </node>
+        <node id="9fb6ed00ba74fd55aaea968b91c88aef">
+            <data key="type">https://schema.org/Dataset</data>
+            <data key="name">OMOP CDM Person table</data>
+        </node>
+        <node id="ddcee1a9bceb18170d12720ba9bdccf3">
+            <data key="type">https://schema.org/PropertyValue</data>
+            <data key="name">gender concept id</data>
+        </node>
+        <node id="9fb6ed00ba74fd55aaea968b91c88aef">
+            <data key="type">https://schema.org/Dataset</data>
+            <data key="name">OMOP CDM Person table</data>
+        </node>
+        <node id="9b43de826e69f2695772882d7750ee62">
+            <data key="type">https://schema.org/PropertyValue</data>
+            <data key="name">gender_source_concept_id</data>
+        </node>
+        <node id="9fb6ed00ba74fd55aaea968b91c88aef">
+            <data key="type">https://schema.org/Dataset</data>
+            <data key="name">OMOP CDM Person table</data>
+        </node>
+        <node id="4b7b9735a2d1098a679c0ae8d18d431f">
+            <data key="type">https://schema.org/PropertyValue</data>
+            <data key="name">year of birth</data>
+        </node>
+        <node id="https://example.org/id/study/IDSRCovid19PrevalenceAndPredictionStudy">
+            <data key="type">https://schema.org/MedicalObservationalStudy</data>
+            <data key="name">Prevalence and Prediction of COVID-19 By Subgroup across several SSA countries: a Network Study</data>
+        </node>
+        <node id="https://example.org/id/creativework/IDSRproject">
+            <data key="type">https://schema.org/CreativeWork</data>
+            <data key="name">None</data>
+        </node>
+        <node id="https://example.org/id/study/IDSRCovid19PrevalenceAndPredictionStudy">
+            <data key="type">https://schema.org/MedicalObservationalStudy</data>
+            <data key="name">Prevalence and Prediction of COVID-19 By Subgroup across several SSA countries: a Network Study</data>
+        </node>
+        <node id="919a7feab997a1d5700591237ca57a81">
+            <data key="type">https://schema.org/Country</data>
+            <data key="name">Malawi</data>
+        </node>
+        <node id="https://example.org/id/study/IDSRCovid19PrevalenceAndPredictionStudy">
+            <data key="type">https://schema.org/MedicalObservationalStudy</data>
+            <data key="name">Prevalence and Prediction of COVID-19 By Subgroup across several SSA countries: a Network Study</data>
+        </node>
+        <node id="121d208a2ec14c8e45da14723d2b2ae7">
+            <data key="type">https://schema.org/Country</data>
+            <data key="name">Uganda</data>
+        </node>
+        <node id="https://example.org/id/study/IDSRCovid19PrevalenceAndPredictionStudy">
+            <data key="type">https://schema.org/MedicalObservationalStudy</data>
+            <data key="name">Prevalence and Prediction of COVID-19 By Subgroup across several SSA countries: a Network Study</data>
+        </node>
+        <node id="11193e6d4efe9a41be4f0d01f0aa7e2b">
+            <data key="type">https://schema.org/Country</data>
+            <data key="name">Kenya</data>
+        </node>
+        <node id="https://example.org/id/study/IDSRCovid19PrevalenceAndPredictionStudy">
+            <data key="type">https://schema.org/MedicalObservationalStudy</data>
+            <data key="name">Prevalence and Prediction of COVID-19 By Subgroup across several SSA countries: a Network Study</data>
+        </node>
+        <node id="dbcc7c3aa028473de67df9df06c63791">
+            <data key="type">https://schema.org/UpdateAction</data>
+            <data key="name">MedicalObservationalStudy Execute Action</data>
+        </node>
+        <node id="https://example.org/id/study/IDSRCovid19PrevalenceAndPredictionStudy">
+            <data key="type">https://schema.org/MedicalObservationalStudy</data>
+            <data key="name">Prevalence and Prediction of COVID-19 By Subgroup across several SSA countries: a Network Study</data>
+        </node>
+        <node id="https://example.org/id/design/IDSRCovid19PrevalenceAndPredictionStudy">
+            <data key="type">https://schema.org/MedicalObservationalStudyDesign</data>
+            <data key="name">None</data>
+        </node>
+        <node id="https://example.org/id/study/IDSRCovid19PrevalenceAndPredictionStudy">
+            <data key="type">https://schema.org/MedicalObservationalStudy</data>
+            <data key="name">Prevalence and Prediction of COVID-19 By Subgroup across several SSA countries: a Network Study</data>
+        </node>
+        <node id="15501f486f71a56c378112693e3a0bb6">
+            <data key="type">https://schema.org/updateAction</data>
+            <data key="name">MedicalObservationalStudy CDM ETL Action</data>
+        </node>
+        <node id="https://example.org/id/study/IDSRCovid19PrevalenceAndPredictionStudy">
+            <data key="type">https://schema.org/MedicalObservationalStudy</data>
+            <data key="name">Prevalence and Prediction of COVID-19 By Subgroup across several SSA countries: a Network Study</data>
+        </node>
+        <node id="https://example.org/id/concept/37311061">
+            <data key="type">https://schema.org/MedicalCondition</data>
+            <data key="name">Disease caused by severe acute respiratory syndrome coronavirus 2</data>
+        </node>
+        <node id="https://example.org/id/study/IDSRCovid19PrevalenceAndPredictionStudy">
+            <data key="type">https://schema.org/MedicalObservationalStudy</data>
+            <data key="name">Prevalence and Prediction of COVID-19 By Subgroup across several SSA countries: a Network Study</data>
+        </node>
+        <node id="https://example.org/id/concept/201820">
+            <data key="type">https://schema.org/MedicalRiskFactor</data>
+            <data key="name">Diabetes mellitus</data>
+        </node>
+        <node id="https://example.org/id/study/IDSRCovid19PrevalenceAndPredictionStudy">
+            <data key="type">https://schema.org/MedicalObservationalStudy</data>
+            <data key="name">Prevalence and Prediction of COVID-19 By Subgroup across several SSA countries: a Network Study</data>
+        </node>
+        <node id="https://example.org/id/concept/317009">
+            <data key="type">https://schema.org/MedicalRiskFactor</data>
+            <data key="name">Asthma</data>
+        </node>
+        <node id="9b43de826e69f2695772882d7750ee62">
+            <data key="type">https://schema.org/PropertyValue</data>
+            <data key="name">gender_source_concept_id</data>
+        </node>
+        <node id="dbbb986ac6a709c0e9e1b61d2f4f8e71">
+            <data key="type">https://schema.org/CreativeWork</data>
+            <data key="name">WHO IDSR Africa</data>
+        </node>
+        <node id="ca1188fd9a99a0b790ba6361917612be">
+            <data key="type">https://schema.org/Place</data>
+            <data key="name">None</data>
+        </node>
+        <node id="a3419c1bdb12b7f2bd1e79c0a6889332">
+            <data key="type">https://schema.org/GeoShape</data>
+            <data key="name">None</data>
+        </node>
+        <node id="ff5979a39820fe3da9e29dcf8e402429">
+            <data key="type">https://schema.org/Place</data>
+            <data key="name">None</data>
+        </node>
+        <node id="78e94848b10f9f4aca9b1a8078ed6347">
+            <data key="type">https://schema.org/GeoShape</data>
+            <data key="name">None</data>
+        </node>
+        <node id="https://example.org/id/creativework/IDSRproject">
+            <data key="type">https://schema.org/CreativeWork</data>
+            <data key="name">None</data>
+        </node>
+        <node id="https://example.org/id/person/MuyingoS">
+            <data key="type">https://schema.org/Person</data>
+            <data key="name">Sylvia Muyingo</data>
+        </node>
+        <node id="https://example.org/id/creativework/IDSRproject">
+            <data key="type">https://schema.org/CreativeWork</data>
+            <data key="name">None</data>
+        </node>
+        <node id="https://example.org/id/person/TaylorA">
+            <data key="type">https://schema.org/Person</data>
+            <data key="name">Amelia Taylor</data>
+        </node>
+        <node id="3c09de4ab2a74a69140d6ad334a8e82c">
+            <data key="type">https://schema.org/CreativeWork</data>
+            <data key="name">IDSR immediate case-based reporting form (Appendix 2F)</data>
+        </node>
+        <node id="1e0f8868c012090498ebfb0cf22e9545">
+            <data key="type">http://data.ohdsi.org/Organization</data>
+            <data key="name">None</data>
+        </node>
+        <node id="dbbb986ac6a709c0e9e1b61d2f4f8e71">
+            <data key="type">https://schema.org/CreativeWork</data>
+            <data key="name">WHO IDSR Africa</data>
+        </node>
+        <node id="2f198c5a224a350eacb85eb1b3502322">
+            <data key="type">https://schema.org/CreativeWork</data>
+            <data key="name">Annex 2F</data>
+        </node>
+        <edge source="7a254c646c67f3680bfa6ef10f331046" target="3cb48f0d6383a05cf4cdd3d730628b63"/>
+        <edge source="7a254c646c67f3680bfa6ef10f331046" target="ff94e9051fb74b53e85bb5f9b576fac8"/>
+        <edge source="https://example.org/id/concept/317009" target="c02aa0b72781b641a27b76d0960f9ac2"/>
+        <edge source="https://example.org/id/concept/317009" target="3611b1940d045a75e111bbf2d81b2b5b"/>
+        <edge source="https://example.org/id/concept/201820" target="3600a2932e24365bcdc614428aa38b7c"/>
+        <edge source="https://example.org/id/concept/201820" target="1d71b35695849cd837d9e17d1c892a45"/>
+        <edge source="175d3e8c6a28ad3fef1628051b725da9" target="7666413b82543dbc4214e419e8e5e524"/>
+        <edge source="179ccb12629f949e730a6f4a05d1e1c1" target="e8750ec8812544f0cf71cde8e8635498"/>
+        <edge source="22af3af114d88e46134b5c5ef3540cfb" target="71fde4c9d53aa4e285fd8b9daf24628c"/>
+        <edge source="3b577dd8556415232a1e6d44005e9f52" target="d333beb3c2621fcab838920695615a8"/>
+        <edge source="5eed5646515ba44db03828c79f0818cc" target="451ded39b6a36cc8e25d8e751cc5a287"/>
+        <edge source="692b6d95dde9d86c59cdcb528e03963c" target="8b306e5a0e833b98aa0e3cc6bc03cbe2"/>
+        <edge source="73837f24a2b7eafe1c7be6e7a991f0d9" target="a235461a79f60e57c58664b38d817e92"/>
+        <edge source="7a3093c17cfe57d75c10106822ee9dce" target="25b578f66ecfe2872505765efdd88ab3"/>
+        <edge source="8de3081fc6540e5547e6531ed37e3d73" target="55fdc01065c57935ed03da6937b08573"/>
+        <edge source="8e0bf3fbae957c38350230a06a65a709" target="4927670981579dda0eabd2c54d14c8bb"/>
+        <edge source="a9219f97c57751654b9929542d870f31" target="eb9ca9d6c5d1ab4f24c8d76c824dc320"/>
+        <edge source="b2bb199c67af79c69fe5694a401daa0a" target="9b3bf5830e53e74b0b480d8cb389565e"/>
+        <edge source="c69af9e12a87934cdfe57ed741863ced" target="ec75b4fc8c059bec8c12436eb903e20c"/>
+        <edge source="d4bae5efd74999d2894e24e7fbacb914" target="2b4f141cdd3dc7511e173c9331b7dd6e"/>
+        <edge source="e6c5cb74cbaf2a8e3bc9c11ef04818cc" target="402dc8d5e25c1ce5f784fa3cae0076ae"/>
+        <edge source="ed790bdfa4feaae776b376d6e4fcc16e" target="f69121c873faa03543593016db7126be"/>
+        <edge source="fc22723a1ae8a5c2ea07cd8a962eb2b9" target="b50532df15e7b34ca02deb6af948cfa1"/>
+        <edge source="30932f94884f0cd21069a61e74ca245c" target="ca25aac46116a14cf611c0f0e8c01bbb"/>
+        <edge source="30932f94884f0cd21069a61e74ca245c" target="78583a550b45fd7bd1ff824c9cdd1f74"/>
+        <edge source="30932f94884f0cd21069a61e74ca245c" target="7a254c646c67f3680bfa6ef10f331046"/>
+        <edge source="cc54f33466735ca1d66d63df4072e661" target="d5108ba642b98a346a84a31835c28028"/>
+        <edge source="270aaa580a30585c8669a0f529518bc0" target="b2bb199c67af79c69fe5694a401daa0a"/>
+        <edge source="270aaa580a30585c8669a0f529518bc0" target="692b6d95dde9d86c59cdcb528e03963c"/>
+        <edge source="55fdc01065c57935ed03da6937b08573" target="8d18725e95c3ff2a25f772f0e8855f92"/>
+        <edge source="55fdc01065c57935ed03da6937b08573" target="5bf6f1c30c03019a07b92f5eca2232c1"/>
+        <edge source="93837ae03fa299c1073a1b150dbb16a1" target="c69af9e12a87934cdfe57ed741863ced"/>
+        <edge source="93837ae03fa299c1073a1b150dbb16a1" target="3b577dd8556415232a1e6d44005e9f52"/>
+        <edge source="93837ae03fa299c1073a1b150dbb16a1" target="22af3af114d88e46134b5c5ef3540cfb"/>
+        <edge source="93837ae03fa299c1073a1b150dbb16a1" target="179ccb12629f949e730a6f4a05d1e1c1"/>
+        <edge source="9740c90c3b541613ea7fbffb28a5ef64" target="ed790bdfa4feaae776b376d6e4fcc16e"/>
+        <edge source="9740c90c3b541613ea7fbffb28a5ef64" target="e6c5cb74cbaf2a8e3bc9c11ef04818cc"/>
+        <edge source="9740c90c3b541613ea7fbffb28a5ef64" target="d4bae5efd74999d2894e24e7fbacb914"/>
+        <edge source="9740c90c3b541613ea7fbffb28a5ef64" target="a9219f97c57751654b9929542d870f31"/>
+        <edge source="9740c90c3b541613ea7fbffb28a5ef64" target="7a3093c17cfe57d75c10106822ee9dce"/>
+        <edge source="9740c90c3b541613ea7fbffb28a5ef64" target="73837f24a2b7eafe1c7be6e7a991f0d9"/>
+        <edge source="9740c90c3b541613ea7fbffb28a5ef64" target="5eed5646515ba44db03828c79f0818cc"/>
+        <edge source="9740c90c3b541613ea7fbffb28a5ef64" target="175d3e8c6a28ad3fef1628051b725da9"/>
+        <edge source="9b3bf5830e53e74b0b480d8cb389565e" target="5cb4c027b6cb477025731d714eb30099"/>
+        <edge source="c9cb5937b9219041f0137631730da74d" target="fc22723a1ae8a5c2ea07cd8a962eb2b9"/>
+        <edge source="c9cb5937b9219041f0137631730da74d" target="8e0bf3fbae957c38350230a06a65a709"/>
+        <edge source="c9cb5937b9219041f0137631730da74d" target="8de3081fc6540e5547e6531ed37e3d73"/>
+        <edge source="ff94e9051fb74b53e85bb5f9b576fac8" target="50cc2ce56eaf61e3ce05ddec965a2a1b"/>
+        <edge source="ff94e9051fb74b53e85bb5f9b576fac8" target="3949cb7e8786164eb1e07075e6085b00"/>
+        <edge source="ff94e9051fb74b53e85bb5f9b576fac8" target="12d9857bba933580eebdffeee63b67da"/>
+        <edge source="89d8fb15db6732b4a5757a4ed9062522" target="c9cb5937b9219041f0137631730da74d"/>
+        <edge source="89d8fb15db6732b4a5757a4ed9062522" target="9740c90c3b541613ea7fbffb28a5ef64"/>
+        <edge source="89d8fb15db6732b4a5757a4ed9062522" target="72f4589fd8f97bdc001365f2485ad3ff"/>
+        <edge source="89d8fb15db6732b4a5757a4ed9062522" target="bc8087821b09bd3a9cf98035772e7db"/>
+        <edge source="https://example.org/id/concept/37311061" target="36a6ecd0121963ff19cc263d77efbd5c"/>
+        <edge source="3600a2932e24365bcdc614428aa38b7c" target="1c69811cab036ae3f0dc505736306fb4"/>
+        <edge source="c02aa0b72781b641a27b76d0960f9ac2" target="f83154debf84d05410c2e6ec5dd81488"/>
+        <edge source="5bf6f1c30c03019a07b92f5eca2232c1" target="74bb39c9292b8fe47f741974347b8532"/>
+        <edge source="5bf6f1c30c03019a07b92f5eca2232c1" target="fd520d5754bd6388c27b892ae0508cde"/>
+        <edge source="8d18725e95c3ff2a25f772f0e8855f92" target="63d8d15184d782f7b920bc6b38a17723"/>
+        <edge source="8d18725e95c3ff2a25f772f0e8855f92" target="74c42e94eea09d8912512839f589974e"/>
+        <edge source="15501f486f71a56c378112693e3a0bb6" target="ab4e62a7bd9d24190b04d2265fd6828"/>
+        <edge source="15501f486f71a56c378112693e3a0bb6" target="https://example.org/id/dataset/mubasCDM"/>
+        <edge source="15501f486f71a56c378112693e3a0bb6" target="cc54f33466735ca1d66d63df4072e661"/>
+        <edge source="https://example.org/id/design/IDSRCovid19PrevalenceAndPredictionStudy" target="89d8fb15db6732b4a5757a4ed9062522"/>
+        <edge source="https://example.org/id/design/IDSRCovid19PrevalenceAndPredictionStudy" target="30932f94884f0cd21069a61e74ca245c"/>
+        <edge source="25b578f66ecfe2872505765efdd88ab3" target="e82ad0076aea3116c6d2d26fa8da4ef5"/>
+        <edge source="2b4f141cdd3dc7511e173c9331b7dd6e" target="1cd988e0d6cab9db4046a6831b48ebc2"/>
+        <edge source="402dc8d5e25c1ce5f784fa3cae0076ae" target="6065a06188032829002cf169657748f2"/>
+        <edge source="451ded39b6a36cc8e25d8e751cc5a287" target="1d12a7b7842225f6da24ba1e6e2151f6"/>
+        <edge source="7666413b82543dbc4214e419e8e5e524" target="a66926cdf829b852ef4abf49b9fa687e"/>
+        <edge source="a235461a79f60e57c58664b38d817e92" target="e755b723fa38e7fcd52787017ef235a9"/>
+        <edge source="eb9ca9d6c5d1ab4f24c8d76c824dc320" target="e3e65de11adb276c2bef76f6a6154c19"/>
+        <edge source="f69121c873faa03543593016db7126be" target="71745ca26ddd530c79daf9c984a53e89"/>
+        <edge source="dbcc7c3aa028473de67df9df06c63791" target="442781e9ff4e11fdaba4311b0c867593"/>
+        <edge source="dbcc7c3aa028473de67df9df06c63791" target="https://example.org/id/dataset/coordinatingcenterCDM"/>
+        <edge source="dbcc7c3aa028473de67df9df06c63791" target="https://example.org/id/dataset/mubasCDM"/>
+        <edge source="dbcc7c3aa028473de67df9df06c63791" target="93837ae03fa299c1073a1b150dbb16a1"/>
+        <edge source="dbcc7c3aa028473de67df9df06c63791" target="270aaa580a30585c8669a0f529518bc0"/>
+        <edge source="dbcc7c3aa028473de67df9df06c63791" target="https://example.org/id/person/MuyingoS"/>
+        <edge source="https://example.org/id/dataset/mubasCDM" target="ca1188fd9a99a0b790ba6361917612be"/>
+        <edge source="https://example.org/id/dataset/mubasCDM" target="ecf5ae0feb9f0109638d8883d35c4f9d"/>
+        <edge source="https://example.org/id/dataset/mubasCDM" target="d1d1b64f4198c0be1522342b0167fd81"/>
+        <edge source="https://example.org/id/dataset/mubasCDM" target="9fb6ed00ba74fd55aaea968b91c88aef"/>
+        <edge source="https://example.org/id/dataset/mubasCDM" target="9e7aa7a6e17c3c0a2b78cb8ea80f95d6"/>
+        <edge source="https://example.org/id/dataset/mubasCDM" target="83a6c70eb07a6ba1041500b0f4d2df12"/>
+        <edge source="https://example.org/id/dataset/mubasCDM" target="80e924ec69de31b8d5d5514423485f5e"/>
+        <edge source="https://example.org/id/dataset/mubasCDM" target="66987de4d604aace8bb2f621314ab299"/>
+        <edge source="https://example.org/id/dataset/mubasCDM" target="170132c79a4809e318a6fe1533aaa9e2"/>
+        <edge source="https://example.org/id/dataset/mubasCDM" target="144b493e9e4ea212da545593fa87d1e7"/>
+        <edge source="https://example.org/id/dataset/mubasCDM" target="84416a85dc3317650ce742f959f6fdca"/>
+        <edge source="https://example.org/id/dataset/mubasCDM" target="https://example.org/id/person/TaylorA"/>
+        <edge source="https://example.org/id/dataset/coordinatingcenterCDM" target="e00b8c5b4f7e49647e0d5478190fb1b4"/>
+        <edge source="https://example.org/id/dataset/coordinatingcenterCDM" target="2e6743b00b20edb791afa2e210ec3e90"/>
+        <edge source="https://example.org/id/dataset/coordinatingcenterCDM" target="ff5979a39820fe3da9e29dcf8e402429"/>
+        <edge source="https://example.org/id/dataset/coordinatingcenterCDM" target="https://doi.org/10.5066/F7VX0DMQ"/>
+        <edge source="https://example.org/id/dataset/coordinatingcenterCDM" target="81a706c3cd4b12717ee59aa5d09a289e"/>
+        <edge source="https://example.org/id/dataset/coordinatingcenterCDM" target="https://example.org/id/person/MuyingoS"/>
+        <edge source="ab4e62a7bd9d24190b04d2265fd6828" target="3c09de4ab2a74a69140d6ad334a8e82c"/>
+        <edge source="9fb6ed00ba74fd55aaea968b91c88aef" target="fb8ad980edbaf088d8c444f0131943e5"/>
+        <edge source="9fb6ed00ba74fd55aaea968b91c88aef" target="ddcee1a9bceb18170d12720ba9bdccf3"/>
+        <edge source="9fb6ed00ba74fd55aaea968b91c88aef" target="9b43de826e69f2695772882d7750ee62"/>
+        <edge source="9fb6ed00ba74fd55aaea968b91c88aef" target="4b7b9735a2d1098a679c0ae8d18d431f"/>
+        <edge source="https://example.org/id/study/IDSRCovid19PrevalenceAndPredictionStudy" target="https://example.org/id/creativework/IDSRproject"/>
+        <edge source="https://example.org/id/study/IDSRCovid19PrevalenceAndPredictionStudy" target="919a7feab997a1d5700591237ca57a81"/>
+        <edge source="https://example.org/id/study/IDSRCovid19PrevalenceAndPredictionStudy" target="121d208a2ec14c8e45da14723d2b2ae7"/>
+        <edge source="https://example.org/id/study/IDSRCovid19PrevalenceAndPredictionStudy" target="11193e6d4efe9a41be4f0d01f0aa7e2b"/>
+        <edge source="https://example.org/id/study/IDSRCovid19PrevalenceAndPredictionStudy" target="dbcc7c3aa028473de67df9df06c63791"/>
+        <edge source="https://example.org/id/study/IDSRCovid19PrevalenceAndPredictionStudy" target="https://example.org/id/design/IDSRCovid19PrevalenceAndPredictionStudy"/>
+        <edge source="https://example.org/id/study/IDSRCovid19PrevalenceAndPredictionStudy" target="15501f486f71a56c378112693e3a0bb6"/>
+        <edge source="https://example.org/id/study/IDSRCovid19PrevalenceAndPredictionStudy" target="https://example.org/id/concept/37311061"/>
+        <edge source="https://example.org/id/study/IDSRCovid19PrevalenceAndPredictionStudy" target="https://example.org/id/concept/201820"/>
+        <edge source="https://example.org/id/study/IDSRCovid19PrevalenceAndPredictionStudy" target="https://example.org/id/concept/317009"/>
+        <edge source="9b43de826e69f2695772882d7750ee62" target="dbbb986ac6a709c0e9e1b61d2f4f8e71"/>
+        <edge source="ca1188fd9a99a0b790ba6361917612be" target="a3419c1bdb12b7f2bd1e79c0a6889332"/>
+        <edge source="ff5979a39820fe3da9e29dcf8e402429" target="78e94848b10f9f4aca9b1a8078ed6347"/>
+        <edge source="https://example.org/id/creativework/IDSRproject" target="https://example.org/id/person/MuyingoS"/>
+        <edge source="https://example.org/id/creativework/IDSRproject" target="https://example.org/id/person/TaylorA"/>
+        <edge source="3c09de4ab2a74a69140d6ad334a8e82c" target="1e0f8868c012090498ebfb0cf22e9545"/>
+        <edge source="dbbb986ac6a709c0e9e1b61d2f4f8e71" target="2f198c5a224a350eacb85eb1b3502322"/>
+    </graph>
+</graphml>

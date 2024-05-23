@@ -1,0 +1,11 @@
+@prefix : <https://schema.org/> .
+
+<https://example.org/datasets/ID> a :Dataset ;
+    :creator "Creator" ;
+    :description "description" ;
+    :identifier "doi" ;
+    :license "license" ;
+    :name "name" ;
+    :sameAs "type" ;
+    :url "url" .
+

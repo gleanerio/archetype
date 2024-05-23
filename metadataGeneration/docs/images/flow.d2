@@ -1,0 +1,27 @@
+direction: right
+
+input: Form or spreadsheet \n data acquisition
+
+d1: CSV and or YAML
+
+rdf: RDF \n (JSON-LD or other)
+ga: graph analytics
+
+input -> d1 
+
+df: Data frame\n (for data manipulation if needed)
+
+d1 -> df
+
+df -> transform
+
+transform -> rdf: via RML declarative
+transform -> rdf: via template population
+
+rdf -> validation:  via SHACL  (fit for use test)
+
+rdf -> triplestore:  (query via SHACL)
+triplestore -> ga
+rdf -> lpg:  (query via Cypher)
+lpg -> ga
+

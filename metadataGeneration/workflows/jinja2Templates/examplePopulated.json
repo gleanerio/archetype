@@ -1,0 +1,13 @@
+{
+    "@context": {
+        "@vocab": "https://schema.org/"
+    },
+    "@type": "Dataset",
+    "@id": "https://example.org/datasets/101.0",
+    "identifier": "http://journals.ametsoc.org/doi/abs/10.1175/WCAS-D-14-00049.1",
+    "name": "Miami-Dade SLOSH Cat 5",
+    "description": "A storm surge risk map created by NOAA utilizing...",
+    "url": "https://www.nhc.noaa.gov/nationalsurge/",
+    "license": "The data and maps in this tool illustrate the height of possible storm surge ...",
+    "sameAs": "Raster Dataset"
+}

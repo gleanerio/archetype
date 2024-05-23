@@ -11,8 +11,9 @@ Suggestions welcome!
 
 ## Tools and Services
 
-* [SemSpect](https://www.semspect.de/) scalable graph exploration and data-driven no-code querying tool for Neo4j and RDF data
 * Great inProcess LPG and RDF with [KuzuDB](https://kuzudb.com/)
+* [PuppyGraph](https://www.puppygraph.com/)
+* [SemSpect](https://www.semspect.de/) scalable graph exploration and data-driven no-code querying tool for Neo4j and RDF data
 * SPARQL related
   * [SPARQL wiki](https://kvistgaard.github.io/sparql/#/page/sparql%20wiki)
   * [yasgui](https://github.com/TriplyDB/Yasgui)
@@ -62,7 +63,7 @@ Suggestions welcome!
 * [Classy Schema](https://classyschema.org/Visualisation)
 * [SSSOM](https://mapping-commons.github.io/sssom/)
 * [Schemasheets](https://github.com/linkml/schemasheets)
-* [Linked Data Hub](https://github.com/AtomGraph/LinkedDataHub)
+* [Linked Data Hub](https://github.com/AtomGraph/LinkedDataHub) also [https://atomgraph.github.io/LinkedDataHub/](https://atomgraph.github.io/LinkedDataHub/)
 * [DuckDB](https://duckdb.org/)
 * [Harlequin](https://harlequin.sh/) database client for the terminal that works well with duckdb
 
@@ -77,3 +78,38 @@ Suggestions welcome!
   * [Sign-Posting Profile](https://signposting.org/)
   * [CEDAR](https://more.metadatacenter.org/) and [CEDAR API](https://more.metadatacenter.org/tools-training/cedar-api)
   * [DeSci Labs Research Object Nodes](https://docs.desci.com/)  
+
+
+
+
+## Network visualization
+- [Geph](https://gephi.org)
+- [Gephisto](https://lnkd.in/diSp3BWN)
+- [VOSviewer](https://www.vosviewer.com)
+- [Cytoscape](https://cytoscape.org)
+- [Kumu](https://kumu.io)
+- [GraphInsight](https://lnkd.in/d5XnkWJr)
+- [NodeXL](https://nodexl.com)
+- [Orange](https://lnkd.in/dZU8Zx3D)
+- [Graphia](https://graphia.app)
+- [Graphistry](https://www.graphistry.com)
+- [SocNetV](https://socnetv.org)
+- [Tulip](https://lnkd.in/dtc_BD33)
+
+## Network Libraries
+- [networkx](https://lnkd.in/dKCCXjif)
+- [graphviz](https://lnkd.in/dtrTeqRv)
+- [pydot](https://lnkd.in/dA46YZvy)
+- [python-igraph](https://lnkd.in/dCGsRXh2)
+- [pyvis](https://lnkd.in/dVrQ64nN)
+- [ipycytoscape](https://lnkd.in/d-hJjDdG)
+- [pygsp](https://lnkd.in/dS7s-A_v)
+- [graph-tool](https://lnkd.in/dvytUzdu)
+- [nxviz](https://lnkd.in/duHbKGPN)
+- [py2cytoscape](https://lnkd.in/dWUU8TZH)
+- [ipydagred3](https://lnkd.in/diXgFWMD)
+- [ipysigma](https://lnkd.in/dP55J5et)
+- [Py3Plex](https://lnkd.in/dhwe7f_g)
+- [net wulf](https://lnkd.in/dxrHAm2P)
+
+

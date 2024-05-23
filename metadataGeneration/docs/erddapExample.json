@@ -1,0 +1,1947 @@
+
+{
+  "@context": {"@vocab":"https://schema.org/"},
+  "@type": "Dataset",
+  "name": "MEOP animal profiles, v2024",
+  "headline": "MEOP_profiles",
+  "description": "MEOP animal profiles, v2024\ncdm_altitude_proxy=PRES\ncdm_data_type=TrajectoryProfile\ncdm_profile_variables=CYCLE_NUMBER\ncdm_trajectory_variables=PLATFORM_NUMBER\ncitation=The marine mammal data were collected and made freely available by the International MEOP Consortium and the national programs that contribute to it (http://www.meop.net).\nConventions=CF-1.6 Sea-mammals-1.1, COARDS, ACDD-1.3, NCCSV-1.1\ndata_type=Marine animals profile data\ndate_update=2024-03-07T10:40:00Z\ndistribution_statement=Follow MEOP data policy standards, cf. http://www.meop.net/the-dataset/data-access.html. Data available free of charge. User assumes all risk for use of data. User must display citation in any publication or product using data. User must contact PI prior to any commercial use of data\nEasternmost_Easting=179.9984\nfeatureType=TrajectoryProfile\nformat_version=1.1\ngeospatial_lat_max=87.7764\ngeospatial_lat_min=-78.66\ngeospatial_lat_units=degrees_north\ngeospatial_lon_max=179.9984\ngeospatial_lon_min=-179.9998\ngeospatial_lon_units=degrees_east\ninfoUrl=http://www.meop.net\ninstitution=MEOP\nis_the_data_public=yes: data can be used freely providing that data owner is properly cited (see meop.net for citing information)\nnaming_authority=MEOP consortium (Marine Mammals Exploring the Oceans Pole to Pole)\nNorthernmost_Northing=87.7764\nnumber_light_profiles=0.0\nreferences=http://www.meop.net\nsource=Marine mammal observation\nsourceUrl=(local files)\nSouthernmost_Northing=-78.66\nstandard_name_vocabulary=CF Standard Name Table v70\nsubsetVariables=deployment_code,wmo_platform_code,smru_platform_code,species\ntime_coverage_end=2024-02-22T12:45:00Z\ntime_coverage_start=2004-01-27T11:49:00Z\nversion_database=MEOP-CTD_2024-03-08\nWesternmost_Easting=-179.9998",
+  "url": "https://osmc.noaa.gov/erddap/tabledap/MEOP_profiles.html",
+  "includedInDataCatalog": {
+    "@type": "DataCatalog",
+    "name": "ERDDAP Data Server at OSMC",
+    "sameAs": "https://osmc.noaa.gov/erddap"
+  },
+  "keywords": [
+    "available",
+    "calibration",
+    "centre",
+    "charge",
+    "coded",
+    "creation",
+    "cycle",
+    "CYCLE_NUMBER",
+    "data",
+    "DATA_CENTRE",
+    "DATA_MODE",
+    "DATA_STATE_INDICATOR",
+    "DATA_TYPE",
+    "database",
+    "date",
+    "DATE_CREATION",
+    "DATE_UPDATE",
+    "day",
+    "DC_REFERENCE",
+    "degree",
+    "delayed",
+    "direction",
+    "equation",
+    "file",
+    "flag",
+    "float",
+    "format",
+    "FORMAT_VERSION",
+    "global",
+    "handbook",
+    "HANDBOOK_VERSION",
+    "identifier",
+    "information",
+    "INST_REFERENCE",
+    "instrument",
+    "JULD_LOCATION",
+    "JULD_QC",
+    "julian",
+    "latitude",
+    "list",
+    "local",
+    "longitude",
+    "meop",
+    "mode",
+    "name",
+    "number",
+    "parameter",
+    "parameters",
+    "passed",
+    "PI_NAME",
+    "PLATFORM_NUMBER",
+    "position",
+    "POSITION_QC",
+    "positioning",
+    "POSITIONING_SYSTEM",
+    "pres",
+    "processing",
+    "profile",
+    "PROFILE_PRES_QC",
+    "PROFILE_PSAL_QC",
+    "PROFILE_TEMP_QC",
+    "profiles",
+    "project",
+    "PROJECT_NAME",
+    "psal",
+    "quality",
+    "real",
+    "reference",
+    "REFERENCE_DATE_TIME",
+    "relative",
+    "SCIENTIFIC_CALIB_COEFFICIENT",
+    "SCIENTIFIC_CALIB_EQUATION",
+    "smru",
+    "source",
+    "srdl",
+    "station",
+    "STATION_PARAMETERS",
+    "system",
+    "temperature",
+    "through",
+    "time",
+    "type",
+    "unique",
+    "update",
+    "version",
+    "with",
+    "WMO_INST_TYPE"
+  ],
+  "license": "Follow MEOP data policy standards, cf. http://www.meop.net/the-dataset/data-access.html. Data available free of charge. User assumes all risk for use of data. User must display citation in any publication or product using data. User must contact PI prior to any commercial use of data",
+  "variableMeasured": [
+    {
+      "@type": "PropertyValue",
+      "name": "deployment_code",
+      "alternateName": "deployment code",
+      "description": "deployment code",
+      "valueReference": [
+        {
+          "@type": "PropertyValue",
+          "name": "axisOrDataVariable",
+          "value": "data"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "comment",
+          "value": "deployment code"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "long_name",
+          "value": "deployment code"
+        }
+      ]
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "wmo_platform_code",
+      "alternateName": "wmo platform code",
+      "description": "wmo platform code",
+      "valueReference": [
+        {
+          "@type": "PropertyValue",
+          "name": "axisOrDataVariable",
+          "value": "data"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "comment",
+          "value": "wmo platform code"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "long_name",
+          "value": "wmo platform code"
+        }
+      ]
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "smru_platform_code",
+      "alternateName": "smru platform code",
+      "description": "smru platform code",
+      "valueReference": [
+        {
+          "@type": "PropertyValue",
+          "name": "axisOrDataVariable",
+          "value": "data"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "comment",
+          "value": "smru platform code"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "long_name",
+          "value": "smru platform code"
+        }
+      ]
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "species",
+      "alternateName": "Species type",
+      "description": "Species type",
+      "valueReference": [
+        {
+          "@type": "PropertyValue",
+          "name": "axisOrDataVariable",
+          "value": "data"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "comment",
+          "value": "Species type"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "long_name",
+          "value": "Species type"
+        }
+      ]
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "DATA_TYPE",
+      "alternateName": "DATA TYPE",
+      "description": "DATA TYPE",
+      "valueReference": [
+        {
+          "@type": "PropertyValue",
+          "name": "axisOrDataVariable",
+          "value": "data"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "comment",
+          "value": "Data type"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "long_name",
+          "value": "DATA TYPE"
+        }
+      ]
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "FORMAT_VERSION",
+      "alternateName": "FORMAT VERSION",
+      "description": "FORMAT VERSION",
+      "valueReference": [
+        {
+          "@type": "PropertyValue",
+          "name": "axisOrDataVariable",
+          "value": "data"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "comment",
+          "value": "File format version"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "long_name",
+          "value": "FORMAT VERSION"
+        }
+      ]
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "HANDBOOK_VERSION",
+      "alternateName": "HANDBOOK VERSION",
+      "description": "HANDBOOK VERSION",
+      "valueReference": [
+        {
+          "@type": "PropertyValue",
+          "name": "axisOrDataVariable",
+          "value": "data"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "comment",
+          "value": "Data handbook version"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "long_name",
+          "value": "HANDBOOK VERSION"
+        }
+      ]
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "REFERENCE_DATE_TIME",
+      "alternateName": "REFERENCE DATE TIME",
+      "description": "REFERENCE DATE TIME",
+      "valueReference": [
+        {
+          "@type": "PropertyValue",
+          "name": "axisOrDataVariable",
+          "value": "data"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "comment",
+          "value": "Date of reference for Julian days"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "conventions",
+          "value": "YYYYMMDDHHMISS"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "long_name",
+          "value": "REFERENCE DATE TIME"
+        }
+      ]
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "DATE_CREATION",
+      "alternateName": "DATE CREATION",
+      "description": "DATE CREATION",
+      "valueReference": [
+        {
+          "@type": "PropertyValue",
+          "name": "axisOrDataVariable",
+          "value": "data"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "comment",
+          "value": "Date of file creation"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "conventions",
+          "value": "YYYYMMDDHHMISS"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "long_name",
+          "value": "DATE CREATION"
+        }
+      ]
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "DATE_UPDATE",
+      "alternateName": "Date of update of this file",
+      "description": "Date of update of this file",
+      "valueReference": [
+        {
+          "@type": "PropertyValue",
+          "name": "axisOrDataVariable",
+          "value": "data"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "conventions",
+          "value": "YYYYMMDDHHMISS"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "long_name",
+          "value": "Date of update of this file"
+        }
+      ]
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "PLATFORM_NUMBER",
+      "alternateName": "Float unique identifier",
+      "description": "Float unique identifier",
+      "valueReference": [
+        {
+          "@type": "PropertyValue",
+          "name": "axisOrDataVariable",
+          "value": "data"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "cf_role",
+          "value": "trajectory_id"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "conventions",
+          "value": "WMO float identifier : A9IIIII"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "long_name",
+          "value": "Float unique identifier"
+        }
+      ]
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "PROJECT_NAME",
+      "alternateName": "PROJECT NAME",
+      "description": "PROJECT NAME",
+      "valueReference": [
+        {
+          "@type": "PropertyValue",
+          "name": "axisOrDataVariable",
+          "value": "data"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "comment",
+          "value": "Name of the project"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "long_name",
+          "value": "PROJECT NAME"
+        }
+      ]
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "PI_NAME",
+      "alternateName": "PI NAME",
+      "description": "PI NAME",
+      "valueReference": [
+        {
+          "@type": "PropertyValue",
+          "name": "axisOrDataVariable",
+          "value": "data"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "comment",
+          "value": "Name of the principal investigator"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "long_name",
+          "value": "PI NAME"
+        }
+      ]
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "CYCLE_NUMBER",
+      "alternateName": "Float cycle number",
+      "description": "Float cycle number",
+      "valueReference": [
+        {
+          "@type": "PropertyValue",
+          "name": "axisOrDataVariable",
+          "value": "data"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "_FillValue",
+          "value": 99999
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "cf_role",
+          "value": "profile_id"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "colorBarMaximum",
+          "value": 100
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "colorBarMinimum",
+          "value": 0
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "conventions",
+          "value": "0..N, 0 : launch cycle (if exists), 1 : first complete cycle"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "long_name",
+          "value": "Float cycle number"
+        }
+      ],
+      "maxValue": 2893,
+      "minValue": 1,
+      "unitText": "1"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "DIRECTION",
+      "alternateName": "Direction of the station profiles",
+      "description": "Direction of the station profiles",
+      "valueReference": [
+        {
+          "@type": "PropertyValue",
+          "name": "axisOrDataVariable",
+          "value": "data"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "colorBarMaximum",
+          "value": 360
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "colorBarMinimum",
+          "value": 0
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "conventions",
+          "value": "A: ascending profiles, D: descending profiles"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "long_name",
+          "value": "Direction of the station profiles"
+        }
+      ],
+      "maxValue": 65,
+      "minValue": 65
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "DATA_CENTRE",
+      "alternateName": "Data centre in charge of float data processing",
+      "description": "Data centre in charge of float data processing",
+      "valueReference": [
+        {
+          "@type": "PropertyValue",
+          "name": "axisOrDataVariable",
+          "value": "data"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "conventions",
+          "value": "Argo reference table 4"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "long_name",
+          "value": "Data centre in charge of float data processing"
+        }
+      ]
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "DC_REFERENCE",
+      "alternateName": "Station unique identifier in data centre",
+      "description": "Station unique identifier in data centre",
+      "valueReference": [
+        {
+          "@type": "PropertyValue",
+          "name": "axisOrDataVariable",
+          "value": "data"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "conventions",
+          "value": "Data centre convention"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "long_name",
+          "value": "Station unique identifier in data centre"
+        }
+      ]
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "DATA_STATE_INDICATOR",
+      "alternateName": "Degree of processing the data have passed through",
+      "description": "Degree of processing the data have passed through",
+      "valueReference": [
+        {
+          "@type": "PropertyValue",
+          "name": "axisOrDataVariable",
+          "value": "data"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "conventions",
+          "value": "Argo reference table 6"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "long_name",
+          "value": "Degree of processing the data have passed through"
+        }
+      ]
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "DATA_MODE",
+      "alternateName": "Delayed mode or real time data",
+      "description": "Delayed mode or real time data",
+      "valueReference": [
+        {
+          "@type": "PropertyValue",
+          "name": "axisOrDataVariable",
+          "value": "data"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "conventions",
+          "value": "R : real time; D : delayed mode; A : real time with adjustment"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "long_name",
+          "value": "Delayed mode or real time data"
+        }
+      ],
+      "maxValue": 68,
+      "minValue": 68
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "INST_REFERENCE",
+      "alternateName": "Instrument type",
+      "description": "Instrument type",
+      "valueReference": [
+        {
+          "@type": "PropertyValue",
+          "name": "axisOrDataVariable",
+          "value": "data"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "conventions",
+          "value": "Brand, type, serial number"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "long_name",
+          "value": "Instrument type"
+        }
+      ]
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "WMO_INST_TYPE",
+      "alternateName": "Coded instrument type",
+      "description": "Coded instrument type",
+      "valueReference": [
+        {
+          "@type": "PropertyValue",
+          "name": "axisOrDataVariable",
+          "value": "data"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "conventions",
+          "value": "Argo reference table 8"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "long_name",
+          "value": "Coded instrument type"
+        }
+      ]
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "time",
+      "alternateName": "Julian day (UTC) of the station relative to REFERENCE_DATE_TIME",
+      "description": "Julian day (UTC) of the station relative to REFERENCE_DATE_TIME",
+      "valueReference": [
+        {
+          "@type": "PropertyValue",
+          "name": "axisOrDataVariable",
+          "value": "data"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "_CoordinateAxisType",
+          "value": "Time"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "axis",
+          "value": "T"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "calendar",
+          "value": "julian"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "conventions",
+          "value": "Relative julian days with decimal part (as parts of day)"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ioos_category",
+          "value": "Time"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "long_name",
+          "value": "Julian day (UTC) of the station relative to REFERENCE_DATE_TIME"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "source_name",
+          "value": "JULD"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "standard_name",
+          "value": "time"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "time_origin",
+          "value": "01-JAN-1970 00:00:00"
+        }
+      ],
+      "maxValue": "2024-02-22T12:45:00Z",
+      "minValue": "2004-01-27T11:49:00Z",
+      "propertyID": "time"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "JULD_QC",
+      "alternateName": "Quality on Date and Time",
+      "description": "Quality on Date and Time",
+      "valueReference": [
+        {
+          "@type": "PropertyValue",
+          "name": "axisOrDataVariable",
+          "value": "data"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "colorBarMaximum",
+          "value": 150
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "colorBarMinimum",
+          "value": 0
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "conventions",
+          "value": "Argo reference table 2"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "long_name",
+          "value": "Quality on Date and Time"
+        }
+      ],
+      "maxValue": 49,
+      "minValue": 49
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "JULD_LOCATION",
+      "alternateName": "Julian day (UTC) of the location relative to REFERENCE_DATE_TIME",
+      "description": "Julian day (UTC) of the location relative to REFERENCE_DATE_TIME",
+      "valueReference": [
+        {
+          "@type": "PropertyValue",
+          "name": "axisOrDataVariable",
+          "value": "data"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "calendar",
+          "value": "julian"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "conventions",
+          "value": "Relative julian days with decimal part (as parts of day)"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ioos_category",
+          "value": "Time"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "long_name",
+          "value": "Julian day (UTC) of the location relative to REFERENCE_DATE_TIME"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "standard_name",
+          "value": "time"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "time_origin",
+          "value": "01-JAN-1970 00:00:00"
+        }
+      ],
+      "maxValue": 1.7086059E9,
+      "minValue": 1.07520414E9,
+      "propertyID": "time",
+      "unitText": "seconds since 1970-01-01T00:00:00Z"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "latitude",
+      "alternateName": "Latitude of the station, best estimate",
+      "description": "Latitude of the station, best estimate",
+      "valueReference": [
+        {
+          "@type": "PropertyValue",
+          "name": "axisOrDataVariable",
+          "value": "data"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "_CoordinateAxisType",
+          "value": "Lat"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "_FillValue",
+          "value": 99999
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "axis",
+          "value": "Y"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "colorBarMaximum",
+          "value": 90
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "colorBarMinimum",
+          "value": -90
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ioos_category",
+          "value": "Location"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "long_name",
+          "value": "Latitude of the station, best estimate"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "standard_name",
+          "value": "latitude"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "valid_max",
+          "value": 90
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "valid_min",
+          "value": -90
+        }
+      ],
+      "maxValue": 87.7764,
+      "minValue": -78.66,
+      "propertyID": "latitude",
+      "unitText": "degrees_north"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "longitude",
+      "alternateName": "Longitude of the station, best estimate",
+      "description": "Longitude of the station, best estimate",
+      "valueReference": [
+        {
+          "@type": "PropertyValue",
+          "name": "axisOrDataVariable",
+          "value": "data"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "_CoordinateAxisType",
+          "value": "Lon"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "_FillValue",
+          "value": 99999
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "axis",
+          "value": "X"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "colorBarMaximum",
+          "value": 180
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "colorBarMinimum",
+          "value": -180
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "ioos_category",
+          "value": "Location"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "long_name",
+          "value": "Longitude of the station, best estimate"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "standard_name",
+          "value": "longitude"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "valid_max",
+          "value": 180
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "valid_min",
+          "value": -180
+        }
+      ],
+      "maxValue": 179.9984,
+      "minValue": -179.9998,
+      "propertyID": "longitude",
+      "unitText": "degrees_east"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "POSITION_QC",
+      "alternateName": "Quality on position (latitude and longitude)",
+      "description": "Quality on position (latitude and longitude)",
+      "valueReference": [
+        {
+          "@type": "PropertyValue",
+          "name": "axisOrDataVariable",
+          "value": "data"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "colorBarMaximum",
+          "value": 150
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "colorBarMinimum",
+          "value": 0
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "conventions",
+          "value": "Argo reference table 2"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "long_name",
+          "value": "Quality on position (latitude and longitude)"
+        }
+      ],
+      "maxValue": 49,
+      "minValue": 49
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "POSITIONING_SYSTEM",
+      "alternateName": "Positioning system",
+      "description": "Positioning system",
+      "valueReference": [
+        {
+          "@type": "PropertyValue",
+          "name": "axisOrDataVariable",
+          "value": "data"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "long_name",
+          "value": "Positioning system"
+        }
+      ]
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "PROFILE_PRES_QC",
+      "alternateName": "Global quality flag of PRES profile",
+      "description": "Global quality flag of PRES profile",
+      "valueReference": [
+        {
+          "@type": "PropertyValue",
+          "name": "axisOrDataVariable",
+          "value": "data"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "colorBarMaximum",
+          "value": 150
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "colorBarMinimum",
+          "value": 0
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "conventions",
+          "value": "Argo reference table 2a"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "long_name",
+          "value": "Global quality flag of PRES profile"
+        }
+      ],
+      "maxValue": 65,
+      "minValue": 65
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "PROFILE_PSAL_QC",
+      "alternateName": "Global quality flag of PSAL profile",
+      "description": "Global quality flag of PSAL profile",
+      "valueReference": [
+        {
+          "@type": "PropertyValue",
+          "name": "axisOrDataVariable",
+          "value": "data"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "colorBarMaximum",
+          "value": 150
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "colorBarMinimum",
+          "value": 0
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "conventions",
+          "value": "Argo reference table 2a"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "long_name",
+          "value": "Global quality flag of PSAL profile"
+        }
+      ],
+      "maxValue": 65,
+      "minValue": 65
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "PROFILE_TEMP_QC",
+      "alternateName": "Global quality flag of TEMP profile",
+      "description": "Global quality flag of TEMP profile",
+      "valueReference": [
+        {
+          "@type": "PropertyValue",
+          "name": "axisOrDataVariable",
+          "value": "data"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "colorBarMaximum",
+          "value": 150
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "colorBarMinimum",
+          "value": 0
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "conventions",
+          "value": "Argo reference table 2a"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "long_name",
+          "value": "Global quality flag of TEMP profile"
+        }
+      ],
+      "maxValue": 65,
+      "minValue": 65
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "PRES",
+      "alternateName": "SEA PRESSURE",
+      "description": "SEA PRESSURE",
+      "valueReference": [
+        {
+          "@type": "PropertyValue",
+          "name": "axisOrDataVariable",
+          "value": "data"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "_CoordinateAxisType",
+          "value": "Height"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "_FillValue",
+          "value": 99999
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "axis",
+          "value": "Z"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "colorBarMaximum",
+          "value": 15000
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "colorBarMinimum",
+          "value": 0
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "comment",
+          "value": "In situ measurement, sea surface = 0"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "long_name",
+          "value": "SEA PRESSURE"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "valid_max",
+          "value": 12000
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "valid_min",
+          "value": 0
+        }
+      ],
+      "maxValue": 2552,
+      "minValue": 0,
+      "unitText": "decibar"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "PRES_QC",
+      "alternateName": "quality flag",
+      "description": "quality flag",
+      "valueReference": [
+        {
+          "@type": "PropertyValue",
+          "name": "axisOrDataVariable",
+          "value": "data"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "colorBarMaximum",
+          "value": 150
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "colorBarMinimum",
+          "value": 0
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "conventions",
+          "value": "Argo reference table 2"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "long_name",
+          "value": "quality flag"
+        }
+      ],
+      "maxValue": 57,
+      "minValue": 49
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "PRES_ADJUSTED",
+      "alternateName": "SEA PRESSURE",
+      "description": "SEA PRESSURE",
+      "valueReference": [
+        {
+          "@type": "PropertyValue",
+          "name": "axisOrDataVariable",
+          "value": "data"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "_FillValue",
+          "value": 99999
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "colorBarMaximum",
+          "value": 15000
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "colorBarMinimum",
+          "value": 0
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "comment",
+          "value": "In situ measurement, sea surface = 0"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "long_name",
+          "value": "SEA PRESSURE"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "valid_max",
+          "value": 12000
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "valid_min",
+          "value": 0
+        }
+      ],
+      "maxValue": 2552,
+      "minValue": 0,
+      "unitText": "decibar"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "PRES_ADJUSTED_QC",
+      "alternateName": "quality flag",
+      "description": "quality flag",
+      "valueReference": [
+        {
+          "@type": "PropertyValue",
+          "name": "axisOrDataVariable",
+          "value": "data"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "colorBarMaximum",
+          "value": 150
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "colorBarMinimum",
+          "value": 0
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "conventions",
+          "value": "Argo reference table 2"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "long_name",
+          "value": "quality flag"
+        }
+      ],
+      "maxValue": 57,
+      "minValue": 49
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "PRES_ADJUSTED_ERROR",
+      "alternateName": "SEA PRESSURE",
+      "description": "SEA PRESSURE",
+      "valueReference": [
+        {
+          "@type": "PropertyValue",
+          "name": "axisOrDataVariable",
+          "value": "data"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "_FillValue",
+          "value": 99999
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "colorBarMaximum",
+          "value": 50
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "colorBarMinimum",
+          "value": 0
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "comment",
+          "value": "Contains the error on the adjusted values as determined by the delayed mode QC process."
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "long_name",
+          "value": "SEA PRESSURE"
+        }
+      ],
+      "unitText": "decibar"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "TEMP",
+      "alternateName": "SEA TEMPERATURE IN SITU ITS-90 SCALE",
+      "description": "SEA TEMPERATURE IN SITU ITS-90 SCALE",
+      "valueReference": [
+        {
+          "@type": "PropertyValue",
+          "name": "axisOrDataVariable",
+          "value": "data"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "_FillValue",
+          "value": 99999
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "colorBarMaximum",
+          "value": 40
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "colorBarMinimum",
+          "value": -10
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "comment",
+          "value": "In situ measurement"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "long_name",
+          "value": "SEA TEMPERATURE IN SITU ITS-90 SCALE"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "valid_max",
+          "value": 40
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "valid_min",
+          "value": -2
+        }
+      ],
+      "maxValue": 932.5018,
+      "minValue": -7.801476,
+      "unitText": "degree_Celsius"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "TEMP_QC",
+      "alternateName": "quality flag",
+      "description": "quality flag",
+      "valueReference": [
+        {
+          "@type": "PropertyValue",
+          "name": "axisOrDataVariable",
+          "value": "data"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "colorBarMaximum",
+          "value": 150
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "colorBarMinimum",
+          "value": 0
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "conventions",
+          "value": "Argo reference table 2"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "long_name",
+          "value": "quality flag"
+        }
+      ],
+      "maxValue": 57,
+      "minValue": 49
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "TEMP_ADJUSTED",
+      "alternateName": "SEA TEMPERATURE IN SITU ITS-90 SCALE",
+      "description": "SEA TEMPERATURE IN SITU ITS-90 SCALE",
+      "valueReference": [
+        {
+          "@type": "PropertyValue",
+          "name": "axisOrDataVariable",
+          "value": "data"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "_FillValue",
+          "value": 99999
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "colorBarMaximum",
+          "value": 40
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "colorBarMinimum",
+          "value": -10
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "comment",
+          "value": "In situ measurement"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "long_name",
+          "value": "SEA TEMPERATURE IN SITU ITS-90 SCALE"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "valid_max",
+          "value": 40
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "valid_min",
+          "value": -2
+        }
+      ],
+      "maxValue": 31.98509,
+      "minValue": -4.915466,
+      "unitText": "degree_Celsius"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "TEMP_ADJUSTED_QC",
+      "alternateName": "quality flag",
+      "description": "quality flag",
+      "valueReference": [
+        {
+          "@type": "PropertyValue",
+          "name": "axisOrDataVariable",
+          "value": "data"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "colorBarMaximum",
+          "value": 150
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "colorBarMinimum",
+          "value": 0
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "conventions",
+          "value": "Argo reference table 2"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "long_name",
+          "value": "quality flag"
+        }
+      ],
+      "maxValue": 57,
+      "minValue": 49
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "TEMP_ADJUSTED_ERROR",
+      "alternateName": "SEA TEMPERATURE ERROR IN SITU ITS-90 SCALE",
+      "description": "SEA TEMPERATURE ERROR IN SITU ITS-90 SCALE",
+      "valueReference": [
+        {
+          "@type": "PropertyValue",
+          "name": "axisOrDataVariable",
+          "value": "data"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "_FillValue",
+          "value": 99999
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "colorBarMaximum",
+          "value": 5
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "colorBarMinimum",
+          "value": 0
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "comment",
+          "value": "Contains the error on the adjusted values as determined by the delayed mode QC process."
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "long_name",
+          "value": "SEA TEMPERATURE ERROR IN SITU ITS-90 SCALE"
+        }
+      ],
+      "maxValue": 0.4,
+      "minValue": 0.03,
+      "unitText": "degree_Celsius"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "PSAL",
+      "alternateName": "PRACTICAL SALINITY",
+      "description": "PRACTICAL SALINITY",
+      "valueReference": [
+        {
+          "@type": "PropertyValue",
+          "name": "axisOrDataVariable",
+          "value": "data"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "_FillValue",
+          "value": 99999
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "colorBarMaximum",
+          "value": 37
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "colorBarMinimum",
+          "value": 32
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "comment",
+          "value": "In situ measurement"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "long_name",
+          "value": "PRACTICAL SALINITY"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "standard_name",
+          "value": "sea_water_practical_salinity"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "valid_max",
+          "value": 42
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "valid_min",
+          "value": 0
+        }
+      ],
+      "maxValue": 22614.28,
+      "minValue": -0.006794212,
+      "propertyID": "sea_water_practical_salinity",
+      "unitText": "PSU"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "PSAL_QC",
+      "alternateName": "quality flag",
+      "description": "quality flag",
+      "valueReference": [
+        {
+          "@type": "PropertyValue",
+          "name": "axisOrDataVariable",
+          "value": "data"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "colorBarMaximum",
+          "value": 150
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "colorBarMinimum",
+          "value": 0
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "conventions",
+          "value": "Argo reference table 2"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "long_name",
+          "value": "quality flag"
+        }
+      ],
+      "maxValue": 57,
+      "minValue": 49
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "PSAL_ADJUSTED",
+      "alternateName": "ADJUSTED PRACTICAL SALINITY",
+      "description": "ADJUSTED PRACTICAL SALINITY",
+      "valueReference": [
+        {
+          "@type": "PropertyValue",
+          "name": "axisOrDataVariable",
+          "value": "data"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "_FillValue",
+          "value": 99999
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "colorBarMaximum",
+          "value": 37
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "colorBarMinimum",
+          "value": 32
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "comment",
+          "value": "In situ measurement"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "long_name",
+          "value": "ADJUSTED PRACTICAL SALINITY"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "standard_name",
+          "value": "sea_water_practical_salinity"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "valid_max",
+          "value": 42
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "valid_min",
+          "value": 0
+        }
+      ],
+      "maxValue": 39.05772,
+      "minValue": 4.065279,
+      "propertyID": "sea_water_practical_salinity",
+      "unitText": "PSU"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "PSAL_ADJUSTED_QC",
+      "alternateName": "quality flag",
+      "description": "quality flag",
+      "valueReference": [
+        {
+          "@type": "PropertyValue",
+          "name": "axisOrDataVariable",
+          "value": "data"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "colorBarMaximum",
+          "value": 150
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "colorBarMinimum",
+          "value": 0
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "conventions",
+          "value": "Argo reference table 2"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "long_name",
+          "value": "quality flag"
+        }
+      ],
+      "maxValue": 57,
+      "minValue": 49
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "PSAL_ADJUSTED_ERROR",
+      "alternateName": "PRACTICAL SALINITY ERROR",
+      "description": "PRACTICAL SALINITY ERROR",
+      "valueReference": [
+        {
+          "@type": "PropertyValue",
+          "name": "axisOrDataVariable",
+          "value": "data"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "_FillValue",
+          "value": 99999
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "colorBarMaximum",
+          "value": 0.1
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "colorBarMinimum",
+          "value": 0
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "comment",
+          "value": "Contains the error on the adjusted values as determined by the delayed mode QC process."
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "long_name",
+          "value": "PRACTICAL SALINITY ERROR"
+        }
+      ],
+      "maxValue": 0.4,
+      "minValue": 0.05,
+      "unitText": "1e-3"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "data_assembly_center",
+      "alternateName": "Data Assembly Center",
+      "description": "Data Assembly Center",
+      "valueReference": [
+        {
+          "@type": "PropertyValue",
+          "name": "axisOrDataVariable",
+          "value": "data"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "long_name",
+          "value": "Data Assembly Center"
+        }
+      ]
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "reference_file_name",
+      "alternateName": "Name of reference file",
+      "description": "Name of reference file",
+      "valueReference": [
+        {
+          "@type": "PropertyValue",
+          "name": "axisOrDataVariable",
+          "value": "data"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "long_name",
+          "value": "Name of reference file"
+        }
+      ]
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "nation",
+      "alternateName": "Name of nation",
+      "description": "Name of nation",
+      "valueReference": [
+        {
+          "@type": "PropertyValue",
+          "name": "axisOrDataVariable",
+          "value": "data"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "long_name",
+          "value": "Name of nation"
+        }
+      ]
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "meop_platform_code",
+      "alternateName": "MEOP platform code",
+      "description": "MEOP platform code",
+      "valueReference": [
+        {
+          "@type": "PropertyValue",
+          "name": "axisOrDataVariable",
+          "value": "data"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "long_name",
+          "value": "MEOP platform code"
+        }
+      ]
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "location",
+      "alternateName": "Location name of observation",
+      "description": "Location name of observation",
+      "valueReference": [
+        {
+          "@type": "PropertyValue",
+          "name": "axisOrDataVariable",
+          "value": "data"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "long_name",
+          "value": "Location name of observation"
+        }
+      ]
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "instr_id",
+      "alternateName": "instrument ID",
+      "description": "instrument ID",
+      "valueReference": [
+        {
+          "@type": "PropertyValue",
+          "name": "axisOrDataVariable",
+          "value": "data"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "long_name",
+          "value": "instrument ID"
+        }
+      ]
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "ptt",
+      "alternateName": "ptt",
+      "description": "ptt",
+      "valueReference": [
+        {
+          "@type": "PropertyValue",
+          "name": "axisOrDataVariable",
+          "value": "data"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "long_name",
+          "value": "ptt"
+        }
+      ]
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "loc_algorithm",
+      "alternateName": "location algorithm used",
+      "description": "location algorithm used",
+      "valueReference": [
+        {
+          "@type": "PropertyValue",
+          "name": "axisOrDataVariable",
+          "value": "data"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "long_name",
+          "value": "location algorithm used"
+        }
+      ]
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "firmware_parameters",
+      "alternateName": "firmware_parameters",
+      "description": "firmware_parameters",
+      "valueReference": [
+        {
+          "@type": "PropertyValue",
+          "name": "axisOrDataVariable",
+          "value": "data"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "long_name",
+          "value": "firmware_parameters"
+        }
+      ]
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "firmware_version",
+      "alternateName": "firmware version",
+      "description": "firmware version",
+      "valueReference": [
+        {
+          "@type": "PropertyValue",
+          "name": "axisOrDataVariable",
+          "value": "data"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "long_name",
+          "value": "firmware version"
+        }
+      ]
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "thermal_lag_adjustment",
+      "alternateName": "thermal lag adjustment",
+      "description": "thermal lag adjustment",
+      "valueReference": [
+        {
+          "@type": "PropertyValue",
+          "name": "axisOrDataVariable",
+          "value": "data"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "long_name",
+          "value": "thermal lag adjustment"
+        }
+      ]
+    }
+  ],
+  "creator": {
+    "@type": "Organization",
+    "name": "MEOP",
+    "sameAs": "http://www.meop.net"
+  },
+  "identifier": "MEOP_profiles",
+  "temporalCoverage": "2004-01-27T11:49:00Z/2024-02-22T12:45:00Z",
+  "spatialCoverage": {
+    "@type": "Place",
+    "geo": {
+      "@type": "GeoShape",
+      "box": "-78.66 -179.9998 87.7764 179.9984"
+    }
+  }
+}

@@ -1,0 +1,81 @@
+@prefix rml: <http://semweb.mmlab.be/ns/rml#> .
+@prefix rr: <http://www.w3.org/ns/r2rml#> .
+@prefix ql: <http://semweb.mmlab.be/ns/ql#> .
+@prefix csvw: <http://www.w3.org/ns/csvw#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix : <http://example.org/rules/> .
+@prefix schema: <https://schema.org/> .
+@prefix dbo: <http://dbpedia.org/ontology/> .
+
+:TriplesMap a rr:TriplesMap;
+  rml:logicalSource [
+    rml:source [
+      a csvw:Table;
+      csvw:url "../GDSC_metadata.csv";
+      csvw:dialect [
+        a csvw:Dialect;
+        csvw:delimiter ","
+      ]
+    ];
+    rml:referenceFormulation ql:CSV
+  ].
+
+:TriplesMap rr:subjectMap [
+  rr:template "https://example.org/datasets/{ID}"
+].
+
+:TriplesMap rr:predicateObjectMap [
+  rr:predicate rdf:type;
+  rr:objectMap [
+   rr:constant schema:Dataset
+ ]
+].
+
+:TriplesMap rr:predicateObjectMap [
+  rr:predicate schema:name;
+  rr:objectMap [
+    rml:reference "Title"
+  ]
+].
+
+:TriplesMap rr:predicateObjectMap [
+  rr:predicate schema:identifier;
+  rr:objectMap [
+    rml:reference "DOI"
+  ]
+].
+
+:TriplesMap rr:predicateObjectMap [
+  rr:predicate schema:name;
+  rr:objectMap [
+    rml:reference "Title"
+  ]
+].
+
+:TriplesMap rr:predicateObjectMap [
+  rr:predicate schema:description;
+  rr:objectMap [
+    rml:reference "Description"
+  ]
+].
+
+:TriplesMap rr:predicateObjectMap [
+  rr:predicate schema:url;
+  rr:objectMap [
+    rml:reference "Url"
+  ]
+].
+
+:TriplesMap rr:predicateObjectMap [
+  rr:predicate schema:license;
+  rr:objectMap [
+    rml:reference "License"
+  ]
+].
+
+:TriplesMap rr:predicateObjectMap [
+  rr:predicate schema:type;
+  rr:objectMap [
+    rml:reference "Type"
+  ]
+].

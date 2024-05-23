@@ -1,0 +1,943 @@
+<?xml version="1.0" ?>
+<graphml>
+    <key id="label" attr.name="label" attr.type="string"/>
+    <key id="type" attr.name="type" attr.type="string"/>
+    <graph id="" edgedefault="undirected">
+        <node id="&lt;http://example.com/ns#8.0&gt;">
+            <data key="type">&lt;https://schema.org/Dataset&gt;</data>
+        </node>
+        <node id="&quot;United States|Florida&quot;^^&lt;http://www.w3.org/2000/01/rdf-schema#Literal&gt;">
+            <data key="type">&lt;https://schema.org/Place&gt;</data>
+        </node>
+        <node id="&lt;http://example.com/ns#22.0&gt;">
+            <data key="type">&lt;https://schema.org/Dataset&gt;</data>
+        </node>
+        <node id="&quot;United States|Florida|Miami Dade County&quot;^^&lt;http://www.w3.org/2000/01/rdf-schema#Literal&gt;">
+            <data key="type">&lt;https://schema.org/Place&gt;</data>
+        </node>
+        <node id="&lt;http://example.com/ns#75.0&gt;">
+            <data key="type">&lt;https://schema.org/Dataset&gt;</data>
+        </node>
+        <node id="&quot;United States&quot;^^&lt;http://www.w3.org/2000/01/rdf-schema#Literal&gt;">
+            <data key="type">&lt;https://schema.org/Place&gt;</data>
+        </node>
+        <node id="&lt;http://example.com/ns#28.0&gt;">
+            <data key="type">&lt;https://schema.org/Dataset&gt;</data>
+        </node>
+        <node id="&quot;United States|Florida|Miami Dade County&quot;^^&lt;http://www.w3.org/2000/01/rdf-schema#Literal&gt;">
+            <data key="type">&lt;https://schema.org/Place&gt;</data>
+        </node>
+        <node id="&lt;http://example.com/ns#81.0&gt;">
+            <data key="type">&lt;https://schema.org/Dataset&gt;</data>
+        </node>
+        <node id="&quot;United States|Florida&quot;^^&lt;http://www.w3.org/2000/01/rdf-schema#Literal&gt;">
+            <data key="type">&lt;https://schema.org/Place&gt;</data>
+        </node>
+        <node id="&lt;http://example.com/ns#48.0&gt;">
+            <data key="type">&lt;https://schema.org/Dataset&gt;</data>
+        </node>
+        <node id="&quot;United States&quot;^^&lt;http://www.w3.org/2000/01/rdf-schema#Literal&gt;">
+            <data key="type">&lt;https://schema.org/Place&gt;</data>
+        </node>
+        <node id="&lt;http://example.com/ns#92.0&gt;">
+            <data key="type">&lt;https://schema.org/Dataset&gt;</data>
+        </node>
+        <node id="&quot;Southeast&quot;^^&lt;http://www.w3.org/2000/01/rdf-schema#Literal&gt;">
+            <data key="type">&lt;https://schema.org/Place&gt;</data>
+        </node>
+        <node id="&lt;http://example.com/ns#11.0&gt;">
+            <data key="type">&lt;https://schema.org/Dataset&gt;</data>
+        </node>
+        <node id="&quot;United States|Florida&quot;^^&lt;http://www.w3.org/2000/01/rdf-schema#Literal&gt;">
+            <data key="type">&lt;https://schema.org/Place&gt;</data>
+        </node>
+        <node id="&lt;http://example.com/ns#88.0&gt;">
+            <data key="type">&lt;https://schema.org/Dataset&gt;</data>
+        </node>
+        <node id="&quot;United States|Florida|Miami Dade County&quot;^^&lt;http://www.w3.org/2000/01/rdf-schema#Literal&gt;">
+            <data key="type">&lt;https://schema.org/Place&gt;</data>
+        </node>
+        <node id="&lt;http://example.com/ns#71.0&gt;">
+            <data key="type">&lt;https://schema.org/Dataset&gt;</data>
+        </node>
+        <node id="&quot;United States&quot;^^&lt;http://www.w3.org/2000/01/rdf-schema#Literal&gt;">
+            <data key="type">&lt;https://schema.org/Place&gt;</data>
+        </node>
+        <node id="&lt;http://example.com/ns#95.0&gt;">
+            <data key="type">&lt;https://schema.org/Dataset&gt;</data>
+        </node>
+        <node id="&quot;Miami-Dade County&quot;^^&lt;http://www.w3.org/2000/01/rdf-schema#Literal&gt;">
+            <data key="type">&lt;https://schema.org/Place&gt;</data>
+        </node>
+        <node id="&lt;http://example.com/ns#13.0&gt;">
+            <data key="type">&lt;https://schema.org/Dataset&gt;</data>
+        </node>
+        <node id="&quot;United States|Florida&quot;^^&lt;http://www.w3.org/2000/01/rdf-schema#Literal&gt;">
+            <data key="type">&lt;https://schema.org/Place&gt;</data>
+        </node>
+        <node id="&lt;http://example.com/ns#29.0&gt;">
+            <data key="type">&lt;https://schema.org/Dataset&gt;</data>
+        </node>
+        <node id="&quot;United States|Florida|Miami Dade County&quot;^^&lt;http://www.w3.org/2000/01/rdf-schema#Literal&gt;">
+            <data key="type">&lt;https://schema.org/Place&gt;</data>
+        </node>
+        <node id="&lt;http://example.com/ns#91.0&gt;">
+            <data key="type">&lt;https://schema.org/Dataset&gt;</data>
+        </node>
+        <node id="&quot;Miami-Dade County&quot;^^&lt;http://www.w3.org/2000/01/rdf-schema#Literal&gt;">
+            <data key="type">&lt;https://schema.org/Place&gt;</data>
+        </node>
+        <node id="&lt;http://example.com/ns#56.0&gt;">
+            <data key="type">&lt;https://schema.org/Dataset&gt;</data>
+        </node>
+        <node id="&quot;Miami-Dade County|Florida&quot;^^&lt;http://www.w3.org/2000/01/rdf-schema#Literal&gt;">
+            <data key="type">&lt;https://schema.org/Place&gt;</data>
+        </node>
+        <node id="&lt;http://example.com/ns#52.0&gt;">
+            <data key="type">&lt;https://schema.org/Dataset&gt;</data>
+        </node>
+        <node id="&quot;United States|Florida|Miami Dade County&quot;^^&lt;http://www.w3.org/2000/01/rdf-schema#Literal&gt;">
+            <data key="type">&lt;https://schema.org/Place&gt;</data>
+        </node>
+        <node id="&lt;http://example.com/ns#63.0&gt;">
+            <data key="type">&lt;https://schema.org/Dataset&gt;</data>
+        </node>
+        <node id="&quot;Miami-Dade County&quot;^^&lt;http://www.w3.org/2000/01/rdf-schema#Literal&gt;">
+            <data key="type">&lt;https://schema.org/Place&gt;</data>
+        </node>
+        <node id="&lt;http://example.com/ns#96.0&gt;">
+            <data key="type">&lt;https://schema.org/Dataset&gt;</data>
+        </node>
+        <node id="&quot;Southeast&quot;^^&lt;http://www.w3.org/2000/01/rdf-schema#Literal&gt;">
+            <data key="type">&lt;https://schema.org/Place&gt;</data>
+        </node>
+        <node id="&lt;http://example.com/ns#42.0&gt;">
+            <data key="type">&lt;https://schema.org/Dataset&gt;</data>
+        </node>
+        <node id="&quot;United States|Florida&quot;^^&lt;http://www.w3.org/2000/01/rdf-schema#Literal&gt;">
+            <data key="type">&lt;https://schema.org/Place&gt;</data>
+        </node>
+        <node id="&lt;http://example.com/ns#61.0&gt;">
+            <data key="type">&lt;https://schema.org/Dataset&gt;</data>
+        </node>
+        <node id="&quot;Miami-Dade County&quot;^^&lt;http://www.w3.org/2000/01/rdf-schema#Literal&gt;">
+            <data key="type">&lt;https://schema.org/Place&gt;</data>
+        </node>
+        <node id="&lt;http://example.com/ns#86.0&gt;">
+            <data key="type">&lt;https://schema.org/Dataset&gt;</data>
+        </node>
+        <node id="&quot;Colombia|Bogota&quot;^^&lt;http://www.w3.org/2000/01/rdf-schema#Literal&gt;">
+            <data key="type">&lt;https://schema.org/Place&gt;</data>
+        </node>
+        <node id="&lt;http://example.com/ns#98.0&gt;">
+            <data key="type">&lt;https://schema.org/Dataset&gt;</data>
+        </node>
+        <node id="&quot;Southeast&quot;^^&lt;http://www.w3.org/2000/01/rdf-schema#Literal&gt;">
+            <data key="type">&lt;https://schema.org/Place&gt;</data>
+        </node>
+        <node id="&lt;http://example.com/ns#40.0&gt;">
+            <data key="type">&lt;https://schema.org/Dataset&gt;</data>
+        </node>
+        <node id="&quot;United States|Florida|Miami Dade County&quot;^^&lt;http://www.w3.org/2000/01/rdf-schema#Literal&gt;">
+            <data key="type">&lt;https://schema.org/Place&gt;</data>
+        </node>
+        <node id="&lt;http://example.com/ns#3.0&gt;">
+            <data key="type">&lt;https://schema.org/Dataset&gt;</data>
+        </node>
+        <node id="&quot;United States|Florida&quot;^^&lt;http://www.w3.org/2000/01/rdf-schema#Literal&gt;">
+            <data key="type">&lt;https://schema.org/Place&gt;</data>
+        </node>
+        <node id="&lt;http://example.com/ns#35.0&gt;">
+            <data key="type">&lt;https://schema.org/Dataset&gt;</data>
+        </node>
+        <node id="&quot;United States|Florida|Miami Dade County&quot;^^&lt;http://www.w3.org/2000/01/rdf-schema#Literal&gt;">
+            <data key="type">&lt;https://schema.org/Place&gt;</data>
+        </node>
+        <node id="&lt;http://example.com/ns#50.0&gt;">
+            <data key="type">&lt;https://schema.org/Dataset&gt;</data>
+        </node>
+        <node id="&quot;United States|Florida&quot;^^&lt;http://www.w3.org/2000/01/rdf-schema#Literal&gt;">
+            <data key="type">&lt;https://schema.org/Place&gt;</data>
+        </node>
+        <node id="&lt;http://example.com/ns#19.0&gt;">
+            <data key="type">&lt;https://schema.org/Dataset&gt;</data>
+        </node>
+        <node id="&quot;United States&quot;^^&lt;http://www.w3.org/2000/01/rdf-schema#Literal&gt;">
+            <data key="type">&lt;https://schema.org/Place&gt;</data>
+        </node>
+        <node id="&lt;http://example.com/ns#31.0&gt;">
+            <data key="type">&lt;https://schema.org/Dataset&gt;</data>
+        </node>
+        <node id="&quot;United States|Florida|Miami Dade County&quot;^^&lt;http://www.w3.org/2000/01/rdf-schema#Literal&gt;">
+            <data key="type">&lt;https://schema.org/Place&gt;</data>
+        </node>
+        <node id="&lt;http://example.com/ns#65.0&gt;">
+            <data key="type">&lt;https://schema.org/Dataset&gt;</data>
+        </node>
+        <node id="&quot;Miami-Dade County&quot;^^&lt;http://www.w3.org/2000/01/rdf-schema#Literal&gt;">
+            <data key="type">&lt;https://schema.org/Place&gt;</data>
+        </node>
+        <node id="&lt;http://example.com/ns#73.0&gt;">
+            <data key="type">&lt;https://schema.org/Dataset&gt;</data>
+        </node>
+        <node id="&quot;USA&quot;^^&lt;http://www.w3.org/2000/01/rdf-schema#Literal&gt;">
+            <data key="type">&lt;https://schema.org/Place&gt;</data>
+        </node>
+        <node id="&lt;http://example.com/ns#77.0&gt;">
+            <data key="type">&lt;https://schema.org/Dataset&gt;</data>
+        </node>
+        <node id="&quot;Miami-Dade County&quot;^^&lt;http://www.w3.org/2000/01/rdf-schema#Literal&gt;">
+            <data key="type">&lt;https://schema.org/Place&gt;</data>
+        </node>
+        <node id="&lt;http://example.com/ns#30.0&gt;">
+            <data key="type">&lt;https://schema.org/Dataset&gt;</data>
+        </node>
+        <node id="&quot;United States|Florida|Miami Dade County&quot;^^&lt;http://www.w3.org/2000/01/rdf-schema#Literal&gt;">
+            <data key="type">&lt;https://schema.org/Place&gt;</data>
+        </node>
+        <node id="&lt;http://example.com/ns#16.0&gt;">
+            <data key="type">&lt;https://schema.org/Dataset&gt;</data>
+        </node>
+        <node id="&quot;United States|Florida&quot;^^&lt;http://www.w3.org/2000/01/rdf-schema#Literal&gt;">
+            <data key="type">&lt;https://schema.org/Place&gt;</data>
+        </node>
+        <node id="&lt;http://example.com/ns#43.0&gt;">
+            <data key="type">&lt;https://schema.org/Dataset&gt;</data>
+        </node>
+        <node id="&quot;United States&quot;^^&lt;http://www.w3.org/2000/01/rdf-schema#Literal&gt;">
+            <data key="type">&lt;https://schema.org/Place&gt;</data>
+        </node>
+        <node id="&lt;http://example.com/ns#102.0&gt;">
+            <data key="type">&lt;https://schema.org/Dataset&gt;</data>
+        </node>
+        <node id="&quot;Florida&quot;^^&lt;http://www.w3.org/2000/01/rdf-schema#Literal&gt;">
+            <data key="type">&lt;https://schema.org/Place&gt;</data>
+        </node>
+        <node id="&lt;http://example.com/ns#57.0&gt;">
+            <data key="type">&lt;https://schema.org/Dataset&gt;</data>
+        </node>
+        <node id="&quot;Miami-Dade County&quot;^^&lt;http://www.w3.org/2000/01/rdf-schema#Literal&gt;">
+            <data key="type">&lt;https://schema.org/Place&gt;</data>
+        </node>
+        <node id="&lt;http://example.com/ns#45.0&gt;">
+            <data key="type">&lt;https://schema.org/Dataset&gt;</data>
+        </node>
+        <node id="&quot;Florida&quot;^^&lt;http://www.w3.org/2000/01/rdf-schema#Literal&gt;">
+            <data key="type">&lt;https://schema.org/Place&gt;</data>
+        </node>
+        <node id="&lt;http://example.com/ns#83.0&gt;">
+            <data key="type">&lt;https://schema.org/Dataset&gt;</data>
+        </node>
+        <node id="&quot;United States|Florida|Miami Dade County&quot;^^&lt;http://www.w3.org/2000/01/rdf-schema#Literal&gt;">
+            <data key="type">&lt;https://schema.org/Place&gt;</data>
+        </node>
+        <node id="&lt;http://example.com/ns#84.0&gt;">
+            <data key="type">&lt;https://schema.org/Dataset&gt;</data>
+        </node>
+        <node id="&quot;United States|Florida&quot;^^&lt;http://www.w3.org/2000/01/rdf-schema#Literal&gt;">
+            <data key="type">&lt;https://schema.org/Place&gt;</data>
+        </node>
+        <node id="&lt;http://example.com/ns#104.0&gt;">
+            <data key="type">&lt;https://schema.org/Dataset&gt;</data>
+        </node>
+        <node id="&quot;Miami-Dade County&quot;^^&lt;http://www.w3.org/2000/01/rdf-schema#Literal&gt;">
+            <data key="type">&lt;https://schema.org/Place&gt;</data>
+        </node>
+        <node id="&lt;http://example.com/ns#12.0&gt;">
+            <data key="type">&lt;https://schema.org/Dataset&gt;</data>
+        </node>
+        <node id="&quot;United States|Florida&quot;^^&lt;http://www.w3.org/2000/01/rdf-schema#Literal&gt;">
+            <data key="type">&lt;https://schema.org/Place&gt;</data>
+        </node>
+        <node id="&lt;http://example.com/ns#24.0&gt;">
+            <data key="type">&lt;https://schema.org/Dataset&gt;</data>
+        </node>
+        <node id="&quot;United States|Florida|Miami Dade County&quot;^^&lt;http://www.w3.org/2000/01/rdf-schema#Literal&gt;">
+            <data key="type">&lt;https://schema.org/Place&gt;</data>
+        </node>
+        <node id="&lt;http://example.com/ns#79.0&gt;">
+            <data key="type">&lt;https://schema.org/Dataset&gt;</data>
+        </node>
+        <node id="&quot;Trinidad and Tobago&quot;^^&lt;http://www.w3.org/2000/01/rdf-schema#Literal&gt;">
+            <data key="type">&lt;https://schema.org/Place&gt;</data>
+        </node>
+        <node id="&lt;http://example.com/ns#47.0&gt;">
+            <data key="type">&lt;https://schema.org/Dataset&gt;</data>
+        </node>
+        <node id="&quot;United States&quot;^^&lt;http://www.w3.org/2000/01/rdf-schema#Literal&gt;">
+            <data key="type">&lt;https://schema.org/Place&gt;</data>
+        </node>
+        <node id="&lt;http://example.com/ns#20.0&gt;">
+            <data key="type">&lt;https://schema.org/Dataset&gt;</data>
+        </node>
+        <node id="&quot;United States|Florida|Miami Dade County&quot;^^&lt;http://www.w3.org/2000/01/rdf-schema#Literal&gt;">
+            <data key="type">&lt;https://schema.org/Place&gt;</data>
+        </node>
+        <node id="&lt;http://example.com/ns#100.0&gt;">
+            <data key="type">&lt;https://schema.org/Dataset&gt;</data>
+        </node>
+        <node id="&quot;Southeast&quot;^^&lt;http://www.w3.org/2000/01/rdf-schema#Literal&gt;">
+            <data key="type">&lt;https://schema.org/Place&gt;</data>
+        </node>
+        <node id="&lt;http://example.com/ns#41.0&gt;">
+            <data key="type">&lt;https://schema.org/Dataset&gt;</data>
+        </node>
+        <node id="&quot;United States|Florida|Miami Dade County&quot;^^&lt;http://www.w3.org/2000/01/rdf-schema#Literal&gt;">
+            <data key="type">&lt;https://schema.org/Place&gt;</data>
+        </node>
+        <node id="&lt;http://example.com/ns#14.0&gt;">
+            <data key="type">&lt;https://schema.org/Dataset&gt;</data>
+        </node>
+        <node id="&quot;United States|Florida|Miami Dade County&quot;^^&lt;http://www.w3.org/2000/01/rdf-schema#Literal&gt;">
+            <data key="type">&lt;https://schema.org/Place&gt;</data>
+        </node>
+        <node id="&lt;http://example.com/ns#82.0&gt;">
+            <data key="type">&lt;https://schema.org/Dataset&gt;</data>
+        </node>
+        <node id="&quot;United States|Florida&quot;^^&lt;http://www.w3.org/2000/01/rdf-schema#Literal&gt;">
+            <data key="type">&lt;https://schema.org/Place&gt;</data>
+        </node>
+        <node id="&lt;http://example.com/ns#90.0&gt;">
+            <data key="type">&lt;https://schema.org/Dataset&gt;</data>
+        </node>
+        <node id="&quot;Miami-Dade County&quot;^^&lt;http://www.w3.org/2000/01/rdf-schema#Literal&gt;">
+            <data key="type">&lt;https://schema.org/Place&gt;</data>
+        </node>
+        <node id="&lt;http://example.com/ns#93.0&gt;">
+            <data key="type">&lt;https://schema.org/Dataset&gt;</data>
+        </node>
+        <node id="&quot;Miami-Dade County&quot;^^&lt;http://www.w3.org/2000/01/rdf-schema#Literal&gt;">
+            <data key="type">&lt;https://schema.org/Place&gt;</data>
+        </node>
+        <node id="&lt;http://example.com/ns#7.0&gt;">
+            <data key="type">&lt;https://schema.org/Dataset&gt;</data>
+        </node>
+        <node id="&quot;United States|Florida&quot;^^&lt;http://www.w3.org/2000/01/rdf-schema#Literal&gt;">
+            <data key="type">&lt;https://schema.org/Place&gt;</data>
+        </node>
+        <node id="&lt;http://example.com/ns#80.0&gt;">
+            <data key="type">&lt;https://schema.org/Dataset&gt;</data>
+        </node>
+        <node id="&quot;Trinidad and Tobago&quot;^^&lt;http://www.w3.org/2000/01/rdf-schema#Literal&gt;">
+            <data key="type">&lt;https://schema.org/Place&gt;</data>
+        </node>
+        <node id="&lt;http://example.com/ns#54.0&gt;">
+            <data key="type">&lt;https://schema.org/Dataset&gt;</data>
+        </node>
+        <node id="&quot;Global&quot;^^&lt;http://www.w3.org/2000/01/rdf-schema#Literal&gt;">
+            <data key="type">&lt;https://schema.org/Place&gt;</data>
+        </node>
+        <node id="&lt;http://example.com/ns#60.0&gt;">
+            <data key="type">&lt;https://schema.org/Dataset&gt;</data>
+        </node>
+        <node id="&quot;City of Miami&quot;^^&lt;http://www.w3.org/2000/01/rdf-schema#Literal&gt;">
+            <data key="type">&lt;https://schema.org/Place&gt;</data>
+        </node>
+        <node id="&lt;http://example.com/ns#74.0&gt;">
+            <data key="type">&lt;https://schema.org/Dataset&gt;</data>
+        </node>
+        <node id="&quot;United States&quot;^^&lt;http://www.w3.org/2000/01/rdf-schema#Literal&gt;">
+            <data key="type">&lt;https://schema.org/Place&gt;</data>
+        </node>
+        <node id="&lt;http://example.com/ns#103.0&gt;">
+            <data key="type">&lt;https://schema.org/Dataset&gt;</data>
+        </node>
+        <node id="&quot;Colombia|Bogota&quot;^^&lt;http://www.w3.org/2000/01/rdf-schema#Literal&gt;">
+            <data key="type">&lt;https://schema.org/Place&gt;</data>
+        </node>
+        <node id="&lt;http://example.com/ns#34.0&gt;">
+            <data key="type">&lt;https://schema.org/Dataset&gt;</data>
+        </node>
+        <node id="&quot;United States|Florida|Miami Dade County&quot;^^&lt;http://www.w3.org/2000/01/rdf-schema#Literal&gt;">
+            <data key="type">&lt;https://schema.org/Place&gt;</data>
+        </node>
+        <node id="&lt;http://example.com/ns#21.0&gt;">
+            <data key="type">&lt;https://schema.org/Dataset&gt;</data>
+        </node>
+        <node id="&quot;United States|Florida|Miami Dade County&quot;^^&lt;http://www.w3.org/2000/01/rdf-schema#Literal&gt;">
+            <data key="type">&lt;https://schema.org/Place&gt;</data>
+        </node>
+        <node id="&lt;http://example.com/ns#1.0&gt;">
+            <data key="type">&lt;https://schema.org/Dataset&gt;</data>
+        </node>
+        <node id="&quot;United States&quot;^^&lt;http://www.w3.org/2000/01/rdf-schema#Literal&gt;">
+            <data key="type">&lt;https://schema.org/Place&gt;</data>
+        </node>
+        <node id="&lt;http://example.com/ns#67.0&gt;">
+            <data key="type">&lt;https://schema.org/Dataset&gt;</data>
+        </node>
+        <node id="&quot;--&quot;^^&lt;http://www.w3.org/2000/01/rdf-schema#Literal&gt;">
+            <data key="type">&lt;https://schema.org/Place&gt;</data>
+        </node>
+        <node id="&lt;http://example.com/ns#87.0&gt;">
+            <data key="type">&lt;https://schema.org/Dataset&gt;</data>
+        </node>
+        <node id="&quot;United States&quot;^^&lt;http://www.w3.org/2000/01/rdf-schema#Literal&gt;">
+            <data key="type">&lt;https://schema.org/Place&gt;</data>
+        </node>
+        <node id="&lt;http://example.com/ns#94.0&gt;">
+            <data key="type">&lt;https://schema.org/Dataset&gt;</data>
+        </node>
+        <node id="&quot;Southeast&quot;^^&lt;http://www.w3.org/2000/01/rdf-schema#Literal&gt;">
+            <data key="type">&lt;https://schema.org/Place&gt;</data>
+        </node>
+        <node id="&lt;http://example.com/ns#6.0&gt;">
+            <data key="type">&lt;https://schema.org/Dataset&gt;</data>
+        </node>
+        <node id="&quot;United States|Florida&quot;^^&lt;http://www.w3.org/2000/01/rdf-schema#Literal&gt;">
+            <data key="type">&lt;https://schema.org/Place&gt;</data>
+        </node>
+        <node id="&lt;http://example.com/ns#10.0&gt;">
+            <data key="type">&lt;https://schema.org/Dataset&gt;</data>
+        </node>
+        <node id="&quot;United States|Florida&quot;^^&lt;http://www.w3.org/2000/01/rdf-schema#Literal&gt;">
+            <data key="type">&lt;https://schema.org/Place&gt;</data>
+        </node>
+        <node id="&lt;http://example.com/ns#5.0&gt;">
+            <data key="type">&lt;https://schema.org/Dataset&gt;</data>
+        </node>
+        <node id="&quot;United States|Florida&quot;^^&lt;http://www.w3.org/2000/01/rdf-schema#Literal&gt;">
+            <data key="type">&lt;https://schema.org/Place&gt;</data>
+        </node>
+        <node id="&lt;http://example.com/ns#85.0&gt;">
+            <data key="type">&lt;https://schema.org/Dataset&gt;</data>
+        </node>
+        <node id="&quot;Miami-Dade County|Florida&quot;^^&lt;http://www.w3.org/2000/01/rdf-schema#Literal&gt;">
+            <data key="type">&lt;https://schema.org/Place&gt;</data>
+        </node>
+        <node id="&lt;http://example.com/ns#66.0&gt;">
+            <data key="type">&lt;https://schema.org/Dataset&gt;</data>
+        </node>
+        <node id="&quot;--&quot;^^&lt;http://www.w3.org/2000/01/rdf-schema#Literal&gt;">
+            <data key="type">&lt;https://schema.org/Place&gt;</data>
+        </node>
+        <node id="&lt;http://example.com/ns#39.0&gt;">
+            <data key="type">&lt;https://schema.org/Dataset&gt;</data>
+        </node>
+        <node id="&quot;United States|Florida|Miami Dade County&quot;^^&lt;http://www.w3.org/2000/01/rdf-schema#Literal&gt;">
+            <data key="type">&lt;https://schema.org/Place&gt;</data>
+        </node>
+        <node id="&lt;http://example.com/ns#9.0&gt;">
+            <data key="type">&lt;https://schema.org/Dataset&gt;</data>
+        </node>
+        <node id="&quot;United States|Florida|Miami-Dade County&quot;^^&lt;http://www.w3.org/2000/01/rdf-schema#Literal&gt;">
+            <data key="type">&lt;https://schema.org/Place&gt;</data>
+        </node>
+        <node id="&lt;http://example.com/ns#58.0&gt;">
+            <data key="type">&lt;https://schema.org/Dataset&gt;</data>
+        </node>
+        <node id="&quot;Miami-Dade County&quot;^^&lt;http://www.w3.org/2000/01/rdf-schema#Literal&gt;">
+            <data key="type">&lt;https://schema.org/Place&gt;</data>
+        </node>
+        <node id="&lt;http://example.com/ns#89.0&gt;">
+            <data key="type">&lt;https://schema.org/Dataset&gt;</data>
+        </node>
+        <node id="&quot;Miami-Dade County&quot;^^&lt;http://www.w3.org/2000/01/rdf-schema#Literal&gt;">
+            <data key="type">&lt;https://schema.org/Place&gt;</data>
+        </node>
+        <node id="&lt;http://example.com/ns#78.0&gt;">
+            <data key="type">&lt;https://schema.org/Dataset&gt;</data>
+        </node>
+        <node id="&quot;Trinidad and Tobago&quot;^^&lt;http://www.w3.org/2000/01/rdf-schema#Literal&gt;">
+            <data key="type">&lt;https://schema.org/Place&gt;</data>
+        </node>
+        <node id="&lt;http://example.com/ns#44.0&gt;">
+            <data key="type">&lt;https://schema.org/Dataset&gt;</data>
+        </node>
+        <node id="&quot;Florida&quot;^^&lt;http://www.w3.org/2000/01/rdf-schema#Literal&gt;">
+            <data key="type">&lt;https://schema.org/Place&gt;</data>
+        </node>
+        <node id="&lt;http://example.com/ns#97.0&gt;">
+            <data key="type">&lt;https://schema.org/Dataset&gt;</data>
+        </node>
+        <node id="&quot;Miami-Dade County&quot;^^&lt;http://www.w3.org/2000/01/rdf-schema#Literal&gt;">
+            <data key="type">&lt;https://schema.org/Place&gt;</data>
+        </node>
+        <node id="&lt;http://example.com/ns#17.0&gt;">
+            <data key="type">&lt;https://schema.org/Dataset&gt;</data>
+        </node>
+        <node id="&quot;United States&quot;^^&lt;http://www.w3.org/2000/01/rdf-schema#Literal&gt;">
+            <data key="type">&lt;https://schema.org/Place&gt;</data>
+        </node>
+        <node id="&lt;http://example.com/ns#55.0&gt;">
+            <data key="type">&lt;https://schema.org/Dataset&gt;</data>
+        </node>
+        <node id="&quot;Miami-Dade County|Florida&quot;^^&lt;http://www.w3.org/2000/01/rdf-schema#Literal&gt;">
+            <data key="type">&lt;https://schema.org/Place&gt;</data>
+        </node>
+        <node id="&lt;http://example.com/ns#101.0&gt;">
+            <data key="type">&lt;https://schema.org/Dataset&gt;</data>
+        </node>
+        <node id="&quot;Miami-Dade County&quot;^^&lt;http://www.w3.org/2000/01/rdf-schema#Literal&gt;">
+            <data key="type">&lt;https://schema.org/Place&gt;</data>
+        </node>
+        <node id="&lt;http://example.com/ns#49.0&gt;">
+            <data key="type">&lt;https://schema.org/Dataset&gt;</data>
+        </node>
+        <node id="&quot;United States&quot;^^&lt;http://www.w3.org/2000/01/rdf-schema#Literal&gt;">
+            <data key="type">&lt;https://schema.org/Place&gt;</data>
+        </node>
+        <node id="&lt;http://example.com/ns#70.0&gt;">
+            <data key="type">&lt;https://schema.org/Dataset&gt;</data>
+        </node>
+        <node id="&quot;United States&quot;^^&lt;http://www.w3.org/2000/01/rdf-schema#Literal&gt;">
+            <data key="type">&lt;https://schema.org/Place&gt;</data>
+        </node>
+        <node id="&lt;http://example.com/ns#105.0&gt;">
+            <data key="type">&lt;https://schema.org/Dataset&gt;</data>
+        </node>
+        <node id="&quot;Colombia|Bogota&quot;^^&lt;http://www.w3.org/2000/01/rdf-schema#Literal&gt;">
+            <data key="type">&lt;https://schema.org/Place&gt;</data>
+        </node>
+        <node id="&lt;http://example.com/ns#72.0&gt;">
+            <data key="type">&lt;https://schema.org/Dataset&gt;</data>
+        </node>
+        <node id="&quot;Florida&quot;^^&lt;http://www.w3.org/2000/01/rdf-schema#Literal&gt;">
+            <data key="type">&lt;https://schema.org/Place&gt;</data>
+        </node>
+        <node id="&lt;http://example.com/ns#18.0&gt;">
+            <data key="type">&lt;https://schema.org/Dataset&gt;</data>
+        </node>
+        <node id="&quot;United States|Florida|Miami Dade County&quot;^^&lt;http://www.w3.org/2000/01/rdf-schema#Literal&gt;">
+            <data key="type">&lt;https://schema.org/Place&gt;</data>
+        </node>
+        <node id="&lt;http://example.com/ns#25.0&gt;">
+            <data key="type">&lt;https://schema.org/Dataset&gt;</data>
+        </node>
+        <node id="&quot;United States|Florida|Miami Dade County&quot;^^&lt;http://www.w3.org/2000/01/rdf-schema#Literal&gt;">
+            <data key="type">&lt;https://schema.org/Place&gt;</data>
+        </node>
+        <node id="&lt;http://example.com/ns#99.0&gt;">
+            <data key="type">&lt;https://schema.org/Dataset&gt;</data>
+        </node>
+        <node id="&quot;Miami-Dade County&quot;^^&lt;http://www.w3.org/2000/01/rdf-schema#Literal&gt;">
+            <data key="type">&lt;https://schema.org/Place&gt;</data>
+        </node>
+        <node id="&lt;http://example.com/ns#4.0&gt;">
+            <data key="type">&lt;https://schema.org/Dataset&gt;</data>
+        </node>
+        <node id="&quot;United States|Florida&quot;^^&lt;http://www.w3.org/2000/01/rdf-schema#Literal&gt;">
+            <data key="type">&lt;https://schema.org/Place&gt;</data>
+        </node>
+        <node id="&lt;http://example.com/ns#2.0&gt;">
+            <data key="type">&lt;https://schema.org/Dataset&gt;</data>
+        </node>
+        <node id="&quot;United States|Florida&quot;^^&lt;http://www.w3.org/2000/01/rdf-schema#Literal&gt;">
+            <data key="type">&lt;https://schema.org/Place&gt;</data>
+        </node>
+        <node id="&lt;http://example.com/ns#33.0&gt;">
+            <data key="type">&lt;https://schema.org/Dataset&gt;</data>
+        </node>
+        <node id="&quot;United States|Florida|Miami Dade County&quot;^^&lt;http://www.w3.org/2000/01/rdf-schema#Literal&gt;">
+            <data key="type">&lt;https://schema.org/Place&gt;</data>
+        </node>
+        <node id="&lt;http://example.com/ns#62.0&gt;">
+            <data key="type">&lt;https://schema.org/Dataset&gt;</data>
+        </node>
+        <node id="&quot;Miami-Dade County&quot;^^&lt;http://www.w3.org/2000/01/rdf-schema#Literal&gt;">
+            <data key="type">&lt;https://schema.org/Place&gt;</data>
+        </node>
+        <node id="&lt;http://example.com/ns#53.0&gt;">
+            <data key="type">&lt;https://schema.org/Dataset&gt;</data>
+        </node>
+        <node id="&quot;United States|Florida|Miami Dade County&quot;^^&lt;http://www.w3.org/2000/01/rdf-schema#Literal&gt;">
+            <data key="type">&lt;https://schema.org/Place&gt;</data>
+        </node>
+        <node id="&lt;http://example.com/ns#51.0&gt;">
+            <data key="type">&lt;https://schema.org/Dataset&gt;</data>
+        </node>
+        <node id="&quot;United States|Florida|Miami Dade County&quot;^^&lt;http://www.w3.org/2000/01/rdf-schema#Literal&gt;">
+            <data key="type">&lt;https://schema.org/Place&gt;</data>
+        </node>
+        <node id="&lt;http://example.com/ns#27.0&gt;">
+            <data key="type">&lt;https://schema.org/Dataset&gt;</data>
+        </node>
+        <node id="&quot;United States|Florida|Miami Dade County&quot;^^&lt;http://www.w3.org/2000/01/rdf-schema#Literal&gt;">
+            <data key="type">&lt;https://schema.org/Place&gt;</data>
+        </node>
+        <node id="&lt;http://example.com/ns#32.0&gt;">
+            <data key="type">&lt;https://schema.org/Dataset&gt;</data>
+        </node>
+        <node id="&quot;United States|Florida|Miami Dade County&quot;^^&lt;http://www.w3.org/2000/01/rdf-schema#Literal&gt;">
+            <data key="type">&lt;https://schema.org/Place&gt;</data>
+        </node>
+        <node id="&lt;http://example.com/ns#64.0&gt;">
+            <data key="type">&lt;https://schema.org/Dataset&gt;</data>
+        </node>
+        <node id="&quot;United States&quot;^^&lt;http://www.w3.org/2000/01/rdf-schema#Literal&gt;">
+            <data key="type">&lt;https://schema.org/Place&gt;</data>
+        </node>
+        <node id="&lt;http://example.com/ns#37.0&gt;">
+            <data key="type">&lt;https://schema.org/Dataset&gt;</data>
+        </node>
+        <node id="&quot;United States|Florida|Miami Dade County&quot;^^&lt;http://www.w3.org/2000/01/rdf-schema#Literal&gt;">
+            <data key="type">&lt;https://schema.org/Place&gt;</data>
+        </node>
+        <node id="&lt;http://example.com/ns#38.0&gt;">
+            <data key="type">&lt;https://schema.org/Dataset&gt;</data>
+        </node>
+        <node id="&quot;United States|Florida|Miami Dade County&quot;^^&lt;http://www.w3.org/2000/01/rdf-schema#Literal&gt;">
+            <data key="type">&lt;https://schema.org/Place&gt;</data>
+        </node>
+        <node id="&lt;http://example.com/ns#15.0&gt;">
+            <data key="type">&lt;https://schema.org/Dataset&gt;</data>
+        </node>
+        <node id="&quot;United States|Florida|Miami Dade County&quot;^^&lt;http://www.w3.org/2000/01/rdf-schema#Literal&gt;">
+            <data key="type">&lt;https://schema.org/Place&gt;</data>
+        </node>
+        <node id="&lt;http://example.com/ns#68.0&gt;">
+            <data key="type">&lt;https://schema.org/Dataset&gt;</data>
+        </node>
+        <node id="&quot;United States|Florida|Miami Dade County&quot;^^&lt;http://www.w3.org/2000/01/rdf-schema#Literal&gt;">
+            <data key="type">&lt;https://schema.org/Place&gt;</data>
+        </node>
+        <node id="&lt;http://example.com/ns#26.0&gt;">
+            <data key="type">&lt;https://schema.org/Dataset&gt;</data>
+        </node>
+        <node id="&quot;United States|Florida|Miami Dade County&quot;^^&lt;http://www.w3.org/2000/01/rdf-schema#Literal&gt;">
+            <data key="type">&lt;https://schema.org/Place&gt;</data>
+        </node>
+        <node id="&lt;http://example.com/ns#46.0&gt;">
+            <data key="type">&lt;https://schema.org/Dataset&gt;</data>
+        </node>
+        <node id="&quot;Florida&quot;^^&lt;http://www.w3.org/2000/01/rdf-schema#Literal&gt;">
+            <data key="type">&lt;https://schema.org/Place&gt;</data>
+        </node>
+        <node id="&lt;http://example.com/ns#69.0&gt;">
+            <data key="type">&lt;https://schema.org/Dataset&gt;</data>
+        </node>
+        <node id="&quot;United States&quot;^^&lt;http://www.w3.org/2000/01/rdf-schema#Literal&gt;">
+            <data key="type">&lt;https://schema.org/Place&gt;</data>
+        </node>
+        <node id="&lt;http://example.com/ns#59.0&gt;">
+            <data key="type">&lt;https://schema.org/Dataset&gt;</data>
+        </node>
+        <node id="&quot;Miami-Dade County&quot;^^&lt;http://www.w3.org/2000/01/rdf-schema#Literal&gt;">
+            <data key="type">&lt;https://schema.org/Place&gt;</data>
+        </node>
+        <node id="&lt;http://example.com/ns#36.0&gt;">
+            <data key="type">&lt;https://schema.org/Dataset&gt;</data>
+        </node>
+        <node id="&quot;United States|Florida|Miami Dade County&quot;^^&lt;http://www.w3.org/2000/01/rdf-schema#Literal&gt;">
+            <data key="type">&lt;https://schema.org/Place&gt;</data>
+        </node>
+        <node id="&lt;http://example.com/ns#23.0&gt;">
+            <data key="type">&lt;https://schema.org/Dataset&gt;</data>
+        </node>
+        <node id="&quot;United States|Florida|Miami Dade County&quot;^^&lt;http://www.w3.org/2000/01/rdf-schema#Literal&gt;">
+            <data key="type">&lt;https://schema.org/Place&gt;</data>
+        </node>
+        <edge source="&lt;http://example.com/ns#8.0&gt;" target="&quot;United States|Florida&quot;^^&lt;http://www.w3.org/2000/01/rdf-schema#Literal&gt;">
+            <data key="type">&lt;https://schema.org/spatialCoverage&gt;</data>
+        </edge>
+        <edge source="&lt;http://example.com/ns#22.0&gt;" target="&quot;United States|Florida|Miami Dade County&quot;^^&lt;http://www.w3.org/2000/01/rdf-schema#Literal&gt;">
+            <data key="type">&lt;https://schema.org/spatialCoverage&gt;</data>
+        </edge>
+        <edge source="&lt;http://example.com/ns#75.0&gt;" target="&quot;United States&quot;^^&lt;http://www.w3.org/2000/01/rdf-schema#Literal&gt;">
+            <data key="type">&lt;https://schema.org/spatialCoverage&gt;</data>
+        </edge>
+        <edge source="&lt;http://example.com/ns#28.0&gt;" target="&quot;United States|Florida|Miami Dade County&quot;^^&lt;http://www.w3.org/2000/01/rdf-schema#Literal&gt;">
+            <data key="type">&lt;https://schema.org/spatialCoverage&gt;</data>
+        </edge>
+        <edge source="&lt;http://example.com/ns#81.0&gt;" target="&quot;United States|Florida&quot;^^&lt;http://www.w3.org/2000/01/rdf-schema#Literal&gt;">
+            <data key="type">&lt;https://schema.org/spatialCoverage&gt;</data>
+        </edge>
+        <edge source="&lt;http://example.com/ns#48.0&gt;" target="&quot;United States&quot;^^&lt;http://www.w3.org/2000/01/rdf-schema#Literal&gt;">
+            <data key="type">&lt;https://schema.org/spatialCoverage&gt;</data>
+        </edge>
+        <edge source="&lt;http://example.com/ns#92.0&gt;" target="&quot;Southeast&quot;^^&lt;http://www.w3.org/2000/01/rdf-schema#Literal&gt;">
+            <data key="type">&lt;https://schema.org/spatialCoverage&gt;</data>
+        </edge>
+        <edge source="&lt;http://example.com/ns#11.0&gt;" target="&quot;United States|Florida&quot;^^&lt;http://www.w3.org/2000/01/rdf-schema#Literal&gt;">
+            <data key="type">&lt;https://schema.org/spatialCoverage&gt;</data>
+        </edge>
+        <edge source="&lt;http://example.com/ns#88.0&gt;" target="&quot;United States|Florida|Miami Dade County&quot;^^&lt;http://www.w3.org/2000/01/rdf-schema#Literal&gt;">
+            <data key="type">&lt;https://schema.org/spatialCoverage&gt;</data>
+        </edge>
+        <edge source="&lt;http://example.com/ns#71.0&gt;" target="&quot;United States&quot;^^&lt;http://www.w3.org/2000/01/rdf-schema#Literal&gt;">
+            <data key="type">&lt;https://schema.org/spatialCoverage&gt;</data>
+        </edge>
+        <edge source="&lt;http://example.com/ns#95.0&gt;" target="&quot;Miami-Dade County&quot;^^&lt;http://www.w3.org/2000/01/rdf-schema#Literal&gt;">
+            <data key="type">&lt;https://schema.org/spatialCoverage&gt;</data>
+        </edge>
+        <edge source="&lt;http://example.com/ns#13.0&gt;" target="&quot;United States|Florida&quot;^^&lt;http://www.w3.org/2000/01/rdf-schema#Literal&gt;">
+            <data key="type">&lt;https://schema.org/spatialCoverage&gt;</data>
+        </edge>
+        <edge source="&lt;http://example.com/ns#29.0&gt;" target="&quot;United States|Florida|Miami Dade County&quot;^^&lt;http://www.w3.org/2000/01/rdf-schema#Literal&gt;">
+            <data key="type">&lt;https://schema.org/spatialCoverage&gt;</data>
+        </edge>
+        <edge source="&lt;http://example.com/ns#91.0&gt;" target="&quot;Miami-Dade County&quot;^^&lt;http://www.w3.org/2000/01/rdf-schema#Literal&gt;">
+            <data key="type">&lt;https://schema.org/spatialCoverage&gt;</data>
+        </edge>
+        <edge source="&lt;http://example.com/ns#56.0&gt;" target="&quot;Miami-Dade County|Florida&quot;^^&lt;http://www.w3.org/2000/01/rdf-schema#Literal&gt;">
+            <data key="type">&lt;https://schema.org/spatialCoverage&gt;</data>
+        </edge>
+        <edge source="&lt;http://example.com/ns#52.0&gt;" target="&quot;United States|Florida|Miami Dade County&quot;^^&lt;http://www.w3.org/2000/01/rdf-schema#Literal&gt;">
+            <data key="type">&lt;https://schema.org/spatialCoverage&gt;</data>
+        </edge>
+        <edge source="&lt;http://example.com/ns#63.0&gt;" target="&quot;Miami-Dade County&quot;^^&lt;http://www.w3.org/2000/01/rdf-schema#Literal&gt;">
+            <data key="type">&lt;https://schema.org/spatialCoverage&gt;</data>
+        </edge>
+        <edge source="&lt;http://example.com/ns#96.0&gt;" target="&quot;Southeast&quot;^^&lt;http://www.w3.org/2000/01/rdf-schema#Literal&gt;">
+            <data key="type">&lt;https://schema.org/spatialCoverage&gt;</data>
+        </edge>
+        <edge source="&lt;http://example.com/ns#42.0&gt;" target="&quot;United States|Florida&quot;^^&lt;http://www.w3.org/2000/01/rdf-schema#Literal&gt;">
+            <data key="type">&lt;https://schema.org/spatialCoverage&gt;</data>
+        </edge>
+        <edge source="&lt;http://example.com/ns#61.0&gt;" target="&quot;Miami-Dade County&quot;^^&lt;http://www.w3.org/2000/01/rdf-schema#Literal&gt;">
+            <data key="type">&lt;https://schema.org/spatialCoverage&gt;</data>
+        </edge>
+        <edge source="&lt;http://example.com/ns#86.0&gt;" target="&quot;Colombia|Bogota&quot;^^&lt;http://www.w3.org/2000/01/rdf-schema#Literal&gt;">
+            <data key="type">&lt;https://schema.org/spatialCoverage&gt;</data>
+        </edge>
+        <edge source="&lt;http://example.com/ns#98.0&gt;" target="&quot;Southeast&quot;^^&lt;http://www.w3.org/2000/01/rdf-schema#Literal&gt;">
+            <data key="type">&lt;https://schema.org/spatialCoverage&gt;</data>
+        </edge>
+        <edge source="&lt;http://example.com/ns#40.0&gt;" target="&quot;United States|Florida|Miami Dade County&quot;^^&lt;http://www.w3.org/2000/01/rdf-schema#Literal&gt;">
+            <data key="type">&lt;https://schema.org/spatialCoverage&gt;</data>
+        </edge>
+        <edge source="&lt;http://example.com/ns#3.0&gt;" target="&quot;United States|Florida&quot;^^&lt;http://www.w3.org/2000/01/rdf-schema#Literal&gt;">
+            <data key="type">&lt;https://schema.org/spatialCoverage&gt;</data>
+        </edge>
+        <edge source="&lt;http://example.com/ns#35.0&gt;" target="&quot;United States|Florida|Miami Dade County&quot;^^&lt;http://www.w3.org/2000/01/rdf-schema#Literal&gt;">
+            <data key="type">&lt;https://schema.org/spatialCoverage&gt;</data>
+        </edge>
+        <edge source="&lt;http://example.com/ns#50.0&gt;" target="&quot;United States|Florida&quot;^^&lt;http://www.w3.org/2000/01/rdf-schema#Literal&gt;">
+            <data key="type">&lt;https://schema.org/spatialCoverage&gt;</data>
+        </edge>
+        <edge source="&lt;http://example.com/ns#19.0&gt;" target="&quot;United States&quot;^^&lt;http://www.w3.org/2000/01/rdf-schema#Literal&gt;">
+            <data key="type">&lt;https://schema.org/spatialCoverage&gt;</data>
+        </edge>
+        <edge source="&lt;http://example.com/ns#31.0&gt;" target="&quot;United States|Florida|Miami Dade County&quot;^^&lt;http://www.w3.org/2000/01/rdf-schema#Literal&gt;">
+            <data key="type">&lt;https://schema.org/spatialCoverage&gt;</data>
+        </edge>
+        <edge source="&lt;http://example.com/ns#65.0&gt;" target="&quot;Miami-Dade County&quot;^^&lt;http://www.w3.org/2000/01/rdf-schema#Literal&gt;">
+            <data key="type">&lt;https://schema.org/spatialCoverage&gt;</data>
+        </edge>
+        <edge source="&lt;http://example.com/ns#73.0&gt;" target="&quot;USA&quot;^^&lt;http://www.w3.org/2000/01/rdf-schema#Literal&gt;">
+            <data key="type">&lt;https://schema.org/spatialCoverage&gt;</data>
+        </edge>
+        <edge source="&lt;http://example.com/ns#77.0&gt;" target="&quot;Miami-Dade County&quot;^^&lt;http://www.w3.org/2000/01/rdf-schema#Literal&gt;">
+            <data key="type">&lt;https://schema.org/spatialCoverage&gt;</data>
+        </edge>
+        <edge source="&lt;http://example.com/ns#30.0&gt;" target="&quot;United States|Florida|Miami Dade County&quot;^^&lt;http://www.w3.org/2000/01/rdf-schema#Literal&gt;">
+            <data key="type">&lt;https://schema.org/spatialCoverage&gt;</data>
+        </edge>
+        <edge source="&lt;http://example.com/ns#16.0&gt;" target="&quot;United States|Florida&quot;^^&lt;http://www.w3.org/2000/01/rdf-schema#Literal&gt;">
+            <data key="type">&lt;https://schema.org/spatialCoverage&gt;</data>
+        </edge>
+        <edge source="&lt;http://example.com/ns#43.0&gt;" target="&quot;United States&quot;^^&lt;http://www.w3.org/2000/01/rdf-schema#Literal&gt;">
+            <data key="type">&lt;https://schema.org/spatialCoverage&gt;</data>
+        </edge>
+        <edge source="&lt;http://example.com/ns#102.0&gt;" target="&quot;Florida&quot;^^&lt;http://www.w3.org/2000/01/rdf-schema#Literal&gt;">
+            <data key="type">&lt;https://schema.org/spatialCoverage&gt;</data>
+        </edge>
+        <edge source="&lt;http://example.com/ns#57.0&gt;" target="&quot;Miami-Dade County&quot;^^&lt;http://www.w3.org/2000/01/rdf-schema#Literal&gt;">
+            <data key="type">&lt;https://schema.org/spatialCoverage&gt;</data>
+        </edge>
+        <edge source="&lt;http://example.com/ns#45.0&gt;" target="&quot;Florida&quot;^^&lt;http://www.w3.org/2000/01/rdf-schema#Literal&gt;">
+            <data key="type">&lt;https://schema.org/spatialCoverage&gt;</data>
+        </edge>
+        <edge source="&lt;http://example.com/ns#83.0&gt;" target="&quot;United States|Florida|Miami Dade County&quot;^^&lt;http://www.w3.org/2000/01/rdf-schema#Literal&gt;">
+            <data key="type">&lt;https://schema.org/spatialCoverage&gt;</data>
+        </edge>
+        <edge source="&lt;http://example.com/ns#84.0&gt;" target="&quot;United States|Florida&quot;^^&lt;http://www.w3.org/2000/01/rdf-schema#Literal&gt;">
+            <data key="type">&lt;https://schema.org/spatialCoverage&gt;</data>
+        </edge>
+        <edge source="&lt;http://example.com/ns#104.0&gt;" target="&quot;Miami-Dade County&quot;^^&lt;http://www.w3.org/2000/01/rdf-schema#Literal&gt;">
+            <data key="type">&lt;https://schema.org/spatialCoverage&gt;</data>
+        </edge>
+        <edge source="&lt;http://example.com/ns#12.0&gt;" target="&quot;United States|Florida&quot;^^&lt;http://www.w3.org/2000/01/rdf-schema#Literal&gt;">
+            <data key="type">&lt;https://schema.org/spatialCoverage&gt;</data>
+        </edge>
+        <edge source="&lt;http://example.com/ns#24.0&gt;" target="&quot;United States|Florida|Miami Dade County&quot;^^&lt;http://www.w3.org/2000/01/rdf-schema#Literal&gt;">
+            <data key="type">&lt;https://schema.org/spatialCoverage&gt;</data>
+        </edge>
+        <edge source="&lt;http://example.com/ns#79.0&gt;" target="&quot;Trinidad and Tobago&quot;^^&lt;http://www.w3.org/2000/01/rdf-schema#Literal&gt;">
+            <data key="type">&lt;https://schema.org/spatialCoverage&gt;</data>
+        </edge>
+        <edge source="&lt;http://example.com/ns#47.0&gt;" target="&quot;United States&quot;^^&lt;http://www.w3.org/2000/01/rdf-schema#Literal&gt;">
+            <data key="type">&lt;https://schema.org/spatialCoverage&gt;</data>
+        </edge>
+        <edge source="&lt;http://example.com/ns#20.0&gt;" target="&quot;United States|Florida|Miami Dade County&quot;^^&lt;http://www.w3.org/2000/01/rdf-schema#Literal&gt;">
+            <data key="type">&lt;https://schema.org/spatialCoverage&gt;</data>
+        </edge>
+        <edge source="&lt;http://example.com/ns#100.0&gt;" target="&quot;Southeast&quot;^^&lt;http://www.w3.org/2000/01/rdf-schema#Literal&gt;">
+            <data key="type">&lt;https://schema.org/spatialCoverage&gt;</data>
+        </edge>
+        <edge source="&lt;http://example.com/ns#41.0&gt;" target="&quot;United States|Florida|Miami Dade County&quot;^^&lt;http://www.w3.org/2000/01/rdf-schema#Literal&gt;">
+            <data key="type">&lt;https://schema.org/spatialCoverage&gt;</data>
+        </edge>
+        <edge source="&lt;http://example.com/ns#14.0&gt;" target="&quot;United States|Florida|Miami Dade County&quot;^^&lt;http://www.w3.org/2000/01/rdf-schema#Literal&gt;">
+            <data key="type">&lt;https://schema.org/spatialCoverage&gt;</data>
+        </edge>
+        <edge source="&lt;http://example.com/ns#82.0&gt;" target="&quot;United States|Florida&quot;^^&lt;http://www.w3.org/2000/01/rdf-schema#Literal&gt;">
+            <data key="type">&lt;https://schema.org/spatialCoverage&gt;</data>
+        </edge>
+        <edge source="&lt;http://example.com/ns#90.0&gt;" target="&quot;Miami-Dade County&quot;^^&lt;http://www.w3.org/2000/01/rdf-schema#Literal&gt;">
+            <data key="type">&lt;https://schema.org/spatialCoverage&gt;</data>
+        </edge>
+        <edge source="&lt;http://example.com/ns#93.0&gt;" target="&quot;Miami-Dade County&quot;^^&lt;http://www.w3.org/2000/01/rdf-schema#Literal&gt;">
+            <data key="type">&lt;https://schema.org/spatialCoverage&gt;</data>
+        </edge>
+        <edge source="&lt;http://example.com/ns#7.0&gt;" target="&quot;United States|Florida&quot;^^&lt;http://www.w3.org/2000/01/rdf-schema#Literal&gt;">
+            <data key="type">&lt;https://schema.org/spatialCoverage&gt;</data>
+        </edge>
+        <edge source="&lt;http://example.com/ns#80.0&gt;" target="&quot;Trinidad and Tobago&quot;^^&lt;http://www.w3.org/2000/01/rdf-schema#Literal&gt;">
+            <data key="type">&lt;https://schema.org/spatialCoverage&gt;</data>
+        </edge>
+        <edge source="&lt;http://example.com/ns#54.0&gt;" target="&quot;Global&quot;^^&lt;http://www.w3.org/2000/01/rdf-schema#Literal&gt;">
+            <data key="type">&lt;https://schema.org/spatialCoverage&gt;</data>
+        </edge>
+        <edge source="&lt;http://example.com/ns#60.0&gt;" target="&quot;City of Miami&quot;^^&lt;http://www.w3.org/2000/01/rdf-schema#Literal&gt;">
+            <data key="type">&lt;https://schema.org/spatialCoverage&gt;</data>
+        </edge>
+        <edge source="&lt;http://example.com/ns#74.0&gt;" target="&quot;United States&quot;^^&lt;http://www.w3.org/2000/01/rdf-schema#Literal&gt;">
+            <data key="type">&lt;https://schema.org/spatialCoverage&gt;</data>
+        </edge>
+        <edge source="&lt;http://example.com/ns#103.0&gt;" target="&quot;Colombia|Bogota&quot;^^&lt;http://www.w3.org/2000/01/rdf-schema#Literal&gt;">
+            <data key="type">&lt;https://schema.org/spatialCoverage&gt;</data>
+        </edge>
+        <edge source="&lt;http://example.com/ns#34.0&gt;" target="&quot;United States|Florida|Miami Dade County&quot;^^&lt;http://www.w3.org/2000/01/rdf-schema#Literal&gt;">
+            <data key="type">&lt;https://schema.org/spatialCoverage&gt;</data>
+        </edge>
+        <edge source="&lt;http://example.com/ns#21.0&gt;" target="&quot;United States|Florida|Miami Dade County&quot;^^&lt;http://www.w3.org/2000/01/rdf-schema#Literal&gt;">
+            <data key="type">&lt;https://schema.org/spatialCoverage&gt;</data>
+        </edge>
+        <edge source="&lt;http://example.com/ns#1.0&gt;" target="&quot;United States&quot;^^&lt;http://www.w3.org/2000/01/rdf-schema#Literal&gt;">
+            <data key="type">&lt;https://schema.org/spatialCoverage&gt;</data>
+        </edge>
+        <edge source="&lt;http://example.com/ns#67.0&gt;" target="&quot;--&quot;^^&lt;http://www.w3.org/2000/01/rdf-schema#Literal&gt;">
+            <data key="type">&lt;https://schema.org/spatialCoverage&gt;</data>
+        </edge>
+        <edge source="&lt;http://example.com/ns#87.0&gt;" target="&quot;United States&quot;^^&lt;http://www.w3.org/2000/01/rdf-schema#Literal&gt;">
+            <data key="type">&lt;https://schema.org/spatialCoverage&gt;</data>
+        </edge>
+        <edge source="&lt;http://example.com/ns#94.0&gt;" target="&quot;Southeast&quot;^^&lt;http://www.w3.org/2000/01/rdf-schema#Literal&gt;">
+            <data key="type">&lt;https://schema.org/spatialCoverage&gt;</data>
+        </edge>
+        <edge source="&lt;http://example.com/ns#6.0&gt;" target="&quot;United States|Florida&quot;^^&lt;http://www.w3.org/2000/01/rdf-schema#Literal&gt;">
+            <data key="type">&lt;https://schema.org/spatialCoverage&gt;</data>
+        </edge>
+        <edge source="&lt;http://example.com/ns#10.0&gt;" target="&quot;United States|Florida&quot;^^&lt;http://www.w3.org/2000/01/rdf-schema#Literal&gt;">
+            <data key="type">&lt;https://schema.org/spatialCoverage&gt;</data>
+        </edge>
+        <edge source="&lt;http://example.com/ns#5.0&gt;" target="&quot;United States|Florida&quot;^^&lt;http://www.w3.org/2000/01/rdf-schema#Literal&gt;">
+            <data key="type">&lt;https://schema.org/spatialCoverage&gt;</data>
+        </edge>
+        <edge source="&lt;http://example.com/ns#85.0&gt;" target="&quot;Miami-Dade County|Florida&quot;^^&lt;http://www.w3.org/2000/01/rdf-schema#Literal&gt;">
+            <data key="type">&lt;https://schema.org/spatialCoverage&gt;</data>
+        </edge>
+        <edge source="&lt;http://example.com/ns#66.0&gt;" target="&quot;--&quot;^^&lt;http://www.w3.org/2000/01/rdf-schema#Literal&gt;">
+            <data key="type">&lt;https://schema.org/spatialCoverage&gt;</data>
+        </edge>
+        <edge source="&lt;http://example.com/ns#39.0&gt;" target="&quot;United States|Florida|Miami Dade County&quot;^^&lt;http://www.w3.org/2000/01/rdf-schema#Literal&gt;">
+            <data key="type">&lt;https://schema.org/spatialCoverage&gt;</data>
+        </edge>
+        <edge source="&lt;http://example.com/ns#9.0&gt;" target="&quot;United States|Florida|Miami-Dade County&quot;^^&lt;http://www.w3.org/2000/01/rdf-schema#Literal&gt;">
+            <data key="type">&lt;https://schema.org/spatialCoverage&gt;</data>
+        </edge>
+        <edge source="&lt;http://example.com/ns#58.0&gt;" target="&quot;Miami-Dade County&quot;^^&lt;http://www.w3.org/2000/01/rdf-schema#Literal&gt;">
+            <data key="type">&lt;https://schema.org/spatialCoverage&gt;</data>
+        </edge>
+        <edge source="&lt;http://example.com/ns#89.0&gt;" target="&quot;Miami-Dade County&quot;^^&lt;http://www.w3.org/2000/01/rdf-schema#Literal&gt;">
+            <data key="type">&lt;https://schema.org/spatialCoverage&gt;</data>
+        </edge>
+        <edge source="&lt;http://example.com/ns#78.0&gt;" target="&quot;Trinidad and Tobago&quot;^^&lt;http://www.w3.org/2000/01/rdf-schema#Literal&gt;">
+            <data key="type">&lt;https://schema.org/spatialCoverage&gt;</data>
+        </edge>
+        <edge source="&lt;http://example.com/ns#44.0&gt;" target="&quot;Florida&quot;^^&lt;http://www.w3.org/2000/01/rdf-schema#Literal&gt;">
+            <data key="type">&lt;https://schema.org/spatialCoverage&gt;</data>
+        </edge>
+        <edge source="&lt;http://example.com/ns#97.0&gt;" target="&quot;Miami-Dade County&quot;^^&lt;http://www.w3.org/2000/01/rdf-schema#Literal&gt;">
+            <data key="type">&lt;https://schema.org/spatialCoverage&gt;</data>
+        </edge>
+        <edge source="&lt;http://example.com/ns#17.0&gt;" target="&quot;United States&quot;^^&lt;http://www.w3.org/2000/01/rdf-schema#Literal&gt;">
+            <data key="type">&lt;https://schema.org/spatialCoverage&gt;</data>
+        </edge>
+        <edge source="&lt;http://example.com/ns#55.0&gt;" target="&quot;Miami-Dade County|Florida&quot;^^&lt;http://www.w3.org/2000/01/rdf-schema#Literal&gt;">
+            <data key="type">&lt;https://schema.org/spatialCoverage&gt;</data>
+        </edge>
+        <edge source="&lt;http://example.com/ns#101.0&gt;" target="&quot;Miami-Dade County&quot;^^&lt;http://www.w3.org/2000/01/rdf-schema#Literal&gt;">
+            <data key="type">&lt;https://schema.org/spatialCoverage&gt;</data>
+        </edge>
+        <edge source="&lt;http://example.com/ns#49.0&gt;" target="&quot;United States&quot;^^&lt;http://www.w3.org/2000/01/rdf-schema#Literal&gt;">
+            <data key="type">&lt;https://schema.org/spatialCoverage&gt;</data>
+        </edge>
+        <edge source="&lt;http://example.com/ns#70.0&gt;" target="&quot;United States&quot;^^&lt;http://www.w3.org/2000/01/rdf-schema#Literal&gt;">
+            <data key="type">&lt;https://schema.org/spatialCoverage&gt;</data>
+        </edge>
+        <edge source="&lt;http://example.com/ns#105.0&gt;" target="&quot;Colombia|Bogota&quot;^^&lt;http://www.w3.org/2000/01/rdf-schema#Literal&gt;">
+            <data key="type">&lt;https://schema.org/spatialCoverage&gt;</data>
+        </edge>
+        <edge source="&lt;http://example.com/ns#72.0&gt;" target="&quot;Florida&quot;^^&lt;http://www.w3.org/2000/01/rdf-schema#Literal&gt;">
+            <data key="type">&lt;https://schema.org/spatialCoverage&gt;</data>
+        </edge>
+        <edge source="&lt;http://example.com/ns#18.0&gt;" target="&quot;United States|Florida|Miami Dade County&quot;^^&lt;http://www.w3.org/2000/01/rdf-schema#Literal&gt;">
+            <data key="type">&lt;https://schema.org/spatialCoverage&gt;</data>
+        </edge>
+        <edge source="&lt;http://example.com/ns#25.0&gt;" target="&quot;United States|Florida|Miami Dade County&quot;^^&lt;http://www.w3.org/2000/01/rdf-schema#Literal&gt;">
+            <data key="type">&lt;https://schema.org/spatialCoverage&gt;</data>
+        </edge>
+        <edge source="&lt;http://example.com/ns#99.0&gt;" target="&quot;Miami-Dade County&quot;^^&lt;http://www.w3.org/2000/01/rdf-schema#Literal&gt;">
+            <data key="type">&lt;https://schema.org/spatialCoverage&gt;</data>
+        </edge>
+        <edge source="&lt;http://example.com/ns#4.0&gt;" target="&quot;United States|Florida&quot;^^&lt;http://www.w3.org/2000/01/rdf-schema#Literal&gt;">
+            <data key="type">&lt;https://schema.org/spatialCoverage&gt;</data>
+        </edge>
+        <edge source="&lt;http://example.com/ns#2.0&gt;" target="&quot;United States|Florida&quot;^^&lt;http://www.w3.org/2000/01/rdf-schema#Literal&gt;">
+            <data key="type">&lt;https://schema.org/spatialCoverage&gt;</data>
+        </edge>
+        <edge source="&lt;http://example.com/ns#33.0&gt;" target="&quot;United States|Florida|Miami Dade County&quot;^^&lt;http://www.w3.org/2000/01/rdf-schema#Literal&gt;">
+            <data key="type">&lt;https://schema.org/spatialCoverage&gt;</data>
+        </edge>
+        <edge source="&lt;http://example.com/ns#62.0&gt;" target="&quot;Miami-Dade County&quot;^^&lt;http://www.w3.org/2000/01/rdf-schema#Literal&gt;">
+            <data key="type">&lt;https://schema.org/spatialCoverage&gt;</data>
+        </edge>
+        <edge source="&lt;http://example.com/ns#53.0&gt;" target="&quot;United States|Florida|Miami Dade County&quot;^^&lt;http://www.w3.org/2000/01/rdf-schema#Literal&gt;">
+            <data key="type">&lt;https://schema.org/spatialCoverage&gt;</data>
+        </edge>
+        <edge source="&lt;http://example.com/ns#51.0&gt;" target="&quot;United States|Florida|Miami Dade County&quot;^^&lt;http://www.w3.org/2000/01/rdf-schema#Literal&gt;">
+            <data key="type">&lt;https://schema.org/spatialCoverage&gt;</data>
+        </edge>
+        <edge source="&lt;http://example.com/ns#27.0&gt;" target="&quot;United States|Florida|Miami Dade County&quot;^^&lt;http://www.w3.org/2000/01/rdf-schema#Literal&gt;">
+            <data key="type">&lt;https://schema.org/spatialCoverage&gt;</data>
+        </edge>
+        <edge source="&lt;http://example.com/ns#32.0&gt;" target="&quot;United States|Florida|Miami Dade County&quot;^^&lt;http://www.w3.org/2000/01/rdf-schema#Literal&gt;">
+            <data key="type">&lt;https://schema.org/spatialCoverage&gt;</data>
+        </edge>
+        <edge source="&lt;http://example.com/ns#64.0&gt;" target="&quot;United States&quot;^^&lt;http://www.w3.org/2000/01/rdf-schema#Literal&gt;">
+            <data key="type">&lt;https://schema.org/spatialCoverage&gt;</data>
+        </edge>
+        <edge source="&lt;http://example.com/ns#37.0&gt;" target="&quot;United States|Florida|Miami Dade County&quot;^^&lt;http://www.w3.org/2000/01/rdf-schema#Literal&gt;">
+            <data key="type">&lt;https://schema.org/spatialCoverage&gt;</data>
+        </edge>
+        <edge source="&lt;http://example.com/ns#38.0&gt;" target="&quot;United States|Florida|Miami Dade County&quot;^^&lt;http://www.w3.org/2000/01/rdf-schema#Literal&gt;">
+            <data key="type">&lt;https://schema.org/spatialCoverage&gt;</data>
+        </edge>
+        <edge source="&lt;http://example.com/ns#15.0&gt;" target="&quot;United States|Florida|Miami Dade County&quot;^^&lt;http://www.w3.org/2000/01/rdf-schema#Literal&gt;">
+            <data key="type">&lt;https://schema.org/spatialCoverage&gt;</data>
+        </edge>
+        <edge source="&lt;http://example.com/ns#68.0&gt;" target="&quot;United States|Florida|Miami Dade County&quot;^^&lt;http://www.w3.org/2000/01/rdf-schema#Literal&gt;">
+            <data key="type">&lt;https://schema.org/spatialCoverage&gt;</data>
+        </edge>
+        <edge source="&lt;http://example.com/ns#26.0&gt;" target="&quot;United States|Florida|Miami Dade County&quot;^^&lt;http://www.w3.org/2000/01/rdf-schema#Literal&gt;">
+            <data key="type">&lt;https://schema.org/spatialCoverage&gt;</data>
+        </edge>
+        <edge source="&lt;http://example.com/ns#46.0&gt;" target="&quot;Florida&quot;^^&lt;http://www.w3.org/2000/01/rdf-schema#Literal&gt;">
+            <data key="type">&lt;https://schema.org/spatialCoverage&gt;</data>
+        </edge>
+        <edge source="&lt;http://example.com/ns#69.0&gt;" target="&quot;United States&quot;^^&lt;http://www.w3.org/2000/01/rdf-schema#Literal&gt;">
+            <data key="type">&lt;https://schema.org/spatialCoverage&gt;</data>
+        </edge>
+        <edge source="&lt;http://example.com/ns#59.0&gt;" target="&quot;Miami-Dade County&quot;^^&lt;http://www.w3.org/2000/01/rdf-schema#Literal&gt;">
+            <data key="type">&lt;https://schema.org/spatialCoverage&gt;</data>
+        </edge>
+        <edge source="&lt;http://example.com/ns#36.0&gt;" target="&quot;United States|Florida|Miami Dade County&quot;^^&lt;http://www.w3.org/2000/01/rdf-schema#Literal&gt;">
+            <data key="type">&lt;https://schema.org/spatialCoverage&gt;</data>
+        </edge>
+        <edge source="&lt;http://example.com/ns#23.0&gt;" target="&quot;United States|Florida|Miami Dade County&quot;^^&lt;http://www.w3.org/2000/01/rdf-schema#Literal&gt;">
+            <data key="type">&lt;https://schema.org/spatialCoverage&gt;</data>
+        </edge>
+    </graph>
+</graphml>

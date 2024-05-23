@@ -1,0 +1,92 @@
+<https://w3id.org/fair/principles/terms/1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://schema.org/CreativeWork> .
+<https://w3id.org/fair/principles/terms/1> <https://schema.org/lastName> "Florida|Miami-Dade County|MDC|Housing|Property|Racial Inequality|Race|Redlining History|HOLC|Social Justice" .
+<https://w3id.org/fair/principles/terms/1> <https://schema.org/url> "https://services.arcgis.com/jIL9msH9OI208GCb/arcgis/rest/services/HOLC_Neighborhood_Redlining/FeatureServer" .
+<https://w3id.org/fair/principles/terms/10> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://schema.org/CreativeWork> .
+<https://w3id.org/fair/principles/terms/10> <https://schema.org/lastName> "Florida|Census|ACS 2021|2021|5-Year Estimates|Tract|Census Block Group|Demographic|Housing|Property|Population|DVMT" .
+<https://w3id.org/fair/principles/terms/10> <https://schema.org/url> "https://www.census.gov/data/developers/data-sets/acs-5year.html" .
+<https://w3id.org/fair/principles/terms/11> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://schema.org/CreativeWork> .
+<https://w3id.org/fair/principles/terms/11> <https://schema.org/lastName> "Florida|Census|2021|Tract|Census Block Group|Geography" .
+<https://w3id.org/fair/principles/terms/11> <https://schema.org/url> "https://www.census.gov/geographies/mapping-files/time-series/geo/tiger-line-file.html" .
+<https://w3id.org/fair/principles/terms/12> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://schema.org/CreativeWork> .
+<https://w3id.org/fair/principles/terms/12> <https://schema.org/lastName> "Florida|Census|ACS 2021|2021|5-Year Estimates|Tract|Census Tract|Demographic|Housing|Property|Population|CAMP" .
+<https://w3id.org/fair/principles/terms/12> <https://schema.org/url> "https://www.census.gov/data/developers/data-sets/acs-5year.html" .
+<https://w3id.org/fair/principles/terms/13> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://schema.org/CreativeWork> .
+<https://w3id.org/fair/principles/terms/13> <https://schema.org/lastName> "Florida|EPA|Environmental Protection Agency|Environment|Health|Safety|Pollution|Contamination|Clean-Up Site|Superfund|Superfund Site|Hazard|Public-Safety" .
+<https://w3id.org/fair/principles/terms/13> <https://schema.org/url> "https://geodata.dep.state.fl.us/datasets/FDEP::florida-state-funded-cleanup-sites/about" .
+<https://w3id.org/fair/principles/terms/14> <http://dbpedia.org/ontology/hairColor> "https://doi.org/10.17604/p318-6n41" .
+<https://w3id.org/fair/principles/terms/14> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://schema.org/CreativeWork> .
+<https://w3id.org/fair/principles/terms/14> <https://schema.org/lastName> "Florida|Miami-Dade County|MDC|Miami-Dade County|Environment|Surface Temperature|Climate|Atmospheric Science|Hylo|Homestead|Little River|Public-Safety" .
+<https://w3id.org/fair/principles/terms/14> <https://schema.org/url> "https://scholarship.miami.edu/esploro/outputs/991031655220702976" .
+<https://w3id.org/fair/principles/terms/15> <http://dbpedia.org/ontology/hairColor> "https://doi.org/10.17604/p318-6n41" .
+<https://w3id.org/fair/principles/terms/15> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://schema.org/CreativeWork> .
+<https://w3id.org/fair/principles/terms/15> <https://schema.org/lastName> "Florida|Miami-Dade County|MDC|Miami-Dade County|Environment|NDVI|Hylo|Homestead|Little River|Public-Safety" .
+<https://w3id.org/fair/principles/terms/15> <https://schema.org/url> "https://scholarship.miami.edu/esploro/outputs/991031655220702976" .
+<https://w3id.org/fair/principles/terms/16> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://schema.org/CreativeWork> .
+<https://w3id.org/fair/principles/terms/16> <https://schema.org/lastName> "Florida|Counties|TIGER" .
+<https://w3id.org/fair/principles/terms/16> <https://schema.org/url> "https://www.census.gov/geographies/mapping-files/time-series/geo/cartographic-boundary.html" .
+<https://w3id.org/fair/principles/terms/17> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://schema.org/CreativeWork> .
+<https://w3id.org/fair/principles/terms/17> <https://schema.org/lastName> "USA|Counties|TIGER" .
+<https://w3id.org/fair/principles/terms/17> <https://schema.org/url> "https://www.census.gov/geographies/mapping-files/time-series/geo/cartographic-boundary.html" .
+<https://w3id.org/fair/principles/terms/18> <http://dbpedia.org/ontology/hairColor> "https://doi.org/10.17604/p318-6n41" .
+<https://w3id.org/fair/principles/terms/18> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://schema.org/CreativeWork> .
+<https://w3id.org/fair/principles/terms/18> <https://schema.org/lastName> "Florida|Miami-Dade County|MDC|Miami-Dade County|Environment|Depth to Groundwater|Water|Hylo|Homestead|Little River" .
+<https://w3id.org/fair/principles/terms/18> <https://schema.org/url> "https://scholarship.miami.edu/esploro/outputs/dataset/Data-for-Hyperlocalism-Transforming-the-Paradigm/991031655220702976?institution=01UOML_INST" .
+<https://w3id.org/fair/principles/terms/19> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://schema.org/CreativeWork> .
+<https://w3id.org/fair/principles/terms/19> <https://schema.org/lastName> "tree density|tree canopy cover|percent tree canopy|Landsat|Sentinel-2|CONUS|United States" .
+<https://w3id.org/fair/principles/terms/19> <https://schema.org/url> "https://www.mrlc.gov/data/nlcd-2021-tree-canopy-cover-conus" .
+<https://w3id.org/fair/principles/terms/2> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://schema.org/CreativeWork> .
+<https://w3id.org/fair/principles/terms/2> <https://schema.org/lastName> "Florida|Census|2019|Tract|Census Tract|Geography" .
+<https://w3id.org/fair/principles/terms/2> <https://schema.org/url> "https://www.census.gov/geographies/mapping-files/time-series/geo/tiger-line-file.html" .
+<https://w3id.org/fair/principles/terms/20> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://schema.org/CreativeWork> .
+<https://w3id.org/fair/principles/terms/20> <https://schema.org/lastName> "tree density|tree canopy cover|percent tree canopy|Landsat|Sentinel-2|CONUS|Florida|Miami-Dade" .
+<https://w3id.org/fair/principles/terms/20> <https://schema.org/url> "https://www.mrlc.gov/data/nlcd-2021-tree-canopy-cover-conus" .
+<https://w3id.org/fair/principles/terms/21> <http://dbpedia.org/ontology/hairColor> "https://doi.org/10.1016/j.rse.2021.112357" .
+<https://w3id.org/fair/principles/terms/21> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://schema.org/CreativeWork> .
+<https://w3id.org/fair/principles/terms/21> <https://schema.org/lastName> "Land cover |Land cover change|Landsat|NLCD|CONUS| Florida|Miami-Dade" .
+<https://w3id.org/fair/principles/terms/21> <https://schema.org/url> "https://www.mrlc.gov/data/nlcd-imperviousness-conus-all-years" .
+<https://w3id.org/fair/principles/terms/22> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://schema.org/CreativeWork> .
+<https://w3id.org/fair/principles/terms/22> <https://schema.org/lastName> "Florida|Miami-Dade County|MDC|Environment|Park Facility|Parks|Recreation|Open Spaces|Wellness|Infrastructure" .
+<https://w3id.org/fair/principles/terms/22> <https://schema.org/url> "https://gis-mdc.opendata.arcgis.com/datasets/MDC::park-facility" .
+<https://w3id.org/fair/principles/terms/23> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://schema.org/CreativeWork> .
+<https://w3id.org/fair/principles/terms/23> <https://schema.org/lastName> "Florida|Miami-Dade County|MDC|Emergency|Police Station|Public-safety|Crime|Infrastructure" .
+<https://w3id.org/fair/principles/terms/23> <https://schema.org/url> "https://gis-mdc.opendata.arcgis.com/datasets/MDC::police-station/about" .
+<https://w3id.org/fair/principles/terms/24> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://schema.org/CreativeWork> .
+<https://w3id.org/fair/principles/terms/24> <https://schema.org/lastName> "Florida|Miami-Dade County|MDC|Health| Emergency|Hospital|Wellness|\nMedical|Public-Safety|Infrastructure" .
+<https://w3id.org/fair/principles/terms/24> <https://schema.org/url> "https://gis-mdc.opendata.arcgis.com/datasets/MDC::hospital/about" .
+<https://w3id.org/fair/principles/terms/25> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://schema.org/CreativeWork> .
+<https://w3id.org/fair/principles/terms/25> <https://schema.org/lastName> "Florida|Miami-Dade County|MDC|Health| Emergency|Federally Qualified Health Center|Wellness|Medical|\nPublic-Safety|Infrastructure" .
+<https://w3id.org/fair/principles/terms/25> <https://schema.org/url> "https://gis-mdc.opendata.arcgis.com/datasets/MDC::federally-qualified-health-center/about" .
+<https://w3id.org/fair/principles/terms/26> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://schema.org/CreativeWork> .
+<https://w3id.org/fair/principles/terms/26> <https://schema.org/lastName> "Florida|Miami-Dade County|MDC| Emergency|Fire Station|Fire|Public-Safety\nInfrastructure" .
+<https://w3id.org/fair/principles/terms/26> <https://schema.org/url> "https://gis-mdc.opendata.arcgis.com/datasets/MDC::fire-station/about" .
+<https://w3id.org/fair/principles/terms/27> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://schema.org/CreativeWork> .
+<https://w3id.org/fair/principles/terms/27> <https://schema.org/lastName> "Florida|Miami-Dade County|MDC|Education| Library|Municipal Library|Infrastructure" .
+<https://w3id.org/fair/principles/terms/27> <https://schema.org/url> "https://gis-mdc.opendata.arcgis.com/datasets/MDC::municipal-library/about" .
+<https://w3id.org/fair/principles/terms/28> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://schema.org/CreativeWork> .
+<https://w3id.org/fair/principles/terms/28> <https://schema.org/lastName> "Florida|Miami-Dade County|MDC|Education| Library|County Library|Population|Infrastructure" .
+<https://w3id.org/fair/principles/terms/28> <https://schema.org/url> "https://gis-mdc.opendata.arcgis.com/datasets/MDC::county-library/about" .
+<https://w3id.org/fair/principles/terms/3> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://schema.org/CreativeWork> .
+<https://w3id.org/fair/principles/terms/3> <https://schema.org/lastName> "Miami-Dade|Census|ACS 2019|2019|5-Year Estimates|Tract|Census Tract|Demographic|Housing|Property|Population|DVMT" .
+<https://w3id.org/fair/principles/terms/3> <https://schema.org/url> "https://www.census.gov/data/developers/data-sets/acs-5year.html" .
+<https://w3id.org/fair/principles/terms/4> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://schema.org/CreativeWork> .
+<https://w3id.org/fair/principles/terms/4> <https://schema.org/lastName> "Florida|Census|ACS 2019|2019|5-Year Estimates|Tract|Census Tract|Demographic|Housing|Property|Population|CAMP" .
+<https://w3id.org/fair/principles/terms/4> <https://schema.org/url> "https://www.census.gov/data/developers/data-sets/acs-5year.html" .
+<https://w3id.org/fair/principles/terms/5> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://schema.org/CreativeWork> .
+<https://w3id.org/fair/principles/terms/5> <https://schema.org/lastName> "Florida|Census|2020|Tract|Census Tract|Geography" .
+<https://w3id.org/fair/principles/terms/5> <https://schema.org/url> "https://www.census.gov/geographies/mapping-files/time-series/geo/tiger-line-file.html" .
+<https://w3id.org/fair/principles/terms/6> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://schema.org/CreativeWork> .
+<https://w3id.org/fair/principles/terms/6> <https://schema.org/lastName> "Florida|Census|ACS 2020|2020|5-Year Estimates|Tract|Census Tract|Demographic|Housing|Property|Population|DVMT" .
+<https://w3id.org/fair/principles/terms/6> <https://schema.org/url> "https://www.census.gov/data/developers/data-sets/acs-5year.html" .
+<https://w3id.org/fair/principles/terms/7> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://schema.org/CreativeWork> .
+<https://w3id.org/fair/principles/terms/7> <https://schema.org/lastName> "Florida|Census|ACS 2020|2020|5-Year Estimates|Tract|Census Tract|Demographic|Housing|Property|Population|CAMP" .
+<https://w3id.org/fair/principles/terms/7> <https://schema.org/url> "https://www.census.gov/data/developers/data-sets/acs-5year.html" .
+<https://w3id.org/fair/principles/terms/8> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://schema.org/CreativeWork> .
+<https://w3id.org/fair/principles/terms/8> <https://schema.org/lastName> "Florida|Census|2021|Tract|Census Tract|Geography" .
+<https://w3id.org/fair/principles/terms/8> <https://schema.org/url> "https://www.census.gov/geographies/mapping-files/time-series/geo/tiger-line-file.html" .
+<https://w3id.org/fair/principles/terms/83> <http://dbpedia.org/ontology/hairColor> "https://doi.org/10.1016/j.rse.2021.112357" .
+<https://w3id.org/fair/principles/terms/83> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://schema.org/CreativeWork> .
+<https://w3id.org/fair/principles/terms/83> <https://schema.org/lastName> "Land cover |Land cover change|Landsat|NLCD|CONUS| Florida|Miami-Dade" .
+<https://w3id.org/fair/principles/terms/83> <https://schema.org/url> "https://www.mrlc.gov/data/nlcd-imperviousness-conus-all-years" .
+<https://w3id.org/fair/principles/terms/9> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://schema.org/CreativeWork> .
+<https://w3id.org/fair/principles/terms/9> <https://schema.org/lastName> "Florida|Census|ACS 2021|2021|5-Year Estimates|Tract|Census Tract|Demographic|Housing|Property|Population|DVMT" .
+<https://w3id.org/fair/principles/terms/9> <https://schema.org/url> "https://www.census.gov/data/developers/data-sets/acs-5year.html" .

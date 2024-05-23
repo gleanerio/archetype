@@ -1,0 +1,29 @@
+{
+    "@context": {
+        "@vocab": "https://schema.org/"
+    },
+    "@id": "https://gofair.us/id/fips/{{index}}",
+    "@type": "Question",
+    "name": "{{FP}}",
+    "Creator": {
+        "@id": "https://gofairus.org/id/org/nih/veupathdb",
+        "@type": "Organization",
+        "legalName": "VEuPathDB",
+        "name": "VEuPathDB",
+        "url": "https://veupathdb.org/"
+    },
+    "description": "{{Question}}",
+    "acceptedAnswer": {
+        "@type": "Answer",
+        "description": "{{answers}}"
+    },
+    "publishingPrinciples": {
+        "@id": "{{FP}}",
+        "@type": "CreativeWork",
+        "name": "{{FP}}",
+        "url": "{{URIs}}",
+        "description": "FAIR enabling resource types"
+    }
+}
+
+
