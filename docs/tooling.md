@@ -36,14 +36,6 @@ Suggestions welcome!
   - [Yatter](https://github.com/oeg-upm/yatter) Translates mapping rules from YARRRML in a turtle-based serialization of RML or R2RML.
   - [OpenRefine](https://openrefine.org/)
     - RDF extension in [extensions showcase](https://openrefine.org/extensions)
-- Visaulizations
-  - [ipysigma](https://github.com/medialab/ipysigma)
-  - [Graphia](https://graphia.app/)
-  - [Gephi](https://gephi.org/)
-  - [Cytoscape](https://cytoscape.org/)
-  - [Graphistry](https://www.graphistry.com/)
-    - [pyGraphistry](https://github.com/graphistry/pygraphistry)
-  - [sigma.js](https://www.sigmajs.org/) a JavaScript library aimed at visualizing graphs of thousands of nodes and edges
 - SAS or other platforms
   - [Data World](https://data.world/)
 - On-line tools
@@ -82,9 +74,10 @@ Suggestions welcome!
   - [CEDAR](https://more.metadatacenter.org/) and [CEDAR API](https://more.metadatacenter.org/tools-training/cedar-api)
   - [DeSci Labs Research Object Nodes](https://docs.desci.com/)
 
-## Network visualization
 
-- [Geph](https://gephi.org)
+## Network Visualization
+
+- [Gephi](https://gephi.org)
 - [Gephisto](https://lnkd.in/diSp3BWN)
 - [VOSviewer](https://www.vosviewer.com)
 - [Cytoscape](https://cytoscape.org)
@@ -96,6 +89,16 @@ Suggestions welcome!
 - [Graphistry](https://www.graphistry.com)
 - [SocNetV](https://socnetv.org)
 - [Tulip](https://lnkd.in/dtc_BD33)
+- [Graphistry](https://www.graphistry.com/)
+  - [pyGraphistry](https://github.com/graphistry/pygraphistry)
+- [sigma.js](https://www.sigmajs.org/) a JavaScript library aimed at visualizing graphs of thousands of nodes and edges
+- [d3rdf](https://github.com/Rathachai/d3rdf)
+- [ogma](https://linkurious.com/ogma/)
+- [vis-network](https://github.com/visjs/vis-network)
+- [orb](https://github.com/memgraph/orb)
+- [vivagraph](https://github.com/anvaka/VivaGraphJS)
+- [neovis.jd](https://github.com/neo4j-contrib/neovis.js/)
+- [cosmos](https://github.com/cosmograph-org/cosmos)
 
 ## Network Libraries
 
