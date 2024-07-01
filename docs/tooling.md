@@ -61,6 +61,7 @@ Suggestions welcome!
 - [DuckDB](https://duckdb.org/)
   - [Awesome DuckDB](https://github.com/davidgasquez/awesome-duckdb)
 - [Harlequin](https://harlequin.sh/) database client for the terminal that works well with duckdb
+- [RDF for JS collection](https://rdfjs.dev/) A collection of tooling for working with RDF in JS
 
 ## FAIR Orchestration Platforms
 
@@ -78,17 +79,18 @@ Suggestions welcome!
 ## Network Visualization
 
 - [Gephi](https://gephi.org)
-- [Gephisto](https://lnkd.in/diSp3BWN)
+- [Gephisto](https://jacomyma.github.io/gephisto/)
 - [VOSviewer](https://www.vosviewer.com)
 - [Cytoscape](https://cytoscape.org)
 - [Kumu](https://kumu.io)
-- [GraphInsight](https://lnkd.in/d5XnkWJr)
+- [GraphInsight](https://github.com/CarloNicolini/GraphInsight)
 - [NodeXL](https://nodexl.com)
-- [Orange](https://lnkd.in/dZU8Zx3D)
+- [Orange](https://orangedatamining.com/widget-catalog/networks/networkanalysis/)
 - [Graphia](https://graphia.app)
 - [Graphistry](https://www.graphistry.com)
+- [IsaViz](https://www.w3.org/2001/11/IsaViz/)
 - [SocNetV](https://socnetv.org)
-- [Tulip](https://lnkd.in/dtc_BD33)
+- [Tulip](https://tulip.labri.fr/site/)
 - [Graphistry](https://www.graphistry.com/)
   - [pyGraphistry](https://github.com/graphistry/pygraphistry)
 - [sigma.js](https://www.sigmajs.org/) a JavaScript library aimed at visualizing graphs of thousands of nodes and edges
@@ -102,17 +104,17 @@ Suggestions welcome!
 
 ## Network Libraries
 
-- [networkx](https://lnkd.in/dKCCXjif)
-- [graphviz](https://lnkd.in/dtrTeqRv)
-- [pydot](https://lnkd.in/dA46YZvy)
-- [python-igraph](https://lnkd.in/dCGsRXh2)
-- [pyvis](https://lnkd.in/dVrQ64nN)
-- [ipycytoscape](https://lnkd.in/d-hJjDdG)
-- [pygsp](https://lnkd.in/dS7s-A_v)
-- [graph-tool](https://lnkd.in/dvytUzdu)
-- [nxviz](https://lnkd.in/duHbKGPN)
-- [py2cytoscape](https://lnkd.in/dWUU8TZH)
-- [ipydagred3](https://lnkd.in/diXgFWMD)
-- [ipysigma](https://lnkd.in/dP55J5et)
-- [Py3Plex](https://lnkd.in/dhwe7f_g)
-- [net wulf](https://lnkd.in/dxrHAm2P)
+- [networkx](https://networkx.org/)
+- [graphviz](https://graphviz.readthedocs.io/en/stable/)
+- [pydot](https://github.com/pydot/pydot)
+- [python-igraph](https://github.com/igraph/python-igraph)
+- [pyvis](https://github.com/WestHealth/pyvis)
+- [ipycytoscape](https://github.com/cytoscape/ipycytoscape)
+- [pygsp](https://github.com/epfl-lts2/pygsp)
+- [graph-tool](https://graph-tool.skewed.de/)
+- [nxviz](https://github.com/ericmjl/nxviz)
+- [py2cytoscape](https://github.com/cytoscape/py4cytoscape)
+- [ipydagred3](https://github.com/timkpaine/ipydagred3)
+- [ipysigma](https://github.com/medialab/ipysigma)
+- [Py3Plex](https://github.com/SkBlaz/Py3Plex)
+- [net wulf](https://github.com/benmaier/netwulf)
