@@ -9,7 +9,7 @@
 @base <http://example.com/ns#>.
 
 
-<people_0> a rml:TriplesMap;
+<Layer_0> a rml:TriplesMap;
 
 	rml:logicalSource [
 		a rml:LogicalSource;
@@ -108,7 +108,7 @@
 		   rml:template "https://example.org/.well-known/genid/{ID}";
 	];
 
-rml:predicateObjectMap [
+	rml:predicateObjectMap [
 		rml:predicateMap [
 			a rml:PredicateMap;
 			rml:constant rdf:type;
@@ -126,7 +126,7 @@ rml:predicateObjectMap [
 		];
 		rml:objectMap [
 			a rml:ObjectMap;
-			rml:template "{Coverage}";
+			rml:reference "Coverage";
 			rml:datatype rdfs:Literal;
 		];
 	].

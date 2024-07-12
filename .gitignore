@@ -3,3 +3,5 @@
 rundir/logs/*
 workbench/data/
 /networks/commons/output/
+store2/
+**/__pycache__/*
