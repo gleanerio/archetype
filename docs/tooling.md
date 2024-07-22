@@ -7,13 +7,20 @@ that might align with the skills and needs of the user. Some are somewhat
 novel applications of existing tools. Some are just JSON tools that I
 have found useful for JSON-LD for some use cases.
 
+I do not list all the various RDF or property graph servers.   There are many
+and it is often personal preference or alignment to local factors that make
+the decison.  I will note that my current go to is [Oxigraph](https://github.com/oxigraph/oxigraph)
+for those wanting a recommendation.  I'd encourage research though since there
+are factors that may make Oxigraph a poor choice for your use case. 
+
 Suggestions welcome!
 
 ## Tools and Services
 
 - Great inProcess LPG and RDF with [KuzuDB](https://kuzudb.com/)
 - [PuppyGraph](https://www.puppygraph.com/)
-- [SemSpect](https://www.semspect.de/) scalable graph exploration and data-driven no-code querying tool for Neo4j and RDF data
+- [blueprint](https://github.com/zazuko/blueprint) Zazuko Blueprint is an enterprise knowledge graph frontend and browser, designed to make RDF Knowledge Graphs accessible and customizable for domain users.
+- [SemSpect](https://www.semspect.de/) scalable graph exploration and data-driven no-code querying tool for Neo4j and RDF data.  They provide licenses free of charge for academic and open data projects.
 - SPARQL related
   - [SPARQL wiki](https://kvistgaard.github.io/sparql/#/page/sparql%20wiki)
   - [yasgui](https://github.com/TriplyDB/Yasgui)
