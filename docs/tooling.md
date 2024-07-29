@@ -15,6 +15,8 @@ are factors that may make Oxigraph a poor choice for your use case.
 
 Suggestions welcome!
 
+You can also check out:  [Awesome KGC Tools](https://github.com/kg-construct/awesome-kgc-tools) 
+
 ## Tools and Services
 
 - Great inProcess LPG and RDF with [KuzuDB](https://kuzudb.com/)
