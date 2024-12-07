@@ -11,11 +11,11 @@ I do not list all the various RDF or property graph servers.   There are many
 and it is often personal preference or alignment to local factors that make
 the decison.  I will note that my current go to is [Oxigraph](https://github.com/oxigraph/oxigraph)
 for those wanting a recommendation.  I'd encourage research though since there
-are factors that may make Oxigraph a poor choice for your use case. 
+are factors that may make Oxigraph a poor choice for your use case.
 
 Suggestions welcome!
 
-You can also check out:  [Awesome KGC Tools](https://github.com/kg-construct/awesome-kgc-tools) 
+You can also check out:  [Awesome KGC Tools](https://github.com/kg-construct/awesome-kgc-tools)
 
 ## Tools and Services
 
@@ -47,6 +47,8 @@ You can also check out:  [Awesome KGC Tools](https://github.com/kg-construct/awe
     - RDF extension in [extensions showcase](https://openrefine.org/extensions)
 - SAS or other platforms
   - [Data World](https://data.world/)
+- JSON editing and visualization
+  - [JSON4u](https://github.com/loggerhead/json4u)
 - On-line tools
   - [JSON Crack](https://jsoncrack.com/)
   - [JSON-LD Playground](https://json-ld.org/playground/)
@@ -110,6 +112,7 @@ You can also check out:  [Awesome KGC Tools](https://github.com/kg-construct/awe
 - [vivagraph](https://github.com/anvaka/VivaGraphJS)
 - [neovis.jd](https://github.com/neo4j-contrib/neovis.js/)
 - [cosmos](https://github.com/cosmograph-org/cosmos)
+- [isSemantic](https://issemantic.net/rdf-visualizer)
 
 ## Network Libraries
 
