@@ -89,6 +89,7 @@ You can also check out:  [Awesome KGC Tools](https://github.com/kg-construct/awe
 
 ## Network Visualization
 
+- [RDF Sketch](https://sketch.zazuko.com/)
 - [Gephi](https://gephi.org)
 - [Gephisto](https://jacomyma.github.io/gephisto/)
 - [VOSviewer](https://www.vosviewer.com)
