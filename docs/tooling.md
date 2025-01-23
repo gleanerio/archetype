@@ -19,6 +19,7 @@ You can also check out:  [Awesome KGC Tools](https://github.com/kg-construct/awe
 
 ## Tools and Services
 
+- Fast and high performance RDF Triplestore [Qlever](https://github.com/ad-freiburg/qlever)  See also [Qlever-control](https://github.com/ad-freiburg/qlever-control)
 - Great inProcess LPG and RDF with [KuzuDB](https://kuzudb.com/)
 - [PuppyGraph](https://www.puppygraph.com/)
 - [blueprint](https://github.com/zazuko/blueprint) Zazuko Blueprint is an enterprise knowledge graph frontend and browser, designed to make RDF Knowledge Graphs accessible and customizable for domain users.
