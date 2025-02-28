@@ -19,6 +19,8 @@ You can also check out:  [Awesome KGC Tools](https://github.com/kg-construct/awe
 
 ## Tools and Services
 
+- [Sparnatural](https://sparnatural.eu/)
+- [SHACL Play!](https://shacl-play.sparna.fr/play/)
 - Fast and high performance RDF Triplestore [Qlever](https://github.com/ad-freiburg/qlever)  See also [Qlever-control](https://github.com/ad-freiburg/qlever-control)
 - Great inProcess LPG and RDF with [KuzuDB](https://kuzudb.com/)
 - [PuppyGraph](https://www.puppygraph.com/)
