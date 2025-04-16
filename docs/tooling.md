@@ -21,8 +21,17 @@ You can also check out:  [Awesome KGC Tools](https://github.com/kg-construct/awe
 
 - [Sparnatural](https://sparnatural.eu/)
 - [SHACL Play!](https://shacl-play.sparna.fr/play/)
-- Fast and high performance RDF Triplestore [Qlever](https://github.com/ad-freiburg/qlever)  See also [Qlever-control](https://github.com/ad-freiburg/qlever-control)
-- Great inProcess LPG and RDF with [KuzuDB](https://kuzudb.com/)
+- [Qlever](https://github.com/ad-freiburg/qlever)  See also [Qlever-control](https://github.com/ad-freiburg/qlever-control) Fast and high performance RDF Triplestore 
+- Great inProcess LPG with [KuzuDB](https://kuzudb.com/)
+- KGlab: [https://derwen.ai/docs/kgl/](https://derwen.ai/docs/kgl/)
+- Relik: [https://github.com/SapienzaNLP/relik](https://github.com/SapienzaNLP/relik)
+- GLiNER: [https://github.com/urchade/GLiNER](https://github.com/urchade/GLiNER)
+- SHACL via pySHACL: [https://github.com/RDFLib/pySHACL](https://github.com/RDFLib/pySHACL)
+- MorphKG: [https://morph-kgc.readthedocs.io/en/stable/](https://morph-kgc.readthedocs.io/en/stable/) (for [R2RML](https://www.w3.org/TR/r2rml/) and [RML](https://kg-construct.github.io/rml-core/spec/docs/))
+- Minio: [https://min.io/](https://min.io/)
+- pyOxigraph (Oxigraph): [https://pypi.org/project/pyoxigraph/](https://pypi.org/project/pyoxigraph/) ([GitHub](https://github.com/oxigraph/oxigraph))
+- BAML: [https://docs.boundaryml.com/home](https://docs.boundaryml.com/home)
+- LanceDB: [https://lancedb.github.io/lancedb/](https://lancedb.github.io/lancedb/)
 - [PuppyGraph](https://www.puppygraph.com/)
 - [blueprint](https://github.com/zazuko/blueprint) Zazuko Blueprint is an enterprise knowledge graph frontend and browser, designed to make RDF Knowledge Graphs accessible and customizable for domain users.
 - [SemSpect](https://www.semspect.de/) scalable graph exploration and data-driven no-code querying tool for Neo4j and RDF data.  They provide licenses free of charge for academic and open data projects.
@@ -67,7 +76,6 @@ You can also check out:  [Awesome KGC Tools](https://github.com/kg-construct/awe
   - [fx](https://fx.wtf/) Terminal JSON viewer & processor
   - [Miller](https://github.com/johnkerl/miller)
 - [Titanium JSON-LD 1.1 Processor & API](https://github.com/filip26/titanium-json-ld)
-- [Morph-KGC](https://github.com/morph-kgc/morph-kgc) is an engine that constructs RDF knowledge graphs from heterogeneous data sources
 - [Classy Schema](https://classyschema.org/Visualisation)
 - [SSSOM](https://mapping-commons.github.io/sssom/)
 - [Schemasheets](https://github.com/linkml/schemasheets)
@@ -89,6 +97,11 @@ You can also check out:  [Awesome KGC Tools](https://github.com/kg-construct/awe
   - [CEDAR](https://more.metadatacenter.org/) and [CEDAR API](https://more.metadatacenter.org/tools-training/cedar-api)
   - [DeSci Labs Research Object Nodes](https://docs.desci.com/)
 
+## Profiles of vocabularies
+* MLCommons - Croissant and GeoCroissant (in development) [https://mlcommons.org/working-groups/data/croissant/](https://mlcommons.org/working-groups/data/croissant/)
+* ESIP Science on Schema.org [https://github.com/ESIPFed/science-on-schema.org](https://github.com/ESIPFed/science-on-schema.org)
+* CODATA CDIF [https://cdif.codata.org/](https://cdif.codata.org/)
+* BioSchema [https://bmcbioinformatics.biomedcentral.com/articles/10.1186/s12859-023-05258-4](https://bmcbioinformatics.biomedcentral.com/articles/10.1186/s12859-023-05258-4)
 
 ## Network Visualization
 
@@ -136,3 +149,16 @@ You can also check out:  [Awesome KGC Tools](https://github.com/kg-construct/awe
 - [ipysigma](https://github.com/medialab/ipysigma)
 - [Py3Plex](https://github.com/SkBlaz/Py3Plex)
 - [net wulf](https://github.com/benmaier/netwulf)
+
+## Data Sources
+
+* [Wikidata](https://query.wikidata.org/) ([SPARQL Tutorial](https://www.wikidata.org/wiki/Wikidata:SPARQL_tutorial))
+* [OpenAIRE Graph](https://graph.openaire.eu/)
+* [ORKG](https://orkg.org/)
+* [Connected Papers](https://www.connectedpapers.com/)
+* [ResearchGraph](https://researchgraph.org/)
+* [UniProt](https://www.uniprot.org/) (for protein sequences, kinda esoteric)
+* [DataCite](https://support.datacite.org/docs/api)
+* [ORCID](https://info.orcid.org/what-is-orcid/services/public-api/)
+* [Papers with Code - Datasets](https://paperswithcode.com/datasets)
+* [Linked Open Vocabularies (LOV)](https://lov.linkeddata.es/dataset/lov/)
