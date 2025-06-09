@@ -47,7 +47,7 @@ while getopts ":a:" opt; do
       case $OPTARG in
           docker)
                 # Docker:  current docker command to do local volume mounts
-                shift 2  # drop the now unneed first two cli params
+                shift 2  # drop the now un-need first two cli params
                 exec docker run \
                   --interactive --tty --rm \
                   -e MINIO_USE_SSL \
@@ -61,7 +61,7 @@ while getopts ":a:" opt; do
           podman)
                 # Podman:  podman needs --privileged to mount /dev/shm
                 #  "docker.io/fils/gleaner:v3.0.11-development-df" "$@"
-                shift 2  # drop the now unneed first two cli params
+                shift 2  # drop the now un-need first two cli params
                 exec podman run \
                   --privileged \
                   --group-add keep-groups \

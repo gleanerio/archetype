@@ -1,5 +1,6 @@
 **/secret/*
 .idea/
+.venv/
 rundir/logs/*
 workbench/data/
 /networks/commons/output/

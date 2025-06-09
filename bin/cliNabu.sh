@@ -9,14 +9,14 @@ PROGNAME="$(basename $0)"
 VERSION="v0.0.1"
 NBIMAGE="fils/nabu:2.0.19-df-development"
 
-# Pull down some of the needed docks if called with -init
+# Pull down some of the needed docs if called with -init
 if [[ $1 == "-init" ]];
 then
     curl -O https://schema.org/version/latest/schemaorg-current-https.jsonld
     curl -O https://raw.githubusercontent.com/earthcubearchitecture-project418/gleaner/master/configs/demo.yaml
     curl -O https://raw.githubusercontent.com/earthcubearchitecture-project418/gleaner/master/deployment/setenvIS.sh
     curl -O https://raw.githubusercontent.com/earthcubearchitecture-project418/gleaner/master/deployment/gleaner-IS.yml
-    docker pull fils/gleaner:latest
+ #   docker pull fils/gleaner:latest
     echo "\n See notes at: https://github.com/gleanerio/gleaner/blob/dev/docs/cliDocker/README.md \n"
     exit 0
 fi

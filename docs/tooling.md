@@ -21,7 +21,8 @@ You can also check out:  [Awesome KGC Tools](https://github.com/kg-construct/awe
 
 - [Sparnatural](https://sparnatural.eu/)
 - [SHACL Play!](https://shacl-play.sparna.fr/play/)
-- [Qlever](https://github.com/ad-freiburg/qlever)  See also [Qlever-control](https://github.com/ad-freiburg/qlever-control) Fast and high performance RDF Triplestore 
+- [Excel 2 RDF](https://xls2rdf.sparna.fr/rest/doc.html#) Excel 2 RDF Converter documentation
+- [Qlever](https://github.com/ad-freiburg/qlever)  See also [Qlever-control](https://github.com/ad-freiburg/qlever-control) Fast and high-performance RDF Triplestore 
 - Great inProcess LPG with [KuzuDB](https://kuzudb.com/)
 - KGlab: [https://derwen.ai/docs/kgl/](https://derwen.ai/docs/kgl/)
 - Relik: [https://github.com/SapienzaNLP/relik](https://github.com/SapienzaNLP/relik)
@@ -62,6 +63,10 @@ You can also check out:  [Awesome KGC Tools](https://github.com/kg-construct/awe
 - JSON editing and visualization
   - [JSON4u](https://github.com/loggerhead/json4u)
 - On-line tools
+  - [WikiShape](https://wikishape.weso.es/) Wikishape is a playground customized for querying and extracting information on Wikidata and other Wikibase instances
+  - [RDFShape](https://rdfshape.weso.es/) RDFShape is a playground for RDF data conversion, validation and visualization, among other features.
+  - [RDF Grapher](https://www.ldf.fi/service/rdf-grapher)
+  - [isSemantic](https://issemantic.net/rdf-visualizer) Visualize RDF graph linked data as a connected diagram
   - [JSON Crack](https://jsoncrack.com/)
   - [JSON-LD Playground](https://json-ld.org/playground/)
   - [validator.schema.org](https://validator.schema.org/)
