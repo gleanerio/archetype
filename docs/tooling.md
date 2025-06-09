@@ -21,8 +21,10 @@ You can also check out:  [Awesome KGC Tools](https://github.com/kg-construct/awe
 
 - [Sparnatural](https://sparnatural.eu/)
 - [SHACL Play!](https://shacl-play.sparna.fr/play/)
+- [SKOS Play](https://skos-play.sparna.fr/play/)SKOS Play is a free application to render and visualise thesaurus, taxonomies or controlled vocabularies expressed in SKOS.
+- [krml](https://github.com/edwardanderson/krml) Knowledge Representation Markup Language: Create knowledge graphs with Markdown
 - [Excel 2 RDF](https://xls2rdf.sparna.fr/rest/doc.html#) Excel 2 RDF Converter documentation
-- [Qlever](https://github.com/ad-freiburg/qlever)  See also [Qlever-control](https://github.com/ad-freiburg/qlever-control) Fast and high-performance RDF Triplestore 
+- [Qlever](https://github.com/ad-freiburg/qlever)  See also [Qlever-control](https://github.com/ad-freiburg/qlever-control) Fast and high-performance RDF Triplestore
 - Great inProcess LPG with [KuzuDB](https://kuzudb.com/)
 - KGlab: [https://derwen.ai/docs/kgl/](https://derwen.ai/docs/kgl/)
 - Relik: [https://github.com/SapienzaNLP/relik](https://github.com/SapienzaNLP/relik)
@@ -89,6 +91,7 @@ You can also check out:  [Awesome KGC Tools](https://github.com/kg-construct/awe
   - [Awesome DuckDB](https://github.com/davidgasquez/awesome-duckdb)
 - [Harlequin](https://harlequin.sh/) database client for the terminal that works well with duckdb
 - [RDF for JS collection](https://rdfjs.dev/) A collection of tooling for working with RDF in JS
+- [w3.org Validation Service](https://www.w3.org/RDF/Validator/)
 
 ## FAIR Orchestration Platforms
 
