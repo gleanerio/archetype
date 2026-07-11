@@ -1,0 +1,63 @@
+---
+objectstore:
+    address: localhost
+    port: 4566 
+    accessKey: test
+    secretKey: test
+    ssl: false
+    bucket: gleanerio  # set to a bucket you own in your object store of choice
+    region: us-east-1
+triplestore:
+    type: oxigraph
+    endpoint: http://localhost:7878
+search:
+    type: elasticsearch
+    endpoint: http://localhost:9200
+    index_prefix: gleaner
+summoner:
+    headless: http://workstation.lan:9222  # URL for headless (reserved; not used in v1)
+    threads: 5
+    delay: 250          # ms between requests per worker
+    user_agent: "gleanerio-mvp-summoner/0.1"
+
+sources:
+    - name: medin
+      propername: Marine Environmental Data and Information Network (MEDIN)
+      catalogue: https://portal.medin.org.uk/portal/start.php
+      domain: https://medin.org.uk/
+      logo: https://medin.org.uk/sites/medin/files/images/medin-portal-logo.png
+      pid: https://catalogue.odis.org/view/40
+      sourcetype: sitemap  
+      url: https://portal.medin.org.uk/portal/sitemap.php
+      changefreq: daily
+      backend: MARIS
+      headless: false
+      dateadded: 2023-05-11
+      active: true     
+    - name: cioos
+      propername: CIOOS
+      catalogue: https://catalogue.cioos.ca/
+      domain: https://cioos.ca/
+      logo: https://cioos.ca/wp-content/themes/cioos-siooc-wordpress-theme/img/national/cioos-national_EN.svg
+      pid: https://catalogue.odis.org/view/3263
+      sourcetype: sitemap
+      url: https://catalogue.cioos.ca/sitemap/sitemap.xml
+      changefreq: daily
+      backend: CKAN
+      headless: false
+      dateadded: 2023-01-31
+      active: true
+    - name: bodc
+      propername: BODC
+      catalogue: https://api.linked-systems.uk
+      domain: https://api.linked-systems.uk
+      logo: https://api.linked-systems.uk/logo.png
+      pid: https://catalogue.odis.org/view/3263
+      sourcetype: sitemap
+      url: https://www.bodc.ac.uk/sitemap.xml  
+      changefreq: daily
+      backend: Custom
+      headless: false
+      dateadded: 2023-01-31
+      active: true
+

@@ -1,0 +1,6 @@
+{
+  "@context": "https://schema.org/",
+  "@type": "Dataset",
+  "name": "Direct JSON-LD",
+  "@id": "https://example.org/jsonld/3.json"
+}

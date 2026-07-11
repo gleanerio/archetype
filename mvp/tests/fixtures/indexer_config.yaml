@@ -1,0 +1,13 @@
+---
+objectstore:
+    address: localhost
+    port: 4566
+    accessKey: test
+    secretKey: test
+    ssl: false
+    bucket: gleanerio
+    region: us-east-1
+search:
+    type: elasticsearch
+    endpoint: http://localhost:9200
+    index_prefix: gleaner

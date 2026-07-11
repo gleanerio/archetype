@@ -1,0 +1,12 @@
+---
+objectstore:
+    address: localhost
+    port: 4566
+    accessKey: test
+    secretKey: test
+    ssl: false
+    bucket: gleanerio
+    region: us-east-1
+triplestore:
+    type: oxigraph
+    endpoint: http://localhost:7878

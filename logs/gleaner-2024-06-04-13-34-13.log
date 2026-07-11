@@ -1,0 +1,1 @@
+{"file":"/home/runner/work/gleaner/gleaner/internal/config/gleanerConfig.go:45","func":"github.com/gleanerio/gleaner/internal/config.ReadGleanerConfig","level":"fatal","msg":"cannot find config file. 'gleanerconfig.yaml' Did you 'glcon generate --cfgName XXX' ","time":"2024-06-04T13:34:13Z"}

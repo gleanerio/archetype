@@ -14,16 +14,18 @@ export PATH=$PATH:$(pwd)/bin
 ```
 
 You will also need to set up Minio or have an S3 compatible
-service via AWS, Googl or others.  For Minio see the
+service via AWS, Google or others.  For Minio see the
 [Minio Quickstart](https://min.io/docs/minio/linux/index.html?ref=docs-redirect)
 
 
-Next you will need to set a few environment variables.
+Next you will need to set a few environment variables.  This is for a local
+test environment using floci.
 
 ```bash 
-export MINIO_USE_SSL=true
-export MINIO_SECRET_KEY=your-secret-here
-export MINIO_ACCESS_KEY=your-access-here
+export AWS_ENDPOINT_URL=http://localhost:4566
+export AWS_DEFAULT_REGION=us-east-1
+export AWS_ACCESS_KEY_ID=test
+export AWS_SECRET_ACCESS_KEY=test
 ```
 
 Set the SSL variable for your environment.  AWS or Google services will always be true but

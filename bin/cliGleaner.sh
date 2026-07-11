@@ -50,9 +50,9 @@ while getopts ":a:" opt; do
                 shift 2  # drop the now un-need first two cli params
                 exec docker run \
                   --interactive --tty --rm \
-                  -e MINIO_USE_SSL \
-                  -e MINIO_SECRET_KEY \
-                  -e MINIO_ACCESS_KEY \
+                  -e AWS_USE_SSL \
+                  -e AWS_SECRET_KEY \
+                  -e AWS_ACCESS_KEY \
                   --network=host \
                   --volume "$PWD":/wd \
                   --workdir /wd \

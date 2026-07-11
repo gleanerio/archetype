@@ -113,6 +113,7 @@ You can also check out:  [Awesome KGC Tools](https://github.com/kg-construct/awe
 
 ## Network Visualization
 
+- [RDF to Gephi](https://github.com/sparna-git/rdf2gephi)
 - [yFiles Jupyter Graphs for SPARQL](https://github.com/yWorks/yfiles-jupyter-graphs-for-sparql)
 - [RDF to Gephi](https://github.com/sparna-git/rdf2gephi)
 - [RDF Sketch](https://sketch.zazuko.com/)

@@ -1,0 +1,30 @@
+---
+objectstore:
+    address: localhost
+    port: 4566
+    accessKey: test
+    secretKey: test
+    ssl: false
+    bucket: gleanerio
+    region: us-east-1
+summoner:
+    headless: http://localhost:9222
+    threads: 2
+    delay: 100
+    user_agent: "test-summoner/0.1"
+sources:
+    - name: active_src
+      url: https://example.org/sitemap.xml
+      sourcetype: sitemap
+      active: true
+      headless: false
+    - name: inactive_src
+      url: https://example.org/other.xml
+      sourcetype: sitemap
+      active: false
+      headless: false
+    - name: headless_src
+      url: https://example.org/js-sitemap.xml
+      sourcetype: sitemap
+      active: true
+      headless: true
