@@ -30,6 +30,13 @@ Minimal HTML/JS search against Elasticsearch indexes produced by `indexer`.
 
 Config: edit `config.js` if ES is not at `http://localhost:9200`.
 
+## Theme (dark / light)
+
+- Toggle in the header switches between light and dark.
+- Preference is stored in `localStorage` under **`mvp-ui-theme`** (`"light"` | `"dark"`).
+- On first visit (no stored value), the UI follows **`prefers-color-scheme`**.
+- A small script in `index.html` applies the theme before CSS paint to avoid a flash.
+
 ## Result fields
 
 | Field | Meaning |

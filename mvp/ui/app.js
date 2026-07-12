@@ -215,6 +215,56 @@
     search(input.value);
   });
 
+  // --- Theme (light / dark) ---
+  const THEME_KEY = "mvp-ui-theme";
+  const themeToggle = document.getElementById("theme-toggle");
+
+  function currentTheme() {
+    const t = document.documentElement.getAttribute("data-theme");
+    return t === "dark" ? "dark" : "light";
+  }
+
+  function applyTheme(theme) {
+    const next = theme === "dark" ? "dark" : "light";
+    document.documentElement.setAttribute("data-theme", next);
+    try {
+      localStorage.setItem(THEME_KEY, next);
+    } catch (e) {
+      /* ignore */
+    }
+    if (themeToggle) {
+      const goingDark = next === "light";
+      themeToggle.setAttribute(
+        "aria-label",
+        goingDark ? "Switch to dark mode" : "Switch to light mode"
+      );
+      const label = themeToggle.querySelector(".theme-toggle-label");
+      if (label) label.textContent = goingDark ? "Dark" : "Light";
+    }
+  }
+
+  function resolveInitialTheme() {
+    try {
+      const stored = localStorage.getItem(THEME_KEY);
+      if (stored === "light" || stored === "dark") return stored;
+    } catch (e) {
+      /* ignore */
+    }
+    if (window.matchMedia && window.matchMedia("(prefers-color-scheme: dark)").matches) {
+      return "dark";
+    }
+    return "light";
+  }
+
+  // Sync control labels with stored / system preference (matches FOUC head script)
+  applyTheme(resolveInitialTheme());
+
+  if (themeToggle) {
+    themeToggle.addEventListener("click", function () {
+      applyTheme(currentTheme() === "dark" ? "light" : "dark");
+    });
+  }
+
   // Optional deep-link: ?q=topographic
   const params = new URLSearchParams(window.location.search);
   if (params.get("q")) {
