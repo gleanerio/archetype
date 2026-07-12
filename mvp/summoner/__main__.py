@@ -24,7 +24,10 @@ def _default_config_path() -> Path:
 def build_parser() -> argparse.ArgumentParser:
     parser = argparse.ArgumentParser(
         prog="summoner",
-        description="MVP sitemap → JSON-LD → S3 summoner (static extraction).",
+        description=(
+            "MVP sitemap → JSON-LD → S3 summoner. "
+            "Static by default; sources with headless:true use Browserless when configured."
+        ),
     )
     parser.add_argument(
         "--config",

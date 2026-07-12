@@ -17,6 +17,10 @@ def test_load_config(fixtures_dir: Path) -> None:
     assert cfg.summoner.threads == 2
     assert cfg.summoner.delay == 100
     assert cfg.summoner.user_agent == "test-summoner/0.1"
+    assert cfg.summoner.headless == "http://localhost:3000"
+    assert cfg.summoner.headless_token == "test-token"
+    assert cfg.summoner.headless_configured is True
+    assert cfg.summoner.headless_hybrid is True
     assert len(cfg.sources) == 3
 
 

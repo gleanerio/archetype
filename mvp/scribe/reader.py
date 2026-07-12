@@ -3,7 +3,7 @@
 from __future__ import annotations
 
 import logging
-from typing import Iterator
+from typing import Any, Iterator
 
 from minio import Minio
 
@@ -27,7 +27,7 @@ def source_prefix(source: str) -> str:
 
 
 def list_jsonld_keys(client: Minio, bucket: str, source: str) -> list[str]:
-    """List object keys under summoned/<source>/ ending in .json."""
+    """List object keys under summoned/<source>/ ending in .json / .jsonld."""
     prefix = source_prefix(source)
     keys: list[str] = []
     for obj in client.list_objects(bucket, prefix=prefix, recursive=True):
@@ -41,6 +41,33 @@ def list_jsonld_keys(client: Minio, bucket: str, source: str) -> list[str]:
     return keys
 
 
+def normalize_object_metadata(raw: Any) -> dict[str, str]:
+    """Normalize MinIO/S3 metadata keys to simple names (e.g. source-url)."""
+    if not raw:
+        return {}
+    out: dict[str, str] = {}
+    items = raw.items() if hasattr(raw, "items") else []
+    for key, value in items:
+        if value is None:
+            continue
+        k = str(key).lower()
+        for prefix in ("x-amz-meta-", "x-amz-", "x-minio-meta-"):
+            if k.startswith(prefix):
+                k = k[len(prefix) :]
+                break
+        out[k] = str(value)
+    return out
+
+
+def harvest_url_from_metadata(meta: dict[str, str]) -> str | None:
+    """Return harvest page URL stored by summoner, if present."""
+    for key in ("source-url", "source_url", "page-url", "page_url"):
+        val = meta.get(key)
+        if val and val.strip():
+            return val.strip()
+    return None
+
+
 def get_object_bytes(client: Minio, bucket: str, key: str) -> bytes:
     response = client.get_object(bucket, key)
     try:
@@ -50,16 +77,28 @@ def get_object_bytes(client: Minio, bucket: str, key: str) -> bytes:
         response.release_conn()
 
 
+def get_object_with_metadata(
+    client: Minio, bucket: str, key: str
+) -> tuple[bytes, dict[str, str]]:
+    """Fetch object body and normalized user metadata."""
+    stat = client.stat_object(bucket, key)
+    meta = normalize_object_metadata(stat.metadata)
+    body = get_object_bytes(client, bucket, key)
+    return body, meta
+
+
 def iter_jsonld_objects(
     client: Minio,
     bucket: str,
     source: str,
     *,
     limit: int | None = None,
-) -> Iterator[tuple[str, bytes]]:
+) -> Iterator[tuple[str, bytes, dict[str, str]]]:
+    """Yield (key, body, metadata) for each JSON-LD object."""
     keys = list_jsonld_keys(client, bucket, source)
     if limit is not None and limit >= 0:
         keys = keys[:limit]
     for key in keys:
         logger.debug("Fetching s3://%s/%s", bucket, key)
-        yield key, get_object_bytes(client, bucket, key)
+        body, meta = get_object_with_metadata(client, bucket, key)
+        yield key, body, meta

@@ -22,6 +22,7 @@ You need three backends. Adjust `mvp_config.yaml` if your hosts/ports differ.
 | S3-compatible store | `localhost:4566` (HTTP, keys `test`/`test`, bucket `gleanerio`) | JSON-LD objects |
 | Oxigraph | `http://localhost:7878` | Named-graph RDF |
 | Elasticsearch 8 | `http://localhost:9200` | Text search + UI |
+| Browserless (optional) | `http://localhost:3000` | JS-rendered HTML for headless sources |
 
 ### Elasticsearch (included)
 
@@ -32,6 +33,17 @@ curl -s http://localhost:9200   # expect cluster JSON
 
 CORS is enabled for the browser UI.
 
+### Browserless (optional headless summoner)
+
+Only needed when a source has `headless: true` (JSON-LD injected after JS).
+
+```bash
+docker compose -f docker-compose.browserless.yaml up -d
+curl -s -o /dev/null -w "%{http_code}\n" \
+  "http://localhost:3000/active?token=mvp-local-token"   # expect 204 or 200
+```
+
+Match `summoner.headless` / `headless_token` in `mvp_config.yaml` to the compose service (`TOKEN=mvp-local-token` by default).
 ### Oxigraph (example)
 
 ```bash
@@ -81,15 +93,27 @@ Metadata on each object includes harvest page URL (`source-url`).
 python -m scribe --config mvp_config.yaml --source medin
 ```
 
-Named graph: `urn:gleaner:medin`
+Named graphs:
 
-Check:
+- data: `urn:gleaner:medin`
+- prov: `urn:gleaner:prov:medin` (harvest URL ↔ S3 key ↔ optional `@id`)
+
+Check data:
 
 ```bash
 curl -s -X POST http://localhost:7878/query \
   -H 'Accept: application/sparql-results+json' \
   -H 'Content-Type: application/sparql-query' \
   --data 'SELECT (COUNT(*) AS ?c) WHERE { GRAPH <urn:gleaner:medin> { ?s ?p ?o } }'
+```
+
+Check provenance:
+
+```bash
+curl -s -X POST http://localhost:7878/query \
+  -H 'Accept: application/sparql-results+json' \
+  -H 'Content-Type: application/sparql-query' \
+  --data 'PREFIX prov: <http://www.w3.org/ns/prov#> SELECT ?harvest ?s3key WHERE { GRAPH <urn:gleaner:prov:medin> { ?o prov:hadPrimarySource ?harvest ; prov:value ?s3key } } LIMIT 5'
 ```
 
 ## 5. Load search (indexer → Elasticsearch)
@@ -141,7 +165,9 @@ cd ui && python -m http.server 8080
 | Symptom | What to check |
 |---------|----------------|
 | Summoner 403 on sitemap | Source blocks bots (e.g. Cloudflare). Try `medin`; `cioos` often fails. |
-| Summoner finds pages, no JSON-LD | Site may need headless JS (not in v1) or pages lack `ld+json`. |
+| Summoner finds pages, no JSON-LD | Page lacks `ld+json`, or needs `headless: true` + Browserless if JS-injected. |
+| Headless 401 / connection refused | `docker compose -f docker-compose.browserless.yaml up -d`; match `headless_token` to compose `TOKEN`. |
+| CIOOS / Cloudflare 403 | Open-source Browserless is not a bot bypass; use API path or allowlisting. |
 | Scribe cannot connect | Oxigraph on `:7878`? `curl http://localhost:7878/` |
 | Indexer connection refused | `docker compose -f docker-compose.es.yaml up -d` and wait until healthy |
 | UI “Search failed” / CORS | Recreate ES with current compose (CORS uses `/.*/`). Serve UI via `http.server`, not `file://` |
@@ -156,7 +182,8 @@ cd ui && python -m http.server 8080
 | S3 meta `source-url` | Harvest page summoner fetched |
 | ES `source_url` | Same harvest URL (copied by indexer) |
 | ES `url` | Schema.org resource/landing page from JSON-LD |
-| ES / Oxigraph `graph` | `urn:gleaner:{source}` |
-| Oxigraph triples | From JSON-LD body only (no harvest URL PROV yet) |
+| ES / Oxigraph data graph | `urn:gleaner:{source}` |
+| Oxigraph data triples | From JSON-LD body |
+| Oxigraph prov graph | `urn:gleaner:prov:{source}` — `prov:hadPrimarySource` (harvest URL), `prov:value` (s3 key) |
 
 More detail: [README.md](./README.md), [ui/README.md](./ui/README.md).

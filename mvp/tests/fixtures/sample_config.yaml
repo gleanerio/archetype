@@ -8,7 +8,11 @@ objectstore:
     bucket: gleanerio
     region: us-east-1
 summoner:
-    headless: http://localhost:9222
+    headless: http://localhost:3000
+    headless_token: test-token
+    headless_timeout_ms: 30000
+    headless_concurrent: 1
+    headless_hybrid: true
     threads: 2
     delay: 100
     user_agent: "test-summoner/0.1"

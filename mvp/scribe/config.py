@@ -53,6 +53,41 @@ def graph_iri(source: str) -> str:
     return f"urn:gleaner:{name}"
 
 
+def prov_graph_iri(source: str) -> str:
+    """Named graph IRI for harvest/load provenance, e.g. urn:gleaner:prov:medin."""
+    name = source.strip()
+    if not name:
+        raise ValueError("source name must be non-empty")
+    return f"urn:gleaner:prov:{name}"
+
+
+def object_iri(source: str, sha: str) -> str:
+    """Entity IRI for a summoned JSON-LD object, e.g. urn:gleaner:object:medin:<sha>."""
+    name = source.strip()
+    digest = sha.strip()
+    if not name:
+        raise ValueError("source name must be non-empty")
+    if not digest:
+        raise ValueError("object sha must be non-empty")
+    return f"urn:gleaner:object:{name}:{digest}"
+
+
+def activity_iri(source: str, sha: str) -> str:
+    """Activity IRI for loading one summoned object into the triplestore."""
+    name = source.strip()
+    digest = sha.strip()
+    if not name:
+        raise ValueError("source name must be non-empty")
+    if not digest:
+        raise ValueError("object sha must be non-empty")
+    return f"urn:gleaner:activity:scribe:{name}:{digest}"
+
+
+def agent_iri() -> str:
+    """Software agent IRI for the MVP scribe loader."""
+    return "urn:gleaner:agent:scribe"
+
+
 def _require(data: dict[str, Any], key: str, ctx: str) -> Any:
     if key not in data:
         raise ValueError(f"Missing required key '{key}' in {ctx}")

@@ -2,16 +2,19 @@
 
 from __future__ import annotations
 
+import os
 from dataclasses import dataclass, field
 from pathlib import Path
 from typing import Any
 
 import yaml
 
-
 DEFAULT_USER_AGENT = "gleanerio-mvp-summoner/0.1"
 DEFAULT_THREADS = 5
 DEFAULT_DELAY_MS = 250
+DEFAULT_HEADLESS_TIMEOUT_MS = 60_000
+DEFAULT_HEADLESS_CONCURRENT = 2
+DEFAULT_HEADLESS_WAIT_MS = 5_000
 
 
 @dataclass(frozen=True)
@@ -37,10 +40,24 @@ class ObjectStoreConfig:
 
 @dataclass(frozen=True)
 class SummonerConfig:
+    """Crawl settings including optional Browserless headless endpoint."""
+
     headless: str = ""
+    headless_token: str = ""
+    headless_timeout_ms: int = DEFAULT_HEADLESS_TIMEOUT_MS
+    headless_concurrent: int = DEFAULT_HEADLESS_CONCURRENT
+    headless_wait_ms: int = DEFAULT_HEADLESS_WAIT_MS
+    headless_wait_for_ldjson: bool = True
+    headless_block_assets: bool = True
+    # hybrid: try static first even when source.headless=true; fall back to Browserless
+    headless_hybrid: bool = True
     threads: int = DEFAULT_THREADS
     delay: int = DEFAULT_DELAY_MS  # milliseconds
     user_agent: str = DEFAULT_USER_AGENT
+
+    @property
+    def headless_configured(self) -> bool:
+        return bool(self.headless and self.headless.strip())
 
 
 @dataclass(frozen=True)
@@ -89,8 +106,29 @@ def _parse_objectstore(raw: dict[str, Any]) -> ObjectStoreConfig:
 def _parse_summoner(raw: dict[str, Any] | None) -> SummonerConfig:
     if not raw:
         return SummonerConfig()
+    token = str(raw.get("headless_token", "") or raw.get("headlessToken", "") or "")
+    if not token:
+        token = os.environ.get("BROWSERLESS_TOKEN", "") or ""
+    wait_ms = raw.get("headless_wait_ms", raw.get("headlessWaitMs", DEFAULT_HEADLESS_WAIT_MS))
     return SummonerConfig(
         headless=str(raw.get("headless", "") or ""),
+        headless_token=token,
+        headless_timeout_ms=int(
+            raw.get("headless_timeout_ms", raw.get("headlessTimeoutMs", DEFAULT_HEADLESS_TIMEOUT_MS))
+            or DEFAULT_HEADLESS_TIMEOUT_MS
+        ),
+        headless_concurrent=int(
+            raw.get("headless_concurrent", raw.get("headlessConcurrent", DEFAULT_HEADLESS_CONCURRENT))
+            or DEFAULT_HEADLESS_CONCURRENT
+        ),
+        headless_wait_ms=int(wait_ms if wait_ms is not None else DEFAULT_HEADLESS_WAIT_MS),
+        headless_wait_for_ldjson=bool(
+            raw.get("headless_wait_for_ldjson", raw.get("headlessWaitForLdjson", True))
+        ),
+        headless_block_assets=bool(
+            raw.get("headless_block_assets", raw.get("headlessBlockAssets", True))
+        ),
+        headless_hybrid=bool(raw.get("headless_hybrid", raw.get("headlessHybrid", True))),
         threads=int(raw.get("threads", DEFAULT_THREADS)),
         delay=int(raw.get("delay", DEFAULT_DELAY_MS) or 0),
         user_agent=str(raw.get("user_agent", DEFAULT_USER_AGENT) or DEFAULT_USER_AGENT),

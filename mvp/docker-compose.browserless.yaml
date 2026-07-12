@@ -1,0 +1,26 @@
+# Local Browserless Chromium for MVP summoner headless fetch.
+# Usage:
+#   docker compose -f docker-compose.browserless.yaml up -d
+#   curl -s -o /dev/null -w "%{http_code}\n" "http://localhost:3000/active?token=mvp-local-token"
+#
+# Summoner config (mvp_config.yaml):
+#   summoner.headless: http://localhost:3000
+#   summoner.headless_token: mvp-local-token
+# Per source: headless: true  (opt-in; static path remains default)
+#
+# Always set shm_size — Chrome crashes on Docker's default 64MB /dev/shm.
+
+services:
+  browserless:
+    image: ghcr.io/browserless/chromium:latest
+    container_name: mvp-browserless
+    ports:
+      - "3000:3000"
+    environment:
+      - TOKEN=${BROWSERLESS_TOKEN:-mvp-local-token}
+      - CONCURRENT=3
+      - QUEUED=10
+      - TIMEOUT=60000
+      - HOST=0.0.0.0
+    shm_size: "2g"
+    restart: unless-stopped

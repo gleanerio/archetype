@@ -4,7 +4,14 @@ from pathlib import Path
 
 import pytest
 
-from scribe.config import graph_iri, load_config
+from scribe.config import (
+    activity_iri,
+    agent_iri,
+    graph_iri,
+    load_config,
+    object_iri,
+    prov_graph_iri,
+)
 
 
 def test_load_config(fixtures_dir: Path) -> None:
@@ -21,9 +28,22 @@ def test_graph_iri() -> None:
     assert graph_iri("  cioos ") == "urn:gleaner:cioos"
 
 
+def test_prov_graph_iri() -> None:
+    assert prov_graph_iri("medin") == "urn:gleaner:prov:medin"
+    assert prov_graph_iri("  bodc ") == "urn:gleaner:prov:bodc"
+
+
+def test_object_and_activity_iri() -> None:
+    assert object_iri("medin", "abc") == "urn:gleaner:object:medin:abc"
+    assert activity_iri("medin", "abc") == "urn:gleaner:activity:scribe:medin:abc"
+    assert agent_iri() == "urn:gleaner:agent:scribe"
+
+
 def test_graph_iri_empty() -> None:
     with pytest.raises(ValueError):
         graph_iri("   ")
+    with pytest.raises(ValueError):
+        prov_graph_iri("   ")
 
 
 def test_missing_triplestore(tmp_path: Path) -> None:

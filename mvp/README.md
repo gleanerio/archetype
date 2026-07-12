@@ -17,9 +17,9 @@ Sitemap / pages
            scribe                          indexer
               │                               │
               ▼                               ▼
-     Oxigraph graph                  Elasticsearch index
+     Oxigraph graphs                 Elasticsearch index
      urn:gleaner:<source>              gleaner-<source>
-                                              │
+     urn:gleaner:prov:<source>                │
                                               ▼
                                            ui/  (browser search)
 ```
@@ -55,8 +55,8 @@ pip install -r requirements.txt
 | `objectstore` | S3 endpoint (`ssl: false` → HTTP, `true` → HTTPS) |
 | `triplestore` | Oxigraph (`type: oxigraph`, `endpoint`) |
 | `search` | Elasticsearch (`type: elasticsearch`, `endpoint`, `index_prefix`) |
-| `summoner` | `threads`, `delay` (ms), `user_agent`, reserved `headless` URL |
-| `sources[]` | Sitemap sources for summoner; only `active: true` are processed |
+| `summoner` | `threads`, `delay`, `user_agent`, **Browserless** `headless` URL + token/timeouts |
+| `sources[]` | Sitemap sources; `active: true`; set `headless: true` to use Browserless for that source |
 
 ### Identity layout
 
@@ -64,7 +64,8 @@ pip install -r requirements.txt
 |-------|-----|
 | S3 | `summoned/<source>/<sha1(page_url)>.json` |
 | S3 metadata | `source-url` = harvest page; `source-name` = source |
-| Oxigraph | Named graph `urn:gleaner:<source>` |
+| Oxigraph (data) | Named graph `urn:gleaner:<source>` |
+| Oxigraph (prov) | Named graph `urn:gleaner:prov:<source>` |
 | Elasticsearch | Index `gleaner-<source>` (or `{index_prefix}-<source>`) |
 
 ### Provenance (how stages connect)
@@ -75,7 +76,7 @@ pip install -r requirements.txt
 | S3 → Elasticsearch | **Yes** — `s3_key`, plus `source_url` from metadata |
 | S3 / ES → Oxigraph (source) | **Yes** — shared `urn:gleaner:<source>` |
 | Entity `@id` across ES / graph | **When present** in JSON-LD |
-| Harvest URL in Oxigraph | **Not yet** (no PROV triples in v1) |
+| Harvest URL in Oxigraph | **Yes** — PROV-O in `urn:gleaner:prov:<source>` (`prov:hadPrimarySource`, `prov:value` = s3 key) |
 
 UI links prefer Schema.org **`url`**, then harvest **`source_url`**, then `@id` if it is `http(s)`.
 
@@ -83,7 +84,30 @@ UI links prefer Schema.org **`url`**, then harvest **`source_url`**, then `@id` 
 
 ## Summoner
 
-Sitemap walk + static JSON-LD extraction. **v1 is static only** (`headless: true` sources are skipped).
+Sitemap walk + JSON-LD extraction → S3.
+
+- **Default:** static HTTP fetch (fast; works for medin).
+- **`headless: true` on a source:** uses **Browserless** (`POST /chromium/content`) for rendered HTML, then the same extractor.
+- **Hybrid (default):** even for headless sources, try static first; fall back to Browserless only if no JSON-LD.
+
+### Browserless (Docker)
+
+```bash
+docker compose -f docker-compose.browserless.yaml up -d
+# TOKEN defaults to mvp-local-token (must match summoner.headless_token)
+curl -s -o /dev/null -w "%{http_code}\n" \
+  "http://localhost:3000/active?token=mvp-local-token"
+```
+
+| Config key | Meaning |
+|------------|---------|
+| `summoner.headless` | Browserless base URL, e.g. `http://localhost:3000` |
+| `summoner.headless_token` | API token (`BROWSERLESS_TOKEN` env also works) |
+| `summoner.headless_concurrent` | Client-side max concurrent browser renders |
+| `summoner.headless_hybrid` | Static first, then Browserless if needed |
+| `sources[].headless` | Opt-in Browserless for that source |
+
+**Not a Cloudflare bypass.** Open-source Browserless does not solve bot walls (e.g. CIOOS HTML 403). Headless only helps when JS actually injects JSON-LD into the DOM.
 
 ```bash
 python -m summoner --config mvp_config.yaml
@@ -104,7 +128,20 @@ python -m summoner --config mvp_config.yaml --source medin --limit 5 --dry-run -
 
 ## Scribe
 
-Load summoned JSON-LD into Oxigraph as quads. **Replaces** the named graph on each run (`CLEAR` then bulk N-Quads).
+Load summoned JSON-LD into Oxigraph as quads. **Replaces** both the data and provenance named graphs on each run (`CLEAR` then bulk N-Quads).
+
+| Graph | Contents |
+|-------|----------|
+| `urn:gleaner:<source>` | Triples from JSON-LD body |
+| `urn:gleaner:prov:<source>` | PROV-O harvest/load links (page URL, s3 key, optional `@id`) |
+
+Per summoned object, provenance includes roughly:
+
+- object entity `urn:gleaner:object:<source>:<sha>` with `prov:value` = S3 key
+- `prov:hadPrimarySource` → harvest page URL (from S3 `source-url` metadata)
+- `prov:wasDerivedFrom` → JSON-LD `@id` when present
+- `rdfs:seeAlso` → data graph `urn:gleaner:<source>`
+- load `prov:Activity` + agent `urn:gleaner:agent:scribe`
 
 ```bash
 python -m scribe --config mvp_config.yaml --source medin
@@ -117,6 +154,21 @@ python -m scribe --config mvp_config.yaml --source medin --limit 10 --dry-run -v
 | `--limit N` | Cap objects loaded |
 | `--dry-run` | Convert only; do not touch Oxigraph |
 | `-v` | Debug logging |
+
+Example SPARQL — harvest URL → S3 key → entity:
+
+```sparql
+PREFIX prov: <http://www.w3.org/ns/prov#>
+
+SELECT ?harvest ?s3key ?entity WHERE {
+  GRAPH <urn:gleaner:prov:medin> {
+    ?obj a prov:Entity ;
+         prov:value ?s3key ;
+         prov:hadPrimarySource ?harvest .
+    OPTIONAL { ?obj prov:wasDerivedFrom ?entity }
+  }
+}
+```
 
 Verify with SPARQL:
 

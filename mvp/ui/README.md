@@ -39,8 +39,11 @@ Config: edit `config.js` if ES is not at `http://localhost:9200`.
 | **source_url** | Harvest page summoner fetched (S3 metadata → indexer) |
 | **source** | Source name (`medin`, …) |
 | **s3_key** | Object under `summoned/<source>/` |
+| **jsonld** | Full harvested JSON-LD node (shown in per-result accordion) |
 
 The title link prefers `url`, then `source_url`, then `@id` if it is an `http(s)` URL.
+
+Each hit includes a small **Original JSON-LD** accordion under the description. Expanding it shows the document body stored by the indexer (same payload as in S3), plus the `s3_key` when present. No extra S3 round-trip is required.
 
 ## Provenance (how stages connect)
 
@@ -48,6 +51,7 @@ The title link prefers `url`, then `source_url`, then `@id` if it is an `http(s)
 |-------|------------------|------------------------|--------------|
 | **S3** (summoner) | Yes — `x-amz-meta-source-url` + key = sha1(page) | Inside JSON-LD body | folder name |
 | **Elasticsearch** | Yes — `source_url` (copied from S3 metadata) | `id`, `url` | `graph` = `urn:gleaner:{source}` |
-| **Oxigraph** (scribe) | **No** (not stored as PROV yet) | RDF triples from body | named graph `urn:gleaner:{source}` |
+| **Oxigraph data** (scribe) | via join to prov graph | RDF triples from body | `urn:gleaner:{source}` |
+| **Oxigraph prov** (scribe) | Yes — `prov:hadPrimarySource` | `prov:wasDerivedFrom` `@id` when present | `urn:gleaner:prov:{source}` |
 
-So: S3 ↔ ES are joinable via `s3_key` and harvest URL; ES ↔ Oxigraph join best at **source** (`graph`) and **entity** (`@id`) when present. Harvest URL is not yet written into Oxigraph.
+So: S3 ↔ ES join via `s3_key` / harvest URL; Oxigraph joins the same keys through the **prov** named graph (`prov:value` = s3 key, `prov:hadPrimarySource` = harvest URL) and content via entity `@id` or data graph `urn:gleaner:{source}`.

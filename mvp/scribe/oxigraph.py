@@ -71,13 +71,30 @@ def replace_graph_with_nquads(
     client: httpx.Client | None = None,
 ) -> None:
     """Clear named graph then bulk-load N-Quads."""
+    replace_graphs_with_nquads(endpoint, [graph_iri], nquads, client=client)
+
+
+def replace_graphs_with_nquads(
+    endpoint: str,
+    graph_iris: list[str],
+    nquads: str | bytes,
+    *,
+    client: httpx.Client | None = None,
+) -> None:
+    """Clear one or more named graphs then bulk-load N-Quads (quads carry graph IRIs)."""
+    if not graph_iris:
+        raise ValueError("graph_iris must be non-empty")
     owns = client is None
     if owns:
         client = httpx.Client(timeout=120.0)
     try:
-        clear_graph(endpoint, graph_iri, client=client)
+        for g in graph_iris:
+            clear_graph(endpoint, g, client=client)
         if not nquads or (isinstance(nquads, str) and not nquads.strip()):
-            logger.warning("No quads to load for graph <%s>", graph_iri)
+            logger.warning(
+                "No quads to load after clearing %s",
+                ", ".join(f"<{g}>" for g in graph_iris),
+            )
             return
         load_nquads(endpoint, nquads, client=client)
     finally:

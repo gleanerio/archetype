@@ -43,6 +43,39 @@
     return t.slice(0, max - 1).trimEnd() + "…";
   }
 
+  function formatJsonld(jsonld) {
+    if (jsonld == null) return null;
+    try {
+      return JSON.stringify(jsonld, null, 2);
+    } catch (e) {
+      return String(jsonld);
+    }
+  }
+
+  function renderJsonldAccordion(src) {
+    const pretty = formatJsonld(src.jsonld);
+    if (!pretty) {
+      return (
+        '<details class="jsonld-panel empty">' +
+        "<summary>Original JSON-LD</summary>" +
+        '<p class="jsonld-missing">No JSON-LD payload on this hit (re-index if older documents omit <code>jsonld</code>).</p>' +
+        "</details>"
+      );
+    }
+    const s3note = src.s3_key
+      ? '<p class="jsonld-provenance">S3: <code>' + escapeHtml(src.s3_key) + "</code></p>"
+      : "";
+    return (
+      '<details class="jsonld-panel">' +
+      "<summary>Original JSON-LD</summary>" +
+      s3note +
+      '<pre class="jsonld-body"><code>' +
+      escapeHtml(pretty) +
+      "</code></pre>" +
+      "</details>"
+    );
+  }
+
   function renderHit(hit) {
     const src = hit._source || {};
     const title = src.name || src.id || "(untitled)";
@@ -91,7 +124,8 @@
       '<p class="meta">' +
       metaParts.join(" · ") +
       indexedFrom +
-      "</p>";
+      "</p>" +
+      renderJsonldAccordion(src);
     return card;
   }
 
@@ -123,6 +157,7 @@
         "source",
         "type",
         "s3_key",
+        "jsonld",
       ],
     };
 

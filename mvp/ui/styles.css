@@ -134,15 +134,108 @@ body {
 }
 
 .card .description {
-  margin: 0 0 0.65rem;
+  margin: 0 0 0.5rem;
   color: var(--text);
   font-size: 0.95rem;
 }
 
 .card .meta {
-  margin: 0;
+  margin: 0 0 0.65rem;
   font-size: 0.8rem;
   color: var(--muted);
+}
+
+.jsonld-panel {
+  margin: 0;
+  border: 1px solid var(--border);
+  border-radius: calc(var(--radius) - 2px);
+  background: color-mix(in srgb, var(--bg) 65%, var(--card));
+  overflow: hidden;
+}
+
+.jsonld-panel summary {
+  list-style: none;
+  cursor: pointer;
+  user-select: none;
+  padding: 0.45rem 0.7rem;
+  font-size: 0.8rem;
+  font-weight: 600;
+  color: var(--muted);
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+}
+
+.jsonld-panel summary::-webkit-details-marker {
+  display: none;
+}
+
+.jsonld-panel summary::before {
+  content: "";
+  width: 0.4rem;
+  height: 0.4rem;
+  border-right: 2px solid var(--muted);
+  border-bottom: 2px solid var(--muted);
+  transform: rotate(-45deg);
+  transition: transform 0.15s ease;
+  flex-shrink: 0;
+  margin-top: -0.1rem;
+}
+
+.jsonld-panel[open] summary::before {
+  transform: rotate(45deg);
+  margin-top: 0;
+}
+
+.jsonld-panel summary:hover {
+  color: var(--text);
+  background: color-mix(in srgb, var(--accent) 6%, transparent);
+}
+
+.jsonld-panel[open] summary {
+  border-bottom: 1px solid var(--border);
+  color: var(--text);
+}
+
+.jsonld-provenance {
+  margin: 0;
+  padding: 0.45rem 0.7rem 0;
+  font-size: 0.72rem;
+  color: var(--muted);
+}
+
+.jsonld-provenance code {
+  font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+  font-size: 0.7rem;
+  word-break: break-all;
+}
+
+.jsonld-body {
+  margin: 0;
+  padding: 0.65rem 0.75rem 0.8rem;
+  max-height: 22rem;
+  overflow: auto;
+  font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+  font-size: 0.72rem;
+  line-height: 1.45;
+  color: var(--text);
+  background: transparent;
+}
+
+.jsonld-body code {
+  font-family: inherit;
+  white-space: pre;
+}
+
+.jsonld-missing {
+  margin: 0;
+  padding: 0.65rem 0.75rem 0.8rem;
+  font-size: 0.8rem;
+  color: var(--muted);
+}
+
+.jsonld-missing code {
+  font-size: 0.75rem;
 }
 
 .card .meta a {
