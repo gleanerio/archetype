@@ -1,0 +1,27 @@
+# Local Oxigraph triplestore for MVP scribe.
+# Usage (from mvp/):
+#   docker compose -f build/docker-compose.oxigraph.yaml up -d
+#   curl -s -o /dev/null -w "%{http_code}\n" http://localhost:7878/
+#
+# mvp_config.yaml:
+#   triplestore:
+#     type: oxigraph
+#     endpoint: http://localhost:7878
+#
+# SPARQL query:  POST http://localhost:7878/query
+# SPARQL update: POST http://localhost:7878/update
+# Bulk load:     POST http://localhost:7878/store
+
+services:
+  oxigraph:
+    image: ghcr.io/oxigraph/oxigraph:latest
+    container_name: mvp-oxigraph
+    command: ["--location", "/data", "serve", "--bind", "0.0.0.0:7878"]
+    ports:
+      - "7878:7878"
+    volumes:
+      - oxigraph-data:/data
+    restart: unless-stopped
+
+volumes:
+  oxigraph-data:

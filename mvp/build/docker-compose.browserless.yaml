@@ -1,6 +1,6 @@
 # Local Browserless Chromium for MVP summoner headless fetch.
-# Usage:
-#   docker compose -f docker-compose.browserless.yaml up -d
+# Usage (from mvp/):
+#   docker compose -f build/docker-compose.browserless.yaml up -d
 #   curl -s -o /dev/null -w "%{http_code}\n" "http://localhost:3000/active?token=mvp-local-token"
 #
 # Summoner config (mvp_config.yaml):

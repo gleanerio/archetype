@@ -15,7 +15,7 @@ search:
     endpoint: http://localhost:9200
     index_prefix: gleaner
 summoner:
-    # Browserless base URL (docker compose -f docker-compose.browserless.yaml up -d)
+    # Browserless base URL (docker compose -f build/docker-compose.browserless.yaml up -d)
     headless: http://localhost:3000
     headless_token: mvp-local-token   # or env BROWSERLESS_TOKEN; must match compose TOKEN
     headless_timeout_ms: 60000

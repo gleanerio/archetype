@@ -24,34 +24,35 @@ You need three backends. Adjust `mvp_config.yaml` if your hosts/ports differ.
 | Elasticsearch 8 | `http://localhost:9200` | Text search + UI |
 | Browserless (optional) | `http://localhost:3000` | JS-rendered HTML for headless sources |
 
+Compose files live under **`build/`**. Run from `mvp/`.
+
 ### Elasticsearch (included)
 
 ```bash
-docker compose -f docker-compose.es.yaml up -d
+docker compose -f build/docker-compose.es.yaml up -d
 curl -s http://localhost:9200   # expect cluster JSON
 ```
 
 CORS is enabled for the browser UI.
+
+### Oxigraph
+
+```bash
+docker compose -f build/docker-compose.oxigraph.yaml up -d
+curl -s -o /dev/null -w "%{http_code}\n" http://localhost:7878/
+```
 
 ### Browserless (optional headless summoner)
 
 Only needed when a source has `headless: true` (JSON-LD injected after JS).
 
 ```bash
-docker compose -f docker-compose.browserless.yaml up -d
+docker compose -f build/docker-compose.browserless.yaml up -d
 curl -s -o /dev/null -w "%{http_code}\n" \
   "http://localhost:3000/active?token=mvp-local-token"   # expect 204 or 200
 ```
 
 Match `summoner.headless` / `headless_token` in `mvp_config.yaml` to the compose service (`TOKEN=mvp-local-token` by default).
-### Oxigraph (example)
-
-```bash
-docker run --rm -d --name mvp-oxigraph -p 7878:7878 \
-  ghcr.io/oxigraph/oxigraph --location /data serve --bind 0.0.0.0:7878
-# or: podman / your existing container on :7878
-curl -s -o /dev/null -w "%{http_code}\n" http://localhost:7878/
-```
 
 ### Object store (LocalStack / MinIO)
 
@@ -150,8 +151,9 @@ Edit `ui/config.js` if Elasticsearch is not at `http://localhost:9200`.
 cd mvp
 source .venv/bin/activate
 
-docker compose -f docker-compose.es.yaml up -d
-# start Oxigraph + S3 if not already running
+docker compose -f build/docker-compose.es.yaml up -d
+docker compose -f build/docker-compose.oxigraph.yaml up -d
+# start S3 (LocalStack/MinIO) if not already running
 
 python -m summoner --config mvp_config.yaml --source medin --limit 5
 python -m scribe   --config mvp_config.yaml --source medin
@@ -166,10 +168,10 @@ cd ui && python -m http.server 8080
 |---------|----------------|
 | Summoner 403 on sitemap | Source blocks bots (e.g. Cloudflare). Try `medin`; `cioos` often fails. |
 | Summoner finds pages, no JSON-LD | Page lacks `ld+json`, or needs `headless: true` + Browserless if JS-injected. |
-| Headless 401 / connection refused | `docker compose -f docker-compose.browserless.yaml up -d`; match `headless_token` to compose `TOKEN`. |
+| Headless 401 / connection refused | `docker compose -f build/docker-compose.browserless.yaml up -d`; match `headless_token` to compose `TOKEN`. |
 | CIOOS / Cloudflare 403 | Open-source Browserless is not a bot bypass; use API path or allowlisting. |
-| Scribe cannot connect | Oxigraph on `:7878`? `curl http://localhost:7878/` |
-| Indexer connection refused | `docker compose -f docker-compose.es.yaml up -d` and wait until healthy |
+| Scribe cannot connect | `docker compose -f build/docker-compose.oxigraph.yaml up -d`; `curl http://localhost:7878/` |
+| Indexer connection refused | `docker compose -f build/docker-compose.es.yaml up -d` and wait until healthy |
 | UI “Search failed” / CORS | Recreate ES with current compose (CORS uses `/.*/`). Serve UI via `http.server`, not `file://` |
 | Empty ES after index | Confirm S3 has `summoned/<source>/` objects first |
 | Wrong S3 endpoint | Match `objectstore` in `mvp_config.yaml` (port, ssl, keys, bucket) |

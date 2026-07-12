@@ -4,11 +4,11 @@ Minimal HTML/JS search against Elasticsearch indexes produced by `indexer`.
 
 ## Run
 
-1. Elasticsearch with CORS (see `../docker-compose.es.yaml`):
+1. Elasticsearch with CORS (see `../build/docker-compose.es.yaml`):
 
    ```bash
    cd ..
-   docker compose -f docker-compose.es.yaml up -d
+   docker compose -f build/docker-compose.es.yaml up -d
    ```
 
 2. Index at least one source:

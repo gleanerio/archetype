@@ -34,10 +34,10 @@ Sitemap / pages
 ## Requirements
 
 - Python ≥ 3.11
-- Docker (for Elasticsearch compose; Oxigraph/S3 also typically via containers)
+- Docker (compose files under `build/` for ES, Oxigraph, Browserless; S3 usually LocalStack/MinIO)
 - S3-compatible store (LocalStack, MinIO, AWS, …) — default config: `localhost:4566`, bucket `gleanerio`
-- Oxigraph for `scribe` — default `http://localhost:7878`
-- Elasticsearch 8 for `indexer` / UI — default `http://localhost:9200`
+- Oxigraph for `scribe` — default `http://localhost:7878` (`build/docker-compose.oxigraph.yaml`)
+- Elasticsearch 8 for `indexer` / UI — default `http://localhost:9200` (`build/docker-compose.es.yaml`)
 
 ## Install
 
@@ -93,7 +93,7 @@ Sitemap walk + JSON-LD extraction → S3.
 ### Browserless (Docker)
 
 ```bash
-docker compose -f docker-compose.browserless.yaml up -d
+docker compose -f build/docker-compose.browserless.yaml up -d
 # TOKEN defaults to mvp-local-token (must match summoner.headless_token)
 curl -s -o /dev/null -w "%{http_code}\n" \
   "http://localhost:3000/active?token=mvp-local-token"
@@ -190,7 +190,7 @@ Documents include a **search facade** (`name`, `description`, `keywords`, `type`
 ### Elasticsearch (Docker)
 
 ```bash
-docker compose -f docker-compose.es.yaml up -d
+docker compose -f build/docker-compose.es.yaml up -d
 curl -s http://localhost:9200
 ```
 
@@ -223,7 +223,7 @@ curl -s 'http://localhost:9200/gleaner-medin/_search' \
 
 ## Search UI
 
-Static page under `ui/` (no build step). Requires Elasticsearch with CORS (enabled in `docker-compose.es.yaml`).
+Static page under `ui/` (no build step). Requires Elasticsearch with CORS (enabled in `build/docker-compose.es.yaml`).
 
 ```bash
 # after indexer has loaded a source

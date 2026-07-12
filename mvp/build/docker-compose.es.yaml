@@ -1,6 +1,6 @@
-# Local Elasticsearch 8 for MVP indexer testing.
-# Usage:
-#   docker compose -f docker-compose.es.yaml up -d
+# Local Elasticsearch 8 for MVP indexer / search UI.
+# Usage (from mvp/ or build/):
+#   docker compose -f build/docker-compose.es.yaml up -d
 #   curl -s http://localhost:9200
 # Security is disabled — for local demos only.
 
