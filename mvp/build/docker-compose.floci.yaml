@@ -1,0 +1,10 @@
+services:
+  floci:
+    image: floci/floci:latest          # or :latest-jvm
+    ports:
+      - "4566:4566"
+    volumes:
+      - /scratch/floci/floci-data:/app/data        # Persist data locally
+    # Optional: restart: unless-stopped
+    #
+    #
