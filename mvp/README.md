@@ -236,6 +236,54 @@ See [ui/README.md](./ui/README.md) for UI-specific notes and provenance detail.
 
 ---
 
+## Tools, agents, and pipeline graph
+
+Thin adapters for agent/LangGraph orchestration live **beside** the domain packages (core harvest/load code is unchanged):
+
+| Path | Role |
+|------|------|
+| `tools/` | JSON-serializable tool functions over library APIs (`dry_run` defaults **true** on write tools) |
+| `agents/` | OpenRouter LLM + LangGraph ReAct specialists + supervisor handoffs |
+| `agents/prompts/` | System-prompt policy for supervisor / summoner / scribe / indexer / diagnoser |
+| `graph/` | Linear runner + multi-agent supervisor entrypoints |
+
+### Deterministic pipeline (no LLM)
+
+```bash
+# pure tools need only requirements.txt
+python -c "from tools import extract_jsonld_from_html; print(extract_jsonld_from_html('https://ex.org', open('tests/fixtures/page_single.html').read()))"
+
+python -m graph --source medin --limit 3 --dry-run
+python -m graph --skip-summon --skip-scribe --skip-indexer --skip-verify  # preflight only
+
+pip install -r requirements-agents.txt
+python -m graph --langgraph --source medin --limit 3 --dry-run
+```
+
+### Multi-agent supervisor (OpenRouter + Grok 4.5)
+
+```bash
+pip install -r requirements-agents.txt
+export OPENROUTER_API_KEY=sk-or-...          # https://openrouter.ai/keys
+# optional:
+# export OPENROUTER_MODEL=x-ai/grok-4.5      # default
+# export OPENROUTER_BASE_URL=https://openrouter.ai/api/v1
+
+python -m agents --show-config
+python -m agents "dry-run the medin pipeline with limit 3"
+python -m agents --agent diagnoser "list sources and check whether oxigraph has data for medin"
+python -m agents --source medin --limit 5 --dry-run "preflight services then dry-run summon"
+```
+
+| Env | Meaning |
+|-----|---------|
+| `OPENROUTER_API_KEY` | Required for live agent calls |
+| `OPENROUTER_MODEL` | Model id (default **`x-ai/grok-4.5`**) |
+| `OPENROUTER_BASE_URL` | Default `https://openrouter.ai/api/v1` |
+| `OPENROUTER_HTTP_REFERER` / `OPENROUTER_APP_TITLE` | Optional OpenRouter app headers |
+
+Supervisor tools include specialist **handoffs** (`transfer_to_summoner|scribe|indexer|diagnoser`) plus `run_linear_pipeline`, `preflight`, and verify tools. Write tools stay **dry-run by default** unless you pass `--no-dry-run` and the model requests writes.
+
 ## Tests
 
 ```bash

@@ -1,0 +1,12 @@
+# Optional agent / LangGraph stack for mvp/tools + mvp/graph + mvp/agents
+# Core pipeline (summoner/scribe/indexer) only needs requirements.txt
+#
+# LLM provider: OpenRouter (OpenAI-compatible)
+#   export OPENROUTER_API_KEY=sk-or-...
+# Default model: x-ai/grok-4.5  (override with OPENROUTER_MODEL)
+
+-r requirements.txt
+langgraph>=0.2.0
+langchain>=1.0.0
+langchain-core>=0.3.0
+langchain-openai>=0.3.0
