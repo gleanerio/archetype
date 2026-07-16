@@ -16,7 +16,7 @@ services:
   oxigraph:
     image: ghcr.io/oxigraph/oxigraph:latest
     container_name: mvp-oxigraph
-    command: ["--location", "/data", "serve", "--bind", "0.0.0.0:7878"]
+    command: ["serve", "--location", "/data", "--bind", "0.0.0.0:7878"]
     ports:
       - "7878:7878"
     volumes:
