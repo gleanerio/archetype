@@ -86,7 +86,7 @@ def _parse_search(raw: dict[str, Any]) -> SearchConfig:
     return SearchConfig(type=search_type, endpoint=endpoint, index_prefix=prefix)
 
 
-def load_config(path: str | Path) -> AppConfig:
+def load_config(path: str | Path, sources_path: str | Path | None = None) -> AppConfig:
     config_path = Path(path)
     if not config_path.is_file():
         raise FileNotFoundError(f"Config file not found: {config_path}")

@@ -48,7 +48,13 @@ source .venv/bin/activate
 pip install -r requirements.txt
 ```
 
-## Config (`mvp_config.yaml`)
+## Config (`mvp_config.yaml` and `sources.yaml`)
+
+The configuration is split into two parts:
+- `mvp_config.yaml`: Infrastructure settings (object store, triplestore, etc.)
+- `sources.yaml`: Data sources to be harvested.
+
+### `mvp_config.yaml`
 
 | Node | Purpose |
 |------|---------|
@@ -56,6 +62,11 @@ pip install -r requirements.txt
 | `triplestore` | Oxigraph (`type: oxigraph`, `endpoint`) |
 | `search` | Elasticsearch (`type: elasticsearch`, `endpoint`, `index_prefix`) |
 | `summoner` | `threads`, `delay`, `user_agent`, **Browserless** `headless` URL + token/timeouts |
+
+### `sources.yaml`
+
+| Node | Purpose |
+|------|---------|
 | `sources[]` | Sitemap sources; `active: true`; set `headless: true` to use Browserless for that source |
 
 ### Identity layout
@@ -110,14 +121,15 @@ curl -s -o /dev/null -w "%{http_code}\n" \
 **Not a Cloudflare bypass.** Open-source Browserless does not solve bot walls (e.g. CIOOS HTML 403). Headless only helps when JS actually injects JSON-LD into the DOM.
 
 ```bash
-python -m summoner --config mvp_config.yaml
-python -m summoner --config mvp_config.yaml --source medin --limit 5
-python -m summoner --config mvp_config.yaml --source medin --limit 5 --dry-run -v
+python -m summoner --config mvp_config.yaml --sources sources.yaml
+python -m summoner --config mvp_config.yaml --sources sources.yaml --source medin --limit 5
+python -m summoner --config mvp_config.yaml --sources sources.yaml --source medin --limit 5 --dry-run -v
 ```
 
 | Flag | Meaning |
 |------|---------|
-| `--config` / `-c` | Path to YAML |
+| `--config` / `-c` | Path to `mvp_config.yaml` |
+| `--sources` / `-S` | Path to `sources.yaml` |
 | `--source` / `-s` | Single source `name` |
 | `--limit N` | Cap page URLs per source |
 | `--dry-run` | Extract only; do not write S3 |
@@ -144,12 +156,14 @@ Per summoned object, provenance includes roughly:
 - load `prov:Activity` + agent `urn:gleaner:agent:scribe`
 
 ```bash
-python -m scribe --config mvp_config.yaml --source medin
-python -m scribe --config mvp_config.yaml --source medin --limit 10 --dry-run -v
+python -m scribe --config mvp_config.yaml --sources sources.yaml --source medin
+python -m scribe --config mvp_config.yaml --sources sources.yaml --source medin --limit 10 --dry-run -v
 ```
 
 | Flag | Meaning |
 |------|---------|
+| `--config` / `-c` | Path to `mvp_config.yaml` |
+| `--sources` / `-S` | Path to `sources.yaml` |
 | `--source` / `-s` | **Required.** S3 prefix under `summoned/` |
 | `--limit N` | Cap objects loaded |
 | `--dry-run` | Convert only; do not touch Oxigraph |
@@ -199,12 +213,14 @@ Security is off and CORS is on for local demos only (see compose file).
 ### Run
 
 ```bash
-python -m indexer --config mvp_config.yaml --source medin
-python -m indexer --config mvp_config.yaml --source medin --limit 5 --dry-run -v
+python -m indexer --config mvp_config.yaml --sources sources.yaml --source medin
+python -m indexer --config mvp_config.yaml --sources sources.yaml --source medin --limit 5 --dry-run -v
 ```
 
 | Flag | Meaning |
 |------|---------|
+| `--config` / `-c` | Path to `mvp_config.yaml` |
+| `--sources` / `-S` | Path to `sources.yaml` |
 | `--source` / `-s` | **Required.** S3 prefix under `summoned/` |
 | `--limit N` | Cap S3 objects |
 | `--dry-run` | Build docs only; no ES writes |

@@ -116,7 +116,7 @@ def _parse_triplestore(raw: dict[str, Any]) -> TriplestoreConfig:
     return TriplestoreConfig(type=store_type, endpoint=endpoint)
 
 
-def load_config(path: str | Path) -> AppConfig:
+def load_config(path: str | Path, sources_path: str | Path | None = None) -> AppConfig:
     config_path = Path(path)
     if not config_path.is_file():
         raise FileNotFoundError(f"Config file not found: {config_path}")
