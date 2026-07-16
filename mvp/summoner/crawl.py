@@ -16,6 +16,7 @@ from .config import AppConfig, SourceConfig
 from .extract import ExtractResult, extract_jsonld
 from .robots import RobotsCache
 from .sitemap import collect_page_urls
+from .sitegraph import collect_sitegraph_items
 from .store import ObjectWriter, store_from_config
 
 if TYPE_CHECKING:
@@ -249,11 +250,31 @@ def crawl_source(
         stats.messages.append(msg)
         return stats
 
-    if source.sourcetype and source.sourcetype.lower() not in ("sitemap", ""):
-        msg = f"Source '{source.name}' sourcetype={source.sourcetype!r} not supported (only sitemap)"
+    if source.sourcetype and source.sourcetype.lower() not in ("sitemap", "sitegraph", ""):
+        msg = f"Source '{source.name}' sourcetype={source.sourcetype!r} not supported (only sitemap, sitegraph)"
         logger.warning(msg)
         stats.errors += 1
         stats.messages.append(msg)
+        return stats
+
+    stype = (source.sourcetype or "sitemap").lower()
+    if stype == "sitegraph":
+        items = collect_sitegraph_items(source.url, client, limit=limit)
+        stats.pages_seen = 1  # The sitegraph file itself
+        stats.extracted = len(items)
+        for item in items:
+            try:
+                # For sitegraph, we might not have a distinct page URL per item
+                # use @id if present, otherwise fallback to source.url
+                item_url = item.get("@id") or source.url
+                meta = {"fetch-mode": "sitegraph", "source-url": source.url}
+                key = store.put_jsonld(source.name, item_url, item, metadata=meta)
+                logger.info("Stored %s (from sitegraph %s)", key, source.url)
+                stats.stored += 1
+            except Exception as exc:  # noqa: BLE001
+                logger.error("Store failed for sitegraph item from %s: %s", source.url, exc)
+                stats.errors += 1
+        logger.info(stats.summary())
         return stats
 
     page_urls = collect_page_urls(source.url, client, limit=limit)
