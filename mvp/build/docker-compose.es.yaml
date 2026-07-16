@@ -1,7 +1,7 @@
 # Local Elasticsearch 8 for MVP indexer / search UI.
 # Usage (from mvp/ or build/):
 #   docker compose -f build/docker-compose.es.yaml up -d
-#   curl -s http://localhost:9200
+#   curl -s http://localhost:9400
 # Security is disabled — for local demos only.
 
 services:
@@ -20,9 +20,9 @@ services:
       - http.cors.allow-headers=X-Requested-With,Content-Type,Content-Length,Authorization
       - http.cors.allow-methods=OPTIONS,HEAD,GET,POST
     ports:
-      - "9200:9200"
+      - "9400:9200"
     healthcheck:
-      test: ["CMD-SHELL", "curl -s http://localhost:9200 >/dev/null || exit 1"]
+      test: ["CMD-SHELL", "curl -s http://localhost:9400 >/dev/null || exit 1"]
       interval: 10s
       timeout: 5s
       retries: 12

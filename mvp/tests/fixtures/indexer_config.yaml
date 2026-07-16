@@ -9,5 +9,5 @@ objectstore:
     region: us-east-1
 search:
     type: elasticsearch
-    endpoint: http://localhost:9200
+    endpoint: http://localhost:9400
     index_prefix: gleaner

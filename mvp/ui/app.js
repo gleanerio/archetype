@@ -2,7 +2,7 @@
   "use strict";
 
   const cfg = window.MVP_UI_CONFIG || {};
-  const esBase = (cfg.elasticsearch || "http://localhost:9200").replace(/\/$/, "");
+  const esBase = (cfg.elasticsearch || "http://localhost:9400").replace(/\/$/, "");
   const indexPattern = cfg.indexPattern || "gleaner-*";
   const size = cfg.size || 20;
 

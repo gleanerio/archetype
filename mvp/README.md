@@ -37,7 +37,7 @@ Sitemap / pages
 - Docker (compose files under `build/` for ES, Oxigraph, Browserless; S3 usually LocalStack/MinIO)
 - S3-compatible store (LocalStack, MinIO, AWS, …) — default config: `localhost:4566`, bucket `gleanerio`
 - Oxigraph for `scribe` — default `http://localhost:7878` (`build/docker-compose.oxigraph.yaml`)
-- Elasticsearch 8 for `indexer` / UI — default `http://localhost:9200` (`build/docker-compose.es.yaml`)
+- Elasticsearch 8 for `indexer` / UI — default `http://localhost:9400` (`build/docker-compose.es.yaml`)
 
 ## Install
 
@@ -191,7 +191,7 @@ Documents include a **search facade** (`name`, `description`, `keywords`, `type`
 
 ```bash
 docker compose -f build/docker-compose.es.yaml up -d
-curl -s http://localhost:9200
+curl -s http://localhost:9400
 ```
 
 Security is off and CORS is on for local demos only (see compose file).
@@ -213,8 +213,8 @@ python -m indexer --config mvp_config.yaml --source medin --limit 5 --dry-run -v
 ### Search examples
 
 ```bash
-curl -s 'http://localhost:9200/gleaner-medin/_count'
-curl -s 'http://localhost:9200/gleaner-medin/_search' \
+curl -s 'http://localhost:9400/gleaner-medin/_count'
+curl -s 'http://localhost:9400/gleaner-medin/_search' \
   -H 'Content-Type: application/json' \
   -d '{"query":{"multi_match":{"query":"coastal","fields":["name","description","keywords"]}},"_source":["name","url","source_url"]}'
 ```
