@@ -7,7 +7,7 @@ import logging
 import re
 from datetime import datetime, timezone
 from typing import Any
-from urllib.parse import unquote
+from urllib.parse import quote, unquote
 
 from .config import activity_iri, agent_iri, object_iri
 
@@ -165,7 +165,16 @@ def _is_iri(value: str) -> bool:
 
 
 def _nquad_iri(iri: str) -> str:
-    return f"<{iri}>"
+    """Wrap IRI in angle brackets, escaping nested brackets/backslashes if needed.
+    Actually N-Quads IRIs should not contain < > " { } | ^ ` \ according to RFC 3986,
+    but we at least ensure they don't break the N-Quads format itself.
+    """
+    # N-Quads IRIs should be absolute and not contain control chars or space.
+    # We use urllib.parse.quote to ensure it's a valid IRI-like string.
+    # We only quote characters that are definitely illegal in N-Quads IRIs.
+    safe = "/:?#=@&~+,!$*';[]%"  # Commonly allowed in URLs
+    quoted = quote(iri, safe=safe)
+    return f"<{quoted}>"
 
 
 def _nquad_literal(value: str, datatype: str | None = None) -> str:
