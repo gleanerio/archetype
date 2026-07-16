@@ -30,18 +30,18 @@ summoner:
 
 sources:
   - name: obis
-    propername: OBIS
-    catalogue: https://obis.org
-    domain: https://obis.org
-    logo: https://oceanexpert.org/images/logoimageindex.jpg
-    pid: hcatttps://catalogue.odis.org/view/343
-    sourcetype: sitemap
-    url: https://obis-sitemaps.s3.amazonaws.com/sitemap_datasets.xml
-    changefreq: daily
-    backend: MARIS
-    headless: false
-    dateadded: 2023-05-11
-    active: true
+      propername: OBIS
+      catalogue: https://obis.org
+      domain: https://obis.org
+      logo: https://oceanexpert.org/images/logoimageindex.jpg
+      pid: hcatttps://catalogue.odis.org/view/343
+      sourcetype: sitemap
+      url: https://obis-sitemaps.s3.amazonaws.com/sitemap_datasets.xml
+      changefreq: daily
+      backend: MARIS
+      headless: false
+      dateadded: 2023-05-11
+      active: true
   - name: obps
       propername: OceanBestPractices
       catalogue: https://oceanexpert.org
