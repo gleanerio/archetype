@@ -1,3 +1,5 @@
+requests
+PyYAML
 polars
 pandas
 minio
