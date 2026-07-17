@@ -12,7 +12,9 @@ def slugify(text):
 
 def main():
     url = "https://catalogue.odis.org/odis-arch-records"
-    sources_path = "mvp/sources.yaml"
+    # Determine script directory to use absolute paths
+    script_dir = os.path.dirname(os.path.abspath(__file__))
+    sources_path = os.path.join(script_dir, "sources.yaml")
     
     print(f"Fetching records from {url}...")
     try:
