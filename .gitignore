@@ -4,3 +4,4 @@
 rundir/logs/*
 workbench/data/
 /networks/commons/output/
+mvp/sources.yaml*
