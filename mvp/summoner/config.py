@@ -148,8 +148,8 @@ def _parse_source(raw: dict[str, Any]) -> SourceConfig:
     )
 
 
-def load_config(path: str | Path) -> AppConfig:
-    """Load and validate configuration from a YAML file."""
+def load_config(path: str | Path, sources_path: str | Path | None = None) -> AppConfig:
+    """Load and validate configuration from a YAML file(s)."""
     config_path = Path(path)
     if not config_path.is_file():
         raise FileNotFoundError(f"Config file not found: {config_path}")
@@ -162,7 +162,18 @@ def load_config(path: str | Path) -> AppConfig:
 
     objectstore = _parse_objectstore(_require(data, "objectstore", "config"))
     summoner = _parse_summoner(data.get("summoner"))
-    raw_sources = data.get("sources") or []
+
+    sources_data = data
+    if sources_path:
+        s_path = Path(sources_path)
+        if not s_path.is_file():
+            raise FileNotFoundError(f"Sources file not found: {s_path}")
+        with s_path.open(encoding="utf-8") as fh:
+            sources_data = yaml.safe_load(fh)
+        if not isinstance(sources_data, dict):
+            raise ValueError(f"Sources root must be a mapping: {s_path}")
+
+    raw_sources = sources_data.get("sources") or []
     if not isinstance(raw_sources, list):
         raise ValueError("'sources' must be a list")
 

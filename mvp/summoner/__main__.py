@@ -21,6 +21,14 @@ def _default_config_path() -> Path:
     return Path("mvp_config.yaml")
 
 
+def _default_sources_path() -> Path:
+    mvp_dir = Path(__file__).resolve().parent.parent
+    candidate = mvp_dir / "sources.yaml"
+    if candidate.is_file():
+        return candidate
+    return Path("sources.yaml")
+
+
 def build_parser() -> argparse.ArgumentParser:
     parser = argparse.ArgumentParser(
         prog="summoner",
@@ -35,6 +43,13 @@ def build_parser() -> argparse.ArgumentParser:
         type=Path,
         default=None,
         help="Path to mvp_config.yaml (default: mvp/mvp_config.yaml or ./mvp_config.yaml)",
+    )
+    parser.add_argument(
+        "--sources",
+        "-S",
+        type=Path,
+        default=None,
+        help="Path to sources.yaml (default: mvp/sources.yaml or ./sources.yaml)",
     )
     parser.add_argument(
         "--source",
@@ -87,8 +102,9 @@ def main(argv: list[str] | None = None) -> int:
         logging.getLogger("httpcore").setLevel(logging.WARNING)
 
     config_path = args.config or _default_config_path()
+    sources_path = args.sources or _default_sources_path()
     try:
-        cfg = load_config(config_path)
+        cfg = load_config(config_path, sources_path=sources_path)
     except (OSError, ValueError) as exc:
         logging.error("Failed to load config %s: %s", config_path, exc)
         return 2

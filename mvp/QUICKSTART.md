@@ -15,7 +15,7 @@ pip install -r requirements.txt
 
 ## 2. Services
 
-You need three backends. Adjust `mvp_config.yaml` if your hosts/ports differ.
+You need three backends. Adjust `mvp_config.yaml` and `sources.yaml` if your hosts/ports or sources differ.
 
 | Service | Default | Purpose |
 |---------|---------|---------|
@@ -74,10 +74,10 @@ PY
 
 ```bash
 # small real run (writes to S3)
-python -m summoner --config mvp_config.yaml --source medin --limit 5
+python -m summoner --config mvp_config.yaml --sources sources.yaml --source medin --limit 5
 
 # dry-run only (no S3 write)
-python -m summoner --config mvp_config.yaml --source medin --limit 5 --dry-run -v
+python -m summoner --config mvp_config.yaml --sources sources.yaml --source medin --limit 5 --dry-run -v
 ```
 
 Objects land at:
@@ -91,7 +91,7 @@ Metadata on each object includes harvest page URL (`source-url`).
 ## 4. Load graph (scribe → Oxigraph)
 
 ```bash
-python -m scribe --config mvp_config.yaml --source medin
+python -m scribe --config mvp_config.yaml --sources sources.yaml --source medin
 ```
 
 Named graphs:
@@ -120,7 +120,7 @@ curl -s -X POST http://localhost:7878/query \
 ## 5. Load search (indexer → Elasticsearch)
 
 ```bash
-python -m indexer --config mvp_config.yaml --source medin
+python -m indexer --config mvp_config.yaml --sources sources.yaml --source medin
 ```
 
 Index: `gleaner-medin`
@@ -155,9 +155,9 @@ docker compose -f build/docker-compose.es.yaml up -d
 docker compose -f build/docker-compose.oxigraph.yaml up -d
 # start S3 (LocalStack/MinIO) if not already running
 
-python -m summoner --config mvp_config.yaml --source medin --limit 5
-python -m scribe   --config mvp_config.yaml --source medin
-python -m indexer  --config mvp_config.yaml --source medin
+python -m summoner --config mvp_config.yaml --sources sources.yaml --source medin --limit 5
+python -m scribe   --config mvp_config.yaml --sources sources.yaml --source medin
+python -m indexer  --config mvp_config.yaml --sources sources.yaml --source medin
 
 cd ui && python -m http.server 8080
 ```
@@ -175,6 +175,7 @@ cd ui && python -m http.server 8080
 | UI “Search failed” / CORS | Recreate ES with current compose (CORS uses `/.*/`). Serve UI via `http.server`, not `file://` |
 | Empty ES after index | Confirm S3 has `summoned/<source>/` objects first |
 | Wrong S3 endpoint | Match `objectstore` in `mvp_config.yaml` (port, ssl, keys, bucket) |
+| Missing sources | Check `sources.yaml` and ensure `--sources` argument is correct |
 
 ## What links what
 
