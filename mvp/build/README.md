@@ -17,7 +17,7 @@ docker compose -f build/docker-compose.browserless.yaml up -d
 
 | File | Service | Port | Used by |
 |------|---------|------|---------|
-| `docker-compose.es.yaml` | Elasticsearch 8 | 9200 | `indexer`, `ui/` |
+| `docker-compose.es.yaml` | Elasticsearch 8 | 9400 | `indexer`, `ui/` |
 | `docker-compose.oxigraph.yaml` | Oxigraph | 7878 | `scribe` |
 | `docker-compose.browserless.yaml` | Browserless Chromium | 3000 | `summoner` when `headless: true` |
 

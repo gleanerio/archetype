@@ -21,7 +21,7 @@ You need three backends. Adjust `mvp_config.yaml` if your hosts/ports differ.
 |---------|---------|---------|
 | S3-compatible store | `localhost:4566` (HTTP, keys `test`/`test`, bucket `gleanerio`) | JSON-LD objects |
 | Oxigraph | `http://localhost:7878` | Named-graph RDF |
-| Elasticsearch 8 | `http://localhost:9200` | Text search + UI |
+| Elasticsearch 8 | `http://localhost:9400` | Text search + UI |
 | Browserless (optional) | `http://localhost:3000` | JS-rendered HTML for headless sources |
 
 Compose files live under **`build/`**. Run from `mvp/`.
@@ -30,7 +30,7 @@ Compose files live under **`build/`**. Run from `mvp/`.
 
 ```bash
 docker compose -f build/docker-compose.es.yaml up -d
-curl -s http://localhost:9200   # expect cluster JSON
+curl -s http://localhost:9400   # expect cluster JSON
 ```
 
 CORS is enabled for the browser UI.
@@ -128,8 +128,8 @@ Index: `gleaner-medin`
 Check:
 
 ```bash
-curl -s 'http://localhost:9200/gleaner-medin/_count'
-curl -s 'http://localhost:9200/gleaner-medin/_search' \
+curl -s 'http://localhost:9400/gleaner-medin/_count'
+curl -s 'http://localhost:9400/gleaner-medin/_search' \
   -H 'Content-Type: application/json' \
   -d '{"query":{"multi_match":{"query":"topographic","fields":["name","description","keywords"]}},"_source":["name","url","source_url"]}'
 ```
@@ -143,7 +143,7 @@ python -m http.server 8080
 
 Open **http://localhost:8080** and search (e.g. `topographic` or `coastal`).
 
-Edit `ui/config.js` if Elasticsearch is not at `http://localhost:9200`.
+Edit `ui/config.js` if Elasticsearch is not at `http://localhost:9400`.
 
 ## One-shot cheat sheet
 

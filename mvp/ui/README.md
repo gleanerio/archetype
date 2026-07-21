@@ -28,7 +28,7 @@ Minimal HTML/JS search against Elasticsearch indexes produced by `indexer`.
 
 4. Open [http://localhost:8080](http://localhost:8080) and search (e.g. `topographic`).
 
-Config: edit `config.js` if ES is not at `http://localhost:9200`.
+Config: edit `config.js` if ES is not at `http://localhost:9400`.
 
 ## Theme (dark / light)
 
