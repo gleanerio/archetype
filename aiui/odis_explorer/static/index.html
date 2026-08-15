@@ -1,0 +1,107 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ODIS Search Explorer</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600&family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+      integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY="
+      crossorigin=""
+    />
+    <link rel="stylesheet" href="/static/styles.css" />
+  </head>
+  <body>
+    <main>
+      <header class="page-header">
+        <div class="page-header-top">
+          <h1><a class="site-title" href="/">ODIS Search Explorer</a></h1>
+          <p class="subtitle">Map and graph the current page of search-demo.odis.org hits</p>
+        </div>
+      </header>
+
+      <form id="search-form" class="search-form">
+        <input
+          id="q"
+          name="q"
+          type="search"
+          placeholder="Search title, description, keywords"
+          autocomplete="off"
+        />
+        <select id="size" name="size" aria-label="Results per page">
+          <option value="10">10</option>
+          <option value="20" selected>20</option>
+          <option value="50">50</option>
+        </select>
+        <button type="submit">Search</button>
+      </form>
+
+      <div class="controls">
+        <label class="fragments">
+          <input id="fragments" type="checkbox" />
+          Include graph fragments
+        </label>
+        <div id="type-pills" class="type-pills" aria-label="Type filters"></div>
+      </div>
+
+      <p id="status" class="results-meta">Enter a query to search the ODIS index.</p>
+
+      <section class="viz">
+        <div class="panel">
+          <div class="panel-head">
+            <h2>Map</h2>
+            <p id="map-note" class="panel-note"></p>
+          </div>
+          <div id="map" class="map" role="img" aria-label="Map of result locations"></div>
+        </div>
+        <div class="panel">
+          <div class="panel-head">
+            <h2>Graph</h2>
+            <p id="graph-note" class="panel-note"></p>
+          </div>
+          <div id="graph" class="graph" aria-label="Force-directed JSON-LD graph"></div>
+        </div>
+      </section>
+
+      <section class="table-wrap">
+        <table>
+          <thead>
+            <tr>
+              <th>Title</th>
+              <th>Type</th>
+              <th>Source</th>
+              <th>Spatial</th>
+              <th>Link</th>
+            </tr>
+          </thead>
+          <tbody id="results-body">
+            <tr class="empty">
+              <td colspan="5">No results yet.</td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+
+      <nav id="pager" class="pager" hidden>
+        <button id="prev-page" type="button">Previous</button>
+        <span id="page-label"></span>
+        <button id="next-page" type="button">Next</button>
+      </nav>
+    </main>
+
+    <script
+      src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+      integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo="
+      crossorigin=""
+    ></script>
+    <script src="https://unpkg.com/vis-network@9.1.9/standalone/umd/vis-network.min.js"></script>
+    <script src="/static/app.js"></script>
+  </body>
+</html>
