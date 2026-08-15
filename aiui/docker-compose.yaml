@@ -1,0 +1,10 @@
+services:
+  explorer:
+    build: .
+    image: odis-explorer:local
+    ports:
+      - "8765:8765"
+    environment:
+      ODIS_BASE_URL: ${ODIS_BASE_URL:-https://search-demo.odis.org}
+      ODIS_BACKEND: ${ODIS_BACKEND:-elasticsearch}
+    restart: unless-stopped

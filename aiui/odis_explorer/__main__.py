@@ -3,6 +3,7 @@
 from __future__ import annotations
 
 import argparse
+import os
 import webbrowser
 
 import uvicorn
@@ -13,17 +14,26 @@ from odis_explorer.server import app, configure_client
 
 def main() -> None:
     parser = argparse.ArgumentParser(description="ODIS Search Explorer (local web UI)")
-    parser.add_argument("--host", default="127.0.0.1", help="Bind address (default: 127.0.0.1)")
-    parser.add_argument("--port", type=int, default=8765, help="Port (default: 8765)")
+    parser.add_argument(
+        "--host",
+        default=os.environ.get("ODIS_EXPLORER_HOST", "127.0.0.1"),
+        help="Bind address (default: 127.0.0.1; use 0.0.0.0 in Docker)",
+    )
+    parser.add_argument(
+        "--port",
+        type=int,
+        default=int(os.environ.get("ODIS_EXPLORER_PORT", "8765")),
+        help="Port (default: 8765)",
+    )
     parser.add_argument("--open", action="store_true", help="Open the UI in a browser")
     parser.add_argument(
         "--base-url",
-        default=DEFAULT_BASE_URL,
+        default=os.environ.get("ODIS_BASE_URL", DEFAULT_BASE_URL),
         help=f"ODIS Search API origin (default: {DEFAULT_BASE_URL})",
     )
     parser.add_argument(
         "--backend",
-        default="elasticsearch",
+        default=os.environ.get("ODIS_BACKEND", "elasticsearch"),
         help="X-Search-Backend value (default: elasticsearch)",
     )
     args = parser.parse_args()

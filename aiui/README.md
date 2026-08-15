@@ -45,6 +45,32 @@ Map, graph, and table share one selection. Only the current page is visualized (
 python -m odis_explorer --port 8765
 ```
 
+## Docker
+
+The image is a single process: FastAPI + the static explorer UI. It calls the public ODIS Search API at runtime, so the container needs outbound HTTPS.
+
+```bash
+cd aiui
+docker compose up --build
+# or: podman compose up --build
+```
+
+Then open <http://127.0.0.1:8765/>.
+
+```bash
+docker build -t odis-explorer:local .
+docker run --rm -p 8765:8765 odis-explorer:local
+```
+
+Optional environment variables:
+
+| Variable | Default | Meaning |
+|----------|---------|---------|
+| `ODIS_BASE_URL` | `https://search-demo.odis.org` | Search API origin |
+| `ODIS_BACKEND` | `elasticsearch` | `X-Search-Backend` header |
+| `ODIS_EXPLORER_HOST` | `0.0.0.0` in the image | Bind address |
+| `ODIS_EXPLORER_PORT` | `8765` | Listen port inside the container |
+
 ## Tests
 
 ```bash
