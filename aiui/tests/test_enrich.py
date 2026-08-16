@@ -57,6 +57,9 @@ def test_enrich_search_attaches_graph_and_geo(monkeypatch):
     ids = {node["id"] for node in out["graph"]["nodes"]}
     assert "https://example.org/ds" in ids
     assert "https://example.org/org" in ids
+    assert "clusters" in out
+    assert "graph" in out["clusters"]
+    assert isinstance(out["clusters"]["clusters"], list)
 
 
 def test_enrich_search_survives_missing_record(monkeypatch):

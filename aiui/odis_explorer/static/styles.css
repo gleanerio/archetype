@@ -180,6 +180,43 @@ main {
   padding: 0.65rem 0.85rem 0.35rem;
 }
 
+.graph-toolbar {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 0.45rem 0.75rem;
+  min-width: 0;
+}
+
+.graph-mode {
+  display: inline-flex;
+  gap: 0.25rem;
+}
+
+.graph-mode button,
+.clear-cluster {
+  font-family: "IBM Plex Mono", monospace;
+  font-size: 0.68rem;
+  padding: 0.15rem 0.5rem;
+  border-radius: 3px;
+  border: 1px solid var(--line);
+  background: var(--paper-raised);
+  color: var(--ink-soft);
+  cursor: pointer;
+}
+
+.graph-mode button.active {
+  border-color: var(--depth);
+  color: var(--depth);
+  background: var(--depth-tint);
+}
+
+.clear-cluster {
+  border-color: var(--depth);
+  color: var(--depth);
+}
+
 .panel-head h2 {
   margin: 0;
   font-size: 0.95rem;

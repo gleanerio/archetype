@@ -13,9 +13,18 @@
     geocoordinates: { key: "default", color: "#4b5d63", tint: "#f3f6f4" },
   };
 
+  const CLUSTER_THEMES = {
+    source: { color: "#1f5c8b", tint: "#e7f1fa" },
+    catalog: { color: "#0f6e56", tint: "#e1f5ee" },
+    org: { color: "#5a4a96", tint: "#efedfa" },
+    keyword: { color: "#8b5e0b", tint: "#fbf1de" },
+  };
+
   const state = {
     page: 1,
     selectedId: null,
+    activeCluster: null,
+    graphMode: "clusters",
     data: null,
     types: new Set(),
     map: null,
@@ -23,6 +32,7 @@
     featureByRecord: new Map(),
     network: null,
     nodeIdsByRecord: new Map(),
+    graphNodes: [],
   };
 
   const els = {
@@ -34,6 +44,9 @@
     status: document.getElementById("status"),
     mapNote: document.getElementById("map-note"),
     graphNote: document.getElementById("graph-note"),
+    graphModeClusters: document.getElementById("graph-mode-clusters"),
+    graphModeEntities: document.getElementById("graph-mode-entities"),
+    clearCluster: document.getElementById("clear-cluster"),
     tbody: document.getElementById("results-body"),
     pager: document.getElementById("pager"),
     prev: document.getElementById("prev-page"),
@@ -50,6 +63,65 @@
 
   function typeTheme(type) {
     return TYPE_THEMES[normalizeType(type)] || { key: "default", color: "#4b5d63", tint: "#f3f6f4" };
+  }
+
+  function clusterTheme(kind) {
+    return CLUSTER_THEMES[kind] || { color: "#4b5d63", tint: "#f3f6f4" };
+  }
+
+  function visibleItems() {
+    const items = state.data?.items || [];
+    if (!state.activeCluster) return items;
+    const ids = new Set(state.activeCluster.recordIds);
+    return items.filter((item) => ids.has(item.id));
+  }
+
+  function visibleGeo() {
+    const geo = state.data?.geo;
+    if (!geo || !state.activeCluster) return geo;
+    const ids = new Set(state.activeCluster.recordIds);
+    const points = (geo.points || []).filter((feature) => ids.has(feature.recordId));
+    const boxes = (geo.boxes || []).filter((feature) => ids.has(feature.recordId));
+    const polygons = (geo.polygons || []).filter((feature) => ids.has(feature.recordId));
+    const items = visibleItems();
+    return {
+      ...geo,
+      points,
+      boxes,
+      polygons,
+      recordsWithSpatial: items.filter(hasSpatial).length,
+      recordCount: items.length,
+    };
+  }
+
+  function renderStatus() {
+    if (!state.data) return;
+    const total = Number(state.data.total || 0).toLocaleString();
+    const items = state.data.items || [];
+    const page = state.data.page || 1;
+    if (state.activeCluster) {
+      const shown = visibleItems().length;
+      els.status.textContent = `${total} results — showing ${shown} of ${items.length} on page ${page} in cluster “${state.activeCluster.label}”`;
+    } else {
+      els.status.textContent = `${total} results — showing page ${page} (${items.length})`;
+    }
+  }
+
+  function updateGraphNote() {
+    if (state.graphMode === "clusters") {
+      const clusters = state.data?.clusters?.clusters || [];
+      const items = state.data?.items || [];
+      if (state.activeCluster) {
+        els.graphNote.textContent = `cluster “${state.activeCluster.label}” · ${state.activeCluster.recordIds.length} datasets`;
+      } else {
+        els.graphNote.textContent = `${clusters.length} clusters · ${items.length} datasets`;
+      }
+      return;
+    }
+    const graph = state.data?.graph;
+    const nodes = graph?.nodes || [];
+    const edges = graph?.edges || [];
+    els.graphNote.textContent = `${nodes.length} nodes · ${edges.length} edges`;
   }
 
   function stripTags(html) {
@@ -211,29 +283,130 @@
     requestAnimationFrame(() => state.map.invalidateSize());
   }
 
-  function renderGraph(graph) {
-    const nodes = (graph?.nodes || []).map((node) => {
-      const theme = typeTheme(node.type);
+  function visNode(node) {
+    if (node.isCluster) {
+      const theme = clusterTheme(node.kind);
       return {
         id: node.id,
         label: node.label,
-        title: `${node.type}${node.details?.name ? ` — ${node.details.name}` : ""}`,
+        title: `${node.kind} cluster — ${(node.recordIds || []).length} datasets`,
         color: {
-          background: node.isRecord ? theme.color : theme.tint,
+          background: theme.color,
           border: theme.color,
           highlight: { background: theme.color, border: "#12232b" },
         },
-        font: {
-          color: node.isRecord ? "#ffffff" : "#12232b",
-          face: "IBM Plex Sans",
-          size: node.isRecord ? 14 : 12,
-        },
-        shape: node.isRecord ? "box" : "dot",
-        size: node.isRecord ? 18 : 12,
+        font: { color: "#ffffff", face: "IBM Plex Sans", size: 14 },
+        shape: "diamond",
+        size: 22,
+        isCluster: true,
+        kind: node.kind,
         recordIds: node.recordIds || [],
-        recordId: node.recordId || (node.recordIds || [])[0] || null,
+        recordId: null,
+      };
+    }
+    const theme = typeTheme(node.type);
+    return {
+      id: node.id,
+      label: node.label,
+      title: `${node.type}${node.details?.name ? ` — ${node.details.name}` : ""}`,
+      color: {
+        background: node.isRecord ? theme.color : theme.tint,
+        border: theme.color,
+        highlight: { background: theme.color, border: "#12232b" },
+      },
+      font: {
+        color: node.isRecord ? "#ffffff" : "#12232b",
+        face: "IBM Plex Sans",
+        size: node.isRecord ? 14 : 12,
+      },
+      shape: node.isRecord ? "box" : "dot",
+      size: node.isRecord ? 18 : 12,
+      isCluster: false,
+      recordIds: node.recordIds || [],
+      recordId: node.recordId || (node.recordIds || [])[0] || null,
+    };
+  }
+
+  function applyClusterHighlight() {
+    if (!state.network || state.graphMode !== "clusters") return;
+    const memberIds = state.activeCluster ? new Set(state.activeCluster.recordIds) : null;
+    const updates = state.graphNodes.map((node) => {
+      const isMember =
+        !memberIds ||
+        (node.isCluster ? node.id === state.activeCluster.id : memberIds.has(node.recordId));
+      const base = node.color;
+      return {
+        id: node.id,
+        color: isMember
+          ? base
+          : {
+              background: node.isCluster ? "#d7e0dc" : "#f3f6f4",
+              border: "#d7e0dc",
+              highlight: base.highlight,
+            },
+        font: { ...node.font, color: isMember ? node.font.color : "#8a9b98" },
       };
     });
+    state.network.body.data.nodes.update(updates);
+    if (state.activeCluster) {
+      state.network.selectNodes([state.activeCluster.id]);
+      state.network.focus(state.activeCluster.id, { scale: 1.05, animation: true });
+    } else {
+      state.network.unselectAll();
+    }
+  }
+
+  function applyVisible() {
+    const items = visibleItems();
+    if (state.selectedId && !items.some((item) => item.id === state.selectedId)) {
+      state.selectedId = null;
+    }
+    renderTable(items);
+    renderMap(visibleGeo());
+    applyClusterHighlight();
+    renderStatus();
+    updateGraphNote();
+    els.clearCluster.hidden = !state.activeCluster;
+    if (state.selectedId) select(state.selectedId, { from: "reload" });
+  }
+
+  function setActiveCluster(cluster) {
+    state.activeCluster = {
+      id: cluster.id,
+      label: cluster.label,
+      recordIds: cluster.recordIds || [],
+    };
+    applyVisible();
+  }
+
+  function clearActiveCluster() {
+    if (!state.activeCluster) return;
+    state.activeCluster = null;
+    applyVisible();
+  }
+
+  function renderActiveGraph() {
+    const graph =
+      state.graphMode === "clusters" ? state.data?.clusters?.graph : state.data?.graph;
+    renderGraph(graph);
+    updateGraphNote();
+    applyClusterHighlight();
+  }
+
+  function setGraphMode(mode) {
+    state.graphMode = mode;
+    els.graphModeClusters.classList.toggle("active", mode === "clusters");
+    els.graphModeEntities.classList.toggle("active", mode === "entities");
+    els.graphModeClusters.setAttribute("aria-pressed", mode === "clusters" ? "true" : "false");
+    els.graphModeEntities.setAttribute("aria-pressed", mode === "entities" ? "true" : "false");
+    if (state.data) {
+      renderActiveGraph();
+      if (state.selectedId) select(state.selectedId, { from: "reload" });
+    }
+  }
+
+  function renderGraph(graph) {
+    const nodes = (graph?.nodes || []).map(visNode);
     const edges = (graph?.edges || []).map((edge, index) => ({
       id: `e${index}`,
       from: edge.from,
@@ -244,8 +417,10 @@
       arrows: "to",
     }));
 
+    state.graphNodes = nodes;
     state.nodeIdsByRecord.clear();
     for (const node of nodes) {
+      if (node.isCluster) continue;
       for (const recordId of node.recordIds || []) {
         if (!state.nodeIdsByRecord.has(recordId)) state.nodeIdsByRecord.set(recordId, []);
         state.nodeIdsByRecord.get(recordId).push(node.id);
@@ -270,11 +445,20 @@
       },
     );
     state.network.on("click", (params) => {
-      if (!params.nodes.length) return;
+      if (!params.nodes.length) {
+        clearActiveCluster();
+        return;
+      }
       const node = nodes.find((item) => item.id === params.nodes[0]);
+      if (node?.isCluster) {
+        const meta = (state.data?.clusters?.clusters || []).find((item) => item.id === node.id);
+        if (!meta) return;
+        if (state.activeCluster?.id === meta.id) clearActiveCluster();
+        else setActiveCluster(meta);
+        return;
+      }
       if (node?.recordId) select(node.recordId, { from: "graph" });
     });
-    els.graphNote.textContent = `${nodes.length} nodes · ${edges.length} edges`;
   }
 
   function renderTypePills(facets) {
@@ -380,13 +564,14 @@
       }
       const data = await response.json();
       state.data = data;
-      const items = data.items || [];
-      els.status.textContent = `${Number(data.total || 0).toLocaleString()} results — showing page ${data.page} (${items.length})`;
+      state.activeCluster = null;
+      els.clearCluster.hidden = true;
       renderTypePills(data.facets);
-      renderTable(items);
-      renderMap(data.geo);
-      renderGraph(data.graph);
+      renderTable(visibleItems());
+      renderMap(visibleGeo());
+      renderActiveGraph();
       renderPager(data);
+      renderStatus();
       if (state.selectedId) select(state.selectedId, { from: "reload" });
     } catch (error) {
       els.status.textContent = error.message || String(error);
@@ -411,6 +596,9 @@
     state.page = 1;
     if (els.q.value.trim() || state.types.size) runSearch();
   });
+  els.graphModeClusters.addEventListener("click", () => setGraphMode("clusters"));
+  els.graphModeEntities.addEventListener("click", () => setGraphMode("entities"));
+  els.clearCluster.addEventListener("click", () => clearActiveCluster());
 
   initMap();
   readUrl();

@@ -64,9 +64,20 @@
         <div class="panel">
           <div class="panel-head">
             <h2>Graph</h2>
-            <p id="graph-note" class="panel-note"></p>
+            <div class="graph-toolbar">
+              <div class="graph-mode" role="tablist" aria-label="Graph mode">
+                <button type="button" id="graph-mode-clusters" class="active" aria-pressed="true">
+                  Clusters
+                </button>
+                <button type="button" id="graph-mode-entities" aria-pressed="false">
+                  Shared entities
+                </button>
+              </div>
+              <button type="button" id="clear-cluster" class="clear-cluster" hidden>Show all</button>
+              <p id="graph-note" class="panel-note"></p>
+            </div>
           </div>
-          <div id="graph" class="graph" aria-label="Force-directed JSON-LD graph"></div>
+          <div id="graph" class="graph" aria-label="Cluster or JSON-LD graph"></div>
         </div>
       </section>
 

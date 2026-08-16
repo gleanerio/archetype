@@ -2,7 +2,7 @@
 
 Local client for the public [ODIS Search](https://search-demo.odis.org/) API.
 
-`odis-search.py` prints one page of hits as JSON. `odis_explorer` is a small local web UI that maps those hits and draws a force-directed graph from the JSON-LD on each record.
+`odis-search.py` prints one page of hits as JSON. `odis_explorer` is a small local web UI that maps those hits, clusters them, and can also draw the shared JSON-LD entity graph.
 
 The remote service is not raw Elasticsearch. It is the FastAPI facade documented at <https://search-demo.odis.org/api/docs>.
 
@@ -36,8 +36,12 @@ Opens <http://127.0.0.1:8765/>. The page:
 
 - searches `https://search-demo.odis.org/api/v1/search`
 - plots `spatial.points` and `spatial.boxes` on a Leaflet map (Carto Positron, OSM fallback)
-- fetches `GET /api/v1/records/{id}?raw=1` for the current page and unions the `jsonld` nodes into a force graph
+- fetches `GET /api/v1/records/{id}?raw=1` for the current page
+- clusters the page by shared source, catalog, organization, and keywords (a record can sit in more than one cluster)
+- optionally draws the older shared-entity JSON-LD graph
 - lists landing-page links in a table
+
+The graph panel defaults to **Clusters**. Click a cluster node to subset the table and map to those datasets. Click the canvas or **Show all** to restore the page. **Shared entities** is the previous force graph of merged JSON-LD nodes.
 
 Map, graph, and table share one selection. Only the current page is visualized (API max 50 hits).
 

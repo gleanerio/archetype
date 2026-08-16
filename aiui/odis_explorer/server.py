@@ -16,6 +16,7 @@ from odis_explorer.client import (
     OdisSearchClient,
     OdisSearchError,
 )
+from odis_explorer.clusters import clusters_from_items
 from odis_explorer.graph import graph_from_items
 from odis_explorer.spatial import collect_geo, spatial_for_item
 
@@ -77,6 +78,7 @@ def enrich_search(payload: dict[str, Any]) -> dict[str, Any]:
         "page": payload.get("page", 1),
         "size": payload.get("size", len(enriched)),
         "graph": graph_from_items(enriched),
+        "clusters": clusters_from_items(enriched),
         "geo": collect_geo(enriched),
     }
 
