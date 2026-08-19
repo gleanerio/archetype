@@ -3,4 +3,6 @@ name = "archetype"
 version = "0.1.0"
 description = "Add your description here"
 requires-python = ">=3.11"
-dependencies = []
+dependencies = [
+    "uvicorn>=0.52.3",
+]
