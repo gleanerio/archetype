@@ -31,6 +31,8 @@ Sitemap / pages
 | `indexer` | S3 JSON-LD → Elasticsearch (search facade + full JSON-LD) |
 | `ui/` | Static HTML/JS search UI over Elasticsearch |
 
+Design notes on changing or replacing stages: [MODIFICATIONS.md](./MODIFICATIONS.md).
+
 ## Requirements
 
 - Python ≥ 3.11
